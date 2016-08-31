@@ -14,15 +14,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Textos sobre acessibilidade na web em português
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+#email: your-email@domain.com
+description: >
+  Aqui você encontra textos traduzidos sobre acessibilidade na web no idioma português. Seu foco é permitir que colaboradores indiquem textos pertinentes sobre o tema e, depois de discussão, seja traduzido por outros colaboradores.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://acessibilidade.pt.webiwg.org" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: WebIWG
+github_username:  Dkmister/acessibilidade-web-pt
 
 # Build settings
 markdown: kramdown
