@@ -37,3 +37,20 @@ $on-laptop:        800px;
 
 // Import partials from the `minima` theme.
 @import "minima";
+
+/**
+* Fazer conteúdo não ser ignorado por máquinas (como leitores de tela)
+*
+* Não use 'visibility: hidden;', 'display:none;' ou 'width:0px;height:0px' pois será ignorado, mesmo por máquinas
+*
+* Q: Prejudica relevância em mecanismos de busca?
+* R: Não. Uso racional, para melhorar outline e experiencia de leitores de tela é bem visto e não penalizado.
+*
+* @see https://support.google.com/webmasters/answer/66353?hl=pt
+* @see http://webaim.org/techniques/css/invisiblecontent/
+*/
+.screen-reader-only {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}

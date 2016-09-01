@@ -15,6 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Textos sobre acessibilidade na web em português
 #email: your-email@domain.com
+lang: pt
 description: >
   Aqui você encontra textos traduzidos sobre acessibilidade na web no idioma português. Seu foco é permitir que colaboradores indiquem textos pertinentes sobre o tema e, depois de discussão, seja traduzido por outros colaboradores.
 baseurl: "" # the subpath of your site, e.g. /blog
