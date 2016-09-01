@@ -4,9 +4,9 @@ date: 2016-08-31
 title: Este é um teste. Deve ser ignorado. Em breve sera removido
 description: Esta é uma descrição
 copyright: "Copyright © 2004-2005 W3C® (MIT, ERCIM, Keio), All Rights Reserved. W3C liability, trademark, document use and software licensing rules apply."
-license: null
+license: LicencaXpto123
 license-custom: Licença de exemplo
-authors: Autor de Exemplo
+author: Autor de Exemplo
 translator: "Vilmar Neto"
 revisor: "Lucas de Vito"
 original: http://historia.pt.webiwg.org/
