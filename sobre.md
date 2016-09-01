@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sobre
-permalink: /Sobre/
+permalink: /sobre.html
 ---
 
 # História da Web em português
