@@ -6,13 +6,15 @@ layout: default
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-      {% if page.author %} • Autoria de <strong itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></strong>{% endif %}
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{% include date-portugues.html date=page.date %}</time>
+      {% if page.authors %} • Autoria de <strong itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.authors }}</span></strong>{% endif %}
       {% if page.translator %} • Traduzido por <strong>{{ page.translator }}</strong>{% endif %}
-      {% if page.revisor %} • Revisado por <strong>{{ page.revisor }}</strong>{% endif %}
+      {% if page.reviewers %} • Revisado por <strong>{{ page.reviewers }}</strong>{% endif %}
     </p>
     {% if page.original %}
-    <p class="post-meta">Original: {{ page.original }}</p>
+    <p class="post-meta">Original: <a href="{{ page.original.link }}">{{ page.original.title }}</a> obtida em {% include date-portugues.html date=page.original.dateOfTranslation %}
+
+    </p>
     {% endif %}
   </header>
 
@@ -22,6 +24,6 @@ layout: default
   <footer>
     {% if page.license %}<p class="post-meta"> Licença: <strong>{{ page.license }}</strong></p>{% endif %}
     {% if page.license-custom %}<p class="post-meta"> Licença: <strong>{{ page.license-custom }}</strong></p>{% endif %}
-    {% if page.copyright %}<p class="post-meta"> Direitos de cópia: <strong>{{ page.copyright }}</strong></p>{% endif %}
+    {% if page.copyright %}<p class="post-meta"><strong>{{ page.copyright }}</strong></p>{% endif %}
   </footer>
 </article>

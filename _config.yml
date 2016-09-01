@@ -21,7 +21,7 @@ description: >
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://acessibilidade.pt.webiwg.org" # the base hostname & protocol for your site
 twitter_username: WebIWG
-github_username:  Dkmister/acessibilidade-web-pt
+github_username:  WebIWG
 
 # Build settings
 markdown: kramdown

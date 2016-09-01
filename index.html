@@ -4,28 +4,16 @@ layout: default
 
 <div class="home">
   <h1 class="page-heading">Página inicial</h1>
-  <p>Neste momento, as traduções estão sendo feitas e não há grande quantidade de conteúdo. Volte em breve</p>
-
+  <p>{{ site.description | escape }}</p>
+  <h2 class="page-heading">Lista de artigos traduzidos</h2>
+  <p>Neste momento, as traduções estão sendo feitas e não há grande quantidade de conteúdo. Volte em breve para ter acesso a mais conteúdo</p>
+  <p><strong>Nenhum artigo traduzido até o momento.</strong></p>
+  <h2 class="page-heading">Lista de artigos em processo de tradução pela equipe de voluntários</h2>
   <ul>
-    <li><a href="{{ '/teste/traducao-de-teste.html' | prepend: site.baseurl }}">Este é um teste. Deve ser ignorado. Em breve sera removido</a></li>
+    <li><a href="https://github.com/Dkmister/acessibilidade-web-pt/issues/3">Web Accessibility Initiative, descrição de todos os grupos de trabalho</a></li>
+    <li><a href="https://github.com/Dkmister/acessibilidade-web-pt/issues/4">W3C - Intelectual Rights FAQ</a></li>
+    <li><a href="https://github.com/Dkmister/acessibilidade-web-pt/issues/5">Leitor de Tela NVDA, tradução da documentação de usuário</a></li>
+    <li><a href="https://github.com/Dkmister/acessibilidade-web-pt/issues/6">Leitor de Tela NVDA, Switching From JAWS To NVDA</a></li>
+    <li><a href="https://github.com/Dkmister/acessibilidade-web-pt/issues/7">W3C WAI wiki: Accesskey</a></li>
   </ul>
-
-
-  <!--
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">Inscrever-se <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-  -->
 </div>
