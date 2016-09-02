@@ -1,7 +1,7 @@
 # Textos sobre acessibilidade na web em português
 Aqui você encontra textos traduzidos sobre acessibilidade na web no idioma português. Seu foco é permitir que colaboradores indiquem textos pertinentes sobre o tema e, depois de discussão, seja traduzido por outros colaboradores.
 
-Precisamos de pessoas que possam traduzir textos de outros idiomas para o português, e não é obrigatório saber HTML e muito mesmo já saber sobre acessibilidade. Esperamos que nosso trabalho voluntáro nos próximos meses sirvam de base para inspirar projetos, que hoje, em Agosto de 2016, seriam inimagináveis pela comunidade de desenvolvedores que fala português.
+Precisamos de pessoas que possam traduzir textos de outros idiomas para o português, e não é obrigatório saber HTML e muito mesmo já saber sobre acessibilidade. Esperamos que nosso trabalho voluntáro nos próximos meses sirva de base para inspirar projetos, que hoje, em Agosto de 2016, seriam inimagináveis pela comunidade de desenvolvedores que fala português.
 
 Veja também [Textos historicamente impactantes sobre padrões web em português](https://github.com/Dkmister/historia-web-pt).
 
