@@ -1,22 +1,3 @@
----
-layout: translation
-date: 2016-03-02 # Data de ultima atualização do original
-title: "Switching From JAWS To NVDA" # Titulo traduzido
-description: Switching From JAWS To NVDA # Descrição traduzida
-copyright: 'Copyright NVDA Community Wiki' # Quem tem direitos de cópia
-license: null # Caso seja uma licença padrão (MIT, GPL...) por aqui
-license-custom: null # Caso a licença não seja uma padrão, por uma descrição curta dela aqui
-authors: ["kara-louise"] # Array com lista do autor
-translators: null # Tradutores
-reviewers: null # Quem revisou a tradução
-issue: https://github.com/webiwg/acessibilidade-web-pt/issues/6
-original: {
-    title: "Switching From JAWS To NVDA", # Titulo original, no idioma origial
-    link: "https://github.com/nvaccess/nvda-community/wiki/SwitchingFromJawsToNVDA", # Link para documento original
-    dateOfTranslation: "2016-09-02", # Data em que a tradução foi finalizada
-    backup: "_switching-from-jaws-to-nvda.md" # arquivo que contém documento original, sem alteracoes.
-}
----
 
 # Switching From JAWS To NVDA
 
