@@ -18,25 +18,34 @@ original: {
 }
 ---
 
-# Switching From JAWS To NVDA
+# Mudando do JAWS para o NVDA
 
-## Introduction
+<!--
+Vilmar: JAWS e NVDA são termos em inglês. A tradução pode não ter ficado de forma definitiva.
+Quem for ajudar na revisão, pode alterar tais detalhes ou colocar outro comentário abaixo.
+Seguindo o padrão deste aqui em cima.
+-->
 
-The purpose of this guide is to assist users of JAWS (Job Access With Speech), a commercial screen reader by Freedom Scientific to switch to the open source screen reader NVDA (NonVisual Desktop Access) with ease. It assumes prior knowledge of JAWS and that you are proficient in it's use.
+## Introdução
 
-It is not intended to be a replacement  of the included user guide, rather as a means to make NVDA seem less daunting.
+O propósito deste guia é auxiliar usuários de JAWS ( Job Acess With Speech / Acesso ao Trabalho com Fala), leitor de tela comercial da Freedom Scientific para trocar para o leitor de tela open source NVDA (NonVisual Desktop Access/Acesso Desktop Não-Visual) com facilidade. Se assume conhecido prévio de JAWS e que você é proficiente em seu uso.
 
-## Strengths And Weaknesses
+Não é intenção ser uma substituição do guia de uso incluso, muito menos uma forma de fazer NVDA menos intimidador.
 
-The intent of this guide is not to be a comparison of JAWS and NVDA, but it is necessary to mention some things that NVDA doesn't currently support or that needs improving so you can make an informed choice.
+## Prós e Contras
 
-Support for advanced features of the Microsoft office suite is a fairly recent addition, so you may not find it as polished an experience as JAWS.  However, this has been improved significantly in recent versions, and is constantly being worked on.
+A intenção deste guia não é ser uma comparação entre JAWS e NVDA, mas é necessário mencionar algumas coisas que NVDA não suporta atualmente ou precisa aprimoramento para que você possa fazer a escolha informada.
 
-With that said, you'll find that - in most daily situations, NVDA works just as well as JAWS, if not better in some cases.
+Suporte para recursos avançados do Microsoft office suite é uma adição relativamente recente, então você pode não achar uma experiência tão polida quanto JAWS. De qualquer forma, tem sido significativamente melhorado em versões recentes, e está sendo constantemente trabalhada.
 
-## A Quick Note about NVDA's Laptop Keyboard Layout
+Com isto dito, você achar que - na maioria das situações diárias, NVDA funciona tão bem quanto JAWS, se não melhor em alguns casos.
+<!--
+Vilmar: deixei a tradução de Laptop por laptop mesmo e também coloquei entre parenteses na primeira aparição do texto principal notebook, termo usado no Brasil
+Por isso foi feita esta breve explicação no texto.
+-->
+## Uma nota rápida sobre o Layout NVDA para teclado de Laptop 
 
-Selecting the laptop keyboard layout does not automatically set the CapsLock key to act as the NVDA modifier key.  However, a check box is provided next to the Keyboard Layout combo box to toggle this setting.
+Selecionando o layout para teclado de Laptop, ou Notebook em português, não ativa automaticamente a tecla CapsLock para agir como tecla modificador do NVDA. De qualquer forma, uma quadro de seleção estará sendo providenciado junto ao Layout de teclado combo box para alterar esta configuração.
 
 ## Note On The Insert Key.
 
