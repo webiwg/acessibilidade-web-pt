@@ -28,9 +28,9 @@ Seguindo o padrão deste aqui em cima.
 
 ## Introdução
 
-O propósito deste guia é auxiliar usuários de JAWS ( Job Acess With Speech / Acesso ao Trabalho com Fala), leitor de tela comercial da Freedom Scientific para trocar para o leitor de tela open source NVDA (NonVisual Desktop Access/Acesso Desktop Não-Visual) com facilidade. Se assume conhecido prévio de JAWS e que você é proficiente em seu uso.
+O propósito deste guia é auxiliar usuários de JAWS ( Job Acess With Speech / Acesso ao Trabalho com Fala), leitor de tela comercial da Freedom Scientific a troca para o leitor de tela open source NVDA (NonVisual Desktop Access/Acesso Desktop Não-Visual) com facilidade. Se assume conhecimento prévio de JAWS e que você é proficiente em seu uso.
 
-Não é intenção ser uma substituição do guia de uso incluso, muito menos uma forma de fazer NVDA menos intimidador.
+Não é a intenção ser uma substituição do guia de uso incluso, muito menos uma forma de fazer NVDA menos intimidador.
 
 ## Prós e Contras
 
@@ -42,10 +42,11 @@ Com isto dito, você achar que - na maioria das situações diárias, NVDA funci
 <!--
 Vilmar: deixei a tradução de Laptop por laptop mesmo e também coloquei entre parenteses na primeira aparição do texto principal notebook, termo usado no Brasil
 Por isso foi feita esta breve explicação no texto.
+Além disso combo box foi deixada em inglês por não ter tradução para portuguÊs
 -->
 ## Uma nota rápida sobre o Layout NVDA para teclado de Laptop 
 
-Selecionando o layout para teclado de Laptop, ou Notebook em português, não ativa automaticamente a tecla CapsLock para agir como tecla modificador do NVDA. De qualquer forma, uma quadro de seleção estará sendo providenciado junto ao Layout de teclado combo box para alterar esta configuração.
+Selecionando o layout para teclado de Laptop, ou Notebook em português, não ativa automaticamente a tecla CapsLock para agir como tecla modificador do NVDA. De qualquer forma, uma quadro de seleção estará sendo providenciado junto ao combo box do  Layout de teclado para alterar esta configuração.
 
 ## Note On The Insert Key.
 
