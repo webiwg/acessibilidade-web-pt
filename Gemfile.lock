@@ -133,6 +133,8 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-seo-tag
+  jekyll-sitemap
   minima
 
 RUBY VERSION

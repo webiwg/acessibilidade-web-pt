@@ -19,10 +19,18 @@ lang: pt
 description: >
   Aqui você encontra textos traduzidos sobre acessibilidade na web no idioma português. Seu foco é permitir que colaboradores indiquem textos pertinentes sobre o tema e, depois de discussão, seja traduzido por outros colaboradores.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://acessibilidade.pt.webiwg.org" # the base hostname & protocol for your site
+url: "http://acessibilidade.pt.webiwg.org" # url completa para o site. NÃO termine com barra
 twitter_username: WebIWG
 github_username:  WebIWG
+
+# Usado por jekyll-seo-tag
+author:
+  twitter: webiwg
 
 # Build settings
 markdown: kramdown
 theme: minima
+
+gems:
+  - jekyll-seo-tag
+  - jekyll-sitemap
