@@ -79,15 +79,15 @@ Uma das mais notáveis diferenças é que NVDA se diferencia entre campos de lin
 NVDA se referencia a diferentes linguagens como um sintetizador de fala que pode falar como vozes, e diferentes vozes suportadas pelo sintetizador como variantes.
 
 
-## Cursors
+## Cursores
 
-NVDA has various cursors to aid in navigating Windows and applications, similar to JAWS.  The terminology is slightly different as described below.
+NVDA tem diversos cursores para auxiliar na navegação do Windows e suas aplicações, similiar ao JAWS. A terminologia é ligeiramente diferente como descrita abaixo.
 
-The PC cursor in NVDA's documentation is referred to as the system focus and system caret.
+O cursor do PC na documentação do NVDA está referenciada como um sistema de foco e um sistema de cursor.
 
-The equivalent to the JAWS cursor is a combination of object navigation, the review cursor and Screen Review.  The Screen Review function is the one perhaps most similar to the JAWS cursor, however it is beneficial to become familiar with all 3.  You will find thorough, easy to understand instructions for these in the user guide.
+O equivalente para o cursor de JAWS é uma combinação de navegação de objetos, um cursor de revisão e um Screen Review. A função de  Screen Review é um, senão o mais similiar cursor para JAWS, de qualquer forma é o mais vantajoso para ser tornar familiar com todos os 3. Você irá achar minucioso, fácil de entender instruções para estas no guia do usuário.
 
-Unlike JAWS, you don't have to switch between the PC and JAWS cursor equivalents as the numpad is reserved exclusively for working with the JAWS cursor like functions.
+Diferente de JAWS, você não irá ter que mudar entre o cursores equivalentes do PC e do JAWS, assim como o numpad está reservado exclusivamente para o trabalhar com o cursor de JAWS como funções.
 
 ### Touch cursor
 
