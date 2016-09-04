@@ -48,35 +48,36 @@ Além disso combo box foi deixada em inglês por não ter tradução para portug
 
 Selecionando o layout para teclado de Laptop, ou Notebook em português, não ativa automaticamente a tecla CapsLock para agir como tecla modificador do NVDA. De qualquer forma, uma quadro de seleção estará sendo providenciado junto ao combo box do  Layout de teclado para alterar esta configuração.
 
-## Note On The Insert Key.
+## Nota sobre a Tecla Insert
 
-As  you may be aware, both JAWS and NVDA can use the insert key for it's modifier key. Both screen readers treat it slightly differently, which could lead to some confusion if you are used to one or the other.
+Como você deve estar informado, ambos JAWS e NVDA podem utilizar a tecla insert como tecla modificadora. Ambos leitores de tela tratam o levemente diferente, o que pode levar a alguma confusão se você está acostumado com um ou com outro.
 
-With JAWS loaded, the insert key is solely for it's use. This means that, in order to use the original function assigned to it (such as switching between insert and overwrite modes in a text editor or word processor), you first have to activate JAWS's pass key through command.
+Com JAWS carregado, a tecla insert é somente para este uso. Isso significa que, em  ordem para usar a função original designada (assim como mudar entre insert e sobreescrever modos no editor de textor ou no processador de texto), primeiro você tem que ativar o a pass key do JAWS através de comando.
 
-NVDA on the other hand allows you to carry out the insert key's original function by pressing it twice quickly.
-Keep this in mind the next time you're editing text while using NVDA and find yourself erasing what you've already written by typing over it.
+Por outro lado, NVDA permite que você realize a função original do insert, através do toque duplo. Tenha isso em mente na próxima vez que você estiver editando um texto pelo NVDA e perceber que está apagando o que você acabou de escrever.
 
-## Eloquence
+## Oratória
 
-One of the most asked questions concerns the use of the Eloquence synthesizer with NVDA. Until recently, it was illegal to do so, as explained by a developer: http://community.nvda-project.org/blog/NVDAAndEloquenceSituation.
+Uma das perguntas mais pedidas preocupa-se no uso do sintetizador de oratória com NVDA. Até recentemente, isto era ilegal, como explicado pelo desenvolvedor:http://community.nvda-project.org/blog/NVDAAndEloquenceSituation.
 
-However, Code Factory has released a version of eloquence as an NVDA add-on which can be purchased from http://codefactoryglobal.com/app-store/voices-for-nvda/.
+De qualquer forma, Code Factory liberou uma versão de oratória como um add-on do NVDA que pode ser comprada no endereço: http://codefactoryglobal.com/app-store/voices-for-nvda/.
 
-A license to use Nuance's Vocalizer synthesizer is also included in the price.
+A licença para o uso do sintetazidor Nuance's Vocalizer está também incluída no valor.
 
-See the section entitled "Scripts" for information about NVDA add-ons.
+Veja a seção intitulada "Scripts" para informações sobre add-ons do NVDA.
 
-eSpeak is not the only synthesizer supported. The following link is to a page detailing where to get extra voices.
+eSpeak não é o único sintetizador suportado. No seguinte endereço está uma página detalhando onde conseguir vozes extras.
 http://community.nvda-project.org/wiki/ExtraVoices.
 
-## Terminology
 
-Most of the time, both NVDA and JAWS share a lot of the same terminology to describe controls e.g. radio buttons, combo boxes, check boxes etc.
+## Terminologia
 
-One notable difference is that NVDA differentiates between single and multi-line edit fields, and will also tell you if a field is "protected" (anything you type will be replaced by asterisks).  It will also alert you if text is selected in a field when you tab over to it.  If so, typing will replace the highlighted text.
+Na maioria do tempo, ambos NVDA e JAWS compartilham da mesma terminologia para descrever controles, isto é, botões de radio, combo boxes, quadros de seleções, etc.
 
-NVDA  refers to the different languages a speech synthesizer can speak as voices, and the different voices  supported by your synthesizer as variants.
+Uma das mais notáveis diferenças é que NVDA se diferencia entre campos de linhas singulares e múltiplas, e isso também irá te dizer se um campo está "protegido" (qualquer coisa que você digitar será substituído por asteriscos). Irá também te alertar se o texto está selecionado no campo ao pressionar tab. Caso sim, ao digitar o texto destacado será substituído.
+
+NVDA se referencia a diferentes linguagens como um sintetizador de fala que pode falar como vozes, e diferentes vozes suportadas pelo sintetizador como variantes.
+
 
 ## Cursors
 
