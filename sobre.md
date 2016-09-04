@@ -5,12 +5,18 @@ permalink: /sobre.html
 ---
 
 # História da Web em português
-Aqui você encontra textos sobre sobre a história da web de abrangência
-mundial e específicas do Brasil no idioma português, inclusive contemporânea.
+Aqui você encontra textos traduzidos sobre acessibilidade na Web no idioma
+português. Seu foco é permitir que colaboradores indiquem textos pertinentes
+sobre o tema e, depois de discussão, seja traduzido por nosso grupo de
+trabalho.
 
-Mais do que apenas citar uma linha de acontecimentos, o objetivo é ir um pouco
-além e servir de base para interessados entenderem como chegamos até aqui, e
-potencialmente **inspirar ações que melhorem o futuro**.
+Precisamos de pessoas que possam traduzir textos de outros idiomas para o
+português, e não é obrigatório saber HTML e nem conhecer previamente
+acessibilidade. Esperamos que nosso trabalho voluntáro nos próximos meses
+sirva de base para inspirar projetos, que hoje, em Agosto de 2016, seriam
+inimagináveis pela comunidade de desenvolvedores que fala português.
 
-O projeto é coordenado por [Vilmar Neto @Dkmister](https://github.com/Dkmister)
-e o código fonte está está disponível em [https://github.com/Dkmister/historia-web-pt](https://github.com/Dkmister/historia-web-pt).
+O projeto é coordenado por [Vilmar Neto](https://github.com/Dkmister).
+O site publicado está em [http://acessibilidade.pt.webiwg.org/](http://acessibilidade.pt.webiwg.org/)
+e seu código fonte em [https://github.com/webiwg/acessibilidade-web-pt](https://github.com/webiwg/acessibilidade-web-pt).
+

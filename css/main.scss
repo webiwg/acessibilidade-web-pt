@@ -54,3 +54,9 @@ $on-laptop:        800px;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
 }
+
+.list-inline li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+}

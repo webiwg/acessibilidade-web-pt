@@ -1,0 +1,49 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Sobre este projeto</h2>
+    <p>
+      O projeto <strong><a href="{{ site.baseurl }}/sobre.html">{{ site.title }}</a></strong> ({% include icon-github.html username=site.github_repository %}) é uma iniciativa do <a href="http://www.webiwg.org/">WebIWG</a>, um grupo
+      de trabalho independente focado em tecnologias da Web, auto-organizado e sem fins lucrativos.
+    </p>
+    <h2 class="footer-heading">Sites do WebIWG</h2>
+    <ul class="list-inline">
+      <li><a href="http://acessibilidade.pt.webiwg.org/">Acessibilidade Web PT</a></li>
+      <li><a href="http://historia.pt.webiwg.org/">História da Web PT</a></li>
+      <li><a href="http://eventos.webiwg.org/">Eventos</a></li>
+      <li><a href="http://www.webiwg.org/">GT WebIWG</a></li>
+    </ul>
+    <!--
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            {% if site.author %} {{ site.author | escape }} {% else %} {{ site.title | escape }} {% endif %}
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          {% if site.github_username %}
+          <li>
+            {% include icon-github.html username=site.github_username %}
+          </li>
+          {% endif %} {% if site.twitter_username %}
+          <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>{{ site.description | escape }}</p>
+      </div>
+    </div>
+    -->
+
+  </div>
+
+</footer>
