@@ -88,16 +88,19 @@ O cursor do PC na documentação do NVDA está referenciada como um sistema de f
 O equivalente para o cursor de JAWS é uma combinação de navegação de objetos, um cursor de revisão e um Screen Review. A função de  Screen Review é um, senão o mais similiar cursor para JAWS, de qualquer forma é o mais vantajoso para ser tornar familiar com todos os 3. Você irá achar minucioso, fácil de entender instruções para estas no guia do usuário.
 
 Diferente de JAWS, você não irá ter que mudar entre o cursores equivalentes do PC e do JAWS, assim como o numpad está reservado exclusivamente para o trabalhar com o cursor de JAWS como funções.
+<!--
+Vilmar: Foi deixado tree-like como estrutura de árvore na sua semântica
+        touchscreens, object mode, browse mode , object navigation e outros termos permanecem em inglês.
+-->
+### Cursor de Toque
 
-### Touch cursor
+No JAWS 15 ou superior, você pode usar as teclas numpad para navegar entre aplicativos usando uma estrutura em forma de árvore, similiar a como usuários de leitores de tela de smartphone, como VoiceOver, iriam navegar em touchscreens. No NVDA, comando de toque do object mode e do object navigation podem ser usados para este próposito.
 
-In JAWS 15 or later, you can use numpad keys to navigate apps using a tree-like structure, similar to how users of smartphone screen readers such as VoiceOver would navigate touchscreens. in NVDA, object navigation and object mode touch commands can be used for this purpose
+##Cursor Virtual
 
-## Virtual Cursor
+O cursor virtual no NVDA é conhecido como browse mode. Funciona da mesma maneira do JAWS, proporcionando acesso a teclas rápidas de navegação, ou no NVDA speak , navegação por letra única.
 
-The virtual cursor in NVDA is known as browse mode. It functions in much the same way as JAWS, giving you access to navigation quick keys, or in NVDA speak, single letter navigation.
-
-Following are some common issues you may encounter when browsing the web with NVDA for the first time, and how to address them.
+A seguir estão alguns problemas que você pode encontrar enquanto estiver navegando na rede com NVDA pela primeira vez, e como resolvê-los.
 
 ### Why Is Everything On One Line?
 
