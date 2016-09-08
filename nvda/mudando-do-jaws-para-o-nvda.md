@@ -101,12 +101,15 @@ No JAWS 15 ou superior, você pode usar as teclas numpad para navegar entre apli
 O cursor virtual no NVDA é conhecido como browse mode. Funciona da mesma maneira do JAWS, proporcionando acesso a teclas rápidas de navegação, ou no NVDA speak , navegação por letra única.
 
 A seguir estão alguns problemas que você pode encontrar enquanto estiver navegando na rede com NVDA pela primeira vez, e como resolvê-los.
+<!--
+Vilmar: Default foi mantido com mesmo significado.
+-->
+### Por que tudo numa só linha?
 
-### Why Is Everything On One Line?
+Caso esteja desavisado, JAWS tem dois modos para exibir páginas web ou outros documentos usando o cursor virtual, layout simples e layout de tela. O Layout simples é o default, que exibe conteúdo numa forma linear - colocando cada link ou controle em sua própria linha. Layout de tela formata o conteúdo de forma similiar a como é exibido na tela.
 
-In case you are unaware, JAWS has two modes for displaying webpages or other documents using the virtual cursor, simple layout and screen layout.  Simple layout is the default, which displays content in a linear fashion - putting each link or control on its own line.  Screen layout formats the content similar to how it's displayed on screen.
+O padrão em NVDA é o layout de tela, mas você pode facilimente trocar para a versão de layout simples pressionando NVDA+V enquanto no modo browse. Isso irá deixar o layout de tela desligado. Tenha certeza de salvar a configuração após fazer a mudança com NVDA+CTRL+C.
 
-The default in NVDA is screen layout, but you can easily switch to its version of simple layout by pressing NVDA+V while in browse mode. This will turn Screen layout off. Be sure to save your configuration after making this change with NVDA+CTRL+c.
 
 ### It Keeps Saying Clickable Clickable Clickable.
 
