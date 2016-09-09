@@ -110,30 +110,35 @@ Caso esteja desavisado, JAWS tem dois modos para exibir páginas web ou outros d
 
 O padrão em NVDA é o layout de tela, mas você pode facilimente trocar para a versão de layout simples pressionando NVDA+V enquanto no modo browse. Isso irá deixar o layout de tela desligado. Tenha certeza de salvar a configuração após fazer a mudança com NVDA+CTRL+C.
 
+<!--
+Vilmar: control foi traduzido para controle, necessito que verifiquem se é o adequado.
+        Acabei deixando em português, as configurações que devem ser clicadas.
+-->
+### Continua dizendo Clicável, Clicável, Clicável !
 
-### It Keeps Saying Clickable Clickable Clickable.
+Enquanto estiver lendo páginas web, você pode perceber que às vezes que NVDA diz "clicável", até múltiplas vezes numa mesma linha ou controle.
 
-While  reading webpages, you might notice sometimes that NVDA says "clickable", even multiple times on the same link or control.
+De qualquer forma, é consertado facilmente com a versão 2014.1 ou mais recente. Vá em dialógo de Formatação de Documento, desmarque a caixa "Reporte se clicável" e aperte OK. Lembre-se de salvar sua configuração.
 
-However, this is easily fixable as of version 2014.1 or later. Go to the Document Formatting dialogue, uncheck the "Report if clickable" check box and press OK. Remember to save your configuration.
+### Procurar(CTRL+F) não funciona na web.
 
-### Find doesn't work on the web.
+Enquanto o JAWS está carregado, pressionando ctrl+f no Internet Explorer ou no Firefox mostra uma caixa de Procurar do JAWS, ao invés de ativar o comando interno do browser. Isto permite procurar texto usando o cursor virtual. O comando de procurar regular irá procurar pela próxima ocorrência do texto digitado, mas não irá mover o cursor virtual para a devida localização. Isto é por conta de como os leitores de tela interagem com páginas web.
 
-While JAWS is loaded, pressing ctrl+f in Internet Explorer or Firefox brings up the JAWS Find dialogue rather than activating the browser's built-in find command.  This is to allow you to search for text using the virtual cursor.  The regular find command will search for the next occurrence of the entered text, but will not move the virtual cursor to that location.  This is due to how screen readers interact with web pages.
+NVDA tem seu próprio comando de busca no modo browse, mas não está ligado a CTRL+F, então pressionar este atalho irá chamar o comando de busca do próprio browser, consequentemente não funcionando como esperado.
 
-NVDA has its own find command to search in browse mode, but it has not been tied to CTRL+F, so pressing that shortcut key calls up the browser's find command, hence find not working as expected.
+Para mostrar o comando de Procurar do NVDA, pressione ctrl+NVDA+F. Digite o que você quiser pesquisar, enão pressione Enter .
+<!--
+Vilmar: headings foi mantido da mesma forma.
+-->
+### Sem comando para visualizar formas e headings?
 
-To bring up NVDA's find dialogue, press ctrl+NVDA+F.  Type in what you wish to find then press enter.
+No JAWS, você pode pressionar JAWS+F5 para listar formas, JAWS+F6 para listar headings e JAWS+F& para listar link. No NVDA, as duas últimas se combinaram em elementos de diálogos de lista, e você pode acessar pressionando NVDA+F7.
 
-### No commands to view forms and headings?
+## Modo de formas
 
-In JAWS, you can press JAWS+F5 to list forms, JAWS+F6 to list headings and JAWS+F7 to list links. In NVDA, the latter two have been combined into an elements list dialog, and you can access it by pressing NVDA+F7.
+O equivalente ao modo de formas no NVDA é o modo focus, e se comporta muito similiar ao JAWS, até mesmo mudando de modos automaticamente quando navegando por uma página web. Isso irá tocar um som alertando que vocẽ para qual modo você está.
 
-## Forms Mode
-
-The equivalent of forms mode in NVDA is focus mode, and it behaves very similar to JAWS, Even switching modes automatically when navigating through a webpage. It will play a sound alerting you to which mode you are in.
-
-Details about Focus Mode can be found in the user guide.
+Detalhes sobre o Modo Focus podem ser achados no guia do usuário.
 
 ## NVDA talks too much.
 
