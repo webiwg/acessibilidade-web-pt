@@ -62,7 +62,7 @@ Uma das perguntas mais pedidas preocupa-se no uso do sintetizador de oratória c
 
 De qualquer forma, Code Factory liberou uma versão de oratória como um add-on do NVDA que pode ser comprada no endereço: http://codefactoryglobal.com/app-store/voices-for-nvda/.
 
-A licença para o uso do sintetazidor Nuance's Vocalizer está também incluída no valor.
+A licença para o uso do sintetizador Nuance's Vocalizer está também incluída no valor.
 
 Veja a seção intitulada "Scripts" para informações sobre add-ons do NVDA.
 
@@ -174,14 +174,17 @@ Isso inclui alguns que emulam os recursos de JAWS que não estão atualmente pre
 
 O seguinte link é para o guia de desenvolvedor com informação sobre como criar add-ons. http://community.nvda-project.org/documentation/developerGuide.html
 
-## Remote access
+## Acesso Remoto
 
-In 2015, Christopher Toth and Tyler Spivey released a free add-on to allow NVDA users to provide remote support, similar to JAWS Tandem. To learn more about this add-on, go to http://www.nvdaremote.com.
+Em 2015, Christopher Toth e Tyler Spivey lançaram um add-on gratuito que permite usuários de NVDA promoverem suporte remoto, similiar ao JAWS Tandem. Para aprender mais sobre este add-on, vá para http://www.nvdaremote.com.
 
-## Application-specific settings
+## Configurações de Aplicação específica
 
-Until recently, NVDA's settings were global (applied everywhere). Starting with NVDA 2013.3, it is possible to configure certain settings to be applied when using a program. This is done by creating an app-specific configuration profile. To create an app-specific profile, open the Configuration Profiles dialogue while using the app in question. When the dialogue opens (NVDA menu/Configuration Profiles), select New, and select "current application" when asked when to use this profile.
+Até recentemente, as configurações do NVDA eram globais (aplicadas em qualquer lugar). A partir do NVDA 2013.3, é possível configurar certas configurações  para serem aplicadas quando estive usando um programa. Isso pode ser feito criando uma configuração de perfil de app-específico. Para criar um perfil de app-específico, abra a caixa de dialógo Configuration Profiles enquanto estiver usando o app em questão. Quando a caixa de dialógo abrir (NVDA menu/Configuration Profiles), selecione New e então "current application" quando perguntado para usar tal perfil.
 
-### Alternate say all
+<!--
+Vilmar: Aqui também deixei say all com o mesma palavra.
+-->
+### Alternativo diz tudo
+Nas versões recentes de JAWS, você pode configurar um sintetizador de voz diferente para ser usado quando say all está ativo. Você pode fazer isso no NVDA cirando um perfil say all e configurando o sintetizador enquanto o perfil say all está ativo.
 
-In recent versions of JAWS, you can configure a different speech synthesizer to be used when say all is active. You can do this in NVDA by creating a say all profile and configuring the synthesizer while say all profile is active.
