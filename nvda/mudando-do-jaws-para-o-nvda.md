@@ -112,13 +112,13 @@ O padrão em NVDA é o layout de tela, mas você pode facilimente trocar para a 
 
 <!--
 Vilmar: control foi traduzido para controle, necessito que verifiquem se é o adequado.
-        Acabei deixando em português, as configurações que devem ser clicadas.
+        Acabei mudando para inglês, as configurações que devem ser clicadas.
 -->
 ### Continua dizendo Clicável, Clicável, Clicável !
 
 Enquanto estiver lendo páginas web, você pode perceber que às vezes que NVDA diz "clicável", até múltiplas vezes numa mesma linha ou controle.
 
-De qualquer forma, é consertado facilmente com a versão 2014.1 ou mais recente. Vá em dialógo de Formatação de Documento, desmarque a caixa "Reporte se clicável" e aperte OK. Lembre-se de salvar sua configuração.
+De qualquer forma, é consertado facilmente com a versão 2014.1 ou mais recente. Vá em dialógo "Document Formatting", desmarque a caixa "Reporte if clickable" e aperte OK. Lembre-se de salvar sua configuração.
 
 ### Procurar(CTRL+F) não funciona na web.
 
@@ -139,12 +139,14 @@ No JAWS, você pode pressionar JAWS+F5 para listar formas, JAWS+F6 para listar h
 O equivalente ao modo de formas no NVDA é o modo focus, e se comporta muito similiar ao JAWS, até mesmo mudando de modos automaticamente quando navegando por uma página web. Isso irá tocar um som alertando que vocẽ para qual modo você está.
 
 Detalhes sobre o Modo Focus podem ser achados no guia do usuário.
+<!--
+Vilmar: list views foi mantido da mesma forma.
+-->
+## NVDA fala pra caramba.
+Às vezes, você pode achar que NVDA pode ser muito verboso, particularmente em algumas list views. Isso é porque na questão do NVDA, list views são tabelas.  NVDA está configurado por default para anunciar cada header de coluna ou header de linha. 
 
-## NVDA talks too much.
+Para desligar esta opção, desmarque "Report table row/columns headers" no dialógo "Document Formatting".
 
-Sometimes you may find that NVDA can seem overly verbose, particularly in some list views. This is because as far as NVDA is concerned, list views are tables.   NVDA is configured by default to announce each column or row header.
-
-To turn that option off, uncheck "Report table row/column headers" in the "Document Formatting" dialogue.
 
 ## Solving unexpected Speech Dictionary behavior.
 
