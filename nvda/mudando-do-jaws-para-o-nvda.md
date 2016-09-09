@@ -147,19 +147,22 @@ Vilmar: list views foi mantido da mesma forma.
 
 Para desligar esta opção, desmarque "Report table row/columns headers" no dialógo "Document Formatting".
 
+<!--
+Vilmar: check box foi mantido como original por estar junto com case sensitive que ficaria dificil de traduzir junto.
+        Recomendo que para palavras mantidas em inglês haja uma pequena explicação sobre, em forma de itens.
+-->
+## Resolvendo comportamento inesperado do Dicionário de Fala.
 
-## Solving unexpected Speech Dictionary behavior.
+NVDA sempre incluiu uma função para editar "Speech Dictionaries", Dicionários de Fala, em português, que são similiares ao manager de arquivos de dicionários do JAWS. De qualquer forma, até recentemente, o resultado de adicionar uma palavra para eles pode não sair como o esperado.
+Se você adicionou uma palavra que queria mudar a pronunciação de uma dicionário, como "mono", qualquer outra palavra que iniciasse com a palavra mono seria afetada. Enquanto em JAWS, somente o texto digitado no campo da "palavra atual" seria afetado, a menos que você junte com um asterisco (*). Então como neste exemplo, mono só seria visto como palavra de rota.
 
-NVDA has always included a function to edit "Speech Dictionaries", which are similar to JAWS' dictionary manager files.  However, until recently, the result of adding a word to them might not be what you had expected.
-If you added a word you wanted to change the pronunciation of to a dictionary , such as "mono", any word that started with or included the word mono would be affected.  Whereas in JAWS, only the text entered into the "actual word" field would be affected, unless you appended an asterisk (*). So as in this example, mono would be seen as a route word.
+Houve um trabalho sobre, mas como isso envolvia expressões regulares, que não são tão óbvias para usuário regular. De qualquer forma , como a versão 2014.4 ou mais recente, você ira achar um grupo de botões de rádio no dicionário de adição/edição do tipo rótulo de entrada, que determina como texto no padrão, (NVDA trata da palavra atual), será tratado na caixa.
+ *  em qualquer lugar, como é o comportamento padrão.
+ *  Toda a palavra, que é como o JAWS manipula entradas de dicionário.
+ *  Expresão Regular, que no caso é complicado.
+Você irá achar um case sensitive check box.
 
-There was a work around, but this involved regular expressions, which aren't at all obvious to the average user.  However, as of 2014.4 or later, you will now find a group of radio buttons in the Add/edit dictionary entry labelled type, which determines how the text in the pattern, (NVDA speak for actual word), box will be treated.
- * anywhere, which is the default behavior.
- * Whole word, which is how JAWS handles dictionary entries.
- * Regular Expression, which is complicated.
-You will also find a case sensitive check box.
-
-If you previously found NVDA's speech dictionaries frustrating, be sure to take another look.
+Se você anteriormente achou os dicionários de fala de NVDA frustantes, tenha certeza de dar outra olhada.
 
 ## Scripts
 
