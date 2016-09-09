@@ -154,7 +154,7 @@ Vilmar: check box foi mantido como original por estar junto com case sensitive q
 ## Resolvendo comportamento inesperado do Dicionário de Fala.
 
 NVDA sempre incluiu uma função para editar "Speech Dictionaries", Dicionários de Fala, em português, que são similiares ao manager de arquivos de dicionários do JAWS. De qualquer forma, até recentemente, o resultado de adicionar uma palavra para eles pode não sair como o esperado.
-Se você adicionou uma palavra que queria mudar a pronunciação de uma dicionário, como "mono", qualquer outra palavra que iniciasse com a palavra mono seria afetada. Enquanto em JAWS, somente o texto digitado no campo da "palavra atual" seria afetado, a menos que você junte com um asterisco (*). Então como neste exemplo, mono só seria visto como palavra de rota.
+Se você adicionou uma palavra que queria mudar a pronunciação de uma dicionário, como "mono", qualquer outra palavra que iniciasse com a palavra mono seria afetada. Enquanto em JAWS, somente o texto digitado no campo da "palavra atual" seria afetado, a menos que você concatene com um asterisco (*). Então como neste exemplo, mono só seria visto como palavra de rota.
 
 Houve um trabalho sobre, mas como isso envolvia expressões regulares, que não são tão óbvias para usuário regular. De qualquer forma , como a versão 2014.4 ou mais recente, você ira achar um grupo de botões de rádio no dicionário de adição/edição do tipo rótulo de entrada, que determina como texto no padrão, (NVDA trata da palavra atual), será tratado na caixa.
  *  em qualquer lugar, como é o comportamento padrão.
@@ -166,12 +166,13 @@ Se você anteriormente achou os dicionários de fala de NVDA frustantes, tenha c
 
 ## Scripts
 
-Like JAWS, scripts can be added to NVDA to provide support  for other applications or to add new features that can be accessed from anywhere.  These script packages are called NVDA Add-ons.  You can find several add-ons here:
+Como JAWS, scripts podem ser adicionados ao NVDA para promover suporte para outras aplicações ou adicionar recursos que podem ser acessados de qualquer lugar. Esses pacotes de scripts são chamados de NVDA Add-ons. Você pode achar vários add-ons aqui:
 http://addons.nvda-project.org/.
 
-These include a few that emulate JAWS features not currently present in NVDA such as a system tray list, virtualise window function and ability to append text to clipboard. Scripts for popular applications such as GoldWave are also available. The user guide has details on installing add-ons, and you can read help documentation that comes with each add-on to learn more about how to use the add-on.
+Isso inclui alguns que emulam os recursos de JAWS que não estão atualmente presentes no NVDA como system tray list, virtualise window function e a habilidade de concatenar texto ao clipboard. Scripts são aplicações populares assim como GoldWare estão disponíveis. O guia do usuário tem vários detalhes na instalação de add-ons, e você pode ajudar a documentação que vem com cada add-on para aprender mais sobre como usar o add-on.
 
-The following link is to the developer guide with information on how to create ad-ons. http://community.nvda-project.org/documentation/developerGuide.html
+
+O seguinte link é para o guia de desenvolvedor com informação sobre como criar add-ons. http://community.nvda-project.org/documentation/developerGuide.html
 
 ## Remote access
 
