@@ -25,18 +25,36 @@ Vilmar: JAWS e NVDA são termos em inglês. A tradução pode não ter ficado de
 Quem for ajudar na revisão, pode alterar tais detalhes ou colocar outro comentário abaixo.
 Seguindo o padrão deste aqui em cima.
 -->
+<!--
+  @fititnt NVDA e JAWS são siglas
+  "open source" = código aberto
+-->
 
 ## Introdução
 
-O propósito deste guia é auxiliar usuários de JAWS ( Job Acess With Speech / Acesso ao Trabalho com Fala), leitor de tela comercial da Freedom Scientific a troca para o leitor de tela open source NVDA (NonVisual Desktop Access/Acesso Desktop Não-Visual) com facilidade. Se assume conhecimento prévio de JAWS e que você é proficiente em seu uso.
+O propósito deste guia é auxiliar usuários de JAWS ( _Job Acess With Speech_, em português "Acesso ao Trabalho com Fala"), um leitor de tela comercial da Freedom Scientific a troca para o leitor de tela de código aberto NVDA (_NonVisual Desktop Access_, em português "Acesso à Desktop Não-Visual") com facilidade. Se assume conhecimento prévio prévio de JAWS e que você é proficiente em seu uso.
 
-Não é a intenção ser uma substituição do guia de uso incluso, muito menos uma forma de fazer NVDA menos intimidador.
+<!--
+  @fititnt removi "incluso" do parafrafo abaixo.
+-->
 
-## Prós e Contras
+Não é a intenção ser uma substituição do guia de usuário, mas sim uma forma de fazer NVDA menos intimidador.
+
+<!--
+  @fititnt  de "Strengths And Weaknesses" do original, e "Prós e Contras" do
+            tradutor, recomendo "Pontos positivos e negativos"
+-->
+
+## Pontos positivos e negativos
 
 A intenção deste guia não é ser uma comparação entre JAWS e NVDA, mas é necessário mencionar algumas coisas que NVDA não suporta atualmente ou precisa aprimoramento para que você possa fazer a escolha informada.
 
-Suporte para recursos avançados do Microsoft office suite é uma adição relativamente recente, então você pode não achar uma experiência tão polida quanto JAWS. De qualquer forma, tem sido significativamente melhorado em versões recentes, e está sendo constantemente trabalhada.
+<!--
+  @fititnt de "Microsoft office suite" para "pacote Microsoft® Office"
+-->
+
+
+Suporte para recursos avançados do pacote Microsoft® Office é uma adição relativamente recente, então você pode não achar uma experiência tão polida quanto JAWS. De qualquer forma, tem sido significativamente melhorado em versões recentes, e está sendo constantemente melhorado.
 
 Com isto dito, você achar que - na maioria das situações diárias, NVDA funciona tão bem quanto JAWS, se não melhor em alguns casos.
 <!--
@@ -44,17 +62,36 @@ Vilmar: deixei a tradução de Laptop por laptop mesmo e também coloquei entre 
 Por isso foi feita esta breve explicação no texto.
 Além disso combo box foi deixada em inglês por não ter tradução para portuguÊs
 -->
-## Uma nota rápida sobre o Layout NVDA para teclado de Laptop 
+<!--
+  @fititnt do original "A Quick Note about NVDA's Laptop Keyboard Layout" e
+           tradução "Uma nota rápida sobre o Layout NVDA para teclado de Laptop"
+           sugiro "Uma nota rápida sobre o NVDA com _layout_ do teclado de _laptop_"
+-->
+## Uma nota rápida sobre o NVDA com _layout_ do teclado de _laptop_
 
-Selecionando o layout para teclado de Laptop, ou Notebook em português, não ativa automaticamente a tecla CapsLock para agir como tecla modificador do NVDA. De qualquer forma, uma quadro de seleção estará sendo providenciado junto ao combo box do  Layout de teclado para alterar esta configuração.
+Selecionando o layout do teclado de _laptop_ (ou _Notebook_ em português), não ativa automaticamente a tecla CapsLock para agir como tecla modificadora do NVDA. Entretanto, uma quadro de seleção estará sendo providenciado próximo ao combo box que define o layout de teclado para alterar esta configuração.
 
-## Nota sobre a Tecla Insert
+## Nota sobre a Tecla <kbd>Insert</kbd>
 
-Como você deve estar informado, ambos JAWS e NVDA podem utilizar a tecla insert como tecla modificadora. Ambos leitores de tela tratam o levemente diferente, o que pode levar a alguma confusão se você está acostumado com um ou com outro.
+Como você deve estar informado, tanto JAWS como NVDA podem utilizar a tecla <kbd>insert</kbd> como tecla modificadora. Ambos leitores de tela tratam o levemente diferente, o que pode levar a alguma confusão se você está acostumado com um ou com outro.
 
-Com JAWS carregado, a tecla insert é somente para este uso. Isso significa que, em  ordem para usar a função original designada (assim como mudar entre insert e sobreescrever modos no editor de textor ou no processador de texto), primeiro você tem que ativar o a pass key do JAWS através de comando.
+<!--
+  @fititnt da tradução "no editor de textor ou no processador de texto" sugiro
+           usar apenas "no editor de texto"
+           do original "you first have to activate JAWS's pass key through command." e tradução
+           "primeiro você tem que ativar o a pass key do JAWS através de comando".  (2016-09-11 04:49)
 
-Por outro lado, NVDA permite que você realize a função original do insert, através do toque duplo. Tenha isso em mente na próxima vez que você estiver editando um texto pelo NVDA e perceber que está apagando o que você acabou de escrever.
+  @fititnt "Passar Tecla a Aplicação" é usado como tradução de "Pass Through key". (2016-09-11 04:49)
+-->
+
+Com JAWS carregado, a tecla <kbd>insert</kbd> é somente para este uso. Isso significa que, para usar a função original designada (assim como mudar entre <kbd>insert</kbd> e sobreescrever modos no editor de texto), primeiro você tem que ativar o comando "Passar Tecla a Aplicação" (N.T.: normalmente <kbd>insert</kbd> + <kbd>3</kbd>.
+
+Por outro lado, NVDA permite que você realize a função original do <kbd>insert</kbd>, através do toque duplo. Tenha isso em mente na próxima vez que você estiver editando um texto pelo NVDA e perceber que está apagando o que você acabou de escrever.
+
+<!--
+  @fititnt do inglês "Eloquence" e sugestão "Oratória" do tradutor, eu não tenho certeza
+           se esse termo é o melhor, mas não tenho sugestão melhor agora (2016-09-11 05:09)
+-->
 
 ## Oratória
 
@@ -143,7 +180,7 @@ Detalhes sobre o Modo Focus podem ser achados no guia do usuário.
 Vilmar: list views foi mantido da mesma forma.
 -->
 ## NVDA fala pra caramba.
-Às vezes, você pode achar que NVDA pode ser muito verboso, particularmente em algumas list views. Isso é porque na questão do NVDA, list views são tabelas.  NVDA está configurado por default para anunciar cada header de coluna ou header de linha. 
+Às vezes, você pode achar que NVDA pode ser muito verboso, particularmente em algumas list views. Isso é porque na questão do NVDA, list views são tabelas.  NVDA está configurado por default para anunciar cada header de coluna ou header de linha.
 
 Para desligar esta opção, desmarque "Report table row/columns headers" no dialógo "Document Formatting".
 
