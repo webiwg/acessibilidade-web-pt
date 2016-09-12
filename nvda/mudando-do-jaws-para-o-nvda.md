@@ -1,7 +1,7 @@
 ---
 layout: translation
 date: 2016-03-02 # Data de ultima atualização do original
-title: "Switching From JAWS To NVDA" # Titulo traduzido
+title: "Mudando do JAWS para o NVDA" # Titulo traduzido
 description: Switching From JAWS To NVDA # Descrição traduzida
 copyright: 'Copyright NVDA Community Wiki' # Quem tem direitos de cópia
 license: null # Caso seja uma licença padrão (MIT, GPL...) por aqui
@@ -24,7 +24,17 @@ original: {
 }
 ---
 
-# Mudando do JAWS para o NVDA
+<!-- Geração automática de índice, inicio -->
+<nav  markdown="1">
+
+## Índice de tópicos
+{:.no_toc}
+
+1. Indice de Tópicos. Esta linha será substituída
+{:toc}
+
+</nav>
+<!-- Geração automática de índice, fim -->
 
 <!--
 Vilmar: JAWS e NVDA são termos em inglês. A tradução pode não ter ficado de forma definitiva.
@@ -63,6 +73,7 @@ A intenção deste guia não é ser uma comparação entre JAWS e NVDA, mas é n
 Suporte para recursos avançados do pacote <em lang="en">Microsoft® Office</em> é uma adição relativamente recente, então você pode não achar uma experiência tão polida quanto JAWS. De qualquer forma, tem sido significativamente melhorado em versões recentes, e está sendo constantemente melhorado.
 
 Com isto dito, você achar que - na maioria das situações diárias, NVDA funciona tão bem quanto JAWS, se não melhor em alguns casos.
+
 <!--
 Vilmar: deixei a tradução de Laptop por laptop mesmo e também coloquei entre parenteses na primeira aparição do texto principal notebook, termo usado no Brasil
 Por isso foi feita esta breve explicação no texto.
@@ -77,6 +88,7 @@ Além disso combo box foi deixada em inglês por não ter tradução para portug
 
   @fititnt layout = leiaute. Muita mão ficar adicionado <em lang="en">layoyt</em> (fititnt, 2016-09-11 05:44)
 -->
+
 ## Uma nota rápida sobre o NVDA com leiaute do teclado de notebook
 
 Selecionando o layout do teclado de notebook, não ativa automaticamente a tecla <kbd>CapsLock</kbd> para agir como tecla modificadora do NVDA. Entretanto, uma quadro de seleção estará sendo providenciado próximo ao combo box que define o layout de teclado para alterar esta configuração.
@@ -105,15 +117,15 @@ Por outro lado, NVDA permite que você realize a função original do <kbd>inser
 
 ## <em lang="en">Eloquence</em>
 
-Uma das perguntas mais pedidas preocupa-se no uso do sintetizador de texto para voz <em lang="en">Eloquence</em> com NVDA. Até recentemente, isto era ilegal, como explicado pelo desenvolvedor no link http://community.nvda-project.org/blog/NVDAAndEloquenceSituation.
+Uma das perguntas mais pedidas preocupa-se no uso do sintetizador de texto para voz <em lang="en">Eloquence</em> com NVDA. Até recentemente, isto era ilegal, como explicado pelo desenvolvedor no link [http://community.nvda-project.org/blog/NVDAAndEloquenceSituation](http://community.nvda-project.org/blog/NVDAAndEloquenceSituation).
 
-De qualquer forma, a <em lang="en">Code Factory</em> liberou uma versão de oratória como um add-on do NVDA que pode ser comprada no endereço http://codefactoryglobal.com/app-store/voices-for-nvda/.
+De qualquer forma, a <em lang="en">Code Factory</em> liberou uma versão de oratória como um add-on do NVDA que pode ser comprada no endereço [http://codefactoryglobal.com/app-store/voices-for-nvda/](http://codefactoryglobal.com/app-store/voices-for-nvda/).
 
 A licença para o uso do sintetizador <em lang="en">Nuance's Vocalizer</em> está também incluída no valor.
 
 Veja a seção intitulada "Scripts" para informações sobre add-ons do NVDA.
 
-eSpeak não é o único sintetizador suportado. No seguinte endereço está uma página detalhando onde conseguir vozes extras: http://community.nvda-project.org/wiki/ExtraVoices.
+eSpeak não é o único sintetizador suportado. No seguinte endereço está uma página detalhando onde conseguir vozes extras: [http://community.nvda-project.org/wiki/ExtraVoices](http://community.nvda-project.org/wiki/ExtraVoices).
 
 
 ## Terminologia
@@ -146,7 +158,7 @@ Vilmar: Foi deixado tree-like como estrutura de árvore na sua semântica
 
 No JAWS 15 ou superior, você pode usar as teclas do teclado numérico para navegar entre aplicativos usando uma estrutura em forma de árvore, similiar a como usuários de leitores de tela de <em lang="en">smartphone</em>, como VoiceOver, iriam navegar em <em lang="en">touchscreens</em>. No NVDA, comando de toque do <em lang="en">object mode</em> e do <em lang="en">object navigation</em> podem ser usados para este próposito.
 
-##Cursor Virtual
+### Cursor Virtual
 
 O cursor virtual no NVDA é conhecido como <em lang="en">browse mode</em>. Funciona da mesma maneira do JAWS, proporcionando acesso a teclas rápidas de navegação, ou no NVDA speak , navegação por letra única.
 
@@ -168,13 +180,14 @@ O padrão em NVDA é o leiaute de tela, mas você pode facilimente trocar para a
 Vilmar: control foi traduzido para controle, necessito que verifiquem se é o adequado.
         Acabei mudando para inglês, as configurações que devem ser clicadas.
 -->
+
 ### Continua dizendo Clicável, Clicável, Clicável !
 
 Enquanto estiver lendo páginas web, você pode perceber que às vezes que NVDA diz "clicável", até múltiplas vezes numa mesma linha ou controle.
 
 De qualquer forma, é consertado facilmente com a versão 2014.1 ou mais recente. Vá em dialógo "Document Formatting", desmarque a caixa "Reporte if clickable" e aperte OK. Lembre-se de salvar sua configuração.
 
-### Procurar(CTRL+F) não funciona na web.
+### Procurar (<kbd>CTRL</kbd> + <kbd>F</kbd>) não funciona na web.
 
 Enquanto o JAWS está carregado, pressionando <kbd>CTRL</kbd> + <kbd>f</kbd> no Internet Explorer ou no Firefox mostra uma caixa de procurar do JAWS, ao invés de ativar o comando interno do browser. Isto permite procurar texto usando o cursor virtual. O comando de procurar regular irá procurar pela próxima ocorrência do texto digitado, mas não irá mover o cursor virtual para a devida localização. Isto é por conta de como os leitores de tela interagem com páginas web.
 
@@ -237,11 +250,11 @@ Como JAWS, scripts podem ser adicionados ao NVDA para promover suporte para outr
 Isso inclui alguns que emulam os recursos de JAWS que não estão atualmente presentes no NVDA como <em lang="en">system tray list</em>, <em lang="en">virtualise window function</em> e a habilidade de concatenar texto na área de transferência. Scripts são aplicações populares como <em lang="en">GoldWare</em> estão disponíveis. O guia do usuário tem vários detalhes na instalação de <em lang="en">add-ons</em>, e você pode ajudar a documentação que vem com cada <em lang="en">add-ons</em> para aprender mais sobre como usar o <em lang="en">add-ons</em>.
 
 
-O seguinte link é para o guia de desenvolvedor com informação sobre como criar <em lang="en">add-ons</em>: http://community.nvda-project.org/documentation/developerGuide.html
-
+O seguinte link é para o guia de desenvolvedor com informação sobre como criar <em lang="en">add-ons</em>:
+[http://community.nvda-project.org/documentation/developerGuide.html](http://community.nvda-project.org/documentation/developerGuide.html).
 ## Acesso Remoto
 
-Em 2015, Christopher Toth e Tyler Spivey lançaram um <em lang="en">add-ons</em> gratuito que permite usuários de NVDA promoverem suporte remoto, similiar ao <em lang="en"JAWS Tandem</em>. Para aprender mais sobre este <em lang="en">add-ons</em>, vá para http://www.nvdaremote.com.
+Em 2015, Christopher Toth e Tyler Spivey lançaram um <em lang="en">add-ons</em> gratuito que permite usuários de NVDA promoverem suporte remoto, similiar ao <em lang="en">JAWS Tandem</em>. Para aprender mais sobre este <em lang="en">add-ons</em>, vá para http://www.nvdaremote.com.
 
 ## Configurações de Aplicação específica
 
