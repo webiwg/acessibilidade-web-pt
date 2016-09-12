@@ -6,7 +6,10 @@ description: Switching From JAWS To NVDA # Descrição traduzida
 copyright: 'Copyright NVDA Community Wiki' # Quem tem direitos de cópia
 license: null # Caso seja uma licença padrão (MIT, GPL...) por aqui
 license-custom: null # Caso a licença não seja uma padrão, por uma descrição curta dela aqui
-authors: ["kara-louise"] # Array com lista do autor
+authors: [{
+    name: "Kara Louse",
+    link: "https://github.com/kara-louise"
+}]
 translators: [{
     name: "Vilmar Neto",
     link: "http://www.webiwg.org"

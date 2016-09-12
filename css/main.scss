@@ -60,3 +60,19 @@ $on-laptop:        800px;
   list-style-type: none;
   padding-right: 20px;
 }
+.dl-meta dd {
+  padding-left: 2em;
+}
+//.dl-traducao > dt {
+//  size: 1.3em;
+//}
+.dl-traducao > dd {
+  padding-left: 2em;
+  padding-top: 1em;
+}
+.dl-traducao > dd:before {
+  content: "» "
+}
+.dl-traducao > dd li {
+  margin-left: 1em;
+}

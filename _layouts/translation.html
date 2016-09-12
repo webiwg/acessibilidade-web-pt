@@ -1,21 +1,78 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
+{% if page.isDraft %}
+<div style="bottom:0;left:0;position:fixed;background:#e2e2e2;width:100%; text-align: center; color: red; font-size: 1.5em">
+  Working Draft. Documento não finalizado.
+  {% if page.discussion %}
+  <a href="{{ page.discussion }}">Veja aqui a discussão sobre o tema</a>
+  {% endif %}
+</div>
+{% endif %}
+<article class="post" itemscope itemtype="http://schema.org/Article">
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{% include date-portugues.html date=page.date %}</time>
-      {% if page.authors %} • Autoria de <strong itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.authors }}</span></strong>{% endif %}
-      {% if page.translator %} • Traduzido por <strong>{{ page.translator }}</strong>{% endif %}
-      {% if page.reviewers %} • Revisado por <strong>{{ page.reviewers }}</strong>{% endif %}
-    </p>
-    {% if page.original %}
-    <p class="post-meta">Original: <a href="{{ page.original.link }}">{{ page.original.title }}</a> obtida em {% include date-portugues.html date=page.original.dateOfTranslation %}
+      <dl class="dl-meta">
+        {% if page.original %}
+        <dt>Original</dt>
+        <dd>
+          <a href="{{ page.original.link }}">{{ page.original.title }}</a> obtida em {% include date-portugues.html date=page.original.dateOfTranslation %}
+        <dd>
+        {% endif %}
+        <dt>Data de atualização do original</dt>
+        <dd><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{% include date-portugues.html date=page.date %}</time></dd>
 
-    </p>
-    {% endif %}
+        {% if page.authors %}
+        <dt>Autoria</dt>
+        {% for author in page.authors %}
+        <dd>
+          <!--
+          @todo nem todos os autores são pessoas. Alterar no futuro esta marcação para permitir
+                organizações (fititnt, 2016-09-08 00:58)
+          -->
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span itemprop="name"><a rel="author" href="{{ author.link }}">{{ author.name }}</a></span>
+          </span>
+        </dd>
+        {% endfor %}
+        {% endif %}
+        {% if page.sponsors %}
+          <!--
+          @todo estou tomando como base http://www.zakon.org/robert/internet/timeline/
+                especificamente "Zakon Group LLC and OpenConf". Devemos discutir mais a fundo isso
+                (fititnt, 2016-09-08 01:19)
+          -->
+        <dt>Patrocínio</dt>
+        {% for sponsor in page.sponsors %}
+        <dd>
+          <span itemprop="sponsor" itemscope itemtype="http://schema.org/Organization">
+            <span itemprop="name"><a href="{{ sponsor.link }}">{{ sponsor.name }}</a></span>
+          </span>
+        </dd>
+        {% endfor %}
+        {% endif %}
+        {% if page.translators %}
+        <dt>Tradução</dt>
+        {% for translator in page.translators %}
+        <dd>
+          <span itemprop="translator" itemscope itemtype="http://schema.org/Person">
+            <span itemprop="name"><a href="{{ translator.link }}">{{ translator.name }}</a></span>
+          </span>
+        </dd>
+        {% endfor %}
+        {% endif %}
+        {% if page.reviewers %}
+        <dt>Revisão de tradução</dt>
+        {% for reviewer in page.reviewers %}
+        <dd>
+          <span itemprop="translator" itemscope itemtype="http://schema.org/Person">
+            <span itemprop="name"><a href="{{ reviewer.link }}">{{ reviewer.name }}</a></span>
+          </span>
+        </dd>
+        {% endfor %}
+        {% endif %}
+      </dl>
   </header>
 
   <div class="post-content" itemprop="articleBody">
