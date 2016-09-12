@@ -255,9 +255,10 @@ Isso inclui alguns que emulam os recursos de JAWS que não estão atualmente pre
 
 O seguinte link é para o guia de desenvolvedor com informação sobre como criar <em lang="en">add-ons</em>:
 [http://community.nvda-project.org/documentation/developerGuide.html](http://community.nvda-project.org/documentation/developerGuide.html).
+
 ## Acesso Remoto
 
-Em 2015, Christopher Toth e Tyler Spivey lançaram um <em lang="en">add-ons</em> gratuito que permite usuários de NVDA promoverem suporte remoto, similiar ao <em lang="en">JAWS Tandem</em>. Para aprender mais sobre este <em lang="en">add-ons</em>, vá para http://www.nvdaremote.com.
+Em 2015, Christopher Toth e Tyler Spivey lançaram um <em lang="en">add-ons</em> gratuito que permite usuários de NVDA promoverem suporte remoto, similiar ao <em lang="en">JAWS Tandem</em>. Para aprender mais sobre este <em lang="en">add-ons</em>, vá para [http://www.nvdaremote.com](http://www.nvdaremote.com).
 
 ## Configurações de Aplicação específica
 
