@@ -27,6 +27,10 @@ isDraft: true
 
 # Creating Accessible Forms
 
+<!--
+  Pagina 1 http://webaim.org/techniques/forms/
+-->
+
 ## Introduction
 
 Forms are used for many types of interactions on the web. When we talk about the accessibility of forms, we are usually referring to their accessibility to people who use screen readers or keyboards. People with other types of disabilities are generally less affected by faulty forms. It should be noted, however, that everyone benefits from a well-organized, highly usable form, especially those with cognitive disabilities.
@@ -54,3 +58,373 @@ Screen reader users generally navigate through a form using the <span class="key
 </div>
 
 Groupings of form controls, typically groups of related checkboxes and radio buttons, sometimes require a higher level description (such as "Shipping Method" for a group of shipping option radio buttons). This descriptive text can be associated to the group of form controls using `<fieldset>` and `<legend>`. The `<fieldset>` identifies the entire grouping and `<legend>` identifies the grouping's descriptive text. Using `<fieldset>` and `<legend>` ensures that the text description is read to screen reader users when the grouping is navigated to.
+
+
+
+<!--
+  Página 2: http://webaim.org/techniques/forms/controls
+-->
+
+# Accessible Form Controls
+
+## Text inputs
+
+<form method="post" action="">
+
+<label for="name">Name:</label> <input id="name" type="text" name="textfield">
+
+Here's the HTML markup:
+
+<div class="programlisting">`<label **for="name"**>Name:</label>
+<input **id="name"** type="text" name="textfield">`
+
+Matching `for` and `id` values associate the label with the appropriate form control. Because `id` must be unique on each page, only one label can be associated to each unique form element. This means you cannot have one label for multiple form elements. Additionally, screen readers do not support multiple labels that are associated to the same form element.
+
+<div class="note">
+
+<div class="title">Note</div>
+
+Another benefit of using labels is that the user can click on the label itself to set focus to the form element. This is useful to some with motor disabilities, particularly when selecting small checkboxes and radio buttons. You can try this by clicking on the word "Name:" above to see focus set to the text box. Clicking adjacent labels provides an easy way to check for proper form labeling.
+
+</div>
+
+</div>
+
+## Textareas
+
+<label for="address">Enter your address:</label>
+<textarea name="addresstext" cols="25" rows="5" id="address"></textarea>
+
+Here's the HTML markup:
+
+<div class="programlisting">`<label for="address">Enter your address:</label><br>
+<textarea id="address" name="addresstext"></textarea>`</div>
+
+## Checkboxes
+
+<fieldset><legend>Select your pizza toppings:</legend> <input id="ham" type="checkbox" name="toppings" value="ham"> <label for="ham">Ham</label>
+<input id="pepperoni" type="checkbox" name="toppings" value="pepperoni"> <label for="pepperoni">Pepperoni</label>
+<input id="mushrooms" type="checkbox" name="toppings" value="mushrooms"> <label for="mushrooms">Mushrooms</label>
+<input id="olives" type="checkbox" name="toppings" value="olives"> <label for="olives">Olives</label></fieldset>
+
+Here's the HTML markup:
+
+<div class="programlisting">`<fieldset>
+<legend>Select your pizza toppings:</legend>
+<input id="ham" type="checkbox" name="toppings" value="ham">
+<label for="ham">Ham</label><br>
+<input id="pepperoni" type="checkbox" name="toppings" value="pepperoni">
+<label for="pepperoni">Pepperoni</label><br>
+<input id="mushrooms" type="checkbox" name="toppings" value="mushrooms">
+<label for="mushrooms">Mushrooms</label><br>
+<input id="olives" type="checkbox" name="toppings" value="olives">
+<label for="olives">Olives</label>
+</fieldset>`</div>
+
+The `<fieldset>` surrounds the entire grouping of radio buttons. The `<legend>` provides a description for the grouping. In screen readers, the legend text is generally read for each control in the fieldset, so the legend text should be brief and descriptive.
+
+## Radio buttons
+
+<fieldset><legend>Choose a shipping method:</legend> <input id="overnight" type="radio" name="shipping" value="overnight"> <label for="overnight">Overnight</label>
+<input id="twoday" type="radio" name="shipping" value="twoday"> <label for="twoday">Two day</label>
+<input id="ground" type="radio" name="shipping" value="ground"> <label for="ground">Ground</label></fieldset>
+
+Here's the HTML markup:
+
+<div class="programlisting">`<fieldset>
+<legend>Choose a shipping method:</legend>
+<input id="overnight" type="radio" name="shipping" value="overnight">
+<label for="overnight">Overnight</label><br>
+<input id="twoday" type="radio" name="shipping" value="twoday">
+<label for="twoday">Two day</label><br>
+<input id="ground" type="radio" name="shipping" value="ground">
+<label for="ground">Ground</label>
+</fieldset>`</div>
+
+<div class="note">
+
+<div class="title">Note</div>
+
+Fieldset and legend should only be used to associate groups of controls when a higher level description (i.e., the legend) is necessary. Single checkboxes or basic radio buttons (such as male/female for gender) that make sense from their labels alone do not require fieldset and legend. Nested fieldsets should generally be avoided.
+
+</div>
+
+## Select menus
+
+<label for="favcity">Choose your favorite city?</label> <select id="favcity" name="select"><option value="1">Amsterdam</option> <option value="2">Buenos Aires</option> <option value="3">Delhi</option> <option value="4">Hong Kong</option> <option value="5">London</option> <option value="6">Los Angeles</option> <option value="7">Moscow</option> <option value="8">Mumbai</option> <option value="9">New York</option> <option value="10">Sao Paulo</option> <option value="11">Tokyo</option></select>
+
+Here's the HTML markup:
+
+<div class="programlisting">`<label for="favcity">Choose your favorite city?</label>
+<select id="favcity" name="select">
+<option value="1">Amsterdam</option>
+<option value="2">Buenos Aires</option>
+<option value="3">Delhi</option>
+<option value="4">Hong Kong</option>
+<option value="5">London</option>
+<option value="6">Los Angeles</option>
+<option value="7">Moscow</option>
+<option value="8">Mumbai</option>
+<option value="9">New York</option>
+<option value="10">Sao Paulo</option>
+<option value="11">Tokyo</option>
+</select>`</div>
+
+To improve the accessibility of this list even further, we could add `optgroup`, to group the options.
+
+<label for="favcity2">Choose your favorite city?</label> <select id="favcity2" name="favcity2"><optgroup label="Asia"><option value="3">Delhi</option> <option value="4">Hong Kong</option> <option value="8">Mumbai</option> <option value="11">Tokyo</option></optgroup> <optgroup label="Europe"><option value="1">Amsterdam</option> <option value="5">London</option> <option value="7">Moscow</option></optgroup> <optgroup label="North America"><option value="6">Los Angeles</option> <option value="9">New York</option></optgroup> <optgroup label="South America"><option value="2">Buenos Aires</option> <option value="10">Sao Paulo</option></optgroup></select>
+
+Here's the HTML markup:
+
+<div class="programlisting">`<label for="favcity2">Choose your favorite city?</label>
+<select id="favcity2" name="favcity2">
+<optgroup label="Asia">
+  <option value="3">Delhi</option>
+  <option value="4">Hong Kong</option>
+  <option value="8">Mumbai</option>
+  <option value="11">Tokyo</option>
+</optgroup>
+<optgroup label="Europe">
+  <option value="1">Amsterdam</option>
+  <option value="5">London</option>
+  <option value="7">Moscow</option>
+</optgroup>
+<optgroup label="North America">
+  <option value="6">Los Angeles</option>
+  <option value="9">New York</option>
+</optgroup>
+<optgroup label="South America">
+  <option value="2">Buenos Aires</option>
+  <option value="10">Sao Paulo</option>
+</optgroup>
+</select>`</div>
+
+Note that `optgroup` is not fully supported by some user agents and screen readers, so it should not be relied on to present vital category information. In cases where `optgroup` is not supported, it is simply ignored. Do not confuse the `label` attribute of the `optgroup` element with the `label` element. They are very different things.
+
+Multiple select menus allow the user to choose more than one option from the list.
+
+<label for="favcities">Choose your three favorite cities?</label> <select id="favcities" name="select" multiple="multiple"><option value="1">Amsterdam</option> <option value="2">Buenos Aires</option> <option value="3">Delhi</option> <option value="4">Hong Kong</option> <option value="5">London</option> <option value="6">Los Angeles</option> <option value="7">Moscow</option> <option value="8">Mumbai</option> <option value="9">New York</option> <option value="10">Sao Paulo</option> <option value="11">Tokyo</option></select>
+
+<div class="note">
+
+<div class="title">Note</div>
+
+**It is recommended that multiple select menus be avoided.** Not all browsers provide intuitive keyboard navigation for multiple select menus. Many users do not know to use CTRL/Command or Shift + click to select multiple items. Typically, a set of check box options can provide similar, yet more accessible functionality.
+
+</div>
+
+## Buttons
+
+For form buttons (submit and reset input elements and button elements), no additional accessibility information is required. The value attribute for input buttons and the nested text for `<button>` elements will be read by screen readers when the button is accessed. These must _never_ be left empty.
+
+<input type="submit" name="submit" value="Submit Search"> <input type="reset" name="reset" value="Reset"> <button>Activate</button>
+
+Here's the HTML markup:
+
+<div class="programlisting">`<input type="submit" name="submit" value="Submit Search">
+<input type="reset" name="reset" value="Reset">
+<button>Activate</button>`</div>
+
+Because reset buttons can be inadvertently selected, there are few cases when they should be provided.
+
+<div class="section" id="image_button">
+
+## Image buttons
+
+If you use an image button (`<input type="image">` rather than a standard button, the input must have appropriate `alt` text.
+
+<input type="image" name="submitbutton" src="media/search.png" alt="Search">
+
+Here's the HTML markup:
+
+<div class="programlisting">`<input type="image" name="submitbutton" **alt="search"** src="submit.png">`</div>
+
+## JavaScript jump menus
+
+Because these types of menus are activated when the menu item changes, these menus can cause keyboard accessibility issues because you cannot scroll through the list without selecting one of the options.
+
+<div class="note">
+
+<div class="title">Note</div>
+
+Some browsers (including Firefox) override these jump menus so they are not activated on keyboard change, but only after you either select an item using a mouse or press Enter if using the keyboard.
+
+</div>
+
+<script type="text/javascript"><!-- function MM_jumpMenu(targ,selObj,restore){ //v3.0 eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'"); if (restore) selObj.selectedIndex=0; } //--></script>
+
+<label for="selectweb">Go to a web site:</label> <select id="selectweb" name="menu1" onchange="MM_jumpMenu('parent',this,1)"><option selected="selected">Select a web site</option> <option value="http://www.webaim.org">WebAIM</option> <option value="http://google.com">Google</option> <option value="http://www.yahoo.com">Yahoo</option> <option value="http://www.microsoft.com">Microsoft</option></select>
+
+Providing a submit button separate from the list of choices that activates the currently selected item will allow full keyboard accessibility
+
+</div>
+
+</form>
+
+<!--
+  Pagina 3: http://webaim.org/techniques/forms/advanced
+-->
+
+# Advanced Form Labeling
+
+## Introduction
+
+There are times when the `<label>` element falls short—it cannot be used to provide multiple labels for a single form control, or to associate a single label with multiple form controls. There are also times when there is not a visible text label to be associated to a form control. The majority of these labeling limitations can be overcome with three ARIA properties (`aria-labelledby`, `aria-describedby`, and `aria-label`) and a couple other techniques outlined on this page.
+
+## `aria-labelledby`
+
+A `<label>` element indicates which form field it labels by referencing its `id` attribute value:
+
+<div class="programlisting">`<label for="fname">`</div>
+
+It declares, "I am a label for this control".
+
+With `aria-labelledby`, the form field indicates which element labels it by referencing its `id` attribute:
+
+<div class="programlisting">`<input aria-labelledby="fnamelabel">`</div>
+
+The form control declares, "I am a control labeled by this element").
+
+## Handling Multiple Labels
+
+Because elements in a page must all have unique `id` attribute values, a `<label>` can only point to the `id` of a single control - at most a one-to-one relationship between label and control. `aria-labelledby`, however, allows an element to be referenced as a label for multiple controls, and allows multiple elements to be referenced as labels for a single control. In short, `aria-labelledby` overcomes the 1 to 1 limitation of `<label>`.
+
+The following is a simplified example of a table that might be used for data entry. Each table header functions as a visual label for the form controls in the column below it. There is only one visual label for multiple form controls. The `<label>` element cannot be used to associate this text to the multiple text boxes.
+
+| Name | Age | Weight |
+| <input type="text" name="name1" aria-labelledby="namelabel"> | <input type="text" size="3" name="age1" aria-labelledby="agelabel"> | <input type="text" size="4" name="weight1" aria-labelledby="weightlabel"> |
+| <input type="text" name="name2" aria-labelledby="namelabel"> | <input type="text" size="3" name="age2" aria-labelledby="agelabel"> | <input type="text" size="4" name="weight2" aria-labelledby="weightlabel"> |
+| <input type="text" name="name2" aria-labelledby="namelabel"> | <input type="text" size="3" name="age2" aria-labelledby="agelabel"> | <input type="text" size="4" name="weight2" aria-labelledby="weightlabel"> |
+
+The HTML for the first header ("Name") is:
+
+<div class="programlisting">`<th **id="namelabel"** scope="col">Name</th>`</div>
+
+The HTML for the first text field within the table is:
+
+<div class="programlisting">`<input type="text" name="name1" **aria-labelledby="namelabel"**>`</div>
+
+This labels the text box with the "Name" text in the table header. This `aria-labelledby` attribute could be added to all three Name fields, thus properly labeling all of them with one text item.
+
+Building on this example, the table below has visual labels along the top and side - multiple visual labels for each control.
+
+| Name | Office Number | Phone |
+| Cyndi | <input type="text" size="4" name="office1" aria-labelledby="cyndi officenum"> | <input type="text" size="12" name="phone1" aria-labelledby="cyndi phonelabel"> |
+| Jared | <input type="text" size="4" name="office2" aria-labelledby="jared officenum"> | <input type="text" size="12" name="phone2" aria-labelledby="jared phonelabel"> |
+| Jonathan | <input type="text" size="4" name="office3" aria-labelledby="jon officenum"> | <input type="text" size="12" name="phone3" aria-labelledby="jon phonelabel"> |
+
+The HTML for the first field in this table is:
+
+<div class="programlisting">`<input type="text" name="office1" **aria-labelledby="cyndi officenum"**>`</div>
+
+The `cyndi` and `officenum` values reference the `id`s of the "Cyndi" and "Office Number" table cells. A screen reader will read "Cyndi Office Number" when navigating into this field. The reading order of multiple labels is based on the order in which these values are specified.
+
+<div class="note">
+
+<div class="title">Note</div>
+
+As a general rule, if a single label is present for a single control, the `<label>` element should be used to reference it. These labels provide additional functionality - clicking on them sets focus to or activates the control. This is not available when using `aria-labelledby`.
+
+</div>
+
+<div class="important">
+
+<div class="title">Important!</div>
+
+If a control has both an associated `<label>` **and** `aria-labelledby`, the referenced `aria-labelledby` text will override and be read of _instead of_ the associated `<label>`.
+
+</div>
+
+## `aria-describedby`
+
+There are times when a form includes information that isn't exactly a label but is important enough to be read by a screen reader when navigating to the form control. This additional information can be associated to the form field with the `aria-describedby` attribute. For example:
+
+<label for="resetpass">Reset Password:</label> <input type="password" name="resetpass" id="resetpass" aria-describedby="newpass">
+<span id="newpass">New password must be 8-15 characters and include letters and numbers</span>
+
+Here is the HTML:
+
+<div class="programlisting">`<label for="resetpass">Reset Password:</label>
+<input type="password" name="resetpass" id="resetpass" **aria-describedby="newpass"**>
+<br>
+<span **id="newpass"**>New password must be 8-15 characters and include letters and numbers</span>`</div>
+
+Because there is a single label, `<label>` is used rather than `aria-labelledby`. As with `aria-labelledby`, the `aria-describedby` attribute points to the `id` of the element that contains the password requirements. A screen reader would read both the associated label(s) and then the associated description(s). Descriptions are sometimes read after a short pause. `aria-describedby` can also reference multiple elements - just separate the referenced `id` values with spaces.
+
+<div class="note">
+
+<div class="title">Note</div>
+
+*   While the `aria-labelledby` overrides the `<label>`, `aria-describedby` does not. This means that `aria-describedby` should only be used _in addition to a label_ (e.g., `<label>` or <input `aria-labelledby`>), not in place of one.
+*   The `aria-describedby` attribute can also be used to reference descriptions that appear as 'tooltips'. Tooltips should become visible to sighted keyboard users when the control has keyboard focus, not just when the user hovers or clicks with a mouse.
+
+</div>
+
+## Invisible Labels
+
+There are times when a text label for a form control does not make sense visually. The most common example is the "Search" field. Its location within the page, in conjunction with the Search button, makes its purpose clear to sighted users. Adding a visual text label would be overkill and could negatively impact the site design.
+
+One of the following three techniques should be used when a visible label is not available:
+
+<div class="section" id="hiddenlabel">
+
+### Hidden `<label>`
+
+Hide the `<label>` element off-screen using CSS. The label will not appear visually, but will still be read by a screen reader.
+
+<label class="hidden" for="s">Search Terms</label> <input id="s" type="text" name="search"> <button>Search</button>
+
+Here is the HTML for the label and form control:
+
+<div class="programlisting">`<label **class="hidden"** for="s">Search Terms</label>
+<input type="text" id="s" name="s">`</div>
+
+The CSS that is used to hide the label, and additional information about this technique, is outlined in our article on [invisible content for screen readers](http://webaim.org/techniques/css/invisiblecontent/).
+
+</div>
+
+<div class="section" id="title">
+
+### `title` attribute
+
+If a form field has a `title` attribute, but no `<label>`, the screen reader will read the `title` as if it were a label.
+
+<input id="s-2" type="text" name="s-2" title="Search Terms"> <button>Search</button>
+
+Here is the HTML for the form control:
+
+<div class="programlisting">`<input id="s" type="text" name="s" **title="Search Terms"**>`</div>
+
+This technique will also cause a tooltip to appear when the user hovers over the field with a mouse, which could be distracting for some users.
+
+</div>
+
+<div class="section" id="arialabel">
+
+### `aria-label`
+
+The `aria-label` attribute can also be used when there is no text label on the page.
+
+<input id="s-3" type="text" name="s-3" aria-label="Search Terms"> <button>Search</button>
+
+<div class="programlisting">`<input id="s" type="text" name="s" **aria-label="Search Terms"**>`</div>
+
+Unlike `aria-labelledby` which must reference another element, `aria-label` contains the label text directly. As with `aria-labelledby`, `aria-label` will override any associated `<label>` elements.
+
+<div class="important">
+
+<div class="title">Important</div>
+
+*   Only one of these recommendations should be implemented. Using two or more together (e.g., a hidden `<label>` and a duplicate `title` attribute) can cause information to be repeated by a screen reader.
+*   Placeholder text (e.g., `<input type="text" **placeholder="Search WebAIM"**>`) is not a suitable label and should never be used in place of the above techniques.
+
+</div>
+
+</div>
+
+## Recap
+
+*   Use `<label>` element when you can. It has excellent browser and screen reader support, and users can click on the label to select the associated form control.
+*   Use `aria-labelledby` to overcome the 1:1 limitations of `<label>`.
+*   Use `aria-describedby` **in addition to a label** when you need to associate descriptive text to the form control.
+*   Use a hidden `<label>` **or** `title` **or** `aria-label` when a visible text label is not available.
