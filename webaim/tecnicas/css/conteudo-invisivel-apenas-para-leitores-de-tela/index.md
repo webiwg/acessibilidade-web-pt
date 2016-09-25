@@ -41,57 +41,60 @@ isReleaseCandidate: false
 
 
 
-Introduction
+Introdução
 ------------
 
-<span style="float: right;margin: 8px 0px 1px 10px;"><img src="media/peekaboo.jpg" alt="A woman hides behind her hands." width="130" height="110" /></span>There
-are occasional instances where content should be made available to screen reader
-users, but hidden from sighted users. In most cases, if content (particularly
-content that provides functionality or interactivity) is important enough to
-provide to screen reader users, it should probably be made available to all
-users. Cases where verbose cues or instructions are provided only for screen
-reader users are most likely a reflection of poor design and accessibility.
-However, there are a few cases where information is apparent visually, but may
-not be apparent to screen reader users. In these cases, it may be appropriate to
-mark-up content in a way that it is read by a screen reader, but invisible to
-sighted users.
+<span style="float: right;margin: 8px 0px 1px 10px;"><img src="media/peekaboo.jpg" alt="A woman hides behind her hands." width="130" height="110" /></span>Existem
+casos pontuais em que o conteúdo deve ser disponibilizados para usuários de leitor de tela,
+mas escondido de utilizadores normovisuais. Na maioria dos casos, se o conteúdo (principalmente
+conteúdo que fornece a funcionalidade e interatividade) é importante o suficiente para
+usuários de leitor de tela, ele provavelmente deve ser disponibilizado a todos os
+usuários. Casos em que sugestões são verbosas ou instruções são fornecidas apenas por usuários de leitores
+de tela são, provavelmente, um reflexo da má concepção e acessibilidade.
+No entanto, existem alguns casos onde a informação é evidente visualmente, mas pode
+não ser clara para os usuários de leitores de tela. Nestes casos, pode ser conveniente
+marcação de conteúdo de uma forma que ele é lido por um leitor de tela, mas invisível para
+utilizadores normovisuais.
 
-Techniques for hiding text
+
+Técnicas para o ocultar texto
 --------------------------
 
-There are several mechanisms that can be used for hiding content. It's important
-that a technique be implemented that results in the desired outcome and
-accessibility.
+Existem diversos mecanismos que podem ser usados para esconder o conteúdo. É importante
+que a técnica a ser implementada resulte em o resultado desejado e a
+acessibilidade.
 
-### `visibility: hidden;` and/or `display:none;`
+### `visibility: hidden;` e/ou `display:none;`
 
-These styles will hide text from all users. The text is removed from the visual
-flow of the page and is ignored by screen readers. **Do not use this CSS if you
-want the content to be read by a screen reader. But DO use it for content you
-don't want read by screen readers.**
+Esses estilos vão ocultar o texto de todos os usuários. O texto é removido do fluxo visual
+da página e é ignorado pelos leitores de tela. **Não use este CSS se
+quiser que o conteúdo a ser lido por um leitor de tela. Mas USE isto para o conteúdo
+que você não quer que sejam lidos por leitores de tela.**
 
-### `width:0px`, `height:0px` or other 0 pixel sizing techniques
+### `width:0px`, `height:0px` e outras técnicas de tamanho 0 pixel
 
-As above, because an element with no height or width is removed from the flow of
-the page, most screen readers will ignore this content. HTML width and height
-may give the same result. **Do not size content to 0 pixels if you want the
-content to be read by a screen reader.** Content styled with `font-size:0px` or
-`line-height:0` may work, though the elements would still take horizontal space
-on the screen. All of these techniques may result in search engine penalties as
-they may interpreted to be malicious.
+Tal como referido acima, devido a um elemento sem nenhuma altura ou largura é removido do fluxo da
+página, a maioria dos leitores de tela irão ignorar este conteúdo. Largura e altura do HTML
+pode dar o mesmo resultado. **Não redimensione o conteúdo a 0 pixels, se você deseja que o
+conteúdo seja lido por um leitor de tela.** Conteúdo estilizado com `font-size:0px` ou
+`line-height:0` podem funcionar, ainda que os elementos tomariam espaço horizontal
+na tela. Todas estas técnicas podem implicar em penalizações de mecanismo de pesquisa já
+que podem interpretado como maliciosas.
+
 
 ### `text-indent: -10000px;`
 
-This approach moves the content to the left 10000 pixels - thus off the visible
-screen. The actual value matters little, so long as it is positioned off-screen.
-Screen readers will still read text with this style. However, if a link or form
-element is given this style, it may result in a focus indicator (the dotted
-lines or 'marching ants' that surround a focused link) that extends from where
-the element should be located in the page to the place it is actually located
-(way to the left). This is not very pretty. This approach also causes issues in
-right-to-left languages. As such, this approach *may* be a viable option if the
-element does not contain navigable elements, though better techniques are
-available.
+
+Esta abordagem move o conteúdo para 10000 pixels para esquerda - portanto, fora da tela
+visível. O valor real tem pouca importância, desde que ele estiver posicionado fora da tela.
+Os leitores de tela ainda vai ler o texto com esse estilo. No entanto, se um link ou elemento de formulário
+recebe esse estilo, que pode resultar em um indicador de foco (as linhas pontilhadas
+ou "formigas em marcha" que cercam um link focalizado) que se estende a partir de onde
+o elemento deve ser localizado na página para o lugar é efectivamente localizado
+(para a esquerda). Isto não é muito bonito. Essa abordagem também causa problemas em
+idiomas da direita para a esquerda. Como tal, esta abordagem *pode* ser uma opção viável se
+o elemento não contém elementos navegáveis, embora melhores técnicas estão
+disponíveis.
 
 ### CSS clip
 
