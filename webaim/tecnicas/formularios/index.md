@@ -1,7 +1,7 @@
 ---
 layout: translation
 date: 2013-08-09 # Data de ultima atualização do original
-title: "Creating Accessible Forms" # Titulo traduzido
+title: "Como criar formulários acessíveis" # Titulo traduzido
 description: "Forms are used for many types of interactions on the web. When we talk about the accessibility of forms, we are usually referring to their accessibility to people who use screen readers or keyboards. People with other types of disabilities are generally less affected by faulty forms. It should be noted, however, that everyone benefits from a well-organized, highly usable form, especially those with cognitive disabilities."
 
 copyright: 'Copyright WebAIM' # Quem tem direitos de cópia
@@ -89,69 +89,68 @@ isDraft: true
   Pagina 1 http://webaim.org/techniques/forms/
 -->
 
-# General Form Accessibility
+# Visão geral de acessibilidade em formulários
 
-## Introduction
+## Introdução
 
-Forms are used for many types of interactions on the web.
-When we talk about the accessibility of forms,
-we are usually referring to their accessibility to people who use screen readers or keyboards.
-People with other types of disabilities are generally less affected by faulty forms.
-It should be noted, however, that everyone benefits from a well-organized,
-highly usable form, especially those with cognitive disabilities.
+Formulários são usados para muitos tipos de interações na web.
+Quando falamos sobre a acessibilidade de formulários,
+estamos normalmente referindo-se a sua acessibilidade às pessoas que utilizam leitores de tela ou navegação por teclados.
+Pessoas com outros tipos de deficiência são geralmente menos afetada por formulários com defeito.
+Deve notar-se, no entanto, que todas as pessoas se beneficiam de um formulário bem organizado,
+com grande usabilidade, especialmente aquelas com deficiências cognitivas.
 
-## Ensure Forms are Logical and Easy to Use
+## Certifique-se de que formulários sejam lógicos e fácil de usar
 
-Forms should be clear and intuitive. They should be organized in a logical manner.
-Instructions, cues, required form fields, field formatting requirements,
-etc. should be clearly identified to users.
-Provide clear instructions about what information is desired.
-If any form elements are required, be sure to indicate so.
-Make sure that the order in which form elements are accessed is logical and easy.
-This can sometimes by problematic if tables are used to control layout of form items.
-To check the linearized order of items on the page,
-use [the WAVE accessibility tool](http://wave.webaim.org/).
+Os formulários devem ser claros e intuitivos. Eles devem ser organizados de uma maneira lógica.
+Instruções, sugestões, campos de formulário obrigatórios, requisitos de formatação de campo,
+etc, devem ser claramente identificados para os usuários.
+De instruções claras sobre as informações desejadas.
+Se quaisquer elementos de formulário são obrigatórios, não se esqueça de indicar-lo.
+Certifique-se de que a ordem em que os elementos de formulário são acessados é lógica e fácil.
+Isto às vezes pode ser problemático se as tabelas são usadas para controlar o layout de itens do formulário.
 
-## Ensure Forms are Keyboard Accessible
+Para verificar a ordem linear de itens na página,
+use [a ferramenta de acessibilidade WAVE](http://wave.webaim.org/).
 
-Many users can only use a keyboard to navigate and use the web.
-You must ensure that the forms on your web site can be completed using only the keyboard.
-There are a few things that can make forms totally unusable with the keyboard,
-the most common of which is JavaScript.
-Be careful in your use of JavaScript to manipulate form data,
-set focus, change form elements, or submit forms.
-Each of these can make the form difficult or impossible to complete or understand using the keyboard alone.
-Always test your web site forms for keyboard accessibility.
+## Certifique-se de que formulários são acessíveis por teclado
 
-## Associate Form Labels with Controls
+Muitos usuários só podem usar um teclado para navegar e usar a web.
+Você deve garantir que os formulários em seu web site podem ser concluídos usando apenas o teclado.
+Existem algumas coisas que podem fazer formulários totalmente inutilizáveis com o teclado,
+o mais comum dos quais é JavaScript.
+Tenha cuidado no seu uso do JavaScript para manipular os dados do formulário,
+definir o foco, alterar elementos de formulário ou submeter formulários.
+Cada um destes pode tornar o formulário difícil ou impossível para completar ou entender usando apenas teclado.
+Sempre teste os formulários do site para acessibilidade através do teclado.
 
-Text labels should generally describe the function of each form control.
-Place the label adjacent to its respective form control (i.e., text box, check box, radio button, menu, etc.).
-Labels are usually positioned above or to the left of controls, however,
-the labels for checkboxes and radio buttons are usually to the right of the control.
-Sighted users should be able to visually associate a text label with its corresponding form control.
-Users with visual disabilities, however, cannot make this visual association.
-Labels can, however, be associated programmatically with form controls using HTML markup.
+## Associe rótulos de formulários com campos de entrada
 
-The `<label>` element is used to associate a text label to a form control.
-This allows a screen reader to read the associated label text when the user navigates to the form control.
+Rótulos de texto geralmente deve descrever a função de cada controle de formulário.
+Posicione o rótulo junto ao seu respectivo controle de formulário (ou seja, caixa de texto, caixa de seleção, botão de opção, menu, etc.).
+
+Os rótulos são normalmente posicionado acima ou para a esquerda do campo de controle, no entanto,
+os rótulos de caixas de seleção e _radio buttons_ são geralmente à direita do controle.
+Usuários com visão devem ser capazes de visualmente associar um rótulo de texto com seu controle de formulário correspondente.
+Os usuários com deficiência visual, no entanto, não pode fazer essa associação visual.
+Os rótulos podem, no entanto, ser associado programaticamente com controles de formulário utilizando marcação HTML.
+O elemento `<label>` é utilizado para associar um rótulo de texto a um controle de formulário.
+Isso permite que um leitor de tela ler o texto do rótulo associado quando o usuário navega para o controle de formulário.
 
 <div class="important">
 
-<div class="title">Important</div>
-
-Screen reader users generally navigate through a form using the <kbd>Tab</kbd> key to jump from form control to form control.
-Associated form labels are read for each form control when the user navigates to them.
-Any non-label text content between the form controls is usually skipped over.
-Be sure to include important cues or instructions in associated labels or at the beginning of the form.
-
+<div class="title">Importante</div>
+Os usuários de leitores de tela geralmente navegam através de um formulário usando a tecla <kbd> Tab</kbd> para saltar de controle de formulário para formulário de controle.
+Rótulos de formulários associados são lidos para cada controle de formulário quando o usuário navega para eles.
+Qualquer conteúdo de texto que não for rótulo e estiver entre os controles de formulário são normalmente são pulado.
+Tenha certeza de incluir sugestões ou instruções importantes em etiquetas associadas ou no início do formulário.
 </div>
 
-Groupings of form controls, typically groups of related checkboxes and radio buttons,
-sometimes require a higher level description (such as "Shipping Method" for a group of shipping option radio buttons).
-This descriptive text can be associated to the group of form controls using `<fieldset>` and `<legend>`.
-The `<fieldset>` identifies the entire grouping and `<legend>` identifies the grouping's descriptive text.
-Using `<fieldset>` and `<legend>` ensures that the text description is read to screen reader users when the grouping is navigated to.
+Agrupamentos de controles de formulário, normalmente grupos de caixas de seleção e _radio buttons_,
+algumas vezes necessitam uma descrição de nível superior (como "Método de envio" para um grupo com oções de envio de _radio buttons_).
+Este texto descritivo pode ser associado com o grupo de controlos de formulário usando `<fieldset>` e `<legend>`.
+O `<fieldset>` identifica todo o agrupamento e `<legend>` identifica o texto descritivo de agrupamento.
+Usando `<fieldset>` e `<legend>` garante que a descrição do texto é lido para os usuários de leitores de tela quando o agrupamento é navegado.
 
 <!--
   Página 2: http://webaim.org/techniques/forms/controls
