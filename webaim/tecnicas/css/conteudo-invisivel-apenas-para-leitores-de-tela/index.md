@@ -16,13 +16,14 @@ translators: [{
     link: "http://twitter.com/fititnt"
 }]
 reviewers: []
-issue: https://github.com/webiwg/acessibilidade-web-pt/issues/12
+discussion: https://github.com/webiwg/acessibilidade-web-pt/issues/16
 original: {
     title: "CSS in Action: Invisible Content Just for Screen Reader Users", # Titulo original, no idioma origial
     link: "http://webaim.org/techniques/css/invisiblecontent/", # Link para documento original
     dateOfTranslation: "2016-09-25" # Data em que a tradução foi finalizada
 }
 isDraft: true
+isReleaseCandidate: false
 ---
 
 <!-- Geração automática de índice, inicio -->

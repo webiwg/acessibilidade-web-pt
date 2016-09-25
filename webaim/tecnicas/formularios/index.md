@@ -16,13 +16,14 @@ translators: [{
     link: "http://twitter.com/fititnt"
 }]
 reviewers: []
-issue: https://github.com/webiwg/acessibilidade-web-pt/issues/12
+discussion: https://github.com/webiwg/acessibilidade-web-pt/issues/12
 original: {
     title: "Creating Accessible Forms", # Titulo original, no idioma origial
     link: "http://webaim.org/techniques/forms/", # Link para documento original
     dateOfTranslation: "2016-09-25" # Data em que a tradução foi finalizada
 }
-isDraft: true
+isDraft: false
+isReleaseCandidate: true
 ---
 
 <!-- Geração automática de índice, inicio -->

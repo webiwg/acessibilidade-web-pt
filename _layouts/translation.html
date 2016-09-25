@@ -5,7 +5,15 @@ layout: default
 <div style="bottom:0;left:0;position:fixed;background:#e2e2e2;width:100%; text-align: center; color: red; font-size: 1.5em">
   Working Draft. Documento não finalizado.
   {% if page.discussion %}
-  <a href="{{ page.discussion }}">Veja aqui a discussão sobre o tema</a>
+  <a href="{{ page.discussion }}">Saiba mais</a>
+  {% endif %}
+</div>
+{% endif %}
+{% if page.isReleaseCandidate %}
+<div style="bottom:0;left:0;position:fixed;background:#e2e2e2;width:100%; text-align: center; color: #0045ff; font-size: 1.5em">
+  RC. Marcado para revisão.
+  {% if page.discussion %}
+  <a href="{{ page.discussion }}">Saiba mais</a>
   {% endif %}
 </div>
 {% endif %}
