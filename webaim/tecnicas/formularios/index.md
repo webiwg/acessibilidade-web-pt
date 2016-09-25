@@ -156,148 +156,151 @@ Usando `<fieldset>` e `<legend>` garante que a descrição do texto é lido para
   Página 2: http://webaim.org/techniques/forms/controls
 -->
 
-# Accessible Form Controls
+# Controles de de formulário acessíveis
 
 <form method="post" action=""  markdown="1">
 
-## Text inputs
+## Entradas de texto
 
-<label for="name">Name:</label>
-<input id="name" type="text" name="textfield">
+<label for="nome">Nome:</label>
+<input id="nome" type="text" name="camponome">
 
-Here's the HTML markup:
-
+Aqui está a marcação HTML:
 
 <div class="programlisting">
-  <code>&lt;label <strong>for="name"</strong>&gt;Name:&lt;/label&gt;<br>
-  &lt;input <strong>id="name"</strong> type="text" name="textfield"&gt;
+  <code>&lt;label <strong>for="nome"</strong>&gt;Nome:&lt;/label&gt;<br>
+  &lt;input <strong>id="nome"</strong> type="text" name="camponome"&gt;
   </code>
 </div>
+Coloque o mesmo valor para  `for` e `id` para assoriar o rótulo com o respectivo controle de formulário.
+Como `id` devem ser únicos para cada página,
+apenas um rótulo pode ser associado para cada elemento de formulário
+Isto significa que você não pode ter um rótulo associado a multiplos elementos.
+Além disso, leitores de tela não suportam associação de multiplos rótilos ao mesmo elemento de formulário.
 
-
-Matching `for` and `id` values associate the label with the appropriate form control.
-Because `id` must be unique on each page,
-only one label can be associated to each unique form element.
-This means you cannot have one label for multiple form elements.
-Additionally, screen readers do not support multiple labels that are associated to the same form element.
 
 <div class="note">
-  <div class="title">Note</div>
-  <p>Another benefit of using labels is that the user can click on the label itself to set focus to the form element.
-  This is useful to some with motor disabilities, particularly when selecting small checkboxes and radio buttons.
-  You can try this by clicking on the word "Name:" above to see focus set to the text box.
-  Clicking adjacent labels provides an easy way to check for proper form labeling.
+  <div class="title">Nota</div>
+  <p>Outra vantagem de usar rótulos é que o usuário pode clicar no próprio rótulo para definir o foco para o elemento de formulário.
+  Isso é útil para algumas pessoas com deficiências motoras, particularmente quando selecionando pequenas caixas de seleção e _radio buttons_.
+  Você pode tentar isso clicando sobre a palavra "Nome:" acima para ver o foco definido para a caixa de texto.
+  Ao clicar em rótulos adjacentes proporciona uma maneira fácil de verificar se a rotulagem de formulário é adequada.
   </p>
 </div>
 
-## Textareas
+## Áreas de texto (do inglês <em lang="en">Textareas</em>)
 
-<p><label for="address">Enter your address:</label><br>
-  <textarea name="addresstext" cols="25" rows="5" id="address"></textarea>
+<p><label for="endereco">Insira seu endereço</label><br>
+  <textarea name="textodoendereco" cols="25" rows="5" id="endereco"></textarea>
 </p>
-<p>Here's the HTML markup:</p>
+<p>Aqui está a marcação HTML:</p>
 <div class="programlisting">
-  <code>&lt;label for="address"&gt;Enter your address:&lt;/label&gt;&lt;br&gt;<br>
-  &lt;textarea id="address" name="addresstext"&gt;&lt;/textarea&gt;
+  <code>&lt;label for="endereco"&gt;Insira seu endereço:&lt;/label&gt;&lt;br&gt;<br>
+  &lt;textarea id="endereco" name="textodoendereco"&gt;&lt;/textarea&gt;
   </code>
 </div>
 
-## Checkboxes
+## Quadro de seleção (do inglês <em lang="en">Checkboxes</em>)
 
 <fieldset>
-  <legend>Select your pizza toppings:</legend>
-  <input id="ham" type="checkbox" name="toppings" value="ham">
-  <label for="ham">Ham</label>
+  <legend>Escolha as coberturas da sua pizza:</legend>
+  <input id="presunto" type="checkbox" name="coberturas" value="presunto">
+  <label for="presunto">Presunto</label>
   <br>
-  <input id="pepperoni" type="checkbox" name="toppings" value="pepperoni">
+  <input id="pepperoni" type="checkbox" name="coberturas" value="pepperoni">
   <label for="pepperoni">Pepperoni</label>
   <br>
-  <input id="mushrooms" type="checkbox" name="toppings" value="mushrooms">
-  <label for="mushrooms">Mushrooms</label>
+  <input id="cogumelos" type="checkbox" name="coberturas" value="cogumelos">
+  <label for="cogumelos">Cogumelos</label>
   <br>
-  <input id="olives" type="checkbox" name="toppings" value="olives">
-  <label for="olives">Olives</label>
+  <input id="azeitonas" type="checkbox" name="coberturas" value="azeitonas">
+  <label for="azeitonas">Azeitonas</label>
 </fieldset>
 
-<p>Here's the HTML markup:</p>
+<p>Aqui está a marcação HTML:</p>
 
 <div class="programlisting">
   <code>
   &lt;fieldset&gt;<br>
-  &lt;legend&gt;Select your pizza toppings:&lt;/legend&gt;<br>
-  &lt;input id="ham" type="checkbox" name="toppings" value="ham"&gt;<br>
-  &lt;label for="ham"&gt;Ham&lt;/label&gt;&lt;br&gt;<br>
-  &lt;input id="pepperoni" type="checkbox" name="toppings" value="pepperoni"&gt;<br>
+  &lt;legend&gt;Escolha as coberturas da sua pizza:&lt;/legend&gt;<br>
+  &lt;input id="presunto" type="checkbox" name="coberturas" value="presunto"&gt;<br>
+  &lt;label for="presunto"&gt;Presunto&lt;/label&gt;&lt;br&gt;<br>
+  &lt;input id="pepperoni" type="checkbox" name="coberturas" value="pepperoni"&gt;<br>
   &lt;label for="pepperoni"&gt;Pepperoni&lt;/label&gt;&lt;br&gt;<br>
-  &lt;input id="mushrooms" type="checkbox" name="toppings" value="mushrooms"&gt;<br>
-  &lt;label for="mushrooms"&gt;Mushrooms&lt;/label&gt;&lt;br&gt;<br>
-  &lt;input id="olives" type="checkbox" name="toppings" value="olives"&gt;<br>
-  &lt;label for="olives"&gt;Olives&lt;/label&gt;<br>
+  &lt;input id="cogumelos" type="checkbox" name="coberturas" value="cogumelos"&gt;<br>
+  &lt;label for="cogumelos"&gt;Cogumelos&lt;/label&gt;&lt;br&gt;<br>
+  &lt;input id="azeitonas" type="checkbox" name="coberturas" value="azeitonas"&gt;<br>
+  &lt;label for="azeitonas"&gt;Azeitonas&lt;/label&gt;<br>
   &lt;/fieldset&gt;</code>
 </div>
-<p>The <code>&lt;fieldset&gt;</code> surrounds the entire grouping of radio buttons.
-The <code>&lt;legend&gt;</code> provides a description for the grouping.
-In screen readers, the legend text is generally read for each control in the fieldset,
-so the legend text should be brief and descriptive.</p>
 
-## Radio buttons
+O <code>&lt;fieldset&gt;</code> rodeia todo o agrupamento de Botões do rádio.
+O <code>&lt;legend&gt;</code> provê uma descrição para o agrupamento
+Em leitores de tela, o texto da legenda é geralmente lido para cada controle no conjunto de campos,
+então a legenda deve ser curta e descritiva.
+
+
+## Botões do rádio (do inglês <em lang="en">Radio buttons</em>)
 
 <fieldset>
-  <legend>Choose a shipping method:</legend>
-  <input id="overnight" type="radio" name="shipping" value="overnight">
-  <label for="overnight">Overnight</label><br>
-  <input id="twoday" type="radio" name="shipping" value="twoday">
-  <label for="twoday">Two day</label><br>
-  <input id="ground" type="radio" name="shipping" value="ground">
-  <label for="ground">Ground</label>
+  <legend>Escolha um método de envio:</legend>
+  <input id="duranteanoite" type="radio" name="metododeentrega" value="duranteanoite">
+  <label for="duranteanoite">Durante a noite</label><br>
+  <input id="doisdias" type="radio" name="metododeentrega" value="doisdias">
+  <label for="doisdias">Dois dias</label><br>
+  <input id="motoboy" type="radio" name="metododeentrega" value="motoboy">
+  <label for="motoboy">Motoboy</label>
 </fieldset>
 
-<p>Here's the HTML markup:</p>
+<p>Aqui está a marcação HTML:</p>
 
 <div class="programlisting">
   <code>&lt;fieldset&gt;<br>
-  &lt;legend&gt;Choose a shipping method:&lt;/legend&gt;<br>
-  &lt;input id="overnight" type="radio" name="shipping" value="overnight"&gt;<br>
-  &lt;label for="overnight"&gt;Overnight&lt;/label&gt;&lt;br&gt;<br>
-  &lt;input id="twoday" type="radio" name="shipping" value="twoday"&gt;<br>
-  &lt;label for="twoday"&gt;Two day&lt;/label&gt;&lt;br&gt;<br>
-  &lt;input id="ground" type="radio" name="shipping" value="ground"&gt;<br>
-  &lt;label for="ground"&gt;Ground&lt;/label&gt;<br>
+  &lt;legend&gt;Escolha um método de envio:&lt;/legend&gt;<br>
+  &lt;input id="duranteanoite" type="radio" name="metododeentrega" value="duranteanoite"&gt;<br>
+  &lt;label for="duranteanoite"&gt;Durante a noite&lt;/label&gt;&lt;br&gt;<br>
+  &lt;input id="doisdias" type="radio" name="metododeentrega" value="doisdias"&gt;<br>
+  &lt;label for="doisdias"&gt;Dois dias&lt;/label&gt;&lt;br&gt;<br>
+  &lt;input id="motoboy" type="radio" name="metododeentrega" value="motoboy"&gt;<br>
+  &lt;label for="motoboy"&gt;Motoboy&lt;/label&gt;<br>
   &lt;/fieldset&gt;</code>
 </div>
 <div class="note">
   <div class="title">Note</div>
-  <p>Fieldset and legend should only be used to associate groups of controls when a higher level description (i.e., the legend) is necessary. Single checkboxes or basic radio buttons (such as male/female for gender) that make sense from their labels alone do not require fieldset and legend. Nested fieldsets should generally be avoided.</p>
+  <p>Conjunto de campos `fieldset` e legenda só deve ser utilizado para associar grupos de controles quando uma descrição de nível superior (ou seja a legenda) é necessária.
+  Quadro de seleção (do inglês <em lang="en">checkbox</em> individuais ou botões de rádio básicos (como masculino / feminino para sexo) que fazem sentido a partir de seus rótulos sozinho não exigem conjunto de campos `fieldset` e legenda. Conjunto de campos `fieldset` aninhados devem ser evitados.</p>
 </div>
 
-## Select menus
+## Menus de seleção
 
 <p>
-  <label for="favcity">Choose your favorite city?</label>
-  <select id="favcity" name="select">
+  <label for="cidadefavorita">Qual sua cidade favorita?</label>
+  <select id="cidadefavorita" name="select">
     <option value="1">Amsterdam</option>
     <option value="2">Buenos Aires</option>
     <option value="3">Delhi</option>
     <option value="4">Hong Kong</option>
-    <option value="5">London</option>
+    <option value="5">Londes</option>
     <option value="6">Los Angeles</option>
-    <option value="7">Moscow</option>
+    <option value="7">Moscou</option>
     <option value="8">Mumbai</option>
     <option value="9">New York</option>
     <option value="10">Sao Paulo</option>
     <option value="11">Tokyo</option>
   </select>
 </p>
-<p>Here's the HTML markup:</p>
-<div class="programlisting"><code>&lt;label for="favcity"&gt;Choose your favorite city?&lt;/label&gt;<br>
-  &lt;select id="favcity" name="select"&gt;<br>
+
+Aqui está a marcação HTML:
+
+<div class="programlisting"><code>&lt;label for="cidadefavorita"&gt;Qual sua cidade favorita?&lt;/label&gt;<br>
+  &lt;select id="cidadefavorita" name="select"&gt;<br>
   &lt;option value="1"&gt;Amsterdam&lt;/option&gt;<br>
   &lt;option value="2"&gt;Buenos Aires&lt;/option&gt;<br>
   &lt;option value="3"&gt;Delhi&lt;/option&gt;<br>
   &lt;option value="4"&gt;Hong Kong&lt;/option&gt;<br>
-  &lt;option value="5"&gt;London&lt;/option&gt;<br>
+  &lt;option value="5"&gt;Londes&lt;/option&gt;<br>
   &lt;option value="6"&gt;Los Angeles&lt;/option&gt;<br>
-  &lt;option value="7"&gt;Moscow&lt;/option&gt;<br>
+  &lt;option value="7"&gt;Moscou&lt;/option&gt;<br>
   &lt;option value="8"&gt;Mumbai&lt;/option&gt;<br>
   &lt;option value="9"&gt;New York&lt;/option&gt;<br>
   &lt;option value="10"&gt;Sao Paulo&lt;/option&gt;<br>
@@ -305,72 +308,74 @@ so the legend text should be brief and descriptive.</p>
   &lt;/select&gt;</code>
 </div>
 
-<p>To improve the accessibility of this list even further, we could add <code>optgroup</code>, to group the options.</p>
+Para melhorar a acessibilidade desta lista ainda mais, poderíamos acrescentar `optgroup`, para agrupar as opções.
+
 <p>
-  <label for="favcity2">Choose your favorite city?</label>
-  <select id="favcity2" name="favcity2">
+  <label for="cidadefavorita2">Qual sua cidade favorita?</label>
+  <select id="cidadefavorita2" name="cidadefavorita2">
     <optgroup label="Asia">
       <option value="3">Delhi</option>
       <option value="4">Hong Kong</option>
       <option value="8">Mumbai</option>
       <option value="11">Tokyo</option>
     </optgroup>
-    <optgroup label="Europe">
+    <optgroup label="Europa">
       <option value="1">Amsterdam</option>
-      <option value="5">London</option>
+      <option value="5">Londres</option>
       <option value="7">Moscow</option>
     </optgroup>
-    <optgroup label="North America">
+    <optgroup label="América do Norte">
       <option value="6">Los Angeles</option>
       <option value="9">New York</option>
     </optgroup>
-    <optgroup label="South America">
+    <optgroup label="América do Sul">
       <option value="2">Buenos Aires</option>
       <option value="10">Sao Paulo</option>
     </optgroup>
   </select>
 </p>
-<p>Here's the HTML markup:</p>
-<div class="programlisting"><code>&lt;label for="favcity2"&gt;Choose your favorite city?&lt;/label&gt;<br>
-  &lt;select id="favcity2" name="favcity2"&gt;<br>
+<p>Aqui está a marcação HTML:</p>
+<div class="programlisting"><code>&lt;label for="cidadefavorita2"&gt;Qual sua cidade favorita?&lt;/label&gt;<br>
+  &lt;select id="cidadefavorita2" name="cidadefavorita2"&gt;<br>
   &lt;optgroup label="Asia"&gt;<br>
   &nbsp;&nbsp;&lt;option value="3"&gt;Delhi&lt;/option&gt;<br>
   &nbsp;&nbsp;&lt;option value="4"&gt;Hong Kong&lt;/option&gt;<br>
   &nbsp;&nbsp;&lt;option value="8"&gt;Mumbai&lt;/option&gt;<br>
   &nbsp;&nbsp;&lt;option value="11"&gt;Tokyo&lt;/option&gt;<br>
   &lt;/optgroup&gt;<br>
-  &lt;optgroup label="Europe"&gt;<br>
+  &lt;optgroup label="Europa"&gt;<br>
   &nbsp;&nbsp;&lt;option value="1"&gt;Amsterdam&lt;/option&gt;<br>
-  &nbsp;&nbsp;&lt;option value="5"&gt;London&lt;/option&gt;<br>
+  &nbsp;&nbsp;&lt;option value="5"&gt;Londres&lt;/option&gt;<br>
   &nbsp;&nbsp;&lt;option value="7"&gt;Moscow&lt;/option&gt;<br>
   &lt;/optgroup&gt;<br>
-  &lt;optgroup label="North America"&gt;<br>
+  &lt;optgroup label="América do Norte"&gt;<br>
   &nbsp;&nbsp;&lt;option value="6"&gt;Los Angeles&lt;/option&gt;<br>
   &nbsp;&nbsp;&lt;option value="9"&gt;New York&lt;/option&gt;<br>
   &lt;/optgroup&gt;<br>
-  &lt;optgroup label="South America"&gt;<br>
+  &lt;optgroup label="América do Sul"&gt;<br>
   &nbsp;&nbsp;&lt;option value="2"&gt;Buenos Aires&lt;/option&gt;<br>
   &nbsp;&nbsp;&lt;option value="10"&gt;Sao Paulo&lt;/option&gt;<br>
   &lt;/optgroup&gt;<br>
   &lt;/select&gt;</code>
 </div>
 
-Note that `optgroup` is not fully supported by some user agents and screen readers,
-so it should not be relied on to present vital category information.
-In cases where `optgroup` is not supported, it is simply ignored.
-Do not confuse the `label` attribute of the `optgroup` element with the `label` element.
-They are very different things.
+Note que o `optgroup` não é totalmente suportado por alguns agentes de usuário e leitores de tela,
 
-Multiple select menus allow the user to choose more than one option from the list.
+por isso não deve ser utilizado para apresentar informações de categorização vitais.
+Nos casos onde `optgroup` não é suportado, é simplesmente ignorado.
+Não confunda o atributo `label` do elemento `optgroup` com o elemento de rótulo `label`.
+Eles são coisas bem diferentes.
+
+Menus de seleção múltipla permitem ao usuário escolher mais de uma opção na lista ao mesmo tempo.
 
 <p>
-  <label for="favcities">Choose your three favorite cities?</label>
-  <select id="favcities" name="select" multiple="multiple">
+  <label for="cidadesfavoritasmultiplo">Quais suas três cidades favoritas?</label>
+  <select id="cidadesfavoritasmultiplo" name="select" multiple="multiple">
     <option value="1">Amsterdam</option>
     <option value="2">Buenos Aires</option>
     <option value="3">Delhi</option>
     <option value="4">Hong Kong</option>
-    <option value="5">London</option>
+    <option value="5">Londres</option>
     <option value="6">Los Angeles</option>
     <option value="7">Moscow</option>
     <option value="8">Mumbai</option>
@@ -380,71 +385,82 @@ Multiple select menus allow the user to choose more than one option from the lis
   </select>
 </p>
 <div class="note">
-  <div class="title">Note</div>
-  <strong>It is recommended that multiple select menus be avoided.</strong>
-  Not all browsers provide intuitive keyboard navigation for multiple select menus.
-  Many users do not know to use CTRL/Command or Shift + click to select multiple items.
-  Typically, a set of check box options can provide similar,
-  yet more accessible functionality.
+  <div class="title">Nota</div>
+  <strong>É recomendável que menus de seleção múltipla devem ser evitados</strong>
+  Nem todos os navegadores provêm navegação intuitíva para navegação de menus de seleção múltipla
+  Muitos usuários não sabem usar <kbd>CTRL</kbd>/<kbd>Command</kbd> ou <kbd>Shift</kbd> + <kbd>click</kbd> para selecionar múltiplos itens.
+
+  Geralmente um conjunto de quadro de seleção (do inglês <em lang="en">Checkboxes</em>) podem prover funcionamento similar,
+  porem com funcionalidade mais acessível.
 </div>
 
-## Buttons
+## Botões
 
-For form buttons (submit and reset input elements and button elements),
-no additional accessibility information is required.
-The value attribute for input buttons and the nested text for `<button>` elements will be read by screen readers when the button is accessed.
-These must _never_ be left empty.
+Para botões de formulário (elementos envio `submit` e de limpar dados `reset` , além de elementos botões `button`),
+não é obritatório fornecer informação adicional sobre acessibilidade.
+O atributo de valor `value` para botões de entrada `input` e o texto dentro do elemento `<button>` elementos serão lidos por leitores de tela quando o botão for acessado.
+Estes <em>jamais</em> devem ser deixados vazios.
 
 <p>
-  <input type="submit" name="submit" value="Submit Search">
-  <input type="reset" name="reset" value="Reset">
-  <button>Activate</button>
+  <input type="submit" name="submit" value="Enviar Busca">
+  <input type="reset" name="reset" value="Limpar Dados">
+  <button>Ativar</button>
 </p>
-<p>Here's the HTML markup:</p>
+<p>Aqui está a marcação HTML:</p>
 <div class="programlisting">
-  <code>&lt;input type="submit" name="submit" value="Submit Search"&gt;<br>
-  &lt;input type="reset" name="reset" value="Reset"&gt;<br>
-  &lt;button&gt;Activate&lt;/button&gt;
+  <code>&lt;input type="submit" name="submit" value="Enviar Busca"&gt;<br>
+  &lt;input type="reset" name="reset" value="Limpar Dados"&gt;<br>
+  &lt;button&gt;Ativar&lt;/button&gt;
   </code>
 </div>
-<p>Because reset buttons can be inadvertently selected,
-there are few cases when they should be provided.</p>
 
-## Image buttons
+Como botões de limpar dados pode ser acidentalmente pressionados,
+são poucos os casos em que deveriam ser usados.
 
-<p>If you use an image button (<code>&lt;input type="image"&gt;</code> rather than a standard button,
-the input must have appropriate <code>alt</code> text.</p>
-<p><input type="image" name="submitbutton" src="media/search.png" alt="Search"></p>
-<p>Here's the HTML markup:</p>
+## Botões de imagem
+
+Se você usar um botão de imagem (`<input type="image">` em vez de um botão padrão,
+o campo de entrada deve ter o texto alternativo do atributo `alt`.
+
+<input type="image" name="botãodeenviar" src="media/search.png" alt="Pesquisar">
+
+
+Aqui está a marcação HTML:
+
 <div class="programlisting">
-  <code>&lt;input type="image" name="submitbutton" <strong>alt="search"</strong> src="submit.png"&gt;</code>
+  <code>&lt;input type="image" name="botãodeenviar" <strong>alt="Pesquisar"</strong> src="submit.png"&gt;</code>
 </div>
 
-## JavaScript jump menus
+## Menus de salto com JavaScript
 
-Because these types of menus are activated when the menu item changes, these menus can cause keyboard accessibility issues because you cannot scroll through the list without selecting one of the options.
+Porque estes tipos de menus são ativados quando o item de menu muda, estes menus pode causar problemas de acessibilidade do teclado porque você não pode percorrer a lista sem selecionar uma das opções.
 
 <div class="note">
 
-<div class="title">Note</div>
+<div class="title">Nota</div>
 
-Some browsers (including Firefox) override these jump menus so they are not activated on keyboard change,
-but only after you either select an item using a mouse or press Enter if using the keyboard.
+Alguns navegadores (inclusive o Firefox) sobrescrevem o comportamento destes menus de salto, logo eles não são ativados com mudança via teclado,
+mas apenas quando você os seleciona usando um mouse ou ao pressionar <kbd>Enter</kbd> usando o teclado.
 
 </div>
 
 <script type="text/javascript">
-  <!--
     function MM_jumpMenu(targ,selObj,restore){ //v3.0
     eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
     if (restore) selObj.selectedIndex=0;
     }
-    //-->
 </script>
 
-<label for="selectweb">Go to a web site:</label> <select id="selectweb" name="menu1" onchange="MM_jumpMenu('parent',this,1)"><option selected="selected">Select a web site</option> <option value="http://www.webaim.org">WebAIM</option> <option value="http://google.com">Google</option> <option value="http://www.yahoo.com">Yahoo</option> <option value="http://www.microsoft.com">Microsoft</option></select>
+<label for="selectweb">Vá para um website:</label>
+<select id="selectweb" name="menu1" onchange="MM_jumpMenu('parent',this,1)">
+  <option selected="selected">Select a web site</option>
+  <option value="http://www.webaim.org">WebAIM</option>
+  <option value="http://google.com">Google</option>
+  <option value="http://www.yahoo.com">Yahoo</option>
+  <option value="http://www.microsoft.com">Microsoft</option>
+</select>
 
-Providing a submit button separate from the list of choices that activates the currently selected item will allow full keyboard accessibility
+Fornecer um botão de envio separado do menus de salto que ativa o item atualmente selecionado irá permitir acessibilidade teclado completa.
 
 </form>
 
