@@ -2,7 +2,8 @@
 layout: translation
 date: 2014-12-11 # Data de ultima atualização do original
 title: "CSS in Action: Invisible Content Just for Screen Reader Users"
-description: "There are occasional instances where content should be made available to screen reader users, but hidden from sighted users. In most cases, if content (particularly content that provides functionality or interactivity) is important enough to provide to screen reader users, it should probably be made available to all users. "
+description: "Existem casos pontuais em que o conteúdo deve ser disponibilizados para usuários de leitor de tela,
+mas escondido de utilizadores normovisuais"
 
 copyright: 'Copyright WebAIM' # Quem tem direitos de cópia
 license: null # Caso seja uma licença padrão (MIT, GPL...) por aqui
@@ -38,7 +39,65 @@ isReleaseCandidate: false
 </nav>
 <!-- Geração automática de índice, fim -->
 
+<style>
+/*
+  NOTA: tags styles dentro do corpo de forma provisória. Melhorar no futuro (fititnt, 2016-09-22 22:59)
+*/
+.programlisting {
+    border: 1px dashed #990000;
+    border-radius: 4px;
+    background-color: #ffffc1;
+    width: auto;
+    margin: 0 0 1em 0;
+    padding: 2px;
+    overflow: auto;
+}
+.note {
+    background-color: #F1F5F7;
+    border: 1px solid #CCCCCC;
+}
+.important, .tip, .note, .example {
+    padding: 4px 1.5em 0px 1.5em;
+    margin: 1em auto 1em auto;
+    width: 85%;
+    border-radius: 4px;
+}
+.note .title {
+    background: url(media/bg.png) 0px -1800px no-repeat;
+}
+.important .title, .tip .title, .note .title, .example .title {
+    padding: 3px 0 15px 35px;
+    display: block;
+    font-size: 1.25em;
+    font-family: 'Kameron',Georgia,Times,serif;
+}
+.important {
+    background-color: #fafaae;
+    border: 1px solid #CCCCCC;
+}
+.important .title {
+    background: url(media/bg.png) 0px -1600px no-repeat;
+}
+.important, .tip, .note, .example {
+    padding: 4px 1.5em 0px 1.5em;
+    margin: 1em auto 1em auto;
+    width: 85%;
+    border-radius: 4px;
+}
+.programlisting  code {
+  background-color: transparent;
+}
+h3 code {
+  font-size: 26px;
+  font-weight: 400;
+}
+h4 code {
+  margin-top: 1em;
+  font-size: 20px;
+  font-weight: 400;
+}
 
+</style>
 
 
 Introdução
@@ -104,20 +163,22 @@ clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
 clip: rect(1px, 1px, 1px, 1px);
 ```
 
-A fairly modern technique of using CSS to hide or clip content that does not fit
-into a 1 pixel visible area will essentially hide the content visibly, but still
-allow it to be read by modern screen readers.
+Uma técnica bastante moderna de usar CSS para ocultar ou cortar conteúdo que não se encaixa
+em um 1 pixel área visível vai essencialmente esconder o conteúdo de forma visível,
+mas ainda permitir que ele seja lido por leitores de tela modernos.
 
-### Absolutely positioning content off-screen
+### Posicionamento absoluto de conteúdo fora da tela
 
-Using CSS to move hidden elements to a position off-screen is generally accepted
-as the most useful and accessible method of hiding content visually.
+Usar CSS para mover elementos ocultos para uma posição fora da tela é geralmente aceita
+como o método mais útil e acessível de esconder o conteúdo visualmente.
 
-Positioning content off-screen
+
+Colocar conteúdo fora da tela
 ------------------------------
 
-The following are the recommended styles for visually hiding content that will
-be read by a screen reader.
+A seguir estão os estilos recomendados para esconder visualmente conteúdos que serão lidos
+por um leitor de tela.
+
 
 ```css
 .hidden {
@@ -130,56 +191,66 @@ be read by a screen reader.
 }
 ```
 
-The .hidden CSS class should then be referenced from within the tag of the
-element being hidden, as shown:
+A classe CSS .hidden deve então ser referenciada no interior da tag do
+elemento a ser escondido, como mostrado:
+
 
 ```html
-<div class="hidden">This text is hidden.</div>
+<div class="hidden">Este texto está ocultado.</div>
 ```
 
-Sighted users will not see the hidden content at all. It will be out of their
-viewing range - hidden well to the left of the visible browser window. Screen
-reader users will have access to the content as if it were not hidden at all.
-Screen readers read the content normally, completely ignoring the styles used in
-this technique.
+Usuários normovisuais não verão este conteúdo ocultado. Ele vai estar fora de seu
+alcance de visão - bem escondida à esquerda da janela visível do navegador. Usuários
+de leitores de tela terão acesso ao conteúdo como se não estivesse escondido.
+Os leitores de tela podem ler o conteúdo normalmente, ignorando completamente
+os estilos usados nesta técnica.
 
-Let's analyze the styles in detail.
+Vamos analisar os estilos em detalhe.
 
-`position:absolute;` tells the browser to remove the element from the page flow
-and to begin positioning it. `left:-10000px;` moves the content 10000 pixels to
-the left. `top:auto;` tells the browser to position the content vertically at
-the same location it was originally. Omitting `top` may result in the `left`
-style being ignored in some instances and browsers. In short, this part of the
-code moves the element 10000 pixels straight to the left.
+`position:absolute;` diz ao navegador para remover o elemento do fluxo da página
+e começar a posicioná-lo. `left:-10000px;` move o conteúdo 10000 pixels para
+esquerda. `top:auto;` diz ao navegador para posicionar o conteúdo verticalmente no
+mesmo local estava originalmente. Omitir `top` pode resultar que o estilo `left`
+seja ignorado em alguns casos e navegadores. Em suma, esta parte do filme de código do elemento 10000 pixels em linha reta para a esquerda. Em suma, esta parte de código move o elemento 10000 pixels em
+linha reta para a esquerda.
 
-`width:1px; height:1px; overflow:hidden;` tells the browser to make the element
-1px by 1px in size and to visually hide everything that does not fit into these
-dimensions. While this is a likely a little overkill and can probably be omitted
-in most circumstances, there are a few instances where positioning may be
-disabled, but all other styles remain enabled. In this case, the element will
-remain in its original position, but will only take 1 pixel of space.
 
-Note
+`width:1px; height:1px; overflow:hidden;` informa o navegador para fazer o elemento
+no tamanho 1px por 1px para esconder visualmente tudo o que não se encaixa nestas
+dimensões. Enquanto isto é provavelmente um exagero e provavelmente poderia
+ser omitido na maioria das vezes, tem alguns casos onde o posicionamento poderia
+estar desabilitado, enquanto todos os demais estilos estão habilitados. Neste caso, o elemento irá
+permanecer em sua posição original, mas vai tomar apenas 1 pixel de espaço.
 
-It is sometimes recommended to position content using `left:0px; top:-500px` (or
-similar). While this works by positioning the content above the top of the page,
-if the hidden element contains a link or form element, upon receiving keyboard
-focus, the browser attempts to scroll to the element - thus scrolling the
-browser to the top of the page. This could result in confusion for sighted
-keyboard users. By positioning directly to the left, the browser will not scroll
-to the top of the page. **It should be noted that because links and form
-elements provide functionality, they should rarely be hidden from sighted users.
-Sighted users will not be able to see which element currently has focus because
-it is hidden off-screen.**
+
+<div class="note" markdown="1">
+<div class="title">Nota</div>
+
+Algumas vezes é recomendado posicionar elemento usando `left:0px; top:-500px` (ou
+simiar). Enquanto isso funciona através do posicionamento o conteúdo acima do topo da página,
+se o elemento oculto contém um link ou elemento de formulário, ao receber o foco do teclado,
+o navegador tenta rolar para o elemento - então rolando o navegador para o topo da página.
+Isso poderia resultar em confusão para os usuários de
+teclado normovisuais. Ao posicionar directamente para a esquerda, o navegador não rolará
+para o início da página. **Deve notar-se que, devido a links e os elementos de formulário
+proporcionar funcionalidade, eles raramente devem ser escondidos dos utilizadores normovisuais.
+Usuários com visão não serão capazes de ver que elemento atualmente tem o focodevido ele
+está escondido fora da tela.**
+
+</div>
 
 Examples
 --------
 
-Important!
+
+<div class="important">
+<div class="title">Importante!</div>
 
 In general, content should only be hidden from sighted users and made available
 to screen reader users when content is apparent visually, but not apparent to
 screen reader users.
+
+</div>
 
 ### Instructional cues and indicators
 
