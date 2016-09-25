@@ -1,8 +1,8 @@
 ---
 layout: translation
-date: 2013-08-09 # Data de ultima atualização do original
+date: 2014-12-19 # Data de ultima atualização do original
 title: "Como criar formulários acessíveis" # Titulo traduzido
-description: "Forms are used for many types of interactions on the web. When we talk about the accessibility of forms, we are usually referring to their accessibility to people who use screen readers or keyboards. People with other types of disabilities are generally less affected by faulty forms. It should be noted, however, that everyone benefits from a well-organized, highly usable form, especially those with cognitive disabilities."
+description: "Formulários são usados para muitos tipos de interações na web. Quando falamos sobre a acessibilidade de formulários, estamos normalmente referindo-se a sua acessibilidade às pessoas que utilizam leitores de tela ou navegação por teclados."
 
 copyright: 'Copyright WebAIM' # Quem tem direitos de cópia
 license: null # Caso seja uma licença padrão (MIT, GPL...) por aqui
@@ -20,7 +20,7 @@ issue: https://github.com/webiwg/acessibilidade-web-pt/issues/12
 original: {
     title: "Creating Accessible Forms", # Titulo original, no idioma origial
     link: "http://webaim.org/techniques/forms/", # Link para documento original
-    dateOfTranslation: "2016-09-17" # Data em que a tradução foi finalizada
+    dateOfTranslation: "2016-09-25" # Data em que a tradução foi finalizada
 }
 isDraft: true
 ---
@@ -82,6 +82,18 @@ isDraft: true
     width: 85%;
     border-radius: 4px;
 }
+.programlisting  code {
+  background-color: transparent;
+}
+h3 code {
+  font-size: 26px;
+  font-weight: 400;
+}
+h4 code {
+  margin-top: 1em;
+  font-size: 20px;
+  font-weight: 400;
+}
 
 </style>
 
@@ -89,9 +101,9 @@ isDraft: true
   Pagina 1 http://webaim.org/techniques/forms/
 -->
 
-# Visão geral de acessibilidade em formulários
+## Visão geral de acessibilidade em formulários
 
-## Introdução
+### Introdução
 
 Formulários são usados para muitos tipos de interações na web.
 Quando falamos sobre a acessibilidade de formulários,
@@ -100,7 +112,7 @@ Pessoas com outros tipos de deficiência são geralmente menos afetada por formu
 Deve notar-se, no entanto, que todas as pessoas se beneficiam de um formulário bem organizado,
 com grande usabilidade, especialmente aquelas com deficiências cognitivas.
 
-## Certifique-se de que formulários sejam lógicos e fácil de usar
+### Certifique-se de que formulários sejam lógicos e fácil de usar
 
 Os formulários devem ser claros e intuitivos. Eles devem ser organizados de uma maneira lógica.
 Instruções, sugestões, campos de formulário obrigatórios, requisitos de formatação de campo,
@@ -113,7 +125,7 @@ Isto às vezes pode ser problemático se as tabelas são usadas para controlar o
 Para verificar a ordem linear de itens na página,
 use [a ferramenta de acessibilidade WAVE](http://wave.webaim.org/).
 
-## Certifique-se de que formulários são acessíveis por teclado
+### Certifique-se de que formulários são acessíveis por teclado
 
 Muitos usuários só podem usar um teclado para navegar e usar a web.
 Você deve garantir que os formulários em seu web site podem ser concluídos usando apenas o teclado.
@@ -124,7 +136,7 @@ definir o foco, alterar elementos de formulário ou submeter formulários.
 Cada um destes pode tornar o formulário difícil ou impossível para completar ou entender usando apenas teclado.
 Sempre teste os formulários do site para acessibilidade através do teclado.
 
-## Associe rótulos de formulários com campos de entrada
+### Associe rótulos de formulários com campos de entrada
 
 Rótulos de texto geralmente deve descrever a função de cada controle de formulário.
 Posicione o rótulo junto ao seu respectivo controle de formulário (ou seja, caixa de texto, caixa de seleção, botão de opção, menu, etc.).
@@ -154,13 +166,14 @@ Usando `<fieldset>` e `<legend>` garante que a descrição do texto é lido para
 
 <!--
   Página 2: http://webaim.org/techniques/forms/controls
+            Last updated: Aug 9, 2013
 -->
 
-# Controles de de formulário acessíveis
+## Controles de de formulário acessíveis
 
 <form method="post" action=""  markdown="1">
 
-## Entradas de texto
+### Entradas de texto
 
 <label for="nome">Nome:</label>
 <input id="nome" type="text" name="camponome">
@@ -188,7 +201,7 @@ Além disso, leitores de tela não suportam associação de multiplos rótilos a
   </p>
 </div>
 
-## Áreas de texto (do inglês <em lang="en">Textareas</em>)
+### Áreas de texto (do inglês <em lang="en">Textareas</em>)
 
 <p><label for="endereco">Insira seu endereço</label><br>
   <textarea name="textodoendereco" cols="25" rows="5" id="endereco"></textarea>
@@ -200,7 +213,7 @@ Além disso, leitores de tela não suportam associação de multiplos rótilos a
   </code>
 </div>
 
-## Quadro de seleção (do inglês <em lang="en">Checkboxes</em>)
+### Quadro de seleção (do inglês <em lang="en">Checkboxes</em>)
 
 <fieldset>
   <legend>Escolha as coberturas da sua pizza:</legend>
@@ -240,7 +253,7 @@ Em leitores de tela, o texto da legenda é geralmente lido para cada controle no
 então a legenda deve ser curta e descritiva.
 
 
-## Botões do rádio (do inglês <em lang="en">Radio buttons</em>)
+### Botões do rádio (do inglês <em lang="en">Radio buttons</em>)
 
 <fieldset>
   <legend>Escolha um método de envio:</legend>
@@ -271,7 +284,7 @@ então a legenda deve ser curta e descritiva.
   Quadro de seleção (do inglês <em lang="en">checkbox</em> individuais ou botões de rádio básicos (como masculino / feminino para sexo) que fazem sentido a partir de seus rótulos sozinho não exigem conjunto de campos `fieldset` e legenda. Conjunto de campos `fieldset` aninhados devem ser evitados.</p>
 </div>
 
-## Menus de seleção
+### Menus de seleção
 
 <p>
   <label for="cidadefavorita">Qual sua cidade favorita?</label>
@@ -394,7 +407,7 @@ Menus de seleção múltipla permitem ao usuário escolher mais de uma opção n
   porem com funcionalidade mais acessível.
 </div>
 
-## Botões
+### Botões
 
 Para botões de formulário (elementos envio `submit` e de limpar dados `reset` , além de elementos botões `button`),
 não é obritatório fornecer informação adicional sobre acessibilidade.
@@ -417,7 +430,7 @@ Estes <em>jamais</em> devem ser deixados vazios.
 Como botões de limpar dados pode ser acidentalmente pressionados,
 são poucos os casos em que deveriam ser usados.
 
-## Botões de imagem
+### Botões de imagem
 
 Se você usar um botão de imagem (`<input type="image">` em vez de um botão padrão,
 o campo de entrada deve ter o texto alternativo do atributo `alt`.
@@ -431,7 +444,7 @@ Aqui está a marcação HTML:
   <code>&lt;input type="image" name="botãodeenviar" <strong>alt="Pesquisar"</strong> src="submit.png"&gt;</code>
 </div>
 
-## Menus de salto com JavaScript
+### Menus de salto com JavaScript
 
 Porque estes tipos de menus são ativados quando o item de menu muda, estes menus pode causar problemas de acessibilidade do teclado porque você não pode percorrer a lista sem selecionar uma das opções.
 
@@ -466,233 +479,286 @@ Fornecer um botão de envio separado do menus de salto que ativa o item atualmen
 
 <!--
   Pagina 3: http://webaim.org/techniques/forms/advanced
+            Last updated: Dec 19, 2014
 -->
 
-# Advanced Form Labeling
+## Rotulagem avançada de formulários
 
-## Introduction
+### Introdução
 
-There are times when the `<label>` element falls short—it cannot be used to provide multiple labels for a single form control,
-or to associate a single label with multiple form controls.
-There are also times when there is not a visible text label to be associated to a form control.
-The majority of these labeling limitations can be overcome with three ARIA properties
-(`aria-labelledby`, `aria-describedby`, and `aria-label`)
-and a couple other techniques outlined on this page.
+Há momentos em que o elemento de rótulo `<label>` deixa a desejar -- não pode ser usado para fornecer várias etiquetas para um único controle de formulário,
+ou não se pode associar um rótulo único com multiplos controles de formulário
+Há também momentos quando não há um rótulo de texto visível para ser associado a um controle de formulário.
+A maioria destas limitações de rotulagem podem ser superados com três propriedades ARIA
+(`aria-labelledby`, `aria-describedby`, e `aria-label`)
+e um par de outras técnicas descritas nesta página.
 
-## `aria-labelledby`
+### `aria-labelledby`
 
-<p>A <code>&lt;label&gt;</code> element indicates which form field it labels by referencing its <code>id</code> attribute value:</p>
+<!--
+  @fititnt Nota de tradução/revisão: este tópico não faz sentido. Posso estar cansado e sem
+           ritalina agora, mas o código proposto aqui não faz o que o texto diz que faz
+           (fititnt, 2016-09-25 08:35)
+  @fititnt Eu estava errado. Faz sentido sim. (fititnt, 2016-09-25 09:17)
+-->
+
+Um elemento de rotulágem `<label>` indica de qual campo ele rotula referenciar o `id` do elemento:
+
 <div class="programlisting">
   <code>&lt;label for="fname"&gt;</code>
 </div>
-<p>It declares, "I am a label for this control".</p>
-<p>With <code>aria-labelledby</code>, the form field indicates which element labels it by referencing its <code>id</code> attribute:</p>
+Ele declara "Eu sou o rótulo para este controle".
+
+Com `aria-labelledby`, o campo de formulário indica qual elemento o nomeia ao referenciar o atributo `id`:
+
 <div class="programlisting">
   <code>&lt;input aria-labelledby="fnamelabel"&gt;</code>
 </div>
-<p>The form control declares, "I am a control labeled by this element").</p>
 
-## Handling Multiple Labels
+O controle de formulário declara, "Eu sou um controle nomeado por este rótulo".
 
-Because elements in a page must all have unique `id` attribute values,
-a `<label>` can only point to the `id` of a single control -
-at most a one-to-one relationship between label and control.
-`aria-labelledby`, however, allows an element to be referenced as a label for multiple controls,
-and allows multiple elements to be referenced as labels for a single control.
-In short, `aria-labelledby` overcomes the 1 to 1 limitation of `<label>`.
+### Manipulação de multiplos rótulos
 
-The following is a simplified example of a table that might be used for data entry.
-Each table header functions as a visual label for the form controls in the column below it.
-There is only one visual label for multiple form controls.
-The `<label>` element cannot be used to associate this text to the multiple text boxes.
+Como os elementos em uma página devem todos ter valor exclusivo do atributo `id`,
+uma `<label>` pode apenas apontar para o `id` de um único controle -
+no máximo uma relação um-para um entre controle e rótulo
+`aria-labelledby`, por outro lado, permite que um elemento seja referência de rótulo para vários controles,
+e permite que multiplos elementos sejam referência como rótulo para um controle único.
+Resumindo, `aria-labelledby` remove a limitação de 1 para 1 de `<label>`.
+
+Na sequência é um exemplo simplificado de uma tabela que pode ser usado para a entrada de dados.
+Cada cabecalho de tabela funciona como rótulo visual nas colunas abaixo dela.
+Há apenas um rótulo visual para vários controles de formulário.
+O elemento `<label>` não pode ser usado para associar seu texto texto com as multiplas caixas de texto.
+
+<!--
+  @fititnt O código original PARECE ter um erro nos atributos name repetidos na tabela.
+           O grupo 2 e três ambos terminam no iriginal com 2 (i.e. age2, weigth2)
+           (fititnt, 2016-09-25 09:19)
+-->
 
 <table>
   <tbody>
     <tr>
-      <th id="namelabel" scope="col">Name</th>
-      <th id="agelabel" scope="col">Age</th>
-      <th id="weightlabel" scope="col">Weight</th>
+      <th id="rotulonome" scope="col">Nome</th>
+      <th id="rotuloidade" scope="col">Idade</th>
+      <th id="rotulopeso" scope="col">Peso</th>
     </tr>
     <tr>
-      <td><input type="text" name="name1" aria-labelledby="namelabel"></td>
-      <td><input type="text" size="3" name="age1" aria-labelledby="agelabel"></td>
-      <td><input type="text" size="4" name="weight1" aria-labelledby="weightlabel"></td>
+      <td><input type="text" name="nome1" aria-labelledby="rotulonome"></td>
+      <td><input type="text" size="3" name="idade1" aria-labelledby="rotuloidade"></td>
+      <td><input type="text" size="4" name="peso1" aria-labelledby="rotulopeso"></td>
     </tr>
     <tr>
-      <td><input type="text" name="name2" aria-labelledby="namelabel"></td>
-      <td><input type="text" size="3" name="age2" aria-labelledby="agelabel"></td>
-      <td><input type="text" size="4" name="weight2" aria-labelledby="weightlabel"></td>
+      <td><input type="text" name="nome2" aria-labelledby="rotulonome"></td>
+      <td><input type="text" size="3" name="idade2" aria-labelledby="rotuloidade"></td>
+      <td><input type="text" size="4" name="peso2" aria-labelledby="rotulopeso"></td>
     </tr>
     <tr>
-      <td><input type="text" name="name2" aria-labelledby="namelabel"></td>
-      <td><input type="text" size="3" name="age2" aria-labelledby="agelabel"></td>
-      <td><input type="text" size="4" name="weight2" aria-labelledby="weightlabel"></td>
+      <td><input type="text" name="nome2" aria-labelledby="rotulonome"></td>
+      <td><input type="text" size="3" name="idade2" aria-labelledby="rotuloidade"></td>
+      <td><input type="text" size="4" name="peso2" aria-labelledby="rotulopeso"></td>
     </tr>
   </tbody>
 </table>
 
-<p>The HTML for the first header ("Name") is:</p>
+O HTML para o primeiro cabecalho ("Nome") é:
+
 <div class="programlisting">
   <code>
-  &lt;th <strong>id="namelabel"</strong> scope="col"&gt;Name&lt;/th&gt;
+  &lt;th <strong>id="rotulonome"</strong> scope="col"&gt;Nome&lt;/th&gt;
   </code>
 </div>
-<p>The HTML for the first text field within the table is:</p>
+
+O HTML para o primeiro campo de texto da tabela é:
+
+
 <div class="programlisting">
-  <code>&lt;input type="text" name="name1" <strong>aria-labelledby="namelabel"</strong>&gt;</code>
+  <code>&lt;input type="text" name="nome1" <strong>aria-labelledby="rotulonome"</strong>&gt;</code>
 </div>
-<p>This labels the text box with the "Name" text in the table header.
-This <code>aria-labelledby</code> attribute could be added to all three Name fields,
-thus properly labeling all of them with one text item.</p>
-<p>Building on this example, the table below has visual labels along the top and side -
-multiple visual labels for each control.</p>
+
+Isso rotula a caixa de texto com o texto "Nome" no cabeçalho da tabela.
+Este atributo `aria-labelledby` pode ser adicionado a todos os três campos Nome,
+
+
+This `aria-labelledby` attribute could be added to all three Name fields,
+assim adequadamente rotulando todos eles com apenas um item de texto.
+
+Com base neste exemplo, o quadro que se segue tem rótulos visuais ao longo do topo e do lado -
+
+Building on this example, the table below has visual labels along the top and side -
+vários rótulos visuais para cada controle.
+
+
 <table>
   <tbody>
     <tr>
-      <th scope="col">Name</th>
-      <th id="officenum" scope="col">Office Number</th>
-      <th id="phonelabel" scope="col">Phone</th>
+      <th scope="col">Nome</th>
+      <th id="numeroescritorio" scope="col">Número do Escritório</th>
+      <th id="rotulotelefone" scope="col">Telefone</th>
     </tr>
     <tr>
       <th id="cyndi" scope="col">Cyndi</th>
-      <td><input type="text" size="4" name="office1" aria-labelledby="cyndi officenum"></td>
-      <td><input type="text" size="12" name="phone1" aria-labelledby="cyndi phonelabel"></td>
+      <td><input type="text" size="4" name="escritorio1" aria-labelledby="cyndi numeroescritorio"></td>
+      <td><input type="text" size="12" name="telefone1" aria-labelledby="cyndi rotulotelefone"></td>
     </tr>
     <tr>
       <th id="jared" scope="col">Jared</th>
-      <td><input type="text" size="4" name="office2" aria-labelledby="jared officenum"></td>
-      <td><input type="text" size="12" name="phone2" aria-labelledby="jared phonelabel"></td>
+      <td><input type="text" size="4" name="escritorio2" aria-labelledby="jared numeroescritorio"></td>
+      <td><input type="text" size="12" name="telefone2" aria-labelledby="jared rotulotelefone"></td>
     </tr>
     <tr>
       <th id="jon" scope="col">Jonathan</th>
-      <td><input type="text" size="4" name="office3" aria-labelledby="jon officenum"></td>
-      <td><input type="text" size="12" name="phone3" aria-labelledby="jon phonelabel"></td>
+      <td><input type="text" size="4" name="escritorio3" aria-labelledby="jon numeroescritorio"></td>
+      <td><input type="text" size="12" name="telefone3" aria-labelledby="jon rotulotelefone"></td>
     </tr>
   </tbody>
 </table>
-<p>The HTML for the first field in this table is:</p>
+
+O HTML para o primeiro campo desta tabela é:
+
 <div class="programlisting">
-  <code>&lt;input type="text" name="office1" <strong>aria-labelledby="cyndi officenum"</strong>&gt;</code>
+  <code>&lt;input type="text" name="escritorio1" <strong>aria-labelledby="cyndi numeroescritorio"</strong>&gt;</code>
 </div>
 
-The `cyndi` and `officenum` values reference the `id`s of the "Cyndi" and "Office Number" table cells.
-A screen reader will read "Cyndi Office Number" when navigating into this field.
-The reading order of multiple labels is based on the order in which these values are specified.
+Os valores `cyndi` e `numeroescritorio` referenciam os `id`s das células de tabela  "Cyndi" e "Número do Escritório".
+Um leitor de tela irá ler "Cyndi Número do Escritório" ao navegar nesse campo.
+A ordem de leitura dos vários rótulos baseia-se na ordem em que estes valores são especificados.
 
 <div class="note">
-  <div class="title">Note</div>
-  <p>As a general rule, if a single label is present for a single control, the <code>&lt;label&gt;</code> element should be used to reference it. These labels provide additional functionality - clicking on them sets focus to or activates the control. This is not available when using <code>aria-labelledby</code>.</p>
+  <div class="title">Nota</div>
+  <p>Como regra geral, se uma única etiqueta está presente para um único controle, elemento <code>&lt;label&gt;</code> deve ser usado para fazer a referência. Esses rótulos fornecem funcionalidade adicional - clicando sobre eles define foco para ou ativa o controle. Isto não ocorre com o uso de <code>aria-labelledby</code>.</p>
 </div>
 <div class="important">
-  <div class="title">Important!</div>
-  <p>If a control has both an associated <code>&lt;label&gt;</code> <strong>and</strong> <code>aria-labelledby</code>, the referenced <code>aria-labelledby</code> text will override and be read of <em>instead of</em> the associated <code>&lt;label&gt;</code>.</p>
+  <div class="title">Importante!</div>
+  <p>Se um controle tiver ao mesmo tempo <code>&lt;label&gt;</code> <strong>e</strong> <code>aria-labelledby</code>
+  a referencia definida por <code>aria-labelledby</code>  irá sobrescrever e ser lida <em>em vez de</em> do elemento <code>&lt;label&gt;</code> associado.</p>
 </div>
 
-## `aria-describedby`
+### `aria-describedby`
 
-There are times when a form includes information that isn't exactly a label but is important enough to be read by a screen reader when navigating to the form control.
-This additional information can be associated to the form field with the `aria-describedby` attribute.
-For example:
+Há momentos em que um formulário inclui informações que não é exatamente um rótulo,
+mas é importante o suficiente para ser lido por um leitor de tela quando estiver navegando para o controle de formulário.
+Esta informação adicional pode ser associado ao campo de formulário com o atributo `aria-describedby`.
+Por exemplo:
 
-<p>
-  <label for="resetpass">Reset Password:</label>
-  <input type="password" name="resetpass" id="resetpass" aria-describedby="newpass">
-  <br>
-  <span id="newpass">New password must be 8-15 characters and include letters and numbers</span>
-</p>
-<p>Here is the HTML:</p>
+
+<label for="resetarsenha">Resetar Senha:</label>
+<input type="password" name="resetarsenha" id="resetarsenha" aria-describedby="novasenha">
+<br>
+<span id="novasenha">Nova senha deve ter 8-15 caracteres e conter letras e números</span>
+
+Aqui o HTML:
+
 <div class="programlisting">
   <code>
-  &lt;label for="resetpass"&gt;Reset Password:&lt;/label&gt;<br>
-  &lt;input type="password" name="resetpass" id="resetpass" <strong>aria-describedby="newpass"</strong>&gt; <br>
+  &lt;label for="resetarsenha"&gt;Resetar Senha:&lt;/label&gt;<br>
+  &lt;input type="password" name="resetarsenha" id="resetarsenha" <strong>aria-describedby="novasenha"</strong>&gt; <br>
   &lt;br&gt;<br>
-  &lt;span <strong>id="newpass"</strong>&gt;New password must be 8-15 characters and include letters and numbers&lt;/span&gt;	</code>
+  &lt;span <strong>id="novasenha"</strong>&gt;New password must be 8-15 characters and include letters and numbers&lt;/span&gt;	</code>
 </div>
 
-Because there is a single label, `<label>` is used rather than `aria-labelledby`.
-As with `aria-labelledby`, the `aria-describedby` attribute points to the `id` of the element that contains the password requirements.
-A screen reader would read both the associated label(s) and then the associated description(s).
-Descriptions are sometimes read after a short pause.
-`aria-describedby` can also reference multiple elements - just separate the referenced `id` values with spaces.
+Como há uma um rótulo, `<label>` é lido em vez de `aria-labelledby`.
+Como ocorre com `aria-labelledby`, o atributo `aria-describedby` aponta par ao `id` do elemento que contém os requisitos da senha.
+Um leitor de tela iria ler tanto o rótulo associado (s) e as descrições então a associados).
+As descrições às vezes são lidas após de uma breve pausa.
+`aria-describedby`  também pode fazer referência a vários elementos - basta referênciar os valores de `id` separados por espaço.
+
 
 <div class="note">
-  <div class="title">Note</div>
+  <div class="title">Nota</div>
   <ul>
-    <li>While the <code>aria-labelledby</code> overrides the <code>&lt;label&gt;</code>, <code>aria-describedby</code> does not. This means that <code>aria-describedby</code> should only be used <em>in addition to a label</em> (e.g., <code>&lt;label&gt;</code> or &lt;input <code>aria-labelledby</code>&gt;), not in place of one.</li>
-    <li>The <code>aria-describedby</code> attribute can also be used to reference descriptions that appear as 'tooltips'. Tooltips should become visible to sighted keyboard users when the control has keyboard focus, not just when the user hovers or clicks with a mouse.</li>
+    <li>Enquanto <code>aria-labelledby</code> sobrescreve o <code>&lt;label&gt;</code>, <code>aria-describedby</code> não faz isto.
+    Isto significa que <code>aria-describedby</code> deve apenas ser usada <em>como complemento a um rótulo</em>
+    (i.e., <code>&lt;label&gt;</code> ou &lt;input <code>aria-labelledby</code>&gt;), não como subistituto de um destes.</li>
+    <li>O atributo <code>aria-describedby</code> também pode ser usada como referência em descrições que aparecem como "dica de ferramenta".
+    Dica de ferramenta devem se tornar visíveis para usuários que enxergam e usam teclado quando o controle está com foco,
+    não apenas quando o usuário passa o mouse por cima, ou clica no elemento com o mouse.</li>
   </ul>
 </div>
 
-## Invisible Labels
+### Rótulos invisíveis
 
-There are times when a text label for a form control does not make sense visually.
-The most common example is the "Search" field. Its location within the page,
-in conjunction with the Search button, makes its purpose clear to sighted users.
-Adding a visual text label would be overkill and could negatively impact the site design.
+Há momentos em que um rótulo de texto para um controle de formulário não faz sentido ser exibido visualmente.
+O exemplo mais comum é o campo de "Pesquisar". Sua localização na página,
+junto ao botão de busca, deixa seu propósito claro para usuários que enxergam.
+Adicionar um ródulo visual seria exagero e impactaria negativamente no design do site
 
+Uma das seguintes três técnicas deveria ser usada quando um rótulo exibido visualmente não está disponível:
 
-One of the following three techniques should be used when a visible label is not available:
+#### `label` oculta
+Esconda o elemento `<label>` movendo para fora da tela usando CSS. O rótulo não vai aparecer visualmente,
+porém será lido por um leitor de tela.
 
-### Hidden `label`
+<label class="hidden" for="s">Termos de busca</label>
+<input id="s" type="text" name="busca">
+<button>Buscar</button>
 
-<p>Hide the <code>&lt;label&gt;</code> element off-screen using CSS. The label will not appear visually, but will still be read by a screen reader.</p>
-<p>
-  <label class="hidden" for="s">Search Terms</label>
-  <input id="s" type="text" name="search">
-  <button>Search</button>
-</p>
-<p> Here is the HTML for the label and form control:</p>
+Aqui o HTML para o rótulo e o controle de formulário:
+
 <div class="programlisting">
   <code>
-  &lt;label <strong>class="hidden"</strong> for="s"&gt;Search Terms&lt;/label&gt;<br>
+  &lt;label <strong>class="hidden"</strong> for="s"&gt;Termos de busca&lt;/label&gt;<br>
   &lt;input type="text" id="s" name="s"&gt;</code>
 </div>
-<p>The CSS that is used to hide the label, and additional information about this technique, is outlined in our article on <a href="http://webaim.org/techniques/css/invisiblecontent/">invisible content for screen readers</a>.</p>
 
-## `title` attribute
+O CSS que é usado para esconder o rótulo,
+e informações adicionais sobre esta técnica, pode ser vista no nosso artigo sobre
+[conteúdo invisível para leitores de tela](http://webaim.org/techniques/css/invisiblecontent/).
 
-<p>If a form field has a <code>title</code> attribute, but no <code>&lt;label&gt;</code>, the screen reader will read the <code>title</code> as if it were a label.</p>
-<p>
-  <input id="s-2" type="text" name="s-2" title="Search Terms">
-  <button>Search</button>
-</p>
-<p> Here is the HTML for the form control:</p>
+
+#### Atributo `title`
+
+Se um campo de formulário tem um atributo `title`, mas nenhum `<label>`, o leitor de tela irá ler o `title` como se fosse um rótulo.
+
+
+<input id="s-2" type="text" name="s-2" title="Termos de busca">
+<button>Buscar</button>
+
+Aqui o HTML para o rótulo e o controle de formulário:
+
 <div class="programlisting">
   <code>
-  &lt;input id="s" type="text" name="s" <strong>title="Search Terms"</strong>&gt;
+  &lt;input id="s" type="text" name="s" <strong>title="Termos de busca"</strong>&gt;
   </code>
 </div>
-<p>This technique will also cause a tooltip to appear when the user hovers over the field with a mouse, which could be distracting for some users. </p>
+This technique will also cause a tooltip to appear when the user hovers over the field with a mouse,
+which could be distracting for some users.
 
-## `aria-label`
+Esta técnica também fará com que uma dica de ferramenta para aparecer quando o usuário passa o mouse sobre o campo com um mouse,
+o que poderia ser uma distração para alguns usuários.
 
-<p>The <code>aria-label</code> attribute can also be used when there is no text label on the page.</p>
-<p>
-  <input id="s-3" type="text" name="s-3" aria-label="Search Terms">
-  <button>Search</button>
-</p>
+#### `aria-label`
+
+O atributo `aria-label` também pode ser usado quando não há rótulo de texto na página.
+
+<input id="s-3" type="text" name="s-3" aria-label="Termos de busca">
+<button>Buscar</button>
+
 <div class="programlisting">
   <code>
-  &lt;input id="s" type="text" name="s" <strong>aria-label="Search Terms"</strong>&gt;
+  &lt;input id="s" type="text" name="s" <strong>aria-label="Termos de busca"</strong>&gt;
   </code>
 </div>
 
-Unlike `aria-labelledby` which must reference another element,
-`aria-label` contains the label text directly. As with `aria-labelledby`,
-`aria-label` will override any associated `<label>` elements.
-
+Ao contrário de `aria-labelledby` que deve fazer referência a um outro elemento,
+`aria-label` contém o texto do rótulo diretamente. Como ocorre com `aria-labelledby`,
+`aria-label` irá sobrescrever qualquer element `<label>`.
 
 <div class="important">
-  <div class="title">Important</div>
+  <div class="title">Importante</div>
   <ul>
-    <li>Only one of these recommendations should be implemented. Using two or more together (e.g., a hidden <code>&lt;label&gt;</code> and a duplicate <code>title</code> attribute) can cause information to be repeated by a screen reader. </li>
-    <li>Placeholder text (e.g., <code>&lt;input type="text" <strong>placeholder="Search WebAIM"</strong>&gt;</code>) is not a suitable label and should never be used in place of the above techniques.</li>
+    <li>Apenas uma destas recomendações deve ser implementada.
+    Usar duas ou mais juntas (e.e., <code>&lt;label&gt;</code> oculta e duplicar com o atributo <code>title</code>)
+    pode causar repetição da informação por um leitor de tela.</li>
+    <li>Testo de espaço reservado (do inglês <em lang="en">placeholder</em>) (e.e., <code>&lt;input type="text" <strong>placeholder="Pesquisar no WebAIM"</strong>&gt;</code>)
+    não é um rótulo adequado e nunca deve ser usada em lugar das técnicas acima.</li>
   </ul>
 </div>
 
-## Recap
+### Recaptulação
 
-*   Use `<label>` element when you can. It has excellent browser and screen reader support, and users can click on the label to select the associated form control.
-*   Use `aria-labelledby` to overcome the 1:1 limitations of `<label>`.
-*   Use `aria-describedby` **in addition to a label** when you need to associate descriptive text to the form control.
-*   Use a hidden `<label>` **or** `title` **or** `aria-label` when a visible text label is not available.
+*   Use elemento `<label>` quando puder. Ele tem excelente suporte ao navegador e leitor de tela, e os usuários podem clicar no rótulo para selecionar o controle de formulário associado.
+*   Use `aria-labelledby` para contornar as limitações de 1:1 de rótulos `<label>`.
+*   Use `aria-describedby` **como complemento a um rótulo** quando você precisa relacionar um texto descritivo a um controle de formulário.
+*   Use `<label>` oculta **ou** atributo `title` **ou** `aria-label` quando texto de um rótulo visível não está disponível.
