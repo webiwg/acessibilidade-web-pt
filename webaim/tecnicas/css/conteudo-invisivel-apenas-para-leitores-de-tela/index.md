@@ -239,63 +239,64 @@ está escondido fora da tela.**
 
 </div>
 
-Examples
+Exemplos
 --------
 
 
 <div class="important">
 <div class="title">Importante!</div>
 
-In general, content should only be hidden from sighted users and made available
-to screen reader users when content is apparent visually, but not apparent to
-screen reader users.
+Em geral, o conteúdo só deve ser escondido dos usuários com visão e disponibilizados
+para os usuários de leitores de tela quando o conteúdo é evidente visualmente, mas não aparente para
+os usuários de leitores de tela.
 
 </div>
 
-### Instructional cues and indicators
+### Sinais e indicadores de instrução
 
-This technique can be used to provide instructional cues and indicators to
-screen reader users. This should be implemented with discretion and only where
-necessary. This page demonstrates proper use of this technique in two places.
+<!--
+  @fititnt após esses parágrafos, o ideal é rushar e fazer o caminho de migalhas
+           e o pular para conteúdo nos sites da WebIWG. Mais prático do que
+           convencer a pessoa a visitar o site original (fititnt, 2016-09-25 15:57)
 
-First, the search text box at the top of the page has a hidden label immediately
-before it. It is apparent visually that the text box is for searching due to the
-presentation and the search button, but a screen reader requires a label for the
-text field. As such, we provided a label, but have hidden it visually.
+-->
 
-Second, the breadcrumbs at the top of the page are a common design convention.
-Most web users understand the convention and can identify breadcrumbs visually.
-Because a screen reader accesses the breadcrumb links and content linearly, it
-may not be apparent to them that it is breadcrumbs until they have read a
-portion of it. As such, we have added hidden text of "You are here:" just prior
-to the breadcrumbs.
+Em primeiro lugar, a caixa de texto de pesquisa na parte topo da página tem um rótulo oculto
+imediatamente antes dele. É evidente visualmente que a caixa de texto é para procurar devido à
+apresentação e no botão de pesquisa, mas um leitor de tela requer um rótulo para o
+campo de texto. Como tal, nós fornecemos um rótulo, mas o escondemos visualmente.
+Em segundo lugar, o caminho-de-pão (do inglês <em lang="en">breadcumb</em>) na parte superior da página é uma convenção de design comum.
+A maioria dos usuários da Internet compreendem a convenção e podem identificar o caminho-de-pão visualmente.
+Devido o leitor de tela acessar os links de navegação e conteúdo de forma linear,
+pode não ser evidente para eles que é caminho-de-pão antes de lerem
+uma parte dele. Como tal, nós adicionamos o texto oculto de "Você está aqui:" pouco antes de caminho-de-pão.
 
-You can see all of this hidden text by disabling styles for this page.
-**Remember, all content hidden visually with CSS will become visible if styles
-are disabled.**
 
-### "Skip to main content" links
 
-["Skip to main content" links](/techniques/skipnav/) are one of the few places
-where accessibility has a direct and distinct impact on visual design. In order
-to be useful, the "skip" link should be one of the first on the page. Designers
-may balk at the idea of providing a link as the first thing on the page -
-particularly when that link is unlikely to be utilized by the majority of the
-site visitors. However, hiding the link makes them unusable to sighted keyboard
-users - a user group that can greatly benefit from this link.
+Você pode ver tudo isso de texto oculto, desativando estilos para esta página.
+**Lembre-se, todo o conteúdo oculto visualmente com CSS ficará visível se estilos
+são desativados.**
 
-One way to reconcile the impact that "skip" links have on visual design with the
-needs of screen reader users and users with mobility impairments is to use a
-technique that hides the "skip to main content" link until the user tabs to it.
-When the link receives focus, the link becomes visible to sighted users. This
-would allow both blind and sighted keyboard users to take advantage of the
-link's functionality
+### Links "Ir para o conteúdo principal"
 
-In order to accomplish this, two styles are created - one for the `<a>` element
-and one for the `a:focus` pseudo-class. The style for the `a:focus` pseudo-class
-will only be active when the user tabs to the link (i.e., it has focus), and the
-link will revert back to its default style (i.e., it will be hidden off-screen
-again) when the user tabs away from the link.
+[Links "Ir para o conteúdo principal"](http://webaim.org/techniques/skipnav/) são um dos poucos lugares
+onde acessibilidade tem um impacto direto e diferente do design visual. Para
+poder ser útil, o link de "pular" deve ser o primeiro da página. Designers
+podem não gostar da ideia de por um link como a primeira coisa na página -
+em especial se o link não será usado pela maioria dos
+visitantes do site. Porém, esconder o link o faz inusável para usuários que enxergam e usam teclado -
+um grupo de usuários que pode ter grande benefício com este link.
+
+Uma forma de conciliar o impacto de que os links "que pulam" tem no design visual com
+as necessidades dos usuários e usuários de leitores de de tela com dificuldades de mobilidade é a
+utilização de uma técnica que esconde o "pular para o conteúdo principal" até que o usuário pressione a tecla <kbd>tab</kbd>. Quando o link recebe o foco, a ligação torna-se visível para os utilizadores que enxergam. Isso
+permitiria que os usuários de teclado cegos ou normovisuais tirem proveito da funcionalidade do link.
+
+Para conseguir isto, dois estilos são criados - um para o elemento `<a>`
+e outro para a pseudo-classe `a:focus`. O estilo criado para pseudo classe `a:focus`,
+será ativo apenas quando o usuário pressionar <kbd>Tab</kbd> para ver o link (i.e., ele tem foco), e o
+link irá voltar a ter seu estilo padrão (i.e., ele vai vai voltar a ser escondido fora da tela
+novamente) quando o usuário pressionar <kbd>Tab<kbd> novamente para sair do link.
 
 ```css
 #skip a {
@@ -313,17 +314,18 @@ again) when the user tabs away from the link.
 }
 ```
 
-The styles should then be applied to the "skip" link.
+Os estilos devem ser aplicados a um link de "pular" (em inglês <em lang="en">skip</em>).
+
 
 ```html
 <div id="skip"><a href="#content">Skip to Main Content</a></div>
 ```
 
-The one drawback to this approach, on a conceptual level, is that the sudden
-appearance of a link that was previously invisible will be unexpected, and could
-confuse the sighted keyboard user. The link should also be clearly styled so it
-is apparent. These will not be problems for screen reader or mouse users because
-they never see the link.
+Um ponto negativo desta abordagem, a nível conceitual, é que a subta
+aparição de um link que estava previamente invisível é inesperada, e poderia
+confundir o usuário de teclado que enxerga. O link também deve ser estilizado claramente para ficar
+aparente. Estes não são problemas para leitores os leitores de tela ou usuários que usam mouse
+porque eles nunca verão este link.
 
 ### Other implementations
 
