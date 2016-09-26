@@ -1,7 +1,7 @@
 ---
 layout: translation
 date: 2014-12-11 # Data de ultima atualização do original
-title: "CSS in Action: Invisible Content Just for Screen Reader Users"
+title: "CSS em ação: conteúdo invisível apenas para usuários de leitores de tela"
 description: "Existem casos pontuais em que o conteúdo deve ser disponibilizados para usuários de leitor de tela,
 mas escondido de utilizadores normovisuais"
 
@@ -318,7 +318,7 @@ Os estilos devem ser aplicados a um link de "pular" (em inglês <em lang="en">sk
 
 
 ```html
-<div id="skip"><a href="#content">Skip to Main Content</a></div>
+<div id="skip"><a href="#content">Pular para conteúdo principal</a></div>
 ```
 
 Um ponto negativo desta abordagem, a nível conceitual, é que a subta
@@ -327,36 +327,41 @@ confundir o usuário de teclado que enxerga. O link também deve ser estilizado 
 aparente. Estes não são problemas para leitores os leitores de tela ou usuários que usam mouse
 porque eles nunca verão este link.
 
-### Other implementations
+### Outras implementações
 
-Form controls are sometimes presented visually so that text is visually
-associated as the label for multiple controls. Consider data entry where one
-"First name" text might describe the function of multiple text boxes that appear
-below it. Sometimes tables are used for these presentations. Alternatively,
-sometimes one control may be labeled by multiple items of text, such as a
-password field that is preceded by the word "Password:" and followed by the word
-"Required". Using standard [form labelling](/webaim/tecnicas/formularios/#controles-de-de-formulrio-acessveis), there
-is no way to associate one text item to multiple controls or multiple texts to
-one form control. In these case, the appropriate labels could be provided in the
-markup adjacent to their respective form elements, but hidden using the CSS
-above.
+Campos de formulário são algumas vezes apresentados visualmente
+modo que o texto é geralmente associada como o rótulo para vários campos. Considere a entrada de dados onde um texto "Nome"
+pode descrever a função de várias caixas de texto que aparecem
+abaixo dela. Às vezes tabelas são usadas para essas apresentações. Alternativamente,
+às vezes um controle pode ser marcado por vários itens de texto, como um
+campo de senha que é precedida pela palavra "senha:" e seguido pela palavra
+"Obrigatório". Usando a forma padrão de [rotulagem de formulário](/webaim/tecnicas/formularios/#controles-de-de-formulrio-acessveis),
+não há um modo de um item de texto a multplos campos ou multiplos textos a
+um campo de formulário. Nestes casos, os rótulos apropriados pode ser fornecidos na
+marcação adjacente aos respectivos elementos de forma, mas escondida usando o CSS
+acima. Um exemplo comum é quando dois ou mais elementos de entrada de texto são usadas para
+números de telefone.
 
-A common example of this is when two or more text input elements are used for
-phone numbers.
+<!--
+  @fititnt Nota do tradutor: tanto a imagem como o HTML dela não tiveram seu texto
+           traduzido; Os dois deveriam ser traduzidos ao mesmo tempo, mas como
+           não consigo recriar a imagem agora, vou mantê-los com mesmo idioma.
+           (fititnt, 2016-09-26 20:14)
+-->
 
-<img src="media/phone1.jpg" alt="The words &#39;phone number&#39; are followed by 4 text input boxes, intended to be used for area code, first three digits, last four digits, and then extension" class="border" width="389" height="42" />
+<img lang="en" src="media/phone1.jpg" alt="The words &#39;phone number&#39; are followed by 4 text input boxes, intended to be used for area code, first three digits, last four digits, and then extension" class="border" width="389" height="42" />
 
-Most visual users in North America will understand that the individual text
-input areas correspond to the different sections of standard phone numbers.
-Screen reader users, however, may attempt to enter the entire phone number in
-the first box. Confusion is likely when they discover that the box limits them
-to only 3 characters or that there are additional unlabeled text boxes that
-follow.
+A maioria dos usuários visuais na América do Norte vai entender que o texto individual
+áreas de entrada correspondem às diferentes seções de números de telefone padrão.
+Usuários de leitores de tela, no entanto, podem tentar introduzir o número de telefone inteiro
+na primeira caixa. A confusão é provável quando eles descobrem que a caixa limita-los
+a apenas 3 caracteres ou que existem caixas de texto sem rótulos adicionais que se seguem.
 
-The most obvious workaround for this particular problem would be to combine all
-of the text input boxes into a single text input box, and then provide the
-appropriate label. However, off-screen labels for each distinct text box will
-also ensure accessibility.
+
+A solução mais óbvia para este problema específico seria combinar todas
+as caixas de entrada de texto em uma única caixa de entrada de texto, e, em seguida, fornecer o
+rótulo adequado. No entanto, os rótulos não visíveis para cada caixa de texto distinta
+também irá garantir a acessibilidade.
 
 ```html
  Phone number: (
@@ -365,30 +370,33 @@ also ensure accessibility.
 )…
 ```
 
-The off-screen labels would, in this case, provide an adequate description for
-screen reader users.
+Os rótulos de não visiveis na tela poderiam, neste caso, fornecer uma descrição adequada para
+usuários de leitores de tela.
 
-Note
+<div class="note" markdown="1">
+<div class="title">Nota</div>
 
-In the example above, the `title` attribute could also be used to provide this
-information. Information in the `title` attribute will be read by screen readers
-when a label is not present. Additionally, `aria-labelledby` could be used to
-provide multiple labels per input or multiple inputs per label.
+No exemplo acima, o atributo `title` também poderia ser utilizado para fornecer esta
+informação. Informações no atributo `title` será lido por leitores de tela
+quando um rótulo não está presente. Além disso, `aria-labelledby` poderia ser utilizado para
+fornecer vários marcadores por entrada ou entradas múltiplas por rótulo.
 
-Conclusion
+</div>
+
+
+Conclusão
 ----------
 
-When the CSS techniques presented here are used to hide content, sighted users
-will never know that the content is there at all (unless they disable styles).
-Screen reader users, on the other hand, will never realize that this content is
-invisible to sighted users. Both kinds of users will be able to use the content
-intuitively, without having to adjust for either too much or too little
-information in the markup. This can provide important contextual cues that are
-otherwise impossible for screen reader users to grasp because of the visual
-nature of these cues. When used judiciously, this technique can resolve some of
-the tension between the demands of accessibility and the demands of visual
-design. It is not the only technique or method of solving this problem, but it
-is one that web developers can add to their list of possible solutions when the
-need arises.
-
+Quando as técnicas CSS aqui apresentadas são usadas para ocultar o conteúdo, os usuários que enxergam
+nunca saberão que o conteúdo está ali (a menos que desativem estilos).
+Usuários de leitores de tela, por outro lado, nunca vai perceber que este conteúdo
+é invisível para os utilizadores invisuais. AAmbos os tipos de usuários serão capazes de usar o conteúdo
+de forma intuitiva, sem precisar ajustar nem muito nem pouco a marcação HTML.
+Isso pode fornecer indicações contextuais importantes que são
+impossíveis para os usuários de leitores de tela para compreender por causa da natureza visual
+destes sinais. Quando utilizado criteriosamente, esta técnica pode resolver um pouco da
+tensão entre as exigências de acessibilidade e as demandas de design
+visual. Não é a única técnica ou método de resolver este problema, mas é
+um que os desenvolvedores web podem adicionar à sua lista de soluções possíveis quando
+surge a necessidade.
 
