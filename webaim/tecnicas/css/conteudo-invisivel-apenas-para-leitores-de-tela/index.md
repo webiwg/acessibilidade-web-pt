@@ -23,8 +23,8 @@ original: {
     link: "http://webaim.org/techniques/css/invisiblecontent/", # Link para documento original
     dateOfTranslation: "2016-09-25" # Data em que a tradução foi finalizada
 }
-isDraft: true
-isReleaseCandidate: false
+isDraft: false
+isReleaseCandidate: true
 ---
 
 <!-- Geração automática de índice, inicio -->
