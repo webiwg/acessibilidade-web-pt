@@ -1,8 +1,9 @@
 ---
 layout: translation
 date: 2014-12-11 # Data de ultima atualização do original
-title: "CSS in Action: Invisible Content Just for Screen Reader Users"
-description: "There are occasional instances where content should be made available to screen reader users, but hidden from sighted users. In most cases, if content (particularly content that provides functionality or interactivity) is important enough to provide to screen reader users, it should probably be made available to all users. "
+title: "CSS em ação: conteúdo invisível apenas para usuários de leitores de tela"
+description: "Existem casos pontuais em que o conteúdo deve ser disponibilizados para usuários de leitor de tela,
+mas escondido de utilizadores normovisuais"
 
 copyright: 'Copyright WebAIM' # Quem tem direitos de cópia
 license: null # Caso seja uma licença padrão (MIT, GPL...) por aqui
@@ -38,60 +39,121 @@ isReleaseCandidate: false
 </nav>
 <!-- Geração automática de índice, fim -->
 
+<style>
+/*
+  NOTA: tags styles dentro do corpo de forma provisória. Melhorar no futuro (fititnt, 2016-09-22 22:59)
+*/
+.programlisting {
+    border: 1px dashed #990000;
+    border-radius: 4px;
+    background-color: #ffffc1;
+    width: auto;
+    margin: 0 0 1em 0;
+    padding: 2px;
+    overflow: auto;
+}
+.note {
+    background-color: #F1F5F7;
+    border: 1px solid #CCCCCC;
+}
+.important, .tip, .note, .example {
+    padding: 4px 1.5em 0px 1.5em;
+    margin: 1em auto 1em auto;
+    width: 85%;
+    border-radius: 4px;
+}
+.note .title {
+    background: url(media/bg.png) 0px -1800px no-repeat;
+}
+.important .title, .tip .title, .note .title, .example .title {
+    padding: 3px 0 15px 35px;
+    display: block;
+    font-size: 1.25em;
+    font-family: 'Kameron',Georgia,Times,serif;
+}
+.important {
+    background-color: #fafaae;
+    border: 1px solid #CCCCCC;
+}
+.important .title {
+    background: url(media/bg.png) 0px -1600px no-repeat;
+}
+.important, .tip, .note, .example {
+    padding: 4px 1.5em 0px 1.5em;
+    margin: 1em auto 1em auto;
+    width: 85%;
+    border-radius: 4px;
+}
+.programlisting  code {
+  background-color: transparent;
+}
+h3 code {
+  font-size: 26px;
+  font-weight: 400;
+}
+h4 code {
+  margin-top: 1em;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+</style>
 
 
-
-Introduction
+Introdução
 ------------
 
-<span style="float: right;margin: 8px 0px 1px 10px;"><img src="media/peekaboo.jpg" alt="A woman hides behind her hands." width="130" height="110" /></span>There
-are occasional instances where content should be made available to screen reader
-users, but hidden from sighted users. In most cases, if content (particularly
-content that provides functionality or interactivity) is important enough to
-provide to screen reader users, it should probably be made available to all
-users. Cases where verbose cues or instructions are provided only for screen
-reader users are most likely a reflection of poor design and accessibility.
-However, there are a few cases where information is apparent visually, but may
-not be apparent to screen reader users. In these cases, it may be appropriate to
-mark-up content in a way that it is read by a screen reader, but invisible to
-sighted users.
+<span style="float: right;margin: 8px 0px 1px 10px;"><img src="media/peekaboo.jpg" alt="A woman hides behind her hands." width="130" height="110" /></span>Existem
+casos pontuais em que o conteúdo deve ser disponibilizados para usuários de leitor de tela,
+mas escondido de utilizadores normovisuais. Na maioria dos casos, se o conteúdo (principalmente
+conteúdo que fornece a funcionalidade e interatividade) é importante o suficiente para
+usuários de leitor de tela, ele provavelmente deve ser disponibilizado a todos os
+usuários. Casos em que sugestões são verbosas ou instruções são fornecidas apenas por usuários de leitores
+de tela são, provavelmente, um reflexo da má concepção e acessibilidade.
+No entanto, existem alguns casos onde a informação é evidente visualmente, mas pode
+não ser clara para os usuários de leitores de tela. Nestes casos, pode ser conveniente
+marcação de conteúdo de uma forma que ele é lido por um leitor de tela, mas invisível para
+utilizadores normovisuais.
 
-Techniques for hiding text
+
+Técnicas para o ocultar texto
 --------------------------
 
-There are several mechanisms that can be used for hiding content. It's important
-that a technique be implemented that results in the desired outcome and
-accessibility.
+Existem diversos mecanismos que podem ser usados para esconder o conteúdo. É importante
+que a técnica a ser implementada resulte em o resultado desejado e a
+acessibilidade.
 
-### `visibility: hidden;` and/or `display:none;`
+### `visibility: hidden;` e/ou `display:none;`
 
-These styles will hide text from all users. The text is removed from the visual
-flow of the page and is ignored by screen readers. **Do not use this CSS if you
-want the content to be read by a screen reader. But DO use it for content you
-don't want read by screen readers.**
+Esses estilos vão ocultar o texto de todos os usuários. O texto é removido do fluxo visual
+da página e é ignorado pelos leitores de tela. **Não use este CSS se
+quiser que o conteúdo a ser lido por um leitor de tela. Mas USE isto para o conteúdo
+que você não quer que sejam lidos por leitores de tela.**
 
-### `width:0px`, `height:0px` or other 0 pixel sizing techniques
+### `width:0px`, `height:0px` e outras técnicas de tamanho 0 pixel
 
-As above, because an element with no height or width is removed from the flow of
-the page, most screen readers will ignore this content. HTML width and height
-may give the same result. **Do not size content to 0 pixels if you want the
-content to be read by a screen reader.** Content styled with `font-size:0px` or
-`line-height:0` may work, though the elements would still take horizontal space
-on the screen. All of these techniques may result in search engine penalties as
-they may interpreted to be malicious.
+Tal como referido acima, devido a um elemento sem nenhuma altura ou largura é removido do fluxo da
+página, a maioria dos leitores de tela irão ignorar este conteúdo. Largura e altura do HTML
+pode dar o mesmo resultado. **Não redimensione o conteúdo a 0 pixels, se você deseja que o
+conteúdo seja lido por um leitor de tela.** Conteúdo estilizado com `font-size:0px` ou
+`line-height:0` podem funcionar, ainda que os elementos tomariam espaço horizontal
+na tela. Todas estas técnicas podem implicar em penalizações de mecanismo de pesquisa já
+que podem interpretado como maliciosas.
+
 
 ### `text-indent: -10000px;`
 
-This approach moves the content to the left 10000 pixels - thus off the visible
-screen. The actual value matters little, so long as it is positioned off-screen.
-Screen readers will still read text with this style. However, if a link or form
-element is given this style, it may result in a focus indicator (the dotted
-lines or 'marching ants' that surround a focused link) that extends from where
-the element should be located in the page to the place it is actually located
-(way to the left). This is not very pretty. This approach also causes issues in
-right-to-left languages. As such, this approach *may* be a viable option if the
-element does not contain navigable elements, though better techniques are
-available.
+
+Esta abordagem move o conteúdo para 10000 pixels para esquerda - portanto, fora da tela
+visível. O valor real tem pouca importância, desde que ele estiver posicionado fora da tela.
+Os leitores de tela ainda vai ler o texto com esse estilo. No entanto, se um link ou elemento de formulário
+recebe esse estilo, que pode resultar em um indicador de foco (as linhas pontilhadas
+ou "formigas em marcha" que cercam um link focalizado) que se estende a partir de onde
+o elemento deve ser localizado na página para o lugar é efectivamente localizado
+(para a esquerda). Isto não é muito bonito. Essa abordagem também causa problemas em
+idiomas da direita para a esquerda. Como tal, esta abordagem *pode* ser uma opção viável se
+o elemento não contém elementos navegáveis, embora melhores técnicas estão
+disponíveis.
 
 ### CSS clip
 
@@ -101,20 +163,22 @@ clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
 clip: rect(1px, 1px, 1px, 1px);
 ```
 
-A fairly modern technique of using CSS to hide or clip content that does not fit
-into a 1 pixel visible area will essentially hide the content visibly, but still
-allow it to be read by modern screen readers.
+Uma técnica bastante moderna de usar CSS para ocultar ou cortar conteúdo que não se encaixa
+em um 1 pixel área visível vai essencialmente esconder o conteúdo de forma visível,
+mas ainda permitir que ele seja lido por leitores de tela modernos.
 
-### Absolutely positioning content off-screen
+### Posicionamento absoluto de conteúdo fora da tela
 
-Using CSS to move hidden elements to a position off-screen is generally accepted
-as the most useful and accessible method of hiding content visually.
+Usar CSS para mover elementos ocultos para uma posição fora da tela é geralmente aceita
+como o método mais útil e acessível de esconder o conteúdo visualmente.
 
-Positioning content off-screen
+
+Colocar conteúdo fora da tela
 ------------------------------
 
-The following are the recommended styles for visually hiding content that will
-be read by a screen reader.
+A seguir estão os estilos recomendados para esconder visualmente conteúdos que serão lidos
+por um leitor de tela.
+
 
 ```css
 .hidden {
@@ -127,101 +191,112 @@ be read by a screen reader.
 }
 ```
 
-The .hidden CSS class should then be referenced from within the tag of the
-element being hidden, as shown:
+A classe CSS .hidden deve então ser referenciada no interior da tag do
+elemento a ser escondido, como mostrado:
+
 
 ```html
-<div class="hidden">This text is hidden.</div>
+<div class="hidden">Este texto está ocultado.</div>
 ```
 
-Sighted users will not see the hidden content at all. It will be out of their
-viewing range - hidden well to the left of the visible browser window. Screen
-reader users will have access to the content as if it were not hidden at all.
-Screen readers read the content normally, completely ignoring the styles used in
-this technique.
+Usuários normovisuais não verão este conteúdo ocultado. Ele vai estar fora de seu
+alcance de visão - bem escondida à esquerda da janela visível do navegador. Usuários
+de leitores de tela terão acesso ao conteúdo como se não estivesse escondido.
+Os leitores de tela podem ler o conteúdo normalmente, ignorando completamente
+os estilos usados nesta técnica.
 
-Let's analyze the styles in detail.
+Vamos analisar os estilos em detalhe.
 
-`position:absolute;` tells the browser to remove the element from the page flow
-and to begin positioning it. `left:-10000px;` moves the content 10000 pixels to
-the left. `top:auto;` tells the browser to position the content vertically at
-the same location it was originally. Omitting `top` may result in the `left`
-style being ignored in some instances and browsers. In short, this part of the
-code moves the element 10000 pixels straight to the left.
+`position:absolute;` diz ao navegador para remover o elemento do fluxo da página
+e começar a posicioná-lo. `left:-10000px;` move o conteúdo 10000 pixels para
+esquerda. `top:auto;` diz ao navegador para posicionar o conteúdo verticalmente no
+mesmo local estava originalmente. Omitir `top` pode resultar que o estilo `left`
+seja ignorado em alguns casos e navegadores. Em suma, esta parte do filme de código do elemento 10000 pixels em linha reta para a esquerda. Em suma, esta parte de código move o elemento 10000 pixels em
+linha reta para a esquerda.
 
-`width:1px; height:1px; overflow:hidden;` tells the browser to make the element
-1px by 1px in size and to visually hide everything that does not fit into these
-dimensions. While this is a likely a little overkill and can probably be omitted
-in most circumstances, there are a few instances where positioning may be
-disabled, but all other styles remain enabled. In this case, the element will
-remain in its original position, but will only take 1 pixel of space.
 
-Note
+`width:1px; height:1px; overflow:hidden;` informa o navegador para fazer o elemento
+no tamanho 1px por 1px para esconder visualmente tudo o que não se encaixa nestas
+dimensões. Enquanto isto é provavelmente um exagero e provavelmente poderia
+ser omitido na maioria das vezes, tem alguns casos onde o posicionamento poderia
+estar desabilitado, enquanto todos os demais estilos estão habilitados. Neste caso, o elemento irá
+permanecer em sua posição original, mas vai tomar apenas 1 pixel de espaço.
 
-It is sometimes recommended to position content using `left:0px; top:-500px` (or
-similar). While this works by positioning the content above the top of the page,
-if the hidden element contains a link or form element, upon receiving keyboard
-focus, the browser attempts to scroll to the element - thus scrolling the
-browser to the top of the page. This could result in confusion for sighted
-keyboard users. By positioning directly to the left, the browser will not scroll
-to the top of the page. **It should be noted that because links and form
-elements provide functionality, they should rarely be hidden from sighted users.
-Sighted users will not be able to see which element currently has focus because
-it is hidden off-screen.**
 
-Examples
+<div class="note" markdown="1">
+<div class="title">Nota</div>
+
+Algumas vezes é recomendado posicionar elemento usando `left:0px; top:-500px` (ou
+simiar). Enquanto isso funciona através do posicionamento o conteúdo acima do topo da página,
+se o elemento oculto contém um link ou elemento de formulário, ao receber o foco do teclado,
+o navegador tenta rolar para o elemento - então rolando o navegador para o topo da página.
+Isso poderia resultar em confusão para os usuários de
+teclado normovisuais. Ao posicionar directamente para a esquerda, o navegador não rolará
+para o início da página. **Deve notar-se que, devido a links e os elementos de formulário
+proporcionar funcionalidade, eles raramente devem ser escondidos dos utilizadores normovisuais.
+Usuários com visão não serão capazes de ver que elemento atualmente tem o focodevido ele
+está escondido fora da tela.**
+
+</div>
+
+Exemplos
 --------
 
-Important!
 
-In general, content should only be hidden from sighted users and made available
-to screen reader users when content is apparent visually, but not apparent to
-screen reader users.
+<div class="important">
+<div class="title">Importante!</div>
 
-### Instructional cues and indicators
+Em geral, o conteúdo só deve ser escondido dos usuários com visão e disponibilizados
+para os usuários de leitores de tela quando o conteúdo é evidente visualmente, mas não aparente para
+os usuários de leitores de tela.
 
-This technique can be used to provide instructional cues and indicators to
-screen reader users. This should be implemented with discretion and only where
-necessary. This page demonstrates proper use of this technique in two places.
+</div>
 
-First, the search text box at the top of the page has a hidden label immediately
-before it. It is apparent visually that the text box is for searching due to the
-presentation and the search button, but a screen reader requires a label for the
-text field. As such, we provided a label, but have hidden it visually.
+### Sinais e indicadores de instrução
 
-Second, the breadcrumbs at the top of the page are a common design convention.
-Most web users understand the convention and can identify breadcrumbs visually.
-Because a screen reader accesses the breadcrumb links and content linearly, it
-may not be apparent to them that it is breadcrumbs until they have read a
-portion of it. As such, we have added hidden text of "You are here:" just prior
-to the breadcrumbs.
+<!--
+  @fititnt após esses parágrafos, o ideal é rushar e fazer o caminho de migalhas
+           e o pular para conteúdo nos sites da WebIWG. Mais prático do que
+           convencer a pessoa a visitar o site original (fititnt, 2016-09-25 15:57)
 
-You can see all of this hidden text by disabling styles for this page.
-**Remember, all content hidden visually with CSS will become visible if styles
-are disabled.**
+-->
 
-### "Skip to main content" links
+Em primeiro lugar, a caixa de texto de pesquisa na parte topo da página tem um rótulo oculto
+imediatamente antes dele. É evidente visualmente que a caixa de texto é para procurar devido à
+apresentação e no botão de pesquisa, mas um leitor de tela requer um rótulo para o
+campo de texto. Como tal, nós fornecemos um rótulo, mas o escondemos visualmente.
+Em segundo lugar, o caminho-de-pão (do inglês <em lang="en">breadcumb</em>) na parte superior da página é uma convenção de design comum.
+A maioria dos usuários da Internet compreendem a convenção e podem identificar o caminho-de-pão visualmente.
+Devido o leitor de tela acessar os links de navegação e conteúdo de forma linear,
+pode não ser evidente para eles que é caminho-de-pão antes de lerem
+uma parte dele. Como tal, nós adicionamos o texto oculto de "Você está aqui:" pouco antes de caminho-de-pão.
 
-["Skip to main content" links](/techniques/skipnav/) are one of the few places
-where accessibility has a direct and distinct impact on visual design. In order
-to be useful, the "skip" link should be one of the first on the page. Designers
-may balk at the idea of providing a link as the first thing on the page -
-particularly when that link is unlikely to be utilized by the majority of the
-site visitors. However, hiding the link makes them unusable to sighted keyboard
-users - a user group that can greatly benefit from this link.
 
-One way to reconcile the impact that "skip" links have on visual design with the
-needs of screen reader users and users with mobility impairments is to use a
-technique that hides the "skip to main content" link until the user tabs to it.
-When the link receives focus, the link becomes visible to sighted users. This
-would allow both blind and sighted keyboard users to take advantage of the
-link's functionality
 
-In order to accomplish this, two styles are created - one for the `<a>` element
-and one for the `a:focus` pseudo-class. The style for the `a:focus` pseudo-class
-will only be active when the user tabs to the link (i.e., it has focus), and the
-link will revert back to its default style (i.e., it will be hidden off-screen
-again) when the user tabs away from the link.
+Você pode ver tudo isso de texto oculto, desativando estilos para esta página.
+**Lembre-se, todo o conteúdo oculto visualmente com CSS ficará visível se estilos
+são desativados.**
+
+### Links "Ir para o conteúdo principal"
+
+[Links "Ir para o conteúdo principal"](http://webaim.org/techniques/skipnav/) são um dos poucos lugares
+onde acessibilidade tem um impacto direto e diferente do design visual. Para
+poder ser útil, o link de "pular" deve ser o primeiro da página. Designers
+podem não gostar da ideia de por um link como a primeira coisa na página -
+em especial se o link não será usado pela maioria dos
+visitantes do site. Porém, esconder o link o faz inusável para usuários que enxergam e usam teclado -
+um grupo de usuários que pode ter grande benefício com este link.
+
+Uma forma de conciliar o impacto de que os links "que pulam" tem no design visual com
+as necessidades dos usuários e usuários de leitores de de tela com dificuldades de mobilidade é a
+utilização de uma técnica que esconde o "pular para o conteúdo principal" até que o usuário pressione a tecla <kbd>tab</kbd>. Quando o link recebe o foco, a ligação torna-se visível para os utilizadores que enxergam. Isso
+permitiria que os usuários de teclado cegos ou normovisuais tirem proveito da funcionalidade do link.
+
+Para conseguir isto, dois estilos são criados - um para o elemento `<a>`
+e outro para a pseudo-classe `a:focus`. O estilo criado para pseudo classe `a:focus`,
+será ativo apenas quando o usuário pressionar <kbd>Tab</kbd> para ver o link (i.e., ele tem foco), e o
+link irá voltar a ter seu estilo padrão (i.e., ele vai vai voltar a ser escondido fora da tela
+novamente) quando o usuário pressionar <kbd>Tab<kbd> novamente para sair do link.
 
 ```css
 #skip a {
@@ -239,48 +314,54 @@ again) when the user tabs away from the link.
 }
 ```
 
-The styles should then be applied to the "skip" link.
+Os estilos devem ser aplicados a um link de "pular" (em inglês <em lang="en">skip</em>).
+
 
 ```html
-<div id="skip"><a href="#content">Skip to Main Content</a></div>
+<div id="skip"><a href="#content">Pular para conteúdo principal</a></div>
 ```
 
-The one drawback to this approach, on a conceptual level, is that the sudden
-appearance of a link that was previously invisible will be unexpected, and could
-confuse the sighted keyboard user. The link should also be clearly styled so it
-is apparent. These will not be problems for screen reader or mouse users because
-they never see the link.
+Um ponto negativo desta abordagem, a nível conceitual, é que a subta
+aparição de um link que estava previamente invisível é inesperada, e poderia
+confundir o usuário de teclado que enxerga. O link também deve ser estilizado claramente para ficar
+aparente. Estes não são problemas para leitores os leitores de tela ou usuários que usam mouse
+porque eles nunca verão este link.
 
-### Other implementations
+### Outras implementações
 
-Form controls are sometimes presented visually so that text is visually
-associated as the label for multiple controls. Consider data entry where one
-"First name" text might describe the function of multiple text boxes that appear
-below it. Sometimes tables are used for these presentations. Alternatively,
-sometimes one control may be labeled by multiple items of text, such as a
-password field that is preceded by the word "Password:" and followed by the word
-"Required". Using standard [form labelling](/webaim/tecnicas/formularios/#controles-de-de-formulrio-acessveis), there
-is no way to associate one text item to multiple controls or multiple texts to
-one form control. In these case, the appropriate labels could be provided in the
-markup adjacent to their respective form elements, but hidden using the CSS
-above.
+Campos de formulário são algumas vezes apresentados visualmente
+modo que o texto é geralmente associada como o rótulo para vários campos. Considere a entrada de dados onde um texto "Nome"
+pode descrever a função de várias caixas de texto que aparecem
+abaixo dela. Às vezes tabelas são usadas para essas apresentações. Alternativamente,
+às vezes um controle pode ser marcado por vários itens de texto, como um
+campo de senha que é precedida pela palavra "senha:" e seguido pela palavra
+"Obrigatório". Usando a forma padrão de [rotulagem de formulário](/webaim/tecnicas/formularios/#controles-de-de-formulrio-acessveis),
+não há um modo de um item de texto a multplos campos ou multiplos textos a
+um campo de formulário. Nestes casos, os rótulos apropriados pode ser fornecidos na
+marcação adjacente aos respectivos elementos de forma, mas escondida usando o CSS
+acima. Um exemplo comum é quando dois ou mais elementos de entrada de texto são usadas para
+números de telefone.
 
-A common example of this is when two or more text input elements are used for
-phone numbers.
+<!--
+  @fititnt Nota do tradutor: tanto a imagem como o HTML dela não tiveram seu texto
+           traduzido; Os dois deveriam ser traduzidos ao mesmo tempo, mas como
+           não consigo recriar a imagem agora, vou mantê-los com mesmo idioma.
+           (fititnt, 2016-09-26 20:14)
+-->
 
-<img src="media/phone1.jpg" alt="The words &#39;phone number&#39; are followed by 4 text input boxes, intended to be used for area code, first three digits, last four digits, and then extension" class="border" width="389" height="42" />
+<img lang="en" src="media/phone1.jpg" alt="The words &#39;phone number&#39; are followed by 4 text input boxes, intended to be used for area code, first three digits, last four digits, and then extension" class="border" width="389" height="42" />
 
-Most visual users in North America will understand that the individual text
-input areas correspond to the different sections of standard phone numbers.
-Screen reader users, however, may attempt to enter the entire phone number in
-the first box. Confusion is likely when they discover that the box limits them
-to only 3 characters or that there are additional unlabeled text boxes that
-follow.
+A maioria dos usuários visuais na América do Norte vai entender que o texto individual
+áreas de entrada correspondem às diferentes seções de números de telefone padrão.
+Usuários de leitores de tela, no entanto, podem tentar introduzir o número de telefone inteiro
+na primeira caixa. A confusão é provável quando eles descobrem que a caixa limita-los
+a apenas 3 caracteres ou que existem caixas de texto sem rótulos adicionais que se seguem.
 
-The most obvious workaround for this particular problem would be to combine all
-of the text input boxes into a single text input box, and then provide the
-appropriate label. However, off-screen labels for each distinct text box will
-also ensure accessibility.
+
+A solução mais óbvia para este problema específico seria combinar todas
+as caixas de entrada de texto em uma única caixa de entrada de texto, e, em seguida, fornecer o
+rótulo adequado. No entanto, os rótulos não visíveis para cada caixa de texto distinta
+também irá garantir a acessibilidade.
 
 ```html
  Phone number: (
@@ -289,30 +370,33 @@ also ensure accessibility.
 )…
 ```
 
-The off-screen labels would, in this case, provide an adequate description for
-screen reader users.
+Os rótulos de não visiveis na tela poderiam, neste caso, fornecer uma descrição adequada para
+usuários de leitores de tela.
 
-Note
+<div class="note" markdown="1">
+<div class="title">Nota</div>
 
-In the example above, the `title` attribute could also be used to provide this
-information. Information in the `title` attribute will be read by screen readers
-when a label is not present. Additionally, `aria-labelledby` could be used to
-provide multiple labels per input or multiple inputs per label.
+No exemplo acima, o atributo `title` também poderia ser utilizado para fornecer esta
+informação. Informações no atributo `title` será lido por leitores de tela
+quando um rótulo não está presente. Além disso, `aria-labelledby` poderia ser utilizado para
+fornecer vários marcadores por entrada ou entradas múltiplas por rótulo.
 
-Conclusion
+</div>
+
+
+Conclusão
 ----------
 
-When the CSS techniques presented here are used to hide content, sighted users
-will never know that the content is there at all (unless they disable styles).
-Screen reader users, on the other hand, will never realize that this content is
-invisible to sighted users. Both kinds of users will be able to use the content
-intuitively, without having to adjust for either too much or too little
-information in the markup. This can provide important contextual cues that are
-otherwise impossible for screen reader users to grasp because of the visual
-nature of these cues. When used judiciously, this technique can resolve some of
-the tension between the demands of accessibility and the demands of visual
-design. It is not the only technique or method of solving this problem, but it
-is one that web developers can add to their list of possible solutions when the
-need arises.
-
+Quando as técnicas CSS aqui apresentadas são usadas para ocultar o conteúdo, os usuários que enxergam
+nunca saberão que o conteúdo está ali (a menos que desativem estilos).
+Usuários de leitores de tela, por outro lado, nunca vai perceber que este conteúdo
+é invisível para os utilizadores invisuais. AAmbos os tipos de usuários serão capazes de usar o conteúdo
+de forma intuitiva, sem precisar ajustar nem muito nem pouco a marcação HTML.
+Isso pode fornecer indicações contextuais importantes que são
+impossíveis para os usuários de leitores de tela para compreender por causa da natureza visual
+destes sinais. Quando utilizado criteriosamente, esta técnica pode resolver um pouco da
+tensão entre as exigências de acessibilidade e as demandas de design
+visual. Não é a única técnica ou método de resolver este problema, mas é
+um que os desenvolvedores web podem adicionar à sua lista de soluções possíveis quando
+surge a necessidade.
 
