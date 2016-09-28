@@ -290,17 +290,17 @@ então a legenda deve ser curta e descritiva.
 <p>
   <label for="cidadefavorita">Qual sua cidade favorita?</label>
   <select id="cidadefavorita" name="select">
-    <option value="1">Amsterdam</option>
+    <option value="1">Amsterdã</option>
     <option value="2">Buenos Aires</option>
-    <option value="3">Delhi</option>
+    <option value="3">Nova Déli</option>
     <option value="4">Hong Kong</option>
     <option value="5">Londes</option>
     <option value="6">Los Angeles</option>
     <option value="7">Moscou</option>
     <option value="8">Mumbai</option>
-    <option value="9">New York</option>
-    <option value="10">Sao Paulo</option>
-    <option value="11">Tokyo</option>
+    <option value="9">Nova York</option>
+    <option value="10">São Paulo</option>
+    <option value="11">Tóquio</option>
   </select>
 </p>
 
