@@ -15,7 +15,10 @@ translators: [{
     name: "Emerson Rocha Luiz",
     link: "http://twitter.com/fititnt"
 }]
-reviewers: []
+reviewers: [{
+    name: "Daniel Oliveira",
+    link: "https://twitter.com/ddtaoli"
+}]
 discussion: https://github.com/webiwg/acessibilidade-web-pt/issues/12
 original: {
     title: "Creating Accessible Forms", # Titulo original, no idioma origial
