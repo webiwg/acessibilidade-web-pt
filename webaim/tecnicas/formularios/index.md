@@ -1,7 +1,7 @@
 ---
 layout: translation
 date: 2014-12-19 # Data de ultima atualização do original
-title: "Como criar formulários acessíveis" # Titulo traduzido
+title: "Criando Formulários Acessíveis" # Titulo traduzido
 description: "Formulários são usados para muitos tipos de interações na web. Quando falamos sobre a acessibilidade de formulários, estamos normalmente referindo-se a sua acessibilidade às pessoas que utilizam leitores de tela ou navegação por teclados."
 
 copyright: 'Copyright WebAIM' # Quem tem direitos de cópia
@@ -35,7 +35,7 @@ isReleaseCandidate: true
 ## Índice de tópicos
 {:.no_toc}
 
-1. Indice de Tópicos. Esta linha será substituída
+1. Índice de Tópicos. Esta linha será substituída
 {:toc}
 
 </nav>
@@ -111,9 +111,9 @@ h4 code {
 
 Formulários são usados para muitos tipos de interações na web.
 Quando falamos sobre a acessibilidade de formulários,
-estamos normalmente referindo-se a sua acessibilidade às pessoas que utilizam leitores de tela ou navegação por teclados.
-Pessoas com outros tipos de deficiência são geralmente menos afetada por formulários com defeito.
-Deve notar-se, no entanto, que todas as pessoas se beneficiam de um formulário bem organizado,
+estamos normalmente nos referindo a sua acessibilidade às pessoas que utilizam leitores de tela ou navegação por teclados.
+Pessoas com outros tipos de deficiência são geralmente menos afetadas por formulários com defeito.
+Deve-se notar, no entanto, que todos se beneficiam de um formulário bem organizado,
 com grande usabilidade, especialmente aquelas com deficiências cognitivas.
 
 ### Certifique-se de que formulários sejam lógicos e fácil de usar
@@ -121,9 +121,9 @@ com grande usabilidade, especialmente aquelas com deficiências cognitivas.
 Os formulários devem ser claros e intuitivos. Eles devem ser organizados de uma maneira lógica.
 Instruções, sugestões, campos de formulário obrigatórios, requisitos de formatação de campo,
 etc, devem ser claramente identificados para os usuários.
-De instruções claras sobre as informações desejadas.
-Se quaisquer elementos de formulário são obrigatórios, não se esqueça de indicar-lo.
-Certifique-se de que a ordem em que os elementos de formulário são acessados é lógica e fácil.
+Dê instruções claras sobre as informações desejadas.
+Se quaisquer elementos de formulário são obrigatórios, não se esqueça de indica-los.
+Certifique-se de que a ordem em que os elementos de formulário são acessados seja lógica e fácil.
 Isto às vezes pode ser problemático se as tabelas são usadas para controlar o layout de itens do formulário.
 
 Para verificar a ordem linear de itens na página,
@@ -133,19 +133,19 @@ use [a ferramenta de acessibilidade WAVE](http://wave.webaim.org/).
 
 Muitos usuários só podem usar um teclado para navegar e usar a web.
 Você deve garantir que os formulários em seu web site podem ser concluídos usando apenas o teclado.
-Existem algumas coisas que podem fazer formulários totalmente inutilizáveis com o teclado,
-o mais comum dos quais é JavaScript.
-Tenha cuidado no seu uso do JavaScript para manipular os dados do formulário,
+Existem algumas coisas que podem fazer os formulários totalmente inutilizáveis com o teclado,
+das quais a mais comum é o JavaScript.
+Tenha cuidado no uso do JavaScript para manipular os dados do formulário,
 definir o foco, alterar elementos de formulário ou submeter formulários.
-Cada um destes pode tornar o formulário difícil ou impossível para completar ou entender usando apenas teclado.
-Sempre teste os formulários do site para acessibilidade através do teclado.
+Cada um destes itens pode tornar o formulário difícil ou impossível, para completar ou entender, usando apenas teclado.
+Sempre teste a acessibilidade através do teclado para os formulários do seu site.
 
 ### Associe rótulos de formulários com campos de entrada
 
-Rótulos de texto geralmente deve descrever a função de cada controle de formulário.
+Rótulos de texto geralmente devem descrever a função de cada campo do formulário.
 Posicione o rótulo junto ao seu respectivo controle de formulário (ou seja, caixa de texto, caixa de seleção, botão de opção, menu, etc.).
 
-Os rótulos são normalmente posicionado acima ou para a esquerda do campo de controle, no entanto,
+Os rótulos são normalmente posicionados acima ou à esquerda do campo do formulário, no entanto,
 os rótulos de caixas de seleção e _radio buttons_ são geralmente à direita do controle.
 Usuários com visão devem ser capazes de visualmente associar um rótulo de texto com seu controle de formulário correspondente.
 Os usuários com deficiência visual, no entanto, não pode fazer essa associação visual.
