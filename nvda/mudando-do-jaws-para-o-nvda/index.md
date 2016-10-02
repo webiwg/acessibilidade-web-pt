@@ -177,7 +177,7 @@ Vilmar: Default foi mantido com mesmo significado.
 
 Caso esteja desavisado, JAWS tem dois modos para exibir páginas web ou outros documentos usando o cursor virtual, leiaute simples e leiaute de tela. O leiaute simples é o padrão, que exibe conteúdo numa forma linear - colocando cada link ou controle em sua própria linha. Leiaute de tela formata o conteúdo de forma similiar a como é exibido na tela.
 
-O padrão em NVDA é o leiaute de tela, mas você pode facilimente trocar para a versão de leiaute simples pressionando <kbd>NVDA</kbd> + <kbd>V</kbd> enquanto no <em lang="en">browse mode</em>. Isso irá deixar o leiaute de tela desligado. Tenha certeza de salvar a configuração após fazer a mudança com <kbd>NVDA<kbd> + <kbd>CTRL</kbd> + </kbd>c</kbd>.
+O padrão em NVDA é o leiaute de tela, mas você pode facilimente trocar para a versão de leiaute simples pressionando <kbd>NVDA</kbd> + <kbd>V</kbd> enquanto no <em lang="en">browse mode</em>. Isso irá deixar o leiaute de tela desligado. Tenha certeza de salvar a configuração após fazer a mudança com <kbd>NVDA</kbd> + <kbd>CTRL</kbd> + <kbd>c</kbd>.
 
 <!--
 Vilmar: control foi traduzido para controle, necessito que verifiquem se é o adequado.
