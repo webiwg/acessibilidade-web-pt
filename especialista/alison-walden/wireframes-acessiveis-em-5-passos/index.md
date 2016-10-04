@@ -5,7 +5,7 @@ title: "How to make your wireframes more accessible in five easy steps" # Titulo
 description: "Most websites in North America and Europe now need to meet accessibility requirements.
 These include requirements described by Section 508 of the American Disabilities Act (ADA)."
 
-copyright: 'Copyright http://accessib.li/' # Quem tem direitos de cópia
+copyright: 'Copyright Alison Walden, via http://accessib.li/' # Quem tem direitos de cópia
 license: null # Caso seja uma licença padrão (MIT, GPL...) por aqui
 license-custom: null # Caso a licença não seja uma padrão, por uma descrição curta dela aqui
 authors: [{
@@ -40,8 +40,6 @@ Follow these five easy steps to make your wireframes more accessible:
 -   Four: Provide clear link labels.
 -   Five: Design simple, usable forms.
 
-<span id="more-279"></span>
-
 One: Document the heading structure
 -----------------------------------
 
@@ -58,7 +56,16 @@ them to assess if the page is useful for them. If the headings are not developed
 and written in a clear and proper way, they will not be helpful to this
 audience.
 
-<img src="http://i0.wp.com/accessib.li/wp-content/uploads/2016/08/headings.jpg?resize=550%2C217" alt="A primary heading that asks the question, Should I be a primary heading?" class="size-full wp-image-282" sizes="(max-width: 550px) 100vw, 550px" srcset="http://i0.wp.com/accessib.li/wp-content/uploads/2016/08/headings.jpg?w=550 550w, http://i0.wp.com/accessib.li/wp-content/uploads/2016/08/headings.jpg?resize=300%2C118 300w" width="550" height="217" />
+<!--
+  N.T: O trexo abaixo é o HTML original. Vamos manter esse comentário até que
+       nosso site tenha exibir imagens com redimencionamento automatico. Eu
+       achei maravilhoso isso.
+       (@fititnt, 2016-10-04 17:45)
+
+  <img src="http://i0.wp.com/accessib.li/wp-content/uploads/2016/08/headings.jpg?resize=550%2C217" alt="A primary heading that asks the question, Should I be a primary heading?" class="size-full wp-image-282" sizes="(max-width: 550px) 100vw, 550px" srcset="http://i0.wp.com/accessib.li/wp-content/uploads/2016/08/headings.jpg?w=550 550w, http://i0.wp.com/accessib.li/wp-content/uploads/2016/08/headings.jpg?resize=300%2C118 300w" width="550" height="217" />
+-->
+
+![A primary heading that asks the question, Should I be a primary heading?](media/headings.jpg)
 
 The experience designer or copywriter should decide the heading structure. The
 wireframe or content matrix should include an annotation that describes the
@@ -188,16 +195,16 @@ accessible:
     annotation for a hidden label. Indicate the label text. All form fields must
     have labels.
 
-<img src="http://i2.wp.com/accessib.li/wp-content/uploads/2016/08/label-top-of-field.jpg?resize=550%2C170" alt="Form field labels should be placed above the field, not beside it." class="size-full wp-image-280" sizes="(max-width: 550px) 100vw, 550px" srcset="http://i2.wp.com/accessib.li/wp-content/uploads/2016/08/label-top-of-field.jpg?w=550 550w, http://i2.wp.com/accessib.li/wp-content/uploads/2016/08/label-top-of-field.jpg?resize=300%2C93 300w" width="550" height="170" />
+![Form field labels should be placed above the field, not beside it.](media/label-top-of-field.jpg)
 
 *See this article:* *[The definitive guide to form label
-positioning](http://www.sitepoint.com/definitive-guide-form-label-positioning/)[/](http://www.sitepoint.com/definitive-guide-form-label-positioning/)*
+positioning](http://www.sitepoint.com/definitive-guide-form-label-positioning/)*
 
-<img src="http://i0.wp.com/accessib.li/wp-content/uploads/2016/08/no-placeholders.jpg?resize=550%2C153" alt="Do not replace labels with placeholder text." class="size-full wp-image-281" sizes="(max-width: 550px) 100vw, 550px" srcset="http://i0.wp.com/accessib.li/wp-content/uploads/2016/08/no-placeholders.jpg?w=550 550w, http://i0.wp.com/accessib.li/wp-content/uploads/2016/08/no-placeholders.jpg?resize=300%2C83 300w" width="550" height="153" />
+!["Do not replace labels with placeholder text.](media/no-placeholders.jpg)
 
 *From the Nielsen Norman Group article:*
-*[https](https://www.nngroup.com/articles/form-design-placeholders/)[Form design
-placeholders](https://www.nngroup.com/articles/form-design-placeholders/)[/](https://www.nngroup.com/articles/form-design-placeholders/)*
+*[Form design
+placeholders](https://www.nngroup.com/articles/form-design-placeholders/)*
 
 ### Accessible form error messaging
 
@@ -216,11 +223,16 @@ error message text. Example: "Email address. Email address is a required field."
 The user can then fix this issue, then tab through the rest of the form and hear
 any other error messages along the way.
 
-[WebAIM has a great article about accessible form development<span
-class="icon-webfont fa-external-link" aria-hidden="true"></span><span
-class="screen-reader-text">Opens in a new
-window</span>](http://webaim.org/techniques/forms/) that I encourage everyone to
-read.
+<!--
+  N.T: O trexo abaixo é o HTML original. Vamos manter esse comentário até que
+       nosso site tenha suporte a declarar links que abram em nova janela
+       (@fititnt, 2016-10-04 17:43)
+
+  <p><a href="http://webaim.org/techniques/forms/" target="_blank">WebAIM has a great article about accessible form development<span class="icon-webfont fa-external-link" aria-hidden="true"></span><span class="screen-reader-text">Opens in a new window</span></a>    that I encourage everyone to read.</p>
+-->
+
+[WebAIM has a great article about accessible form development](http://acessibilidade.pt.webiwg.org/webaim/tecnicas/formularios/)
+that I encourage everyone to read.
 
 You might be interested in these other articles related to accessible user experience:
 --------------------------------------------------------------------------------------
