@@ -145,7 +145,7 @@ NVDA tem diversos cursores para auxiliar na navegação do Windows e suas aplica
 
 O cursor do PC na documentação do NVDA está referenciada como um sistema de foco e um sistema de cursor.
 
-O equivalente para o cursor de JAWS é uma combinação de navegação de objetos, um cursor de revisão e um <em lang="en">Screen Review</em>. A função de <em lang="en">Screen Review<em> é um, senão o mais similiar cursor para JAWS, de qualquer forma é o mais vantajoso para ser tornar familiar com todos os 3. Você irá achar minucioso, fácil de entender instruções para estas no guia do usuário.
+O equivalente para o cursor de JAWS é uma combinação de navegação de objetos, um cursor de revisão e um <em lang="en">Screen Review</em>. A função de <em lang="en">Screen Review</em> é um, senão o mais similiar cursor para JAWS, de qualquer forma é o mais vantajoso para ser tornar familiar com todos os 3. Você irá achar minucioso, fácil de entender instruções para estas no guia do usuário.
 
 Diferente de JAWS, você não irá ter que mudar entre o cursores equivalentes do PC e do JAWS, assim como o teclado numérico está reservado exclusivamente para o trabalhar com o cursor de JAWS como funções.
 

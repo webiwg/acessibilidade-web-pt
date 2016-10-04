@@ -1,0 +1,163 @@
+<p>
+    Most websites in North America and Europe now need to meet accessibility requirements.
+    These include requirements described by Section 508 of the American Disabilities
+    Act (ADA). They also refer to the Web Content Accessibility Guidelines (WCAG
+    2.0).
+</p>
+<p>Follow these five&nbsp;easy steps to make your wireframes more accessible:</p>
+<ul>
+    <li>One: Document the heading structure.</li>
+    <li>Two: Document hidden way-finding cues.</li>
+    <li>Three: Document focus order information and specify the visible focus state.
+    </li>
+    <li>Four: Provide clear link labels.</li>
+    <li>Five: Design simple, usable forms.</li>
+</ul>
+<p><span id="more-279"></span></p>
+<h2>One: Document the heading structure</h2>
+<p>Remember the last time you wrote an essay? You probably had a series of sections
+    in your essay that each had a heading. Most likely you had a table of contents
+    that listed all your headings. If someone read your table of contents, they would
+    have had a good idea of what your essay was about.</p>
+<p>This is what headings are for on a website. They should describe the page they are
+    on. Assistive devices like screen readers allow users to navigate web pages by
+    headings. This is one way that a non-sighted person can "scan" a webpage, by
+    choosing to hear all the headings on the page. Listening to the headings allows
+    them to assess if the page is useful for them. If the headings are not developed
+    and written in a clear and proper way, they will not be helpful to this audience.</p>
+<p><img class="size-full wp-image-282" src="http://i0.wp.com/accessib.li/wp-content/uploads/2016/08/headings.jpg?resize=550%2C217"
+        alt="A primary heading that asks the question, Should I be a primary heading?"
+        srcset="http://i0.wp.com/accessib.li/wp-content/uploads/2016/08/headings.jpg?w=550 550w, http://i0.wp.com/accessib.li/wp-content/uploads/2016/08/headings.jpg?resize=300%2C118 300w"
+        sizes="(max-width: 550px) 100vw, 550px" width="550" height="217"></p>
+<p>The experience designer or copywriter should decide the heading structure. The wireframe
+    or content matrix should include an annotation that describes the heading structure.
+    A developer should not decide the heading structure by herself (in absence of
+    documentation).</p>
+<h2>Two: Document hidden way-finding cues</h2>
+<p>Screen reader users benefit from additional way-finding cues to help them navigate
+    a webpage. These include:</p>
+<ul>
+    <li>"Bypass block links": These allow screen reader users to skip over repeated blocks
+        of content. &nbsp;Without them, screen reader users would have&nbsp;to tab
+        through repetitive blocks of content from page to page. They are most often
+        used to skip over navigation menus.&nbsp;Other candidates for bypassing&nbsp;include
+        filter menus&nbsp;or&nbsp;carousels with many panels.
+    </li>
+    <li>Bypass block links&nbsp;can be hidden by default, but should appear on keyboard
+        focus. They&nbsp;should allow the user to skip past the content block to
+        the content&nbsp;immediately after. It's important to test these with your
+        keyboard once they are implemented. Make sure that you can tab once into
+        the content area, and tab again into the next interactive element in the
+        content area.</li>
+</ul>
+<h2>Three: Document focus order information and specify the visible focus state</h2>
+<h3>Focus order</h3>
+<p>Focus order is an important concept for keyboard accessibility. It refers to the
+    order that elements on the page receive keyboard focus. The usual focus order
+    for the Western world is from top to bottom, left to right, the same way we read.</p>
+<p>For keyboard users, a common way to access a website is to move through the content&nbsp;by
+    pressing the tab key. The tab key moves the focus state to links or form elements.
+    Screen reader users can have their device begin reading the page at any point.</p>
+<p>Usually experiences benefit from implementing a default focus order. There are instances
+    where the focus order should be changed. This is best determined by an experience
+    designer.</p>
+<p>The following flow illustrates a situation where the default tabbing order should
+    be overridden:</p>
+<ul>
+    <li>User clicks on a link to log in to a website, and the log in link leads to a
+        different page.</li>
+    <li>By default, the first focused area on the page would probably be in&nbsp;the
+        top left-most link or form field. But in this instance, the user is definitely
+        there to log in. It makes sense here to put the focus state on the first
+        field in the sign in form.</li>
+</ul>
+<p>Again, this cannot be decided by a developer in absence of documentation. It must
+    be annotated in the wireframe.</p>
+<h3>Visible focus state</h3>
+<p>The visible focus state is the visual indicator that an element has focus. It is
+    common for designers to create a hover state for mouse users. Usually the focus
+    state should match the hover state.</p>
+<p>For developers to&nbsp;handle this state in their implementations,&nbsp;it must be
+    defined in the wireframe. Additionally, the design of each element's focus state
+    must be described in the style guide. Each browser has its own default focus
+    state. Either allow this to be used, or have the designer create a new one that
+    matches your client's branding.</p>
+<p>Many clients do not understand the value of the visible focus state. When it is described
+    in the style guide, the client has an opportunity to see it up front and ask
+    questions about it.</p>
+<blockquote>
+    <p>What is a visible focus state?</p>
+    <p>Try it out on my website: Press your tab key now and try to see what the current
+        focused element is on the site. You will see that my navigation links along
+        the top of the site get underlines, and other links change color and have
+        an outline. This is so keyboard users can see where the focus is.</p>
+</blockquote>
+<h2>Four: Provide clear link labels</h2>
+<p>For users who navigate with a screen reader, many of them will only hear link labels.
+    They will not have any context on surrounding information. That's why it is important
+    to make sure the link itself (or the form field label) is meaningful.</p>
+<p>Do this:&nbsp;Learn more about our services</p>
+<p>Don't do this: Learn more</p>
+<p>Do this: Edit my account settings</p>
+<p>Don't do this: Edit</p>
+<p>Sometimes the context is clear to a sighted user based on surrounding content. In
+    this case, indicate in the wireframe that the developer should hide the additional
+    content from sighted users. This way, a sighted user who can gain context from
+    the surrounding content&nbsp;will see "Learn more". A non-sighted user will hear,
+    "Learn more about our services".</p>
+<h2>Five: Design simple, usable forms</h2>
+<h3>Usable form design</h3>
+<p>I often ask designers if they plan to enter their form design into the coveted Form
+    Design Awards. Usually they stare back at me blankly. Sometimes they perk up
+    and ask for more information about these awards.</p>
+<p>There are no Form Design Awards. Isn't it great? We can put our aesthetic goals aside
+    and focus on making the form usable. Trust me: forms are meant to be filled out.
+    They don't need to be flashy. It's okay if they aren't ultra clean and sleek.</p>
+<p>Here are some form design best practices that also make the form more accessible:</p>
+<ul>
+    <li>Place the label above the form field, not beside it.</li>
+    <li>Put a "required field" indicator inside the field's label. It's also helpful
+        to put "(optional)" within optional field's labels.</li>
+    <li>Do not replace proper form fields with placeholder text. Users of all ages and
+        abilities complain about this. Placeholder text disappears when a user clicks
+        into the field and begins to type. It can be hard to remember what content
+        the field needed (e.g. Email address vs. username).
+    </li>
+    <li>If fields do not have a visible label (e.g. search fields), provide the annotation
+        for a hidden label. Indicate the label text. All form fields must have labels.
+    </li>
+</ul>
+<p><img class="size-full wp-image-280" src="http://i2.wp.com/accessib.li/wp-content/uploads/2016/08/label-top-of-field.jpg?resize=550%2C170"
+        alt="Form field labels should be placed above the field, not beside it." srcset="http://i2.wp.com/accessib.li/wp-content/uploads/2016/08/label-top-of-field.jpg?w=550 550w, http://i2.wp.com/accessib.li/wp-content/uploads/2016/08/label-top-of-field.jpg?resize=300%2C93 300w"
+        sizes="(max-width: 550px) 100vw, 550px" width="550" height="170"></p>
+<p><i>See this article: </i><i><a href="http://www.sitepoint.com/definitive-guide-form-label-positioning/">The definitive guide to form label positioning</a></i><i><a href="http://www.sitepoint.com/definitive-guide-form-label-positioning/">/</a></i></p>
+<p><img class="size-full wp-image-281" src="http://i0.wp.com/accessib.li/wp-content/uploads/2016/08/no-placeholders.jpg?resize=550%2C153"
+        alt="Do not replace labels with placeholder text." srcset="http://i0.wp.com/accessib.li/wp-content/uploads/2016/08/no-placeholders.jpg?w=550 550w, http://i0.wp.com/accessib.li/wp-content/uploads/2016/08/no-placeholders.jpg?resize=300%2C83 300w"
+        sizes="(max-width: 550px) 100vw, 550px" width="550" height="153"></p>
+<p><i>From the Nielsen Norman Group article: </i><i><a href="https://www.nngroup.com/articles/form-design-placeholders/">https</a></i><i><a href="https://www.nngroup.com/articles/form-design-placeholders/">Form design placeholders</a></i><i><a href="https://www.nngroup.com/articles/form-design-placeholders/">/</a></i></p>
+<h3>Accessible form error messaging</h3>
+<p>Screen readers automatically read out form field labels when the field has focus.
+    The form error messaging flow should work like this:</p>
+<ul>
+    <li>User fills out a field the wrong way.</li>
+    <li>User attempts to submit form.</li>
+    <li>The first form field that has an&nbsp;error message&nbsp;should automatically
+        gain keyboard focus.</li>
+    <li>The form field error message should be programmatically appended to the field's
+        label.
+    </li>
+</ul>
+<p>In this way, the screen reader will read out the form field followed by the error
+    message text. Example: "Email address. Email address is a required field." The
+    user can then fix this issue, then tab through the rest of the form and hear
+    any other error messages along the way.</p>
+<p><a href="http://webaim.org/techniques/forms/" target="_blank">WebAIM has a great article about accessible form development<span class="icon-webfont fa-external-link" aria-hidden="true"></span><span class="screen-reader-text">Opens in a new window</span></a>    that I encourage everyone to read.</p>
+<h2>You might be interested in these other articles related to accessible user experience:
+</h2>
+<ul>
+    <li><a href="http://accessib.li/2016/05/14/creating-accessible-experiences-starts-with-experience-design/">Creating accessible experiences starts with experience design</a></li>
+    <li><a href="http://accessib.li/2016/04/22/why-accessibility-compliance-should-be-a-criteria-in-web-design-awards/">Why accessibility compliance should be a criteria in web design awards</a></li>
+    <li><a href="http://accessib.li/2016/03/18/usability-should-include-accessibility/">Usability should include accessibility</a></li>
+</ul>
+<p>Let me know in the comments section what accessibility features you add to your wireframes.
+</p>
