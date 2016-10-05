@@ -26,12 +26,79 @@ isDraft: true
 isReleaseCandidate: false
 ---
 
+<!-- Geração automática de índice, inicio -->
+<nav markdown="1">
 
-Accessible Javascript
-=====================
+## Índice de tópicos
+{:.no_toc}
 
-JavaScript Accessibility Issues
--------------------------------
+1. Indice de Tópicos. Esta linha será substituída
+{:toc}
+
+</nav>
+<!-- Geração automática de índice, fim -->
+
+<style>
+/*
+  NOTA: tags styles dentro do corpo de forma provisória. Melhorar no futuro (fititnt, 2016-09-22 22:59)
+*/
+.programlisting {
+    border: 1px dashed #990000;
+    border-radius: 4px;
+    background-color: #ffffc1;
+    width: auto;
+    margin: 0 0 1em 0;
+    padding: 2px;
+    overflow: auto;
+}
+.note {
+    background-color: #F1F5F7;
+    border: 1px solid #CCCCCC;
+}
+.important, .tip, .note, .example {
+    padding: 4px 1.5em 0px 1.5em;
+    margin: 1em auto 1em auto;
+    width: 85%;
+    border-radius: 4px;
+}
+.note .title {
+    background: url(media/bg.png) 0px -1800px no-repeat;
+}
+.important .title, .tip .title, .note .title, .example .title {
+    padding: 3px 0 15px 35px;
+    display: block;
+    font-size: 1.25em;
+    font-family: 'Kameron',Georgia,Times,serif;
+}
+.important {
+    background-color: #fafaae;
+    border: 1px solid #CCCCCC;
+}
+.important .title {
+    background: url(media/bg.png) 0px -1600px no-repeat;
+}
+.important, .tip, .note, .example {
+    padding: 4px 1.5em 0px 1.5em;
+    margin: 1em auto 1em auto;
+    width: 85%;
+    border-radius: 4px;
+}
+.programlisting  code {
+  background-color: transparent;
+}
+h3 code {
+  font-size: 26px;
+  font-weight: 400;
+}
+h4 code {
+  margin-top: 1em;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+</style>
+
+## JavaScript Accessibility Issues
 
 JavaScript allows developers to add increased interaction, information
 processing, and control in web-based content. However, JavaScript can also
@@ -60,8 +127,8 @@ Just because JavaScript is utilized on a page does not mean that the page is
 inaccessible. In many cases, JavaScript can be used to increase accessibility.
 Additional information, warnings, or instructions can be given to users through
 JavaScript prompts. For instance, under the [Section 508 guidelines of United
-States law](/standards/508/checklist) and the [Web Content Accessibility
-Guidelines](/standards/wcag/checklist), a user must be notified when a timed
+States law](http://webaim.org//standards/508/checklist) and the [Web Content Accessibility
+Guidelines](http://webaim.org//standards/wcag/checklist), a user must be notified when a timed
 response is required and given sufficient time to indicate more time is
 required. Such functionality would be difficult with HTML alone.
 
@@ -75,16 +142,15 @@ Such uses of JavaScript do not need additional accessibility features
 incorporated because important content is not displayed or functionality
 introduced by such scripting.
 
-JavaScript Reliance
--------------------
+### JavaScript Reliance
 
 It is a common misconception that people with disabilities don't have or 'do'
 JavaScript, and thus, that it's acceptable to have inaccessible scripted
 interfaces, so long as it is accessible with JavaScript disabled. A 2012 survey
 by WebAIM of screen reader users found that [98.6% of respondents had JavaScript
-enabled](/projects/screenreadersurvey4/#javascript). The numbers are even higher
+enabled](http://webaim.org//projects/screenreadersurvey4/#javascript). The numbers are even higher
 for users with [low vision](http://webaim.org/projects/lowvisionsurvey/#javascript) or [motor
-disabilities](projects/motordisabilitysurvey/#javascript). In short, people with
+disabilities]http://webaim.org/(projects/motordisabilitysurvey/#javascript). In short, people with
 disabilities will experience scripting, so scripted content must be made
 natively accessible.
 
@@ -103,11 +169,9 @@ optimal), if it does not work without scripting, you must avoid a confusing or
 non-functional presentation that may appear to function, but does not because of
 lack of JavaScript support.
 
-JavaScript Event Handlers
-=======================================================
+## JavaScript Event Handlers
 
-Overview
---------
+### Overview
 
 Event handlers accompany existing HTML code or dynamically generated content and
 are triggered by a browser or user event - such as when the page loads, when the
@@ -116,14 +180,14 @@ dependent upon use of a mouse or keyboard. These are called **device dependent**
 event handlers. Other event handlers are **device independent** and are
 triggered by both the mouse and keyboard or by other means.
 
-Important
-
+<div class="important" markdown="1">
+<div class="title">Importante</div>
 To ensure accessibility, use either a device independent event handler (one that
 works with both the mouse and the keyboard) or use both mouse dependent *and*
 keyboard dependent event handlers.
+</div>
 
-`onMouseOver` and `onMouseOut`
-------------------------------
+### `onMouseOver` and `onMouseOut`
 
 The `onMouseOver` event handler is triggered when the mouse cursor is placed
 over an item. As its name implies, `onMouseOver` requires the use of a mouse,
@@ -166,8 +230,7 @@ complex menu (e.g., a Products landing page that has links to the various
 product categories). While not exactly the same interaction that mouse users may
 choose, such alternatives are often more intuitive and friendly for all users.
 
-`onFocus` and `onBlur`
-----------------------
+### `onFocus` and `onBlur`
 
 These event handlers are typically used with form elements, such as text fields,
 radio buttons, and submit buttons, but can also be used with links. `onFocus` is
@@ -187,8 +250,7 @@ dynamically revealing form controls immediately upon a user leaving (blurring) a
 form control, etc. Keyboard and screen reader testing will be necessary to
 ensure these interactions are built in an accessible manner.
 
-`onClick` and `onDblClick`
---------------------------
+### `onClick` and `onDblClick`
 
 The `onClick` event handler is triggered when the mouse is pressed when over an
 HTML element. `onClick` is intended to be a mouse dependent event handler.
@@ -208,8 +270,7 @@ The `onDblClick` event handler is associated with the double click of a mouse on
 a selected HTML element. There is no device independent or keyboard equivalent
 to `onDblClick`, so it must be avoided.
 
-`onChange` and `onSelect`
--------------------------
+### `onChange` and `onSelect`
 
 The `onChange` event handler is triggered when a form element is selected and
 changed, for example, when a radio button is initially selected, when the text
@@ -230,8 +291,7 @@ mouse or press Enter if using the keyboard. However, these types of JavaScript
 providing a submit button separate from the list of choices that activates the
 currently selected item.
 
-Using Device Independent Event Handlers
----------------------------------------
+### Using Device Independent Event Handlers
 
 Several event handlers are device independent, including `onFocus`, `onBlur`,
 `onSelect`, `onChange`, and `onClick` (when `onClick` is used with link or form
@@ -244,11 +304,9 @@ event handlers can be used together to allow both mouse and keyboard activation
 of JavaScript, but this requires testing across different browsers and assistive
 technologies to ensure that accessibility is not limited in any way.
 
-Other Issues
-==========================================
+## Other Issues
 
-Dynamic Content and Accessibility
----------------------------------
+### Dynamic Content and Accessibility
 
 CSS and JavaScript are sometimes used to display, hide, or move information
 based upon input from the user or pre-programmed commands. This is sometimes
@@ -264,8 +322,7 @@ evaluated to determine its impact on accessibility:
     technologies cannot adequately access dynamically triggered content or
     functionality, then it is not fully accessible.
 
-JavaScript Generated Content
-----------------------------
+### JavaScript Generated Content
 
 Content generated by JavaScript, such as through `document.write` or other
 functions is generally accessible to assistive technologies. In some cases,
@@ -291,8 +348,7 @@ such dynamic elements - a modal dialog, for example, may need to be programmed
 to maintain keyboard focus (rather than allowing focus into other parts of the
 page that are not available).
 
-Pop-up Windows
---------------
+### Pop-up Windows
 
 Pop-up windows provide a unique accessibility concern. First of all, most
 usability experts would argue against the use of pop-up windows except in
@@ -321,8 +377,7 @@ decision to use them. If they are used, thorough user testing of your
 implementation is vital to ensure accessibility. It is generally best to alert
 the user to the fact that a pop-up window will be opened.
 
-Redirecting and Refreshing Browser Windows
-------------------------------------------
+### Redirecting and Refreshing Browser Windows
 
 When the page the browser is viewing suddenly changes or refreshes, the person
 viewing that page may become disoriented or confused, especially if that person
@@ -334,8 +389,7 @@ or refresh the browser window without first alerting the user that the change
 will occur and giving him/her the ability to disable or postpone the change, or
 even better, give the user full control over the page change or redirect.
 
-Using Pure CSS as a JavaScript Alternative
-------------------------------------------
+### Using Pure CSS as a JavaScript Alternative
 
 As mentioned previously, Cascading Style Sheet (CSS) parameters are often
 modified using JavaScript to create dynamically changing content. However, much
@@ -352,11 +406,9 @@ or functionality, at least not without ensuring the content or functionality is
 fully accessible. Using CSS alone to produce dynamic content should only
 employed with much testing in a variety of browsers and screen readers.
 
-JavaScript Alternatives
-=====================================================
+## JavaScript Alternatives
 
-Introduction
-------------
+### Introduction
 
 Whenever JavaScript cannot be made directly accessible, an accessible
 alternative must be provided. Also, some user agents, such as web-enabled cell
@@ -365,8 +417,7 @@ There are several ways you can provide accessible alternatives when the
 scripting cannot be made accessible or when the end user does not have
 JavaScript enabled.
 
-Server-side Processing
-----------------------
+### Server-side Processing
 
 In many cases, the functionality provided by JavaScript can or should be
 duplicated by server-side scripting. For example, JavaScript is often used to
@@ -379,8 +430,7 @@ dynamic information to a web page, such as the current date and/or time. Again,
 using a server script or include negates the need for additional accessibility
 implementation.
 
-Progressive Enhancement
------------------------
+### Progressive Enhancement
 
 Progressive enhancement is the technique of using scripting to enhance the
 functionality or behavior of content and functionality that is already
@@ -393,8 +443,7 @@ scripted interfaces - first start with accessible markup and core HTML (and
 perhaps server-side) functionality, then add accessible scripting to make it
 more efficient, friendly, and accessible.
 
-`<noscript>`
-------------
+### `<noscript>`
 
 Making JavaScript natively accessible is very important. However, in some cases,
 the end user may not have JavaScript enabled or may be using technologies that
@@ -408,14 +457,15 @@ within your page to display content in browsers that do not support or have
 disabled JavaScript. However, if JavaScript IS enabled the `<noscript>` element
 is ignored.
 
-Important
-
+<div class="important" markdown="1">
+<div class="title">Importante</div>
 Providing an accessible alternative within the `<noscript>` element for an
 inaccessible script will not make the page accessible. The `<noscript>` content
 will only display if JavaScript is disabled. Most screen reader users have
 JavaScript enabled, and will thus encounter your inaccessible script and not the
 `<noscript>` content. **In other words, `<noscript>` is an alternative to
 scripting, NOT an alternative for inaccessibility.**
+</div>
 
 Optimally, the `<noscript>` element would contain equivalent or alternative
 content or functionality to the scripted content or functionality. You may, for
