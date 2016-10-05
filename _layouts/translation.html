@@ -84,6 +84,17 @@ layout: default
   </header>
 
   <div class="post-content" itemprop="articleBody">
+    {% if page.isDraft %}
+    <div class="alert-wd">
+      <h2 class="alert-wd-tt">Versão rascunho de trabalho de tradução</h2>
+      Documento em processo de tradução. Não é seguro usar como referência!
+      Aguarde lançamento da versão <strong>candidata a lançamento</strong>
+      ou a versão <strong>estável</strong>.
+      {% if page.discussion %}
+      Veja a <a href="{{ page.discussion }}">discussão desta tradução no Github</a>.
+      {% endif %}
+    </div>
+    {% endif %}
     {% if page.isReleaseCandidate %}
     <div class="alert-rc">
       <h2 class="alert-rc-tt">Versão candidata a lançamento da tradução final</h2>

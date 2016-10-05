@@ -90,13 +90,16 @@ kbd {
 .dl-traducao > dd li {
   margin-left: 1em;
 }
-.alert-rc {
+.alert-rc, .alert-wd {
   background-color: #fafaae;
   border-radius: 10px;
   padding: 10px;
   margin: 1em auto;
   border: 2px black dashed;
 }
-.alert-rc > .alert-rc-tt {
+.alert-wd {
+  border: 5px red dashed;
+}
+.alert-rc > .alert-rc-tt, .alert-wd > .alert-wd-tt {
   font-size: 2em;
 }
