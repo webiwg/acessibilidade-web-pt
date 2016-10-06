@@ -109,8 +109,21 @@ layout: default
     {{ content }}
   </div>
   <footer>
+    <hr style="margin: 1em auto ">
     {% if page.license %}<p class="post-meta"> Licença: <strong>{{ page.license }}</strong></p>{% endif %}
     {% if page.license-custom %}<p class="post-meta"> Licença: <strong>{{ page.license-custom }}</strong></p>{% endif %}
     {% if page.copyright %}<p class="post-meta"><strong>{{ page.copyright }}</strong></p>{% endif %}
+    {% if page.license == null and page.license-custom == null %}
+    <!--
+    <p>
+      <strong>Licença de uso</strong>: Esta tradução usa licença de uso genérica
+    </p>
+    -->
+    {% endif %}
+    <p id="contribua">
+      Tem sugestões de melhoria, encontrou erros, ou mesmo esta tradução está
+      desatualizada em relação a original?
+      <a href="{{ page.discussion }}">Discuta melhorias deste texto</a>.
+    </p>
   </footer>
 </article>
