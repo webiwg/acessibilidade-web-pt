@@ -16,7 +16,10 @@ translators: [{
     name: "Emerson Rocha Luiz",
     link: "http://twitter.com/fititnt"
 }]
-reviewers: []
+reviewers: [{
+    name: "Daniel Oliveira",
+    link: "https://twitter.com/ddtaoli"
+}]
 discussion: https://github.com/webiwg/acessibilidade-web-pt/issues/16
 original: {
     title: "CSS in Action: Invisible Content Just for Screen Reader Users", # Titulo original, no idioma origial
