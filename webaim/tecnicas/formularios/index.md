@@ -26,7 +26,7 @@ original: {
     dateOfTranslation: "2016-09-25" # Data em que a tradução foi finalizada
 }
 isDraft: false
-isReleaseCandidate: true
+isReleaseCandidate: false
 ---
 
 <!-- Geração automática de índice, inicio -->
@@ -86,8 +86,9 @@ isReleaseCandidate: true
     width: 85%;
     border-radius: 4px;
 }
-.programlisting  code {
+.programlisting code {
   background-color: transparent;
+  border: none;
 }
 h3 code {
   font-size: 26px;
@@ -155,10 +156,10 @@ Sempre teste a acessibilidade através do teclado para os formulários do seu si
 ### Associe etiquetas de formulários com campos de entrada
 
 Etiquetas de texto geralmente devem descrever a função de cada campo de formulário.
-Posicione a etiqueta junto ao seu respectivo campo de formulário (ou seja, caixa de texto, caixa de seleção, "radio button", menu, etc.).
+Posicione a etiqueta junto ao seu respectivo campo de formulário (ou seja, caixa de texto, caixa de seleção, <em lang="en">radio button</em>, menu, etc.).
 
 As etiquetas são normalmente posicionadas acima ou à esquerda do campo de formulário, no entanto,
-as etiquetas de caixas de seleção e "radio buttons" estão geralmente à direita do campo de formulário.
+as etiquetas de caixas de seleção e <em lang="en">radio buttons</em> estão geralmente à direita do campo de formulário.
 Usuários com visão devem ser capazes de visualmente associar uma etiqueta de texto ao seu campo correspondente.
 No entanto, os usuários com deficiência visual não podem fazer essa associação visual.
 As etiquetas podem, contudo, ser associadas programaticamente com campos de formulário utilizando marcação HTML.
@@ -174,8 +175,8 @@ Qualquer conteúdo de texto que não seja uma etiqueta e estiver entre os campos
 Tenha certeza de incluir sugestões ou instruções importantes em etiquetas associadas ou no início do formulário.
 </div>
 
-Algumas vezes agrupamentos de campos de formulário, normalmente grupos de caixas de seleção e "radio buttons",
-necessitam de uma descrição de nível superior (como "Método de envio" para um grupo com oções de envio de "radio buttons").
+Algumas vezes agrupamentos de campos de formulário, normalmente grupos de caixas de seleção e <em lang="en">radio buttons</em>,
+necessitam de uma descrição de nível superior (como "Método de envio" para um grupo com oções de envio de <em lang="en">radio buttons</em>).
 Este texto descritivo pode ser associado com o grupo de campos de formulário usando `<fieldset>` e `<legend>`.
 O `<fieldset>` identifica todo o agrupamento e `<legend>` identifica o texto descritivo do agrupamento.
 Usando `<fieldset>` e `<legend>` garante-se que a descrição do texto seja lida para os usuários de leitores de tela quando o agrupamento é navegado.
@@ -211,7 +212,7 @@ Além disso, leitores de tela não suportam associação de múltiplas etiquetas
 <div class="note">
   <div class="title">Nota</div>
   <p>Outra vantagem de usar etiquetas é que o usuário pode clicar na própria etiqueta para definir o foco para o elemento de formulário.
-  Isso é útil para algumas pessoas com deficiências motoras, particularmente quando selecionando pequenas caixas de seleção e "radio buttons".
+  Isso é útil para algumas pessoas com deficiências motoras, particularmente quando selecionando pequenas caixas de seleção e <em lang="en">radio buttons</em>.
   Você pode tentar isso clicando sobre a palavra "Nome:" acima para ver o foco definido para a caixa de texto.
   Clicar em etiquetas adjacentes proporciona uma maneira fácil de verificar se a etiquetagem de formulário é adequada.
   </p>
@@ -263,13 +264,13 @@ Além disso, leitores de tela não suportam associação de múltiplas etiquetas
   &lt;/fieldset&gt;</code>
 </div>
 
-O <code>&lt;fieldset&gt;</code> rodeia todo o agrupamento de "radio buttons".
+O <code>&lt;fieldset&gt;</code> rodeia todo o agrupamento de <em lang="en">radio buttons</em>.
 O <code>&lt;legend&gt;</code> provê uma descrição para o agrupamento
 Em leitores de tela, o texto da legenda é geralmente lido para cada campo no conjunto de campos,
 então a legenda deve ser curta e descritiva.
 
 
-### Radio Buttons
+### <em lang="en">Radio buttons</em>
 
 <fieldset>
   <legend>Escolha um método de envio:</legend>
@@ -297,7 +298,7 @@ então a legenda deve ser curta e descritiva.
 <div class="note">
   <div class="title">Note</div>
   <p>Conjunto de campos `fieldset` e legenda só devem ser utilizados para associar grupos de campos quando uma descrição de nível superior (ou seja a legenda) é necessária.
-  Quadro de seleção (do inglês <em lang="en">checkbox</em> individuais ou "radio buttons" básicos (como masculino / feminino para sexo) que fazem sentido a partir de suas etiquetas sozinhas não exigem conjunto de campos `fieldset` e legenda. Conjunto de campos `fieldset` aninhados devem ser evitados.</p>
+  Quadro de seleção (do inglês <em lang="en">checkbox</em> individuais ou <em lang="en">radio buttons</em> básicos (como masculino / feminino para sexo) que fazem sentido a partir de suas etiquetas sozinhas não exigem conjunto de campos `fieldset` e legenda. Conjunto de campos `fieldset` aninhados devem ser evitados.</p>
 </div>
 
 ### Menus de seleção
@@ -596,7 +597,7 @@ Isso etiquetará a caixa de texto com o texto "Nome" no cabeçalho da tabela.
 Este atributo `aria-labelledby` pode ser adicionado a todos os três campos "Nome",
 assim adequadamente etiquetando todos eles com apenas um item de texto.
 
-Com base neste exemplo, o quadro que se segue tem etiquetas visuais ao longo do topo e do lado - várias 
+Com base neste exemplo, o quadro que se segue tem etiquetas visuais ao longo do topo e do lado - várias
 etiquetas visuais para cada campo de formulário.
 
 
@@ -638,8 +639,8 @@ A ordem de leitura das várias etiqeutas baseia-se na ordem em que estes valores
 
 <div class="note">
   <div class="title">Nota</div>
-  <p>Como regra geral, se uma única etiqueta está presente para um único campo de formulário, 
-  o elemento <code>&lt;label&gt;</code> deve ser usado para fazer a referência. 
+  <p>Como regra geral, se uma única etiqueta está presente para um único campo de formulário,
+  o elemento <code>&lt;label&gt;</code> deve ser usado para fazer a referência.
   Essas etiquetas fornecem funcionalidade adicional - clicando sobre elas define-se o foco ou ativa o controle.
   Isto não ocorre com o uso de <code>aria-labelledby</code>.</p>
 
