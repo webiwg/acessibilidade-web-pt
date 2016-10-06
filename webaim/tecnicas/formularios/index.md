@@ -1,7 +1,7 @@
 ---
 layout: translation
 date: 2014-12-19 # Data de ultima atualização do original
-title: "Como criar formulários acessíveis" # Titulo traduzido
+title: "Criando Formulários Acessíveis" # Titulo traduzido
 description: "Formulários são usados para muitos tipos de interações na web. Quando falamos sobre a acessibilidade de formulários, estamos normalmente referindo-se a sua acessibilidade às pessoas que utilizam leitores de tela ou navegação por teclados."
 
 copyright: 'Copyright WebAIM' # Quem tem direitos de cópia
@@ -15,7 +15,10 @@ translators: [{
     name: "Emerson Rocha Luiz",
     link: "http://twitter.com/fititnt"
 }]
-reviewers: []
+reviewers: [{
+    name: "Daniel Oliveira",
+    link: "https://twitter.com/ddtaoli"
+}]
 discussion: https://github.com/webiwg/acessibilidade-web-pt/issues/12
 original: {
     title: "Creating Accessible Forms", # Titulo original, no idioma origial
@@ -32,7 +35,7 @@ isReleaseCandidate: true
 ## Índice de tópicos
 {:.no_toc}
 
-1. Indice de Tópicos. Esta linha será substituída
+1. Índice de Tópicos. Esta linha será substituída
 {:toc}
 
 </nav>
@@ -102,75 +105,87 @@ h4 code {
   Pagina 1 http://webaim.org/techniques/forms/
 -->
 
+<!--
+  N.T.:
+  Não há tradução em português para "radio button", porém em espanhol foi
+  traduzido como "botón de opción", que para o português ficaria "botão de opção".
+  Sugiro no entanto manter o nome em inglês, já que o público alvo terá maior
+  facilidade em compreender a nomenclatura original do que uma possível tradução.
+  (@ddtaoli, 2016-09-30 23:05)
+
+  Sugiro traduzir "labels" como "etiquetas" ao invés de "rótulos".
+  (@ddtaoli, 2016-10-01 01:02)
+-->
+
 ## Visão geral de acessibilidade em formulários
 
 ### Introdução
 
 Formulários são usados para muitos tipos de interações na web.
 Quando falamos sobre a acessibilidade de formulários,
-estamos normalmente referindo-se a sua acessibilidade às pessoas que utilizam leitores de tela ou navegação por teclados.
-Pessoas com outros tipos de deficiência são geralmente menos afetada por formulários com defeito.
-Deve notar-se, no entanto, que todas as pessoas se beneficiam de um formulário bem organizado,
-com grande usabilidade, especialmente aquelas com deficiências cognitivas.
+estamos normalmente nos referindo a sua acessibilidade às pessoas que utilizam leitores de tela ou navegação por teclados.
+Pessoas com outros tipos de deficiência são geralmente menos afetadas por formulários com defeito.
+Deve-se notar, no entanto, que todos se beneficiam de um formulário bem organizado,
+com grande usabilidade, especialmente aquelas pessoas com deficiências cognitivas.
 
-### Certifique-se de que formulários sejam lógicos e fácil de usar
+### Certifique-se de que os formulários sejam lógicos e fáceis de usar
 
 Os formulários devem ser claros e intuitivos. Eles devem ser organizados de uma maneira lógica.
 Instruções, sugestões, campos de formulário obrigatórios, requisitos de formatação de campo,
 etc, devem ser claramente identificados para os usuários.
-De instruções claras sobre as informações desejadas.
-Se quaisquer elementos de formulário são obrigatórios, não se esqueça de indicar-lo.
-Certifique-se de que a ordem em que os elementos de formulário são acessados é lógica e fácil.
-Isto às vezes pode ser problemático se as tabelas são usadas para controlar o layout de itens do formulário.
+Dê instruções claras sobre as informações desejadas.
+Se quaisquer elementos de formulário são obrigatórios, não se esqueça de indica-los.
+Certifique-se de que a ordem em que os elementos de formulário são acessados seja lógica e fácil.
+Isto as vezes pode ser problemático se tabelas são usadas para controlar o layout de itens do formulário.
 
 Para verificar a ordem linear de itens na página,
 use [a ferramenta de acessibilidade WAVE](http://wave.webaim.org/).
 
-### Certifique-se de que formulários são acessíveis por teclado
+### Certifique-se de que os formulários são acessíveis por teclado
 
-Muitos usuários só podem usar um teclado para navegar e usar a web.
-Você deve garantir que os formulários em seu web site podem ser concluídos usando apenas o teclado.
-Existem algumas coisas que podem fazer formulários totalmente inutilizáveis com o teclado,
-o mais comum dos quais é JavaScript.
-Tenha cuidado no seu uso do JavaScript para manipular os dados do formulário,
+Muitos usuários só podem navegar e usar a web através do teclado.
+Você deve garantir que os formulários em seu web site possam ser concluídos usando apenas o teclado.
+Existem algumas coisas que podem tornar os formulários totalmente inutilizáveis com o teclado,
+das quais a mais comum é o JavaScript.
+Tenha cuidado no uso do JavaScript para manipular os dados de formulário,
 definir o foco, alterar elementos de formulário ou submeter formulários.
-Cada um destes pode tornar o formulário difícil ou impossível para completar ou entender usando apenas teclado.
-Sempre teste os formulários do site para acessibilidade através do teclado.
+Cada um destes itens pode tornar o formulário difícil ou impossível, para completar ou entender, usando apenas o teclado.
+Sempre teste a acessibilidade através do teclado para os formulários do seu site.
 
-### Associe rótulos de formulários com campos de entrada
+### Associe etiquetas de formulários com campos de entrada
 
-Rótulos de texto geralmente deve descrever a função de cada controle de formulário.
-Posicione o rótulo junto ao seu respectivo controle de formulário (ou seja, caixa de texto, caixa de seleção, botão de opção, menu, etc.).
+Etiquetas de texto geralmente devem descrever a função de cada campo de formulário.
+Posicione a etiqueta junto ao seu respectivo campo de formulário (ou seja, caixa de texto, caixa de seleção, "radio button", menu, etc.).
 
-Os rótulos são normalmente posicionado acima ou para a esquerda do campo de controle, no entanto,
-os rótulos de caixas de seleção e _radio buttons_ são geralmente à direita do controle.
-Usuários com visão devem ser capazes de visualmente associar um rótulo de texto com seu controle de formulário correspondente.
-Os usuários com deficiência visual, no entanto, não pode fazer essa associação visual.
-Os rótulos podem, no entanto, ser associado programaticamente com controles de formulário utilizando marcação HTML.
-O elemento `<label>` é utilizado para associar um rótulo de texto a um controle de formulário.
-Isso permite que um leitor de tela ler o texto do rótulo associado quando o usuário navega para o controle de formulário.
+As etiquetas são normalmente posicionadas acima ou à esquerda do campo de formulário, no entanto,
+as etiquetas de caixas de seleção e "radio buttons" estão geralmente à direita do campo de formulário.
+Usuários com visão devem ser capazes de visualmente associar uma etiqueta de texto ao seu campo correspondente.
+No entanto, os usuários com deficiência visual não podem fazer essa associação visual.
+As etiquetas podem, contudo, ser associadas programaticamente com campos de formulário utilizando marcação HTML.
+O elemento `<label>` é utilizado para associar uma etiqueta de texto a um campo de formulário.
+Isso permite que um leitor de tela leia o texto da etiqueta associada quando o usuário navegar pelo campo de formulário.
 
 <div class="important">
 
 <div class="title">Importante</div>
-Os usuários de leitores de tela geralmente navegam através de um formulário usando a tecla <kbd> Tab</kbd> para saltar de controle de formulário para formulário de controle.
-Rótulos de formulários associados são lidos para cada controle de formulário quando o usuário navega para eles.
-Qualquer conteúdo de texto que não for rótulo e estiver entre os controles de formulário são normalmente são pulado.
+Os usuários de leitores de tela geralmente navegam através de um formulário usando a tecla <kbd> Tab</kbd> para saltar de campo de formulário para outro campo.
+Etiquetas de texto associadas são lidas em cada campo de formulário quando o usuário navega por eles.
+Qualquer conteúdo de texto que não seja uma etiqueta e estiver entre os campos de formulário são normalmente pulados.
 Tenha certeza de incluir sugestões ou instruções importantes em etiquetas associadas ou no início do formulário.
 </div>
 
-Agrupamentos de controles de formulário, normalmente grupos de caixas de seleção e _radio buttons_,
-algumas vezes necessitam uma descrição de nível superior (como "Método de envio" para um grupo com oções de envio de _radio buttons_).
-Este texto descritivo pode ser associado com o grupo de controlos de formulário usando `<fieldset>` e `<legend>`.
-O `<fieldset>` identifica todo o agrupamento e `<legend>` identifica o texto descritivo de agrupamento.
-Usando `<fieldset>` e `<legend>` garante que a descrição do texto é lido para os usuários de leitores de tela quando o agrupamento é navegado.
+Algumas vezes agrupamentos de campos de formulário, normalmente grupos de caixas de seleção e "radio buttons",
+necessitam de uma descrição de nível superior (como "Método de envio" para um grupo com oções de envio de "radio buttons").
+Este texto descritivo pode ser associado com o grupo de campos de formulário usando `<fieldset>` e `<legend>`.
+O `<fieldset>` identifica todo o agrupamento e `<legend>` identifica o texto descritivo do agrupamento.
+Usando `<fieldset>` e `<legend>` garante-se que a descrição do texto seja lida para os usuários de leitores de tela quando o agrupamento é navegado.
 
 <!--
   Página 2: http://webaim.org/techniques/forms/controls
             Last updated: Aug 9, 2013
 -->
 
-## Controles de de formulário acessíveis
+## Controles de formulários acessíveis
 
 <form method="post" action=""  markdown="1">
 
@@ -186,19 +201,19 @@ Aqui está a marcação HTML:
   &lt;input <strong>id="nome"</strong> type="text" name="camponome"&gt;
   </code>
 </div>
-Coloque o mesmo valor para  `for` e `id` para assoriar o rótulo com o respectivo controle de formulário.
-Como `id` devem ser únicos para cada página,
-apenas um rótulo pode ser associado para cada elemento de formulário
-Isto significa que você não pode ter um rótulo associado a multiplos elementos.
-Além disso, leitores de tela não suportam associação de multiplos rótilos ao mesmo elemento de formulário.
+Coloque o mesmo valor para `for` e `id` para associar a etiqueta com o respectivo campo de formulário.
+Como `id` deve ser único para cada página,
+apenas uma etiqueta pode ser associado para cada elemento de formulário.
+Isto significa que você não pode ter uma etiqueta associada a múltiplos elementos.
+Além disso, leitores de tela não suportam associação de múltiplas etiquetas ao mesmo elemento de formulário.
 
 
 <div class="note">
   <div class="title">Nota</div>
-  <p>Outra vantagem de usar rótulos é que o usuário pode clicar no próprio rótulo para definir o foco para o elemento de formulário.
-  Isso é útil para algumas pessoas com deficiências motoras, particularmente quando selecionando pequenas caixas de seleção e _radio buttons_.
+  <p>Outra vantagem de usar etiquetas é que o usuário pode clicar na própria etiqueta para definir o foco para o elemento de formulário.
+  Isso é útil para algumas pessoas com deficiências motoras, particularmente quando selecionando pequenas caixas de seleção e "radio buttons".
   Você pode tentar isso clicando sobre a palavra "Nome:" acima para ver o foco definido para a caixa de texto.
-  Ao clicar em rótulos adjacentes proporciona uma maneira fácil de verificar se a rotulagem de formulário é adequada.
+  Clicar em etiquetas adjacentes proporciona uma maneira fácil de verificar se a etiquetagem de formulário é adequada.
   </p>
 </div>
 
@@ -248,13 +263,13 @@ Além disso, leitores de tela não suportam associação de multiplos rótilos a
   &lt;/fieldset&gt;</code>
 </div>
 
-O <code>&lt;fieldset&gt;</code> rodeia todo o agrupamento de Botões do rádio.
+O <code>&lt;fieldset&gt;</code> rodeia todo o agrupamento de "radio buttons".
 O <code>&lt;legend&gt;</code> provê uma descrição para o agrupamento
-Em leitores de tela, o texto da legenda é geralmente lido para cada controle no conjunto de campos,
+Em leitores de tela, o texto da legenda é geralmente lido para cada campo no conjunto de campos,
 então a legenda deve ser curta e descritiva.
 
 
-### Botões do rádio (do inglês <em lang="en">Radio buttons</em>)
+### Radio Buttons
 
 <fieldset>
   <legend>Escolha um método de envio:</legend>
@@ -281,8 +296,8 @@ então a legenda deve ser curta e descritiva.
 </div>
 <div class="note">
   <div class="title">Note</div>
-  <p>Conjunto de campos `fieldset` e legenda só deve ser utilizado para associar grupos de controles quando uma descrição de nível superior (ou seja a legenda) é necessária.
-  Quadro de seleção (do inglês <em lang="en">checkbox</em> individuais ou botões de rádio básicos (como masculino / feminino para sexo) que fazem sentido a partir de seus rótulos sozinho não exigem conjunto de campos `fieldset` e legenda. Conjunto de campos `fieldset` aninhados devem ser evitados.</p>
+  <p>Conjunto de campos `fieldset` e legenda só devem ser utilizados para associar grupos de campos quando uma descrição de nível superior (ou seja a legenda) é necessária.
+  Quadro de seleção (do inglês <em lang="en">checkbox</em> individuais ou "radio buttons" básicos (como masculino / feminino para sexo) que fazem sentido a partir de suas etiquetas sozinhas não exigem conjunto de campos `fieldset` e legenda. Conjunto de campos `fieldset` aninhados devem ser evitados.</p>
 </div>
 
 ### Menus de seleção
@@ -290,129 +305,128 @@ então a legenda deve ser curta e descritiva.
 <p>
   <label for="cidadefavorita">Qual sua cidade favorita?</label>
   <select id="cidadefavorita" name="select">
-    <option value="1">Amsterdam</option>
+    <option value="1">Amsterdã</option>
     <option value="2">Buenos Aires</option>
-    <option value="3">Delhi</option>
+    <option value="3">Nova Déli</option>
     <option value="4">Hong Kong</option>
-    <option value="5">Londes</option>
+    <option value="5">Londres</option>
     <option value="6">Los Angeles</option>
     <option value="7">Moscou</option>
     <option value="8">Mumbai</option>
-    <option value="9">New York</option>
-    <option value="10">Sao Paulo</option>
-    <option value="11">Tokyo</option>
+    <option value="9">Nova York</option>
+    <option value="10">São Paulo</option>
+    <option value="11">Tóquio</option>
   </select>
 </p>
 
 Aqui está a marcação HTML:
 
-<div class="programlisting"><code>&lt;label for="cidadefavorita"&gt;Qual sua cidade favorita?&lt;/label&gt;<br>
+<div class="programlisting"><code>&lt;label for="cidadefavorita"&gt;Qual a sua cidade favorita?&lt;/label&gt;<br>
   &lt;select id="cidadefavorita" name="select"&gt;<br>
-  &lt;option value="1"&gt;Amsterdam&lt;/option&gt;<br>
+  &lt;option value="1"&gt;Amsterdã&lt;/option&gt;<br>
   &lt;option value="2"&gt;Buenos Aires&lt;/option&gt;<br>
-  &lt;option value="3"&gt;Delhi&lt;/option&gt;<br>
+  &lt;option value="3"&gt;Nova Déli&lt;/option&gt;<br>
   &lt;option value="4"&gt;Hong Kong&lt;/option&gt;<br>
-  &lt;option value="5"&gt;Londes&lt;/option&gt;<br>
+  &lt;option value="5"&gt;Londres&lt;/option&gt;<br>
   &lt;option value="6"&gt;Los Angeles&lt;/option&gt;<br>
   &lt;option value="7"&gt;Moscou&lt;/option&gt;<br>
   &lt;option value="8"&gt;Mumbai&lt;/option&gt;<br>
-  &lt;option value="9"&gt;New York&lt;/option&gt;<br>
-  &lt;option value="10"&gt;Sao Paulo&lt;/option&gt;<br>
-  &lt;option value="11"&gt;Tokyo&lt;/option&gt;<br>
+  &lt;option value="9"&gt;Nova York&lt;/option&gt;<br>
+  &lt;option value="10"&gt;São Paulo&lt;/option&gt;<br>
+  &lt;option value="11"&gt;Tóquio&lt;/option&gt;<br>
   &lt;/select&gt;</code>
 </div>
 
 Para melhorar a acessibilidade desta lista ainda mais, poderíamos acrescentar `optgroup`, para agrupar as opções.
 
 <p>
-  <label for="cidadefavorita2">Qual sua cidade favorita?</label>
+  <label for="cidadefavorita2">Qual a sua cidade favorita?</label>
   <select id="cidadefavorita2" name="cidadefavorita2">
     <optgroup label="Asia">
-      <option value="3">Delhi</option>
+      <option value="3">Nova Déli</option>
       <option value="4">Hong Kong</option>
       <option value="8">Mumbai</option>
-      <option value="11">Tokyo</option>
+      <option value="11">Tóquio</option>
     </optgroup>
     <optgroup label="Europa">
-      <option value="1">Amsterdam</option>
+      <option value="1">Amsterdã</option>
       <option value="5">Londres</option>
-      <option value="7">Moscow</option>
+      <option value="7">Moscou</option>
     </optgroup>
     <optgroup label="América do Norte">
       <option value="6">Los Angeles</option>
-      <option value="9">New York</option>
+      <option value="9">Nova York</option>
     </optgroup>
     <optgroup label="América do Sul">
       <option value="2">Buenos Aires</option>
-      <option value="10">Sao Paulo</option>
+      <option value="10">São Paulo</option>
     </optgroup>
   </select>
 </p>
 <p>Aqui está a marcação HTML:</p>
-<div class="programlisting"><code>&lt;label for="cidadefavorita2"&gt;Qual sua cidade favorita?&lt;/label&gt;<br>
+<div class="programlisting"><code>&lt;label for="cidadefavorita2"&gt;Qual a sua cidade favorita?&lt;/label&gt;<br>
   &lt;select id="cidadefavorita2" name="cidadefavorita2"&gt;<br>
   &lt;optgroup label="Asia"&gt;<br>
-  &nbsp;&nbsp;&lt;option value="3"&gt;Delhi&lt;/option&gt;<br>
+  &nbsp;&nbsp;&lt;option value="3"&gt;Nova Déli&lt;/option&gt;<br>
   &nbsp;&nbsp;&lt;option value="4"&gt;Hong Kong&lt;/option&gt;<br>
   &nbsp;&nbsp;&lt;option value="8"&gt;Mumbai&lt;/option&gt;<br>
-  &nbsp;&nbsp;&lt;option value="11"&gt;Tokyo&lt;/option&gt;<br>
+  &nbsp;&nbsp;&lt;option value="11"&gt;Tóquio&lt;/option&gt;<br>
   &lt;/optgroup&gt;<br>
   &lt;optgroup label="Europa"&gt;<br>
-  &nbsp;&nbsp;&lt;option value="1"&gt;Amsterdam&lt;/option&gt;<br>
+  &nbsp;&nbsp;&lt;option value="1"&gt;Amsterdã&lt;/option&gt;<br>
   &nbsp;&nbsp;&lt;option value="5"&gt;Londres&lt;/option&gt;<br>
-  &nbsp;&nbsp;&lt;option value="7"&gt;Moscow&lt;/option&gt;<br>
+  &nbsp;&nbsp;&lt;option value="7"&gt;Moscou&lt;/option&gt;<br>
   &lt;/optgroup&gt;<br>
   &lt;optgroup label="América do Norte"&gt;<br>
   &nbsp;&nbsp;&lt;option value="6"&gt;Los Angeles&lt;/option&gt;<br>
-  &nbsp;&nbsp;&lt;option value="9"&gt;New York&lt;/option&gt;<br>
+  &nbsp;&nbsp;&lt;option value="9"&gt;Nova York&lt;/option&gt;<br>
   &lt;/optgroup&gt;<br>
   &lt;optgroup label="América do Sul"&gt;<br>
   &nbsp;&nbsp;&lt;option value="2"&gt;Buenos Aires&lt;/option&gt;<br>
-  &nbsp;&nbsp;&lt;option value="10"&gt;Sao Paulo&lt;/option&gt;<br>
+  &nbsp;&nbsp;&lt;option value="10"&gt;São Paulo&lt;/option&gt;<br>
   &lt;/optgroup&gt;<br>
   &lt;/select&gt;</code>
 </div>
 
 Note que o `optgroup` não é totalmente suportado por alguns agentes de usuário e leitores de tela,
-
 por isso não deve ser utilizado para apresentar informações de categorização vitais.
 Nos casos onde `optgroup` não é suportado, é simplesmente ignorado.
-Não confunda o atributo `label` do elemento `optgroup` com o elemento de rótulo `label`.
+Não confunda o atributo `label` do elemento `optgroup` com o elemento de etiqueta `label`.
 Eles são coisas bem diferentes.
 
 Menus de seleção múltipla permitem ao usuário escolher mais de uma opção na lista ao mesmo tempo.
 
 <p>
-  <label for="cidadesfavoritasmultiplo">Quais suas três cidades favoritas?</label>
+  <label for="cidadesfavoritasmultiplo">Quais as suas três cidades favoritas?</label>
   <select id="cidadesfavoritasmultiplo" name="select" multiple="multiple">
-    <option value="1">Amsterdam</option>
+    <option value="1">Amsterdã</option>
     <option value="2">Buenos Aires</option>
-    <option value="3">Delhi</option>
+    <option value="3">Nova Déli</option>
     <option value="4">Hong Kong</option>
     <option value="5">Londres</option>
     <option value="6">Los Angeles</option>
-    <option value="7">Moscow</option>
+    <option value="7">Moscou</option>
     <option value="8">Mumbai</option>
-    <option value="9">New York</option>
-    <option value="10">Sao Paulo</option>
-    <option value="11">Tokyo</option>
+    <option value="9">Nova York</option>
+    <option value="10">São Paulo</option>
+    <option value="11">Tóquio</option>
   </select>
 </p>
 <div class="note">
   <div class="title">Nota</div>
-  <strong>É recomendável que menus de seleção múltipla devem ser evitados</strong>
-  Nem todos os navegadores provêm navegação intuitíva para navegação de menus de seleção múltipla
+  <strong>É recomendável que menus de seleção múltipla sejam evitados</strong>
+  Nem todos os navegadores provêm navegação intuitiva para navegação de menus de seleção múltipla.
   Muitos usuários não sabem usar <kbd>CTRL</kbd>/<kbd>Command</kbd> ou <kbd>Shift</kbd> + <kbd>click</kbd> para selecionar múltiplos itens.
 
-  Geralmente um conjunto de quadro de seleção (do inglês <em lang="en">Checkboxes</em>) podem prover funcionamento similar,
-  porem com funcionalidade mais acessível.
+  Geralmente um conjunto de quadro de seleção (do inglês <em lang="en">Checkboxes</em>) podea prover funcionamento similar,
+  porém com funcionalidade mais acessível.
 </div>
 
 ### Botões
 
 Para botões de formulário (elementos envio `submit` e de limpar dados `reset` , além de elementos botões `button`),
 não é obritatório fornecer informação adicional sobre acessibilidade.
-O atributo de valor `value` para botões de entrada `input` e o texto dentro do elemento `<button>` elementos serão lidos por leitores de tela quando o botão for acessado.
+O atributo de valor `value` para botões de entrada `input` e o texto dentro do elemento `<button>` serão lidos por leitores de tela quando o botão for acessado.
 Estes <em>jamais</em> devem ser deixados vazios.
 
 <p>
@@ -428,7 +442,7 @@ Estes <em>jamais</em> devem ser deixados vazios.
   </code>
 </div>
 
-Como botões de limpar dados pode ser acidentalmente pressionados,
+Como botões de limpar dados podem ser acidentalmente pressionados,
 são poucos os casos em que deveriam ser usados.
 
 ### Botões de imagem
@@ -447,7 +461,7 @@ Aqui está a marcação HTML:
 
 ### Menus de salto com JavaScript
 
-Porque estes tipos de menus são ativados quando o item de menu muda, estes menus pode causar problemas de acessibilidade do teclado porque você não pode percorrer a lista sem selecionar uma das opções.
+Porquê estes tipos de menus são ativados quando o item de menu muda, estes menus podem causar problemas de acessibilidade do teclado porque você não pode percorrer a lista sem selecionar uma das opções.
 
 <div class="note">
 
@@ -474,7 +488,7 @@ mas apenas quando você os seleciona usando um mouse ou ao pressionar <kbd>Enter
   <option value="http://www.microsoft.com">Microsoft</option>
 </select>
 
-Fornecer um botão de envio separado do menus de salto que ativa o item atualmente selecionado irá permitir acessibilidade teclado completa.
+Fornecer um botão de envio separado dos menus de salto que ativa o item atualmente selecionado irá permitir acessibilidade completa do teclado.
 
 </form>
 
@@ -483,14 +497,14 @@ Fornecer um botão de envio separado do menus de salto que ativa o item atualmen
             Last updated: Dec 19, 2014
 -->
 
-## Rotulagem avançada de formulários
+## Etiquetagem avançada de formulários
 
 ### Introdução
 
-Há momentos em que o elemento de rótulo `<label>` deixa a desejar -- não pode ser usado para fornecer várias etiquetas para um único controle de formulário,
-ou não se pode associar um rótulo único com multiplos controles de formulário
-Há também momentos quando não há um rótulo de texto visível para ser associado a um controle de formulário.
-A maioria destas limitações de rotulagem podem ser superados com três propriedades ARIA
+Há momentos em que o elemento de etiquetagem `<label>` deixa a desejar -- não pode ser usado para fornecer várias etiquetas para um só campo de formulário,
+ou não se pode associar apenas uma etiqueta com múltiplos campos de formulário
+Há também momentos quando não há uma etiqueta de texto visível para ser associada a um campo de formulário.
+A maioria destas limitações de etiquetagem podem ser superadas com três propriedades ARIA
 (`aria-labelledby`, `aria-describedby`, e `aria-label`)
 e um par de outras técnicas descritas nesta página.
 
@@ -503,12 +517,12 @@ e um par de outras técnicas descritas nesta página.
   @fititnt Eu estava errado. Faz sentido sim. (fititnt, 2016-09-25 09:17)
 -->
 
-Um elemento de rotulágem `<label>` indica de qual campo ele rotula referenciar o `id` do elemento:
+Um elemento de etiquetagem `<label>` indica de qual campo de formulário etiquetar referenciando o `id` do elemento:
 
 <div class="programlisting">
   <code>&lt;label for="fname"&gt;</code>
 </div>
-Ele declara "Eu sou o rótulo para este controle".
+Ele declara "Eu sou a etiqueta para este campo".
 
 Com `aria-labelledby`, o campo de formulário indica qual elemento o nomeia ao referenciar o atributo `id`:
 
@@ -516,21 +530,21 @@ Com `aria-labelledby`, o campo de formulário indica qual elemento o nomeia ao r
   <code>&lt;input aria-labelledby="fnamelabel"&gt;</code>
 </div>
 
-O controle de formulário declara, "Eu sou um controle nomeado por este rótulo".
+O campo de formulário declara, "Eu sou um campo nomeado por esta etiqueta".
 
-### Manipulação de multiplos rótulos
+### Manipulação de múltiplas etiquetas
 
 Como os elementos em uma página devem todos ter valor exclusivo do atributo `id`,
-uma `<label>` pode apenas apontar para o `id` de um único controle -
-no máximo uma relação um-para um entre controle e rótulo
-`aria-labelledby`, por outro lado, permite que um elemento seja referência de rótulo para vários controles,
-e permite que multiplos elementos sejam referência como rótulo para um controle único.
-Resumindo, `aria-labelledby` remove a limitação de 1 para 1 de `<label>`.
+uma `<label>` pode apenas apontar para o `id` de um único campo -
+no máximo uma relação um-para-um entre campo e etiqueta
+`aria-labelledby`, por outro lado, permite que um elemento seja referência de etiqueta para vários campos,
+e permite que múltiplos elementos sejam referência como etiqueta para um campo apenas.
+Resumindo, `aria-labelledby` remove a limitação de um-para-um de `<label>`.
 
-Na sequência é um exemplo simplificado de uma tabela que pode ser usado para a entrada de dados.
-Cada cabecalho de tabela funciona como rótulo visual nas colunas abaixo dela.
-Há apenas um rótulo visual para vários controles de formulário.
-O elemento `<label>` não pode ser usado para associar seu texto texto com as multiplas caixas de texto.
+Na sequência há um exemplo simplificado de uma tabela que pode ser usada para a entrada de dados.
+Cada cabeçalho de tabela funciona como etiqueta visual nas colunas abaixo dela.
+Há apenas uma etiqueta visual para vários campos de formulário.
+O elemento `<label>` não pode ser usado para associar seu texto com as múltiplas caixas de texto.
 
 <!--
   @fititnt O código original PARECE ter um erro nos atributos name repetidos na tabela.
@@ -563,7 +577,7 @@ O elemento `<label>` não pode ser usado para associar seu texto texto com as mu
   </tbody>
 </table>
 
-O HTML para o primeiro cabecalho ("Nome") é:
+O HTML para o primeiro cabeçalho ("Nome") é:
 
 <div class="programlisting">
   <code>
@@ -578,17 +592,13 @@ O HTML para o primeiro campo de texto da tabela é:
   <code>&lt;input type="text" name="nome1" <strong>aria-labelledby="rotulonome"</strong>&gt;</code>
 </div>
 
-Isso rotula a caixa de texto com o texto "Nome" no cabeçalho da tabela.
-Este atributo `aria-labelledby` pode ser adicionado a todos os três campos Nome,
+Isso etiquetará a caixa de texto com o texto "Nome" no cabeçalho da tabela.
+Este atributo `aria-labelledby` pode ser adicionado a todos os três campos "Nome",
+assim adequadamente etiquetando todos eles com apenas um item de texto.
 
+Com base neste exemplo, o quadro que se segue tem etiquetas visuais ao longo do topo e do lado - várias 
+etiquetas visuais para cada campo de formulário.
 
-This `aria-labelledby` attribute could be added to all three Name fields,
-assim adequadamente rotulando todos eles com apenas um item de texto.
-
-Com base neste exemplo, o quadro que se segue tem rótulos visuais ao longo do topo e do lado -
-
-Building on this example, the table below has visual labels along the top and side -
-vários rótulos visuais para cada controle.
 
 
 <table>
@@ -596,22 +606,22 @@ vários rótulos visuais para cada controle.
     <tr>
       <th scope="col">Nome</th>
       <th id="numeroescritorio" scope="col">Número do Escritório</th>
-      <th id="rotulotelefone" scope="col">Telefone</th>
+      <th id="etiquetatelefone" scope="col">Telefone</th>
     </tr>
     <tr>
       <th id="cyndi" scope="col">Cyndi</th>
       <td><input type="text" size="4" name="escritorio1" aria-labelledby="cyndi numeroescritorio"></td>
-      <td><input type="text" size="12" name="telefone1" aria-labelledby="cyndi rotulotelefone"></td>
+      <td><input type="text" size="12" name="telefone1" aria-labelledby="cyndi etiquetatelefone"></td>
     </tr>
     <tr>
       <th id="jared" scope="col">Jared</th>
       <td><input type="text" size="4" name="escritorio2" aria-labelledby="jared numeroescritorio"></td>
-      <td><input type="text" size="12" name="telefone2" aria-labelledby="jared rotulotelefone"></td>
+      <td><input type="text" size="12" name="telefone2" aria-labelledby="jared etiquetatelefone"></td>
     </tr>
     <tr>
       <th id="jon" scope="col">Jonathan</th>
       <td><input type="text" size="4" name="escritorio3" aria-labelledby="jon numeroescritorio"></td>
-      <td><input type="text" size="12" name="telefone3" aria-labelledby="jon rotulotelefone"></td>
+      <td><input type="text" size="12" name="telefone3" aria-labelledby="jon etiquetatelefone"></td>
     </tr>
   </tbody>
 </table>
@@ -624,23 +634,27 @@ O HTML para o primeiro campo desta tabela é:
 
 Os valores `cyndi` e `numeroescritorio` referenciam os `id`s das células de tabela  "Cyndi" e "Número do Escritório".
 Um leitor de tela irá ler "Cyndi Número do Escritório" ao navegar nesse campo.
-A ordem de leitura dos vários rótulos baseia-se na ordem em que estes valores são especificados.
+A ordem de leitura das várias etiqeutas baseia-se na ordem em que estes valores são especificados.
 
 <div class="note">
   <div class="title">Nota</div>
-  <p>Como regra geral, se uma única etiqueta está presente para um único controle, elemento <code>&lt;label&gt;</code> deve ser usado para fazer a referência. Esses rótulos fornecem funcionalidade adicional - clicando sobre eles define foco para ou ativa o controle. Isto não ocorre com o uso de <code>aria-labelledby</code>.</p>
+  <p>Como regra geral, se uma única etiqueta está presente para um único campo de formulário, 
+  o elemento <code>&lt;label&gt;</code> deve ser usado para fazer a referência. 
+  Essas etiquetas fornecem funcionalidade adicional - clicando sobre elas define-se o foco ou ativa o controle.
+  Isto não ocorre com o uso de <code>aria-labelledby</code>.</p>
+
 </div>
 <div class="important">
   <div class="title">Importante!</div>
-  <p>Se um controle tiver ao mesmo tempo <code>&lt;label&gt;</code> <strong>e</strong> <code>aria-labelledby</code>
-  a referencia definida por <code>aria-labelledby</code>  irá sobrescrever e ser lida <em>em vez de</em> do elemento <code>&lt;label&gt;</code> associado.</p>
+  <p>Se um campo de formulário tiver ao mesmo tempo <code>&lt;label&gt;</code> <strong>e</strong> <code>aria-labelledby</code>
+  a referencia definida por <code>aria-labelledby</code> irá sobrescrever e ser lida <em>em vez de</em> do elemento <code>&lt;label&gt;</code> associado.</p>
 </div>
 
 ### `aria-describedby`
 
-Há momentos em que um formulário inclui informações que não é exatamente um rótulo,
-mas é importante o suficiente para ser lido por um leitor de tela quando estiver navegando para o controle de formulário.
-Esta informação adicional pode ser associado ao campo de formulário com o atributo `aria-describedby`.
+Há momentos em que um formulário inclui informações que não é exatamente uma etiqeuta,
+mas é importante o suficiente para ser lida por um leitor de tela quando estiver navegando pelos campos de formulário.
+Esta informação adicional pode ser associada ao campo de formulário com o atributo `aria-describedby`.
 Por exemplo:
 
 
@@ -656,12 +670,12 @@ Aqui o HTML:
   &lt;label for="resetarsenha"&gt;Resetar Senha:&lt;/label&gt;<br>
   &lt;input type="password" name="resetarsenha" id="resetarsenha" <strong>aria-describedby="novasenha"</strong>&gt; <br>
   &lt;br&gt;<br>
-  &lt;span <strong>id="novasenha"</strong>&gt;New password must be 8-15 characters and include letters and numbers&lt;/span&gt;	</code>
+  &lt;span <strong>id="novasenha"</strong>&gt;Nova senha deve ter 8-15 caracteres e conter letras e números&lt;/span&gt;	</code>
 </div>
 
-Como há uma um rótulo, `<label>` é lido em vez de `aria-labelledby`.
-Como ocorre com `aria-labelledby`, o atributo `aria-describedby` aponta par ao `id` do elemento que contém os requisitos da senha.
-Um leitor de tela iria ler tanto o rótulo associado (s) e as descrições então a associados).
+Como há uma uma etiqueta, `<label>` é lido em vez de `aria-labelledby`.
+Como ocorre com `aria-labelledby`, o atributo `aria-describedby` aponta para o `id` do elemento que contém os requisitos da senha.
+Um leitor de tela iria ler tantoambos, a etiqueta associada e as descrições associadas.
 As descrições às vezes são lidas após de uma breve pausa.
 `aria-describedby`  também pode fazer referência a vários elementos - basta referênciar os valores de `id` separados por espaço.
 
@@ -669,33 +683,33 @@ As descrições às vezes são lidas após de uma breve pausa.
 <div class="note">
   <div class="title">Nota</div>
   <ul>
-    <li>Enquanto <code>aria-labelledby</code> sobrescreve o <code>&lt;label&gt;</code>, <code>aria-describedby</code> não faz isto.
-    Isto significa que <code>aria-describedby</code> deve apenas ser usada <em>como complemento a um rótulo</em>
+    <li>Enquanto <code>aria-labelledby</code> sobrescreve o <code>&lt;label&gt;</code>, <code>aria-describedby</code> não faz isso.
+    Isto significa que <code>aria-describedby</code> deve apenas ser usado <em>como complemento a uma eitqueta</em>
     (i.e., <code>&lt;label&gt;</code> ou &lt;input <code>aria-labelledby</code>&gt;), não como subistituto de um destes.</li>
     <li>O atributo <code>aria-describedby</code> também pode ser usada como referência em descrições que aparecem como "dica de ferramenta".
-    Dica de ferramenta devem se tornar visíveis para usuários que enxergam e usam teclado quando o controle está com foco,
+    Dica de ferramenta devem se tornar visíveis para usuários que enxergam e usam teclado quando o campo está com foco,
     não apenas quando o usuário passa o mouse por cima, ou clica no elemento com o mouse.</li>
   </ul>
 </div>
 
-### Rótulos invisíveis
+### Etiquetas invisíveis
 
-Há momentos em que um rótulo de texto para um controle de formulário não faz sentido ser exibido visualmente.
+Há momentos em que uma etiqueta de texto para um campo de formulário não faz sentido ser exibida visualmente.
 O exemplo mais comum é o campo de "Pesquisar". Sua localização na página,
 junto ao botão de busca, deixa seu propósito claro para usuários que enxergam.
-Adicionar um ródulo visual seria exagero e impactaria negativamente no design do site
+Adicionar um ródulo visual seria exagero e impactaria negativamente no design do site.
 
-Uma das seguintes três técnicas deveria ser usada quando um rótulo exibido visualmente não está disponível:
+Uma das três técnicas seguintes deveria ser usada quando uma etiqueta exibida visualmente não está disponível:
 
 #### `label` oculta
-Esconda o elemento `<label>` movendo para fora da tela usando CSS. O rótulo não vai aparecer visualmente,
-porém será lido por um leitor de tela.
+Esconda o elemento `<label>` movendo-o para fora da tela usando CSS. A etiqueta não vai aparecer visualmente,
+porém será lida por um leitor de tela.
 
 <label class="hidden" for="s">Termos de busca</label>
 <input id="s" type="text" name="busca">
 <button>Buscar</button>
 
-Aqui o HTML para o rótulo e o controle de formulário:
+Aqui o HTML para a etiqueta e o campo de formulário:
 
 <div class="programlisting">
   <code>
@@ -710,28 +724,27 @@ e informações adicionais sobre esta técnica, pode ser vista no nosso artigo s
 
 #### Atributo `title`
 
-Se um campo de formulário tem um atributo `title`, mas nenhum `<label>`, o leitor de tela irá ler o `title` como se fosse um rótulo.
+Se um campo de formulário tem um atributo `title`, mas nenhum `<label>`, o leitor de tela irá ler o `title` como se fosse uma etiqueta.
 
 
 <input id="s-2" type="text" name="s-2" title="Termos de busca">
 <button>Buscar</button>
 
-Aqui o HTML para o rótulo e o controle de formulário:
+Aqui o HTML para a etiqueta e o campo de formulário:
 
 <div class="programlisting">
   <code>
   &lt;input id="s" type="text" name="s" <strong>title="Termos de busca"</strong>&gt;
   </code>
 </div>
-This technique will also cause a tooltip to appear when the user hovers over the field with a mouse,
-which could be distracting for some users.
 
-Esta técnica também fará com que uma dica de ferramenta para aparecer quando o usuário passa o mouse sobre o campo com um mouse,
+
+Esta técnica também fará com que uma dica de ferramenta apareça quando o usuário passar o mouse sobre o campo,
 o que poderia ser uma distração para alguns usuários.
 
 #### `aria-label`
 
-O atributo `aria-label` também pode ser usado quando não há rótulo de texto na página.
+O atributo `aria-label` também pode ser usado quando não há uma etiqueta de texto na página.
 
 <input id="s-3" type="text" name="s-3" aria-label="Termos de busca">
 <button>Buscar</button>
@@ -743,8 +756,8 @@ O atributo `aria-label` também pode ser usado quando não há rótulo de texto 
 </div>
 
 Ao contrário de `aria-labelledby` que deve fazer referência a um outro elemento,
-`aria-label` contém o texto do rótulo diretamente. Como ocorre com `aria-labelledby`,
-`aria-label` irá sobrescrever qualquer element `<label>`.
+`aria-label` contém o texto da etiqueta diretamente. Como ocorre com `aria-labelledby`,
+`aria-label` irá sobrescrever qualquer elemento `<label>`.
 
 <div class="important">
   <div class="title">Importante</div>
@@ -752,14 +765,16 @@ Ao contrário de `aria-labelledby` que deve fazer referência a um outro element
     <li>Apenas uma destas recomendações deve ser implementada.
     Usar duas ou mais juntas (e.e., <code>&lt;label&gt;</code> oculta e duplicar com o atributo <code>title</code>)
     pode causar repetição da informação por um leitor de tela.</li>
-    <li>Testo de espaço reservado (do inglês <em lang="en">placeholder</em>) (e.e., <code>&lt;input type="text" <strong>placeholder="Pesquisar no WebAIM"</strong>&gt;</code>)
-    não é um rótulo adequado e nunca deve ser usada em lugar das técnicas acima.</li>
+    <li>Texto de espaço reservado (do inglês <em lang="en">placeholder</em>) (e.e., <code>&lt;input type="text" <strong>placeholder="Pesquisar no WebAIM"</strong>&gt;</code>)
+    não é uma etiqueta adequada e nunca deve ser usada em lugar das técnicas acima.</li>
   </ul>
 </div>
 
 ### Recaptulação
 
-*   Use elemento `<label>` quando puder. Ele tem excelente suporte ao navegador e leitor de tela, e os usuários podem clicar no rótulo para selecionar o controle de formulário associado.
+*   Use elemento `<label>` quando puder. Ele tem excelente suporte ao navegador e leitor de tela,
+ e os usuários podem clicar na etiqeuta para selecionar o campo de formulário associado.
 *   Use `aria-labelledby` para contornar as limitações de 1:1 de rótulos `<label>`.
-*   Use `aria-describedby` **como complemento a um rótulo** quando você precisa relacionar um texto descritivo a um controle de formulário.
-*   Use `<label>` oculta **ou** atributo `title` **ou** `aria-label` quando texto de um rótulo visível não está disponível.
+*   Use `aria-describedby` **como complemento a uma etiqueta** quando você precisa relacionar um
+ texto descritivo a um campo de formulário.
+*   Use `<label>` oculta **ou** atributo `title` **ou** `aria-label` quando texto de uma etiqeuta visível não está disponível.
