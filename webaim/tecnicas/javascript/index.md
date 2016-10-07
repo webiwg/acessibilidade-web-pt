@@ -106,17 +106,18 @@ Esses problemas incluem:
 
 <!--
   N.T.:  Não tenho certeza da tradução de "user agent" (@robsmayer, 2016-10-06 22:18)
+  N.T.:  Deixar esse comentário como exemplo para eu me lembrar por enquanto.
 -->
 
--   **Navigation.** Inability or difficulty navigating using a keyboard or assistive technology.
--   **Hidden content.** Presentation of content or functionality that is not accessible to assistive technologies.
--   **User control.** Lack of user control over automated content changes.
--   **Confusion/Disorientation.** Altering or disabling the normal functionality of the <em lang="en">user agent</em> (navegador) or triggering events that the user may not be aware of.
+-   **Navegação.** Incapacidade ou dificuldade ao navegar utilizando um teclado ou tecnologia assistiva.
+-   **Conteúdo Oculto.** Apresentação de conteúdo ou funcionalidade que não é acessível ao utilizar tecnologia assistiva.
+-   **Controle do Usuário.** Falta controle do usuário sobre mudanças automáticas de conteúdo.
+-   **Confusão/Desorientamento.** Alterando ou desligando o uso normal do usuário ou ativando eventos que podem ser desconhecidos pelo usuário.
 
-A web page containing JavaScript will typically be fully accessible if the functionality of the script is device independent
-(does not require only a mouse or only a keyboard) and the information (content) is available to assistive technologies.
-Unfortunately, there is no easy fix that can be applied to solve all accessibility problems associated with JavaScript.
-The only way to ensure JavaScript accessibility is by evaluating each pages that utilizes scripting and devising a unique solution to any accessibility problem found.
+Geralmente, uma página web contendo Javascript será totalmente acessível se o script da página funcionar independente de qual dispositivo for utilizado.
+Ou seja, que não requere somente o uso do mouse ou somente o uso do teclado para ser utilizada e que as informações(conteúdo) for disponível para tecnologias assistivas.
+Infelizmente, não há um meio simples que possa ser aplicado para resolver todos problemas de acessibilidade associados ao Javascript.
+O único modo de garantir a acessibilidade do JavaScript é análisar cada página que utiliza scripts e inventar uma solução única para cada problema encontrado. 
 
 ### JavaScript that does not impact accessibility
 
