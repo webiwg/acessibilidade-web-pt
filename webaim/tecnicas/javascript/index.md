@@ -98,16 +98,20 @@ h4 code {
 
 </style>
 
-## JavaScript Accessibility Issues
+## Problemas de Acessibilidade com JavasScript
 
-JavaScript allows developers to add increased interaction, information processing, and control in web-based content.
-However, JavaScript can also introduce accessibility issues.
-These issues may include:
+Javascript permite que os desenvolvedores disponibilizem mais interação, processamento de informações e controle num contexto web.
+Entretanto, Javascript pode introduzir alguns problemas de acessibilidade.
+Esses problemas incluem:
+
+<!--
+  N.T.:  Não tenho certeza da tradução de "user agent" (@robsmayer, 2016-10-06 22:18)
+-->
 
 -   **Navigation.** Inability or difficulty navigating using a keyboard or assistive technology.
 -   **Hidden content.** Presentation of content or functionality that is not accessible to assistive technologies.
 -   **User control.** Lack of user control over automated content changes.
--   **Confusion/Disorientation.** Altering or disabling the normal functionality of the user agent (browser) or triggering events that the user may not be aware of.
+-   **Confusion/Disorientation.** Altering or disabling the normal functionality of the <em lang="en">user agent</em> (navegador) or triggering events that the user may not be aware of.
 
 A web page containing JavaScript will typically be fully accessible if the functionality of the script is device independent
 (does not require only a mouse or only a keyboard) and the information (content) is available to assistive technologies.
