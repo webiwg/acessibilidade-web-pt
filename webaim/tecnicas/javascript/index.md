@@ -12,8 +12,8 @@ authors: [{
     link: "http://webaim.org/"
 }]
 translators: [{
-    name: "Emerson Rocha Luiz",
-    link: "http://twitter.com/fititnt"
+    name: "Roberta Schmitz Mayer",
+    link: "http://webiwg.org"
 }]
 reviewers: []
 discussion: https://github.com/webiwg/acessibilidade-web-pt/issues/22
