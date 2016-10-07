@@ -15,7 +15,7 @@ O site publicado está em [http://acessibilidade.pt.webiwg.org/](http://acessibi
 e seu código fonte em [https://github.com/webiwg/acessibilidade-web-pt](https://github.com/webiwg/acessibilidade-web-pt).
 
 ## Sobre o conteúdo desde repositório
-- A fonte original já não deve ter versão confiável e bem conhecida em também em português
+- A fonte original já não deve ter versão confiável e bem conhecida em português
 - Explicitamente, padrões técnicos (que provavelmente já tem tradução) não serão incluídos aqui
 - Textos com **grande** volume podem não ser incluídos; sem problemas adição apenas de partes relevantes
 - O conteúdo **deve** ser relacionado a acessibilidade web
