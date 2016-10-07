@@ -36,7 +36,7 @@ isReleaseCandidate: true
 ## Índice de tópicos
 {:.no_toc}
 
-1. Indice de Tópicos. Esta linha será substituída
+1. Índice de Tópicos. Esta linha será substituída
 {:toc}
 
 </nav>
@@ -107,55 +107,54 @@ Introdução
 ------------
 
 <span style="float: right;margin: 8px 0px 1px 10px;"><img src="media/peekaboo.jpg" alt="A woman hides behind her hands." width="130" height="110" /></span>Existem
-casos pontuais em que o conteúdo deve ser disponibilizados para usuários de leitor de tela,
+Há casos pontuais em que o conteúdo deve ser disponibilizado para usuários de leitor de tela,
 mas escondido de utilizadores normovisuais. Na maioria dos casos, se o conteúdo (principalmente
 conteúdo que fornece a funcionalidade e interatividade) é importante o suficiente para
 usuários de leitor de tela, ele provavelmente deve ser disponibilizado a todos os
-usuários. Casos em que sugestões são verbosas ou instruções são fornecidas apenas por usuários de leitores
-de tela são, provavelmente, um reflexo da má concepção e acessibilidade.
+usuários. Casos em que sugestões são detalhadas ou instruções são fornecidas apenas para usuários de leitores
+de tela são, provavelmente, um reflexo da má concepção de design e acessibilidade.
 No entanto, existem alguns casos onde a informação é evidente visualmente, mas pode
 não ser clara para os usuários de leitores de tela. Nestes casos, pode ser conveniente
 marcação de conteúdo de uma forma que ele é lido por um leitor de tela, mas invisível para
 utilizadores normovisuais.
 
 
-Técnicas para o ocultar texto
+Técnicas para ocultar o texto
 --------------------------
 
 Existem diversos mecanismos que podem ser usados para esconder o conteúdo. É importante
-que a técnica a ser implementada resulte em o resultado desejado e a
-acessibilidade.
+que a técnica a ser implementada resulte no objetivo desejado e em acessibilidade.
 
 ### `visibility: hidden;` e/ou `display:none;`
 
 Esses estilos vão ocultar o texto de todos os usuários. O texto é removido do fluxo visual
 da página e é ignorado pelos leitores de tela. **Não use este CSS se
-quiser que o conteúdo a ser lido por um leitor de tela. Mas USE isto para o conteúdo
-que você não quer que sejam lidos por leitores de tela.**
+quiser que o conteúdo seja lido por um leitor de tela. Mas USE isto para o conteúdo
+que você não quer que seja lido por leitores de tela.**
 
 ### `width:0px`, `height:0px` e outras técnicas de tamanho 0 pixel
 
 Tal como referido acima, devido a um elemento sem nenhuma altura ou largura é removido do fluxo da
 página, a maioria dos leitores de tela irão ignorar este conteúdo. Largura e altura do HTML
 pode dar o mesmo resultado. **Não redimensione o conteúdo a 0 pixels, se você deseja que o
-conteúdo seja lido por um leitor de tela.** Conteúdo estilizado com `font-size:0px` ou
-`line-height:0` podem funcionar, ainda que os elementos tomariam espaço horizontal
+conteúdo seja lido por um leitor de tela.** Conteúdos estilizados com `font-size:0px` ou
+`line-height:0` podem funcionar, ainda que os elementos tomem espaço horizontal
 na tela. Todas estas técnicas podem implicar em penalizações de mecanismo de pesquisa já
-que podem interpretado como maliciosas.
+que podem ser interpretadas como maliciosas.
 
 
 ### `text-indent: -10000px;`
 
 
 Esta abordagem move o conteúdo para 10000 pixels para esquerda - portanto, fora da tela
-visível. O valor real tem pouca importância, desde que ele estiver posicionado fora da tela.
-Os leitores de tela ainda vai ler o texto com esse estilo. No entanto, se um link ou elemento de formulário
+visível. O valor real tem pouca importância, desde que ele esteja posicionado fora da tela.
+Os leitores de tela ainda irão ler o texto com esse estilo. No entanto, se um link ou elemento de formulário
 recebe esse estilo, que pode resultar em um indicador de foco (as linhas pontilhadas
 ou "formigas em marcha" que cercam um link focalizado) que se estende a partir de onde
 o elemento deve ser localizado na página para o lugar é efectivamente localizado
 (para a esquerda). Isto não é muito bonito. Essa abordagem também causa problemas em
 idiomas da direita para a esquerda. Como tal, esta abordagem *pode* ser uma opção viável se
-o elemento não contém elementos navegáveis, embora melhores técnicas estão
+o campo não contém elementos navegáveis, embora melhores técnicas estejam
 disponíveis.
 
 ### CSS clip
