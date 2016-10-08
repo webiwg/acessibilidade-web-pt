@@ -119,22 +119,32 @@ Ou seja, que não requere somente o uso do mouse ou somente o uso do teclado par
 Infelizmente, não há um meio simples que possa ser aplicado para resolver todos problemas de acessibilidade associados ao Javascript.
 O único modo de garantir a acessibilidade do JavaScript é análisar cada página que utiliza scripts e inventar uma solução única para cada problema encontrado. 
 
-### JavaScript that does not impact accessibility
+### JavaScript que não altera a acessibilidade
 
-Just because JavaScript is utilized on a page does not mean that the page is inaccessible.
-In many cases, JavaScript can be used to increase accessibility.
-Additional information, warnings, or instructions can be given to users through JavaScript prompts.
-For instance, under the [Section 508 guidelines of United States law](http://webaim.org//standards/508/checklist) and the
-[Web Content Accessibility Guidelines](http://webaim.org//standards/wcag/checklist),
-a user must be notified when a timed response is required and given sufficient time to indicate more time is required.
-Such functionality would be difficult with HTML alone.
+<!--
+    N.T.1: Não tenho certeza de qual é o melhor termo para "JavaScript prompts" (@robsmayer, 2016-10-07 22:33) 
+    N.T.2: Não sei se devo manter o texto original(@robsmayer, 2016-10-07 22:34)
+    N.T.3: Obter termos melhores para: (@robsmayer, 2016-10-07 hora indefinida)
+        JavaScript prompts
+        Navigation items
+    N.T.4: Achar mais sinônimos de "por exemplo" (@robsmayer, 2016-10-04 2)
+-->
 
-JavaScript is sometimes used to create visual interface elements that do not affect accessibility.
-JavaScript is commonly used for image rollovers or other visual-only modifications,
-where one image is replaced with another when the mouse is placed above it;
-for example, when a navigation item changes to display a shadow, glow, or highlight when the user mouses over it.
+Usar JavaScript numa página não significa que ela não é acessível.
+Em muitos casos, JavaScript pode ser usado para aumentar a acessibilidade.
+Por meio dos <em lang="en">prompts JavaScript</em> informações adicionais, avisos ou instruções podem ser dadas ao usuário.
+Por exemplo, segundo a  <em lang="en">[Section 508 guidelines of United States law](http://webaim.org//standards/508/checklist) and the
+[Web Content Accessibility Guidelines](http://webaim.org//standards/wcag/checklist),)</em>,
+caso seja necessário uma resposta do usuário num tempo dado, deve-se notificar o mesmo desse tempo de resposta e dar a ele tempo suficiente para que ele possa
+indicar que será necessário um período maior.
+Implementar tal função seria dificíl usando somente HTML. 
 
-Such uses of JavaScript do not need additional accessibility features incorporated because important content is not displayed or functionality introduced by such scripting.
+Às vezes, JavaScript é utilizado para criar elementos de interfaces visuais que não afetam a acessibilidade.
+Geralmente, JavaScript é usado para rolagem de imagens ou outras modificações apenas visuais,
+onde uma imagem é trocada por outra quando o mouse é movido acima dela;
+por exemplo, um <em lang="en">navigation item<\em> que muda para exibir uma sombra, brilho, sublinhado quando o cursor fica acima dele.
+
+Para tais usos não são necessários recursos adicionais de acessibilidade, pois tal script não introduz ferramentas ou não exibe conteúdos importantes.
 
 ### JavaScript Reliance
 
