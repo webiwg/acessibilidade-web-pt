@@ -1,13 +1,119 @@
-Cognitive  
-<span class="subtitle">Introduction</span>
-==========================================
+---
+layout: translation
+date: 2013-08-09 # Data de ultima atualização do original
+title: "Cognitive Disabilities" # Titulo traduzido
+description: "The concept of cognitive disabilities is extremely broad,
+and not always well-defined. In loose terms,
+a person with a cognitive disability has greater difficulty with one or more types of mental tasks than the average person.
+There are too many types of cognitive disabilities to list here, but we will cover some of the major categories. "
 
-Something to Think About...
----------------------------
+copyright: 'Copyright WebAIM' # Quem tem direitos de cópia
+license: null # Caso seja uma licença padrão (MIT, GPL...) por aqui
+license-custom: null # Caso a licença não seja uma padrão, por uma descrição curta dela aqui
+authors: [{
+    name: "WebAIM",
+    link: "http://webaim.org/"
+}]
+translators: [{
+    name: "Nome Da Pessa Tradutora",
+    link: "http://www.webiwg.org/colabore.html"
+}]
+reviewers: []
+discussion: https://github.com/webiwg/acessibilidade-web-pt/issues/28
+original: {
+    title: "Cognitive Disabilities", # Titulo original, no idioma origial
+    link: "http://webaim.org/articles/cognitive/", # Link para documento original
+    dateOfTranslation: "2016-10-09" # Data em que a tradução foi finalizada
+}
+isDraft: true
+isReleaseCandidate: false
+---
 
-<span
-class="floatright"><img src="media/head.jpg" alt="computer generated image of a human head" width="156" height="149" /></span>The
-concept of cognitive disabilities is extremely broad, and not always
+<!-- Geração automática de índice, inicio -->
+<nav markdown="1">
+
+## Índice de tópicos
+{:.no_toc}
+
+1. Indice de Tópicos. Esta linha será substituída
+{:toc}
+
+</nav>
+<!-- Geração automática de índice, fim -->
+
+<style>
+/*
+  NOTA: tags styles dentro do corpo de forma provisória. Melhorar no futuro (fititnt, 2016-09-22 22:59)
+*/
+.programlisting {
+    border: 1px dashed #990000;
+    border-radius: 4px;
+    background-color: #ffffc1;
+    width: auto;
+    margin: 0 0 1em 0;
+    padding: 2px;
+    overflow: auto;
+}
+.note {
+    background-color: #F1F5F7;
+    border: 1px solid #CCCCCC;
+}
+.example {
+    background-color: #F1F5F7;
+    border: 1px solid #CCCCCC;
+}
+.important, .tip, .note, .example {
+    padding: 4px 1.5em 0px 1.5em;
+    margin: 1em auto 1em auto;
+    width: 85%;
+    border-radius: 4px;
+}
+.example .title {
+    background: url(media/bg.png) 0px -1700px no-repeat;
+}
+.note .title {
+    background: url(media/bg.png) 0px -1800px no-repeat;
+}
+.important .title, .tip .title, .note .title, .example .title {
+    padding: 3px 0 15px 35px;
+    display: block;
+    font-size: 1.25em;
+    font-family: 'Kameron',Georgia,Times,serif;
+}
+.important {
+    background-color: #fafaae;
+    border: 1px solid #CCCCCC;
+}
+.important .title {
+    background: url(media/bg.png) 0px -1600px no-repeat;
+}
+.important, .tip, .note, .example {
+    padding: 4px 1.5em 0px 1.5em;
+    margin: 1em auto 1em auto;
+    width: 85%;
+    border-radius: 4px;
+}
+.programlisting  code {
+  background-color: transparent;
+}
+h3 code {
+  font-size: 26px;
+  font-weight: 400;
+}
+h4 code {
+  margin-top: 1em;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+</style>
+
+## Introduction
+
+### Something to Think About...
+
+<span style="float: right; margin: 8px 0px 1px 10px;"><img src="media/head.jpg" alt="computer generated image of a human head" width="156" height="149"></span>
+The concept of cognitive disabilities is extremely broad, and not always
 well-defined. In loose terms, a person with a cognitive disability has greater
 difficulty with one or more types of mental tasks than the average person. There
 are too many types of cognitive disabilities to list here, but we will cover
@@ -29,8 +135,7 @@ will always be too complex for certain audiences. This is unavoidable.
 Nevertheless, there are still some things that designers can do to increase the
 accessibility of web content to people with less severe cognitive disabilities.
 
-Functional vs. Clinical Cognitive Disabilities
-----------------------------------------------
+### Functional vs. Clinical Cognitive Disabilities
 
 There are at least two ways to classify cognitive disabilities: by functional
 disability or by clinical disability. Clinical diagnoses of cognitive
@@ -67,8 +172,7 @@ have difficulty with attention or problem-solving, for example. This kind of
 overlap fits within a medical model, but is not particularly helpful to web
 developers, who simply need to know what the person can or cannot do.
 
-Memory
-------
+### Memory
 
 Memory refers to the ability of a user to recall what they have learned over
 time. A common model for explaining memory involves the concepts of working
@@ -80,8 +184,7 @@ displays multiple error messages at the top of the form when submitted. It may
 be very difficult for the user to remember multiple errors, or perhaps may even
 forget the error information before they are even able to address that error.
 
-Problem-Solving
----------------
+### Problem-Solving
 
 Some individuals with cognitive disabilities have a difficult time solving
 problems as they arise. In many instances, their resilience can be low and the
@@ -90,11 +193,10 @@ to solve the problem. One example of this would be the presence of a 404 error
 from a bad link, or a link that does not take them where they thought they were
 going.
 
-Attention
----------
+### Attention
 
-<span class="floatright">![A distracted student](media/student.jpg)</span>There
-are many individuals that have difficulty with focusing their attention to the
+<span style="float: right; margin: 8px 0px 1px 10px;">![A distracted student](media/student.jpg)</span>
+There are many individuals that have difficulty with focusing their attention to the
 task at hand. Distractions such as scrolling text, blinking icons, and pop-up
 windows can make the web environment difficult or even impossible. Even for
 typical users, such things can be irritating. Good design principles would limit
@@ -113,12 +215,10 @@ Avoiding anything that draws a person's attention away from the main content and
 using good design, such as color, white space, and simple presentation can help
 users focus on important content and functionality.
 
-Reading, Linguistic, and Verbal Comprehension
----------------------------------------------
+### Reading, Linguistic, and Verbal Comprehension
 
-<span
-class="border floatright"><img src="media/text.jpg" alt="complex words floating through space" width="203" height="203" /></span>Some
-individuals have difficulties understanding text. These difficulties may be mild
+<span style="float: right; margin: 8px 0px 1px 10px;"><img src="media/text.jpg" alt="complex words floating through space" width="203" height="203" /></span>
+Some individuals have difficulties understanding text. These difficulties may be mild
 or severe, ranging from minor challenges to a complete inability to read any
 text. It would be unreasonable to expect web developers to accommodate the
 entire range of reading abilities. The difference between non-readers and genius
@@ -130,7 +230,8 @@ including many of the brightest minds of recent generations such as Albert
 Einstein, Thomas Edison, and Henry Ford, has some sort of language or text
 comprehension difficulty*.
 
-Example
+<div class="example" markdown="1">
+<div class="title">Example</div>
 
 Here is one example of a reading problem. Note that it may be one of perception
 or of processing. See if the associated accessibility fix helps you.
@@ -147,7 +248,9 @@ Another interesting simulation of a reading difficulty and our resilience in the
 face of reading problems can be found at
 <http://www.angmail.fsnet.co.uk/jumbltxt.htm>.
 
-### Non-Literal Text
+</div>
+
+#### Non-Literal Text
 
 Non-literal text, such as sarcasm, satire, parody, allegory, metaphor, slang,
 and colloquialisms, can be a problem for some readers. In some cases, readers
@@ -160,26 +263,29 @@ referring to real ducks at all. The author is suggesting that the reader get
 organized or disciplined, using the comparison of a mother duck with her
 ducklings lined up behind her in order to illustrate the concept.
 
-### Non-Existent Text
+#### Non-Existent Text
 
 The unstated assumptions and implied meaning of written content may seem obvious
 to the writer, but readers may not have the necessary background knowledge. Some
 readers may not have the skills to infer meaning from text without additional
 help.
 
-Math Comprehension
-------------------
+### Math Comprehension
 
-<span class="floatright border">![](media/formula.gif)</span> Mathematical
-expressions are not easy for everybody to understand. This does not mean that
+<!--
+  Nota de preparação do documento: no original, o alt da imagem seguinte
+    NÃO tem conteúdo (fititnt, 2016-10-09 17:20)
+-->
+
+<span style="float: right; margin: 8px 0px 1px 10px;">![](media/formula.gif)</span>
+Mathematical expressions are not easy for everybody to understand. This does not mean that
 authors should avoid math entirely. For people who are comfortable reading
 equations and thinking mathematically, the best way to explain mathematical
 concepts is to use equations. On the other hand, often it is helpful to explain
 math conceptually, either with or without the formulas. Conceptual explanations
 help readers understand the reasoning behind the math.
 
-Visual Comprehension
---------------------
+### Visual Comprehension
 
 Some individuals have difficulties processing visual information. In many ways,
 this is the opposite of the problem experienced by people with reading and
@@ -195,35 +301,9 @@ and mentally process than a static image of a person in a photograph. Video and
 multimedia, accompanied with narration, may be the best way to communicate to
 these individuals.
 
-Cognitive Disabilities  
-<span class="subtitle">Design Considerations</span>
-===================================================
+## Design Considerations
 
-<span class="hidden">You are here: </span>[Home](/) &gt; [Articles](/articles/)
-&gt; [Cognitive Disabilities](./) &gt; Page 2: Design Considerations
-
-Article Contents
-----------------
-
-1.  Page 1: [Introduction](./)
-2.  <span class="hidden">Current page: </span>Page 2: Design Considerations
-    1.  [Overview](#overview)
-    2.  [Accommodating Memory Deficits](#memory)
-    3.  [Accommodating Problem-solving Deficits](#problem)
-    4.  [Accommodating Attention Deficits](#add)
-    5.  [Accommodating Reading, Linguistic, and Verbal Comprehension
-        Deficits](#reading)
-        1.  [Supplemental media](#supplemental)
-        2.  [Document organization and structure](#docorg)
-        3.  [Clear and simple writing](#clearandsimple)
-
-    6.  [Accommodating Math Comprehension deficits](#math)
-    7.  [Accommodating Visual Comprehension Deficits](#visual)
-
-3.  Page 3: [Cognitive Disabilities Activity](activity)
-
-Overview
---------
+### Overview
 
 Any list of design considerations for users with cognitive disabilities can
 easily turn into a lengthy list of usability concerns and general "good design
@@ -231,8 +311,7 @@ principles." The ideas presented here do not exhaust all avenues of thought on
 the topic, by any means. They merely present some of the larger principles which
 categorize more specific techniques.
 
-Accommodating Memory Deficits
------------------------------
+### Accommodating Memory Deficits
 
 Any kind of reminder of the overall context of a web site can help people with
 memory deficits. Lengthy interactive processes, such as those required to
@@ -245,8 +324,7 @@ Each step can also be named or labeled so instead of saying "previous page" and
 "next page," a link could say "previous page (payment and shipping information)"
 and "next page (review order)."
 
-Accommodating Problem-Solving Deficits
---------------------------------------
+### Accommodating Problem-Solving Deficits
 
 Everyone at some point or another accidentally clicks on the wrong link,
 misspells a word, or commits some kind of error on the web. This is normal human
@@ -264,19 +342,17 @@ should be as predictable as possible, and any deviations from predictability
 should be preceded by warnings and/or explained to users after the changes
 occur.
 
-Accommodating Attention Deficits
---------------------------------
+### Accommodating Attention Deficits
 
 Focus the attention of users. Use visual cues to highlight important points or
 sections of the content. If possible, eliminate advertisements and sponsored
 links. Use headings to draw attention to the important points and outline of the
 content. Avoid background noises or images that distract. Use them instead to
-focus the users attention.  
+focus the users attention.
 
-Accommodating Reading, Linguistic, and Verbal Comprehension Deficits
---------------------------------------------------------------------
+### Accommodating Reading, Linguistic, and Verbal Comprehension Deficits
 
-### Supplemental media
+#### Supplemental media
 
 Supplemental media such as illustrations, icons, video and audio have the
 potential to greatly enhance the accessibility of web content for people with
@@ -287,9 +363,9 @@ to try. Use your judgment. Incorporate media where it makes sense. Realize, too,
 that the vast majority of web content could benefit from some sort of
 supplemental media, if only supplemental graphics.
 
-### Document organization and structure
+#### Document organization and structure
 
-#### Structural organization
+##### Structural organization
 
 As a general statement, the more structured your document is, the easier it will
 be to understand. Structure in documents can be created by adding:
@@ -304,7 +380,7 @@ All of the above structural elements can be added into the markup of the
 document. In other words, there are built in methods in HTML of designating a
 part of your content as a heading, or a list item, etc.
 
-#### Visual organization
+##### Visual organization
 
 You can also add visual structure to a document that will benefit those who have
 sight. For example, you can:
@@ -312,7 +388,8 @@ sight. For example, you can:
 -   indent sub-items in a hierarchical list[\*](#note1)
 -   highlight items by changing the font color or background color
 
-NOTE:
+<div class="note" markdown="1">
+<div class="title">Note:</div>
 
 Developers should not ignore the semantics of the markup language when trying to
 achieve a visual effect. For example, despite the fact that the `<blockquote>`
@@ -323,7 +400,9 @@ be used for its visual effect alone. If the text truly is a quote, then the
 example, the developer could add the following style attribute to the paragraph:
 `style="margin-left: 5%"`).
 
-#### White space
+</div>
+
+##### White space
 
 It is usually easier to read text when it is visually separated from the borders
 of the surrounding design. People with reading disorders, such as dyslexia, can
@@ -332,7 +411,7 @@ headings, paragraphs, tables, etc. Long paragraphs can be more difficult to read
 than shorter ones, partly because readers may lose their place within the
 paragraph.
 
-### Clear and simple writing
+#### Clear and simple writing
 
 Short, simple, unambiguous phrases are easier to understand than long, complex,
 ambiguous ones. People with more profound cognitive disabilities need sentences
@@ -347,10 +426,9 @@ may need to create an image-only site.
 To the extent possible, try to avoid non-literal content such as sarcasm,
 parody, and metaphors. Also make sure to give readers all necessary background
 information about the topic at hand. <span class="ifnotrichmedia">(See also the
-article on [writing clearly and simply](/techniques/writing/).)</span>
+article on [writing clearly and simply](http://webaim.org/techniques/writing/).)</span>
 
-Accommodating Math Comprehension Deficits
------------------------------------------
+### Accommodating Math Comprehension Deficits
 
 Math computations or formulas can be difficult for many people to understand,
 whether they have a genuine deficit in math comprehension abilities or just
@@ -369,8 +447,7 @@ e-commerce sites that add the price of the items purchased, tax, shipping and
 handling, and other charges—it is usually best to perform these computations
 automatically, so the user does not have to.
 
-Accommodating Visual Comprehension Deficits
--------------------------------------------
+### Accommodating Visual Comprehension Deficits
 
 Usually, the best advice to help users with cognitive disabilities is to provide
 information in muliple formats, with a heavy emphasis on visual formats. While
@@ -385,12 +462,9 @@ communicative methods, the take-home message is that no one method is sufficient
 by itself. Supplement the information with multiple modes and methods of
 communication.
 
-Cognitive Disabilities  
-<span class="subtitle">Activity</span>
-======================================
+## Cognitive Disabilities Activity
 
-Instructions
-------------
+### Instructions
 
 Here are your instructions:
 
@@ -412,8 +486,7 @@ Here are your instructions:
 9.  Spread apart the two layers on the top and gently push the sides in.
 10. You made an origami cup! (Or did you?)
 
-Questions and Discussion
-------------------------
+### Questions and Discussion
 
 -   How successful were you at performing the task?
 -   Were you able to make anything resembling a cup?
@@ -423,7 +496,7 @@ Questions and Discussion
 Here's what your origami cup should look like (although the color of your paper
 may be different):
 
-<img src="media/origami.jpg" alt="photo of an origami cup" width="188" height="188" />
+<div style="text-align: center;"><img src="media/origami.jpg" alt="photo of an origami cup" width="188" height="188" /></div>
 
 How closely does your origami cup match the one pictured above? Is it even
 close? If not, why not?
@@ -439,11 +512,14 @@ misunderstood my instructions even when you thought that you understood them.
 -   Would it have helped to see someone perform the task, or an illustration of
     how to perform the task?
 
-<span class="title">**Note**</span>
+<div class="note" markdown="1">
+<div class="title">Note:</div>
 
 The following example presents visual content that will not be of use to people
 who cannot see it, but we have provided a brief discussion of this material in
 the [Note About Visual Disabilities](#note) section.
+
+</div>
 
 Compare the written instructions to a visual method of instruction:
 
@@ -458,8 +534,7 @@ After looking at the above visual methods of giving instructions on the task:
 -   Which instructional method did you like best?
 -   Can you think of other instructional methods that may be even better?
 
-How This Relates to Cognitive Disabilities
-------------------------------------------
+### How This Relates to Cognitive Disabilities
 
 Those of you who are visually-oriented were at a cognitive disadvantage when
 trying to fold an origami cup with nothing more than written instructions.
@@ -471,11 +546,14 @@ to fully understand content. In the case of folding an origami cup,
 illustrations and animations are particularly useful. With other types of
 information, audio content may be more appropriate.
 
-Important
+<div class="important" markdown="1">
+<div class="title">Important</div>
 
 In many cases, the techniques for more making web content accessible to people
 with cognitive disabilities are nothing more than techniques for effective
 communication.
+
+</div>
 
 Once you understand this principle, the task of making content accessible to
 people with cognitive disabilities becomes a little bit less mysterious, even if
@@ -488,8 +566,7 @@ illustrations. The effectiveness of graphics and animations depends largely on
 the skills of the artist, both in the sense of draftsmanship ("being able to
 draw well") and presentation (being able to communicate well).
 
-Note About Visual Disabilities
-------------------------------
+### Note About Visual Disabilities
 
 As you can imagine, illustrations, graphics, and other materials that are
 visually-oriented are going to be useless to someone who cannot see them. This
