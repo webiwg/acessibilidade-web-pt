@@ -146,25 +146,32 @@ por exemplo, um <em lang="en">navigation item<\em> que muda para exibir uma somb
 
 Para tais usos não são necessários recursos adicionais de acessibilidade, pois tal script não introduz ferramentas ou não exibe conteúdos importantes.
 
-### JavaScript Reliance
+### Credibilidade do JavaScript
 
-It is a common misconception that people with disabilities don't have or 'do' JavaScript,
-and thus, that it's acceptable to have inaccessible scripted interfaces, so long as it is accessible with JavaScript disabled.
-A 2012 survey by WebAIM of screen reader users found that [98.6% of respondents had JavaScript enabled](http://webaim.org//projects/screenreadersurvey4/#javascript).
-The numbers are even higher for users with [low vision](http://webaim.org/projects/lowvisionsurvey/#javascript) or
-[motor disabilities](http://webaim.org/projects/motordisabilitysurvey/#javascript).
-In short, people with disabilities will experience scripting, so scripted content must be made natively accessible.
+<!--
+    N.T.: Acho que exite uma tradução melhor para "don't have or 'do' JavaScript".
+    N.T,: Desconheço uma tradução correta de scripted interfaces (supus interfaces script) e scripted content (coloquei conteúdo script).
+-->
 
-Accessibility guidelines also require scripted interfaces to be accessible.
-While WCAG 1.0 from 1999 required that pages be functional and accessible with scripting disabled,
-WCAG 2.0 and all other modern guidelines allow you to require JavaScript,
-but the scripted content or interactions must be compliant with the guidelines.
+É um erro comum supor que pessoas com deficiência não precisam do JavaScript ou 'utilizem'  <em lang="en">don't have or 'do' JavaScript</en> o mesmo
+e portanto, é aceitável que exista interfaces script inacessíveias, contanto que sejam acessíveis com o JavaScript desativado.
+Uma pesquisa feita pela WebAIM de usuários leitores descobriu que [98.6% dos correspondentes tinham JavaScript ativado](http://webaim.org//projects/screenreadersurvey4/#javascript).
+Os números são ainda maiores para usuários que possuem um nível maior de [deficiência visual](http://webaim.org/projects/lowvisionsurvey/#javascript)
+ou [disfunções motoras](http://webaim.org/projects/motordisabilitysurvey/#javascript).
+Resumindo, pessoas com deficiência vão utilizar scripts e por isso o conteúdo dos scripts devem ser naturalmente acessíveis. (criados originalmente de maneira acessível).
 
-It is important to keep in mind, however, that some users do disable JavaScript or may be using technologies that don't support or fully support scripting.
-If your web page or application requires scripting, ensure that you account for users without JavaScript.
-While this does not necessarily mean that all functionality must work without scripting (though this would clearly be optimal),
-if it does not work without scripting, you must avoid a confusing or non-functional presentation that may appear to function,
-but does not because of lack of JavaScript support.
+
+As orientações(diretrizes) de acessibilidade devem também exigir que <em lang="en">scripted interfaces</em> sejam acessíveis.
+Enquanto, WCAG 1.0 de 1999 exigia que as páginas deveriam ser funcionais e acessíveis com scripts desativados,
+WCAG 2.0 e todas outras orientações modernas permitem que você solicite JavaScript,
+mas o <em lang="en">scripted content</em> ou interações devem seguir as diretrizes de acessibilidade.
+
+Contudo,é importante ter em mente que alguns usuários com deficiência podem estar usando tecnlogias acessíveis que não ofereçam
+suporte ou total suporte aos scripts.
+Se sua página web ou aplicação requere o uso de scripts, garanta que ela funcione para usuários que não utilizem JavaScript.
+Entretanto, isso não significa que todas funcionalidades devem funcionar sem scripts (embora isso seria ótimo),
+se ela não funcionar sem scripts, você deve evitar apresentar algo confuso ou falso que pareça funcionar, mas não 
+funcione sem o uso de suporte para JavaScript.
 
 ## JavaScript Event Handlers
 
