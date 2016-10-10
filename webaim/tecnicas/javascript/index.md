@@ -104,7 +104,8 @@ Javascript permite que os desenvolvedores disponibilizem mais interação, proce
 Entretanto, Javascript pode introduzir alguns problemas de acessibilidade.
 Esses problemas incluem:
 
-<!--
+<!--Comentários do item: Problemas de Acessibilidade com JavasScript
+
   N.T.:  Não tenho certeza da tradução de "user agent" (@robsmayer, 2016-10-06 22:18)
   N.T.:  Deixar esse comentário como exemplo para eu me lembrar por enquanto.
 -->
@@ -121,7 +122,8 @@ O único modo de garantir a acessibilidade do JavaScript é análisar cada pági
 
 ### JavaScript que não altera a acessibilidade
 
-<!--
+<!--Comentários do item: JavaScript que não altera a acessibilidade
+
     N.T.1: Não tenho certeza de qual é o melhor termo para "JavaScript prompts" (@robsmayer, 2016-10-07 22:33) 
     N.T.2: Não sei se devo manter o texto original(@robsmayer, 2016-10-07 22:34)
     N.T.3: Obter termos melhores para: (@robsmayer, 2016-10-07 hora indefinida)
@@ -148,7 +150,8 @@ Para tais usos não são necessários recursos adicionais de acessibilidade, poi
 
 ### Credibilidade do JavaScript
 
-<!--
+<!--Comentários do item: Credibilidade do JavaScript
+
     N.T.: Acho que exite uma tradução melhor para "don't have or 'do' JavaScript".
     N.T,: Desconheço uma tradução correta de scripted interfaces (supus interfaces script) e scripted content (coloquei conteúdo script).
 -->
@@ -173,70 +176,85 @@ Entretanto, isso não significa que todas funcionalidades devem funcionar sem sc
 se ela não funcionar sem scripts, você deve evitar apresentar algo confuso ou falso que pareça funcionar, mas não 
 funcione sem o uso de suporte para JavaScript.
 
-## JavaScript Event Handlers
+## <em lang="en">JavaScript Event Handlers</em>
 
-### Overview
+<!--Comentários do item: JavaScript Event Handlers
 
-Event handlers accompany existing HTML code or dynamically generated content and are triggered by a browser or user event -
-such as when the page loads, when the user clicks the mouse, or when the time is 8 p.m.
-Some event handlers are dependent upon use of a mouse or keyboard.
-These are called **device dependent** event handlers.
-Other event handlers are **device independent** and are triggered by both the mouse and keyboard or by other means.
+    N.T: Desculpem, não sei a tradução correta de "JavaScript Event Handlres" 
+    N.T: Termo mais bonito para dynamically generated content seria legal saber
+    N.T: Deixando claro, não é que eu não saiba as coisas, é só que eu ache que tenha algo melhor do que a minha tradução
+    N.T: Há muitos termos técnicos nesse item.(@robsmayer 2016-10-09 - 23:50)
+    N.T: Esqueci de colocar o horário em basicamente todas notas de tradução (@robsmayer 2016-10-09 - 23:51)
+-->
+
+<!--Ideia Geral/Panorama Geral-->
+### Visão Geral 
+
+<em lang="en">Event handlers</em> acompanham código HTML existente ou conteúdo gerado dinâmicamente 
+são ativados pelo navegador ou pelo usuário -
+por exemplo quando uma página carrega, quando um usuário clica o mouse, ou quando são 20h.
+Alguns <em lang="en">event handlers</em> dependem do uso do mouse ou do teclado.
+Estes são chamados de <em lang="en">**device dependent**event handlers</em>.
+Outros <em lang="en">event handlers are **device independent**</em> e são ativados por ambos, mouse e teclado. ou por outros meios.
 
 <div class="important" markdown="1">
 <div class="title">Importante</div>
-To ensure accessibility, use either a device independent event handler (one that works with both the mouse and the keyboard)
-or use both mouse dependent *and* keyboard dependent event handlers.
+
+Com objetivo de assegurar a acessibilidade, use tanto um <em lang="en">device independent event handler</em> (Um que funcione com o mouse e com o teclado)
+ou utilize ambos <em lang="en">mouse dependente *and* keyboard dependent event handlers</em>.
 </div>
 
 ### `onMouseOver` and `onMouseOut`
 
-The `onMouseOver` event handler is triggered when the mouse cursor is placed over an item.
-As its name implies, `onMouseOver` requires the use of a mouse, thus it is a device dependent event handler and may cause accessibility issues.
-`onMouseOver`, and its companion, `onMouseOut`, may be used, as long as any important content or functionality is also available without using the mouse.
-If the mouse interaction is purely cosmetic (such as the addition of a glow or drop shadow),
-there are likely no accessibility issues, so long as the style change does not indicate some function (such as to indicate that an element is clickable).
+O `onMouseOver` <em> event handler</em> é ativado quando o cursor do mouse é colocado sobre um item.
+Como seu nome implica, `onMouseOver` necessita do uso de um mouse, portanto ele é <em>device dependent event handler</em> e pode causar problemas de acessibilidade.
+`onMouseOver`, e seu companheiro, `onMouseOut`, podem ser usados, contanto que algum conteúdo ou funcionalidade importante também estiver disponível sem a utilização do mouse.
+may be used, as long as any important content or functionality is also available without using the mouse.
+// Se a interação do mouse é apenas para aparência (como a adição de um brilho ou uma sombra Aka: deixar bonitinho),
+provavelmente não há problemas de acessibilidade, desde que essa mudança não indique alguma função(como deixar indicado que um elemento é clicável).
 
-If the mouse interaction presents additional information or content,
-such as a tooltip, a navigation menu, etc., then this content will not be accessible to anyone not using a mouse.
-Additional considerations are necessary for accessibility.
+Se tal interação indica informações ou conteúdos adicionais
+tal como um <em>tooltip</em>, um menu de navegação, etc, então esse conteúdo não vai ser acessível para pessoas que não estiverem utilizando um mouse.
+Considerações adicionais são necessárias para acessibilidade.
 
-For screen reader users, the additional content might be provided directly in an accessible way,
-such as through alternative text, through an ARIA label or description, or perhaps through off-screen text.
-However, for sighted keyboard-only users, there must be a mechanism for them to access and view the newly revealed content or functionality.
+Para usuários que não possuem deficiência visual, o conteúdo adicional pode ser fornecido diretamente de um modo acessível,
+como texto alternativo, por <em> ARIA label </em> ou descrição, ou até um meio fora da tela.
+Entretanto, para usuários que navegam conhecendo somente o conteúdo do teclado, deve haver algum mecanismo para que eles 
+possam acessar e ver o novo conteúdo ou a nova funcionalidade reveladas. 
 
-In addition to `onMouseOver` and `onMouseOut`, use `onFocus` and `onBlur`.
-These actions are triggered when the keyboard is used to navigate to and from an element.
-Of course these can only be triggered on keyboard-navigable elements -
-links and form controls (or perhaps elements with [tabindex](http://webaim.org/techniques/keyboard/tabindex)).
-Simply triggering the change with a standard link and using both mouse and keyboard dependent event handlers will help ensure accessibility.
+Em adicição a `onMouseOver`e `onMouseOut`, use `onFocus` e `onBlur`.
+Essas ações são ativadas quando o teclado é utilizado para navegar de ou para um elemento.
+É claro que estes só podem ser ativados por <em>keyboard-navigable elements</em> -
+links e controle de formulários (ou até talvez elementos com [tabindex](http://webaim.org/techniques/keyboard/tabindex)).
+Simplesmente, ativando a mudança com um link comum e usando <em> mouse and keyboard event handlers </em> garantirá a acessibilidade.
 
-Sometimes scripting is used to present complex interactions, such as a drop-down or fly-out menu.
-While these can be made technically accessible,
-sometimes an accessible alternative approach may be more friendly.
-For example, instead of forcing users to navigate through a complex and lengthy navigation menu,
-you could instead ensure that the menu system is NOT directly keyboard accessible (nor read by a screen reader),
-but provide standard link functionality on the top-level menu item (e.g., "Products").
-This link would take the user to a secondary page that provides standard links to the pages provided through the complex menu
-(e.g., a Products landing page that has links to the various product categories).
-While not exactly the same interaction that mouse users may choose,
-such alternatives are often more intuitive and friendly for all users.
+Ocasionalmente, scripting é usado para exibir interações complexas, como drop-down ou fly-out menu.
+Apesar de ser possível fazer com que essas funcionalidades sejam acessíveis,
+as vezes, uma alternativa acessível pode ser mais amigável.
+Por exemplo, ao invés de forçar usuários a navegar por um longo e complexo menu de navegação, 
+você pode garantir que esse sistema de menu não (NOT) é diretamente acessível pelo teclado (nem lido por um <em>screen reader</em>)
+mas prover um link padrão de funcionalidade no nível superior de um menu. (e.g., "Produtos").
+Esse link levaria o usuário a uma página secundária que forneceria links padrões para páginas incluidas no menu complexo.
+(e.g., uma <em>Products landing page</em> que contém links para várias categorias de produtos).
+Ainda que não seja exatamente a mesma interação que <em>mouse users</em> poderiam escolher,
+tais alternativas são em geral mais intuitivas e amigáveis para todos usuários.
 
-### `onFocus` and `onBlur`
+### `onFocus` e `onBlur`
 
-These event handlers are typically used with form elements,
-such as text fields, radio buttons, and submit buttons, but can also be used with links.
-`onFocus` is triggered when the cursor is placed on or within a specific form element,
-or when a user 'tabs' to the element using the keyboard.
-`onBlur` is triggered when the cursor leaves a form element or the user 'tabs' away from it.
+Estes <em>event handlers</em> são tipicamente utilizados junto de elementos de formulários,
+tais como caixas de text fields, radio buttons e submit buttons, mas também podem ser usados com links.<!--Aqui preferi utilizar os termos originais-->
+`onFocus` é ativado quando o cursor é colocado em cima ou dentro de um item de formulário especifico,
+ou quando o usuário aperta 'tab' para ir de um item a outro.
+`onBlur` é ativado quando o cursor sai de um elemento de formulário ou aperta 'tab' para sair dele.
 
-Both of these event handlers are device independent,
-meaning that they can be performed with the mouse, keyboard, or other assistive technology.
-The actions that are performed as a result of these event handlers must be analyzed to determine if they cause accessibility problems.
-Typically, these events do not cause accessibility issues unless they are modifying the default behavior of the web browser or are interfering with keyboard navigation within the web page.
-Examples of such issues might be automatically setting focus to other page areas with `onFocus` and `onBlur`,
-trapping the user inside a form control, dynamically revealing form controls immediately upon a user leaving (blurring) a form control, etc.
-Keyboard and screen reader testing will be necessary to ensure these interactions are built in an accessible manner.
+Ambos desses <em>event handlers are device independent</em>,
+ou seja, eles podem ser ativados com o mouse, o teclado, ou qualquer tecnologia assistiva.
+As ações que são provenientes da execução desses <em>event handlers</em> devem ser analisadas para determinar se elas causam algum problema de acessibilidade.
+Geralmente, esses eventos não causam problema algum a não ser que eles estejam modificando o comportamento padrão do navegador 
+ou estão interferindo com o navegador de teclado dentro da página.
+Exemplos de tais problemas podem estar automaticamente colocando o foco em outras áreas da página com `onFocus` e `onBlur`,
+prendendo o usuário dentro do formulário, <em>dynamically revealing form controls immediately upon a user leaving (blurring) a form control, etc.
+Keyboard and screen reader testing will be necessary to ensure these interactions are built in an accessible manner.</em>
 
 ### `onClick` and `onDblClick`
 
