@@ -14,8 +14,8 @@ authors: [{
     link: "http://webaim.org/"
 }]
 translators: [{
-    name: "Nome Da Pessoa Tradutora",
-    link: "http://www.webiwg.org/colabore.html"
+    name: "Isadora Coffani",
+    link: "https://github.com/icoffani"
 }]
 reviewers: []
 discussion: https://github.com/webiwg/acessibilidade-web-pt/issues/29
