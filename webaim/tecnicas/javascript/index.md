@@ -118,13 +118,13 @@ Esses problemas incluem:
 Geralmente, uma página web contendo Javascript será totalmente acessível se o script da página funcionar independente de qual dispositivo for utilizado.
 Ou seja, que não requere somente o uso do mouse ou somente o uso do teclado para ser utilizada e que as informações(conteúdo) for disponível para tecnologias assistivas.
 Infelizmente, não há um meio simples que possa ser aplicado para resolver todos problemas de acessibilidade associados ao Javascript.
-O único modo de garantir a acessibilidade do JavaScript é análisar cada página que utiliza scripts e inventar uma solução única para cada problema encontrado. 
+O único modo de garantir a acessibilidade do JavaScript é análisar cada página que utiliza scripts e inventar uma solução única para cada problema encontrado.
 
 ### JavaScript que não altera a acessibilidade
 
 <!--Comentários do item: JavaScript que não altera a acessibilidade
 
-    N.T.1: Não tenho certeza de qual é o melhor termo para "JavaScript prompts" (@robsmayer, 2016-10-07 22:33) 
+    N.T.1: Não tenho certeza de qual é o melhor termo para "JavaScript prompts" (@robsmayer, 2016-10-07 22:33)
     N.T.2: Não sei se devo manter o texto original(@robsmayer, 2016-10-07 22:34)
     N.T.3: Obter termos melhores para: (@robsmayer, 2016-10-07 hora indefinida)
         JavaScript prompts
@@ -139,7 +139,7 @@ Por exemplo, segundo a  <em lang="en">[Section 508 guidelines of United States l
 [Web Content Accessibility Guidelines](http://webaim.org//standards/wcag/checklist),)</em>,
 caso seja necessário uma resposta do usuário num tempo dado, deve-se notificar o mesmo desse tempo de resposta e dar a ele tempo suficiente para que ele possa
 indicar que será necessário um período maior.
-Implementar tal função seria dificíl usando somente HTML. 
+Implementar tal função seria dificíl usando somente HTML.
 
 Às vezes, JavaScript é utilizado para criar elementos de interfaces visuais que não afetam a acessibilidade.
 Geralmente, JavaScript é usado para rolagem de imagens ou outras modificações apenas visuais,
@@ -173,14 +173,14 @@ Contudo,é importante ter em mente que alguns usuários com deficiência podem e
 suporte ou total suporte aos scripts.
 Se sua página web ou aplicação requere o uso de scripts, garanta que ela funcione para usuários que não utilizem JavaScript.
 Entretanto, isso não significa que todas funcionalidades devem funcionar sem scripts (embora isso seria ótimo),
-se ela não funcionar sem scripts, você deve evitar apresentar algo confuso ou falso que pareça funcionar, mas não 
+se ela não funcionar sem scripts, você deve evitar apresentar algo confuso ou falso que pareça funcionar, mas não
 funcione sem o uso de suporte para JavaScript.
 
 ## <em lang="en">JavaScript Event Handlers</em>
 
 <!--Comentários do item: JavaScript Event Handlers
 
-    N.T: Desculpem, não sei a tradução correta de "JavaScript Event Handlres" 
+    N.T: Desculpem, não sei a tradução correta de "JavaScript Event Handlres"
     N.T: Termo mais bonito para dynamically generated content seria legal saber
     N.T: Deixando claro, não é que eu não saiba as coisas, é só que eu ache que tenha algo melhor do que a minha tradução
     N.T: Há muitos termos técnicos nesse item.(@robsmayer 2016-10-09 - 23:50)
@@ -188,9 +188,10 @@ funcione sem o uso de suporte para JavaScript.
 -->
 
 <!--Ideia Geral/Panorama Geral-->
-### Visão Geral 
 
-<em lang="en">Event handlers</em> acompanham código HTML existente ou conteúdo gerado dinâmicamente 
+### Visão Geral
+
+<em lang="en">Event handlers</em> acompanham código HTML existente ou conteúdo gerado dinâmicamente
 são ativados pelo navegador ou pelo usuário -
 por exemplo quando uma página carrega, quando um usuário clica o mouse, ou quando são 20h.
 Alguns <em lang="en">event handlers</em> dependem do uso do mouse ou do teclado.
@@ -219,8 +220,8 @@ Considerações adicionais são necessárias para acessibilidade.
 
 Para usuários que não possuem deficiência visual, o conteúdo adicional pode ser fornecido diretamente de um modo acessível,
 como texto alternativo, por <em> ARIA label </em> ou descrição, ou até um meio fora da tela.
-Entretanto, para usuários que navegam conhecendo somente o conteúdo do teclado, deve haver algum mecanismo para que eles 
-possam acessar e ver o novo conteúdo ou a nova funcionalidade reveladas. 
+Entretanto, para usuários que navegam conhecendo somente o conteúdo do teclado, deve haver algum mecanismo para que eles
+possam acessar e ver o novo conteúdo ou a nova funcionalidade reveladas.
 
 Em adicição a `onMouseOver`e `onMouseOut`, use `onFocus` e `onBlur`.
 Essas ações são ativadas quando o teclado é utilizado para navegar de ou para um elemento.
@@ -231,7 +232,7 @@ Simplesmente, ativando a mudança com um link comum e usando <em> mouse and keyb
 Ocasionalmente, scripting é usado para exibir interações complexas, como drop-down ou fly-out menu.
 Apesar de ser possível fazer com que essas funcionalidades sejam acessíveis,
 as vezes, uma alternativa acessível pode ser mais amigável.
-Por exemplo, ao invés de forçar usuários a navegar por um longo e complexo menu de navegação, 
+Por exemplo, ao invés de forçar usuários a navegar por um longo e complexo menu de navegação,
 você pode garantir que esse sistema de menu não (NOT) é diretamente acessível pelo teclado (nem lido por um <em>screen reader</em>)
 mas prover um link padrão de funcionalidade no nível superior de um menu. (e.g., "Produtos").
 Esse link levaria o usuário a uma página secundária que forneceria links padrões para páginas incluidas no menu complexo.
@@ -250,43 +251,43 @@ ou quando o usuário aperta 'tab' para ir de um item a outro.
 Ambos desses <em>event handlers are device independent</em>,
 ou seja, eles podem ser ativados com o mouse, o teclado, ou qualquer tecnologia assistiva.
 As ações que são provenientes da execução desses <em>event handlers</em> devem ser analisadas para determinar se elas causam algum problema de acessibilidade.
-Geralmente, esses eventos não causam problema algum a não ser que eles estejam modificando o comportamento padrão do navegador 
+Geralmente, esses eventos não causam problema algum a não ser que eles estejam modificando o comportamento padrão do navegador
 ou estão interferindo com o navegador de teclado dentro da página.
 Exemplos de tais problemas podem estar automaticamente colocando o foco em outras áreas da página com `onFocus` e `onBlur`,
 prendendo o usuário dentro do formulário, <em>dynamically revealing form controls immediately upon a user leaving (blurring) a form control, etc.
 Keyboard and screen reader testing will be necessary to ensure these interactions are built in an accessible manner.</em>
 
-### `onClick` and `onDblClick`
+### `onClick` e `onDblClick`
 
-The `onClick` event handler is triggered when the mouse is pressed when over an HTML element.
-`onClick` is intended to be a mouse dependent event handler.
-However, if the `onClick` event handler is used with keyboard-navigable links or form controls,
-then most major browsers and assistive technologies trigger `onClick` if the <kbd>Enter</kbd> key is pressed when the link or control has focus.
-In these cases, `onClick` is a device independent event handler.
+O manipulador de evento `onClick` é disparado quando o mouse é pressionado sobre um elemento HTML.
+`onClick` destina-se a ser um manipulador de evento dependente do dispositivo mouse.
+No entanto, se o manipulador de eventos `onClick` é usado com links navegáveis via teclado ou controles de formulário,
+a maioria dos principais navegadores e tecnologias assistivas irão disparar `onClick` se a tecla <kbd>Enter</kbd> é pressionada quando o link ou o controle tem foco.
+Nesses casos, o `onClick` é um manipulador de eventos independente de dispositivo.
 
-Nevertheless, the <kbd>Enter</kbd> key will not always trigger the `onClick` event if it is used with non-link and non-control elements,
-such as plain text, table cells, or `<div>` elements,
-even if they made keyboard navigable using tabindex or are focused using scripting.
-In these cases, it will be necessary to detect the <kbd>Enter</kbd> and <kbd>Space</kbd> key presses while focus is placed on them.
+No entanto, o <kbd>Enter</kbd> não disparará sempre o evento `onClick` se este for usado em algo que não é um link ou controle de formulário,
+como texto puro, cécula de tabela, ou elementos `<div>`,
+mesmo se eles forem navegaveis com teclado usando tabindex ou focados com uso de <em lang="en">scription</em>
+Nestes casos, será necessário detectar o se teclas <kbd>Enter</kbd> e <kbd>Space</kbd> são pressionadas enquanto há foco neles
 
-The `onDblClick` event handler is associated with the double click of a mouse on a selected HTML element.
-There is no device independent or keyboard equivalent to `onDblClick`, so it must be avoided.
+O manipulador de eventos onDblClick` está associado ao clique do mouse no elemento HTML selecionado.
+Não existe um manipulador de eventos independente de dispositivo ou equivalente com teclado ao `onDblClick`, por isso deve ser evitado
 
-### `onChange` and `onSelect`
+### `onChange` e `onSelect`
 
-The `onChange` event handler is triggered when a form element is selected and changed,
-for example, when a radio button is initially selected, when the text changes within a text box or text area,
-or when the active item in a select menu changes.
-Although these event handlers are device independent and can be activated using the mouse, keyboard, or other device,
-the actions that are performed as a result of these event handlers must be analyzed to determine if they cause accessibility problems.
+O manipulador de eventos `onChange` é acionado quando um elemento do formulário é selecionado e alterado,
+por exemplo, quando um <em lang="en">radio button</em> é inicialmente selecionado, quando o texto é alterado dentro de uma caixa de texto ou a área de texto,
+ou quando um item ativo em um menu de seleção é alterado.
+Embora esses manipuladores de eventos são independentes do dispositivo e podem ser ativados usando o mouse, teclado ou outro dispositivo,
+as ações que são executadas como resultado desses manipuladores de evento devem ser analisadas para determinar se eles causam problemas de acessibilidade.
 
-A common use of `onChange` is on select menus to trigger navigation when the active option within the menu is changed.
-These menus can cause keyboard accessibility issues because you cannot scroll through the list using a keyboard without selecting one of the options,
-and thus triggering the `onChange` event.
-Some browsers (including Firefox) override these jump menus so they are not activated on keyboard change,
-but only after you either select an item using a mouse or press Enter if using the keyboard.
-However, these types of JavaScript 'jump' menus can be made keyboard accessible by removing `onChange` and
-providing a submit button separate from the list of choices that activates the currently selected item.
+Um uso comum de `onChange` é selecionar menus que disparam navegação quando a opção ativa dentro do menu é alterada.
+Estes menus podem causar problemas de acessibilidade de teclado, porque você não pode rolar pela lista usando um teclado sem selecionar uma das opções,
+e, assim, provocando o evento `onChange`.
+Alguns navegadores (incluindo o Firefox) subistituem estes menus de salto para que eles não sejam ativados na mudança do teclado,
+Mas só depois que você seleciona um item usando um mouse ou pressione <kbd>Enter</kbd> se usando o teclado.
+No entanto, esses tipos de menus JavaScript "de salto" podem ser feitos acessíveis para teclado removendo `onChange` e
+fornecendo um botão enviar separado da lista de escolhas que ativa o item atualmente selecionado.
 
 ### Using Device Independent Event Handlers
 
