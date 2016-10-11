@@ -365,60 +365,69 @@ Deve-se tomar cuidado em tomar a decisão de usá-las.
 Se elas são usadas, teste de usuário completo da sua implementação é vital para garantir a acessibilidade.
 É geralmente melhor alertar o usuário para o fato de que uma janela pop-up será aberta.
 
-### Redirecting and Refreshing Browser Windows
+### Redirecionando e Atualizando Janelas do Navegador
 
-When the page the browser is viewing suddenly changes or refreshes,
-the person viewing that page may become disoriented or confused,
-especially if that person is using an assistive technology.
-This is commonly done with page redirects when page content has been moved or updated,
-or with scripting or `<meta>` tags to refresh pages automatically.
-Accessibility guidelines requires that users be given control over time sensitive content changes.
-Do not automatically change or refresh the browser window without first alerting the user that the change will occur and giving him/her the ability to disable or postpone the change,
-or even better, give the user full control over the page change or redirect.
+Quando a página do navegador está sendo vista e de repente muda ou atualiza,
+a pessoa que está exibindo essa página pode tornar-se desorientada ou confusa,
+especialmente se essa pessoa está usando uma tecnologia assistiva.
+Isto é comumente feito com redirecionamentos de página quando o conteúdo da página foi movido ou atualizado,
+ou com scripts ou tags de `<meta>` para atualizar páginas automaticamente.
+As diretrizes de acessibilidade exige que aos usuários deve ser dado controle sobre conteúdo que é sensível a passagem de tempo.
+Não alterar ou atualiza automaticamente a janela do navegador sem primeiro alertar o usuário que a mudança irá ocorrer e dando-lhe a capacidade de desabilitar ou adiar a mudança,
+ou melhor ainda, dar ao usuário controle completo sobre a mudança de página ou redirecionamento.
 
-### Using Pure CSS as a JavaScript Alternative
+### Uso de CSS Puro Como Alternativa ao JavasScript
 
-As mentioned previously, Cascading Style Sheet (CSS) parameters are often modified using JavaScript to create dynamically changing content.
-However, much of the dynamic functionality often controlled with JavaScript is now available directly within the specifications for CSS itself.
-This allows the construction of interactive and dynamic navigation and layout elements without the need for JavaScript events.
-You can create drop-down menus, interactive images, animation,
-and other exciting features in web sites without worrying about device dependent event handlers.
+Como mencionado anteriormente, folhas de estilo em cascada, do inglês <em lang="en">Cascading Style Sheet</em> (CSS), são muitas vezes modificadas usando JavaScript para criar dinamicamente conteúdo.
+No entanto, grande parte da funcionalidade dinâmica muitas vezes controlada com JavaScript está disponível diretamente dentro das especificações para CSS em si.
+Isto permite a construção de elementos de navegação e layout interativos e dinâmicos sem a necessidade de eventos de JavaScript.
+Você pode criar menus suspensos, imagens interativas, animação,
+e outros recursos interessantes em sites da web sem se preocupar com manipuladores de eventos dependentes do dispositivo.
 
-It's important to note that CSS is intended for visual styling.
-As such, screen readers largely ignore CSS.
-It should not generally be used to present content or functionality,
-at least not without ensuring the content or functionality is fully accessible.
-Using CSS alone to produce dynamic content should only employed with much testing in a variety of browsers and screen readers.
+É importante notar que CSS destina-se para o estilo visual.
+Como tal, os leitores de tela ignoram a maioria do CSS.
+Ele geralmente não deve ser usado para apresentar conteúdo ou funcionalidade,
+pelo menos não sem garantir que o conteúdo ou a funcionalidade é completamente acessível.
+Usando CSS sozinho para produzir conteúdo dinâmico deve somente empregados com quantidade de testes em uma variedade de navegadores e leitores de tela.
 
-## JavaScript Alternatives
+## Alternativas ao JavaScript
 
-### Introduction
+<!--
+   N.T.: O @suissa vai ficar p da vida ao revisar essa parte do texto original,
+         só tem que levar em conta que o artigo é de 2013. Outro ponto é que
+         em estatisticas recentes, quem usa tecnologia assistiva USA javascript
+         ativado sim. Se ele realmente fizer questão, podemos adicionar uma
+         notação SEPARADA e clara de nota de tradução, mas não podemos
+         alterar o texto original sem avisar a WebAIM (@fititnt, 2016-10-11 02:34)
+-->
 
-Whenever JavaScript cannot be made directly accessible, an accessible alternative must be provided.
-Also, some user agents, such as web-enabled cell phones, tablets, and other mobile devices, do not yet fully utilize JavaScript.
-There are several ways you can provide accessible alternatives when the scripting cannot be made accessible or when the end user does not have JavaScript enabled.
+### Introdução
 
-### Server-side Processing
+Sempre que o JavaScript não pode ser feito acessível diretamente, deve ser fornecida uma alternativa acessível.
+Além disso, alguns agentes de usuário, tais como celulares habilitados para web, tablets e outros dispositivos móveis, não ainda utilizam JavaScript completamente.
+Existem várias maneiras que você pode fornecer alternativas acessíveis quando o script não pode ser feito acessível ou quando o usuário final não tem JavaScript habilitado.
 
-In many cases, the functionality provided by JavaScript can or should be duplicated by server-side scripting.
-For example, JavaScript is often used to validate form elements before a form is posted.
-Instead of implementing such JavaScript programming and its accompanying accessibility techniques,
-you could use a server-side script to validate the form elements.
-Because scripting can always be disabled or modified by the end user,
-it should never be relied on for critical form validation or other functions.
-JavaScript is often used to write dynamic information to a web page, such as the current date and/or time.
-Again, using a server script or include negates the need for additional accessibility implementation.
+### Processamento do lado do servidor
 
-### Progressive Enhancement
+Em muitos casos, a funcionalidade fornecida pelo JavaScript pode ou deve ser repetida por script do lado do servidor.
+Por exemplo, JavaScript é muitas vezes usado para validar elementos de formulário antes que um formulário é enviado.
+Em vez de implementar tal programação JavaScript e suas respectivas técnicas de acessibilidade,
+Você pode usar um programação do lado do servidor para validar os elementos de formulário.
+Porque o script pode sempre ser desativado ou modificado pelo usuário final,
+isso nunca deve ser invocado para validação de forma crítica ou outras funções.
+JavaScript é usado frequentemente para gravar informações dinâmicas em uma página da web, tais como a data atual e/ou tempo.
+Novamente, usando processamento do lado do servidor nega a necessidade de implementação de acessibilidade adicionais.
 
-Progressive enhancement is the technique of using scripting to enhance the functionality or behavior of content and functionality that is already sufficient without scripting.
-An example might be adding client-side [form validation and error recovery](http://webaim.org/techniques/formvalidation/)
-to a form that already has server-side validation.
-The form still functions fine without scripting,
-ut the scripting progressively enhances the form to make it more usable and accessible.
-This is an excellent approach to developing accessible scripted interfaces -
-first start with accessible markup and core HTML (and perhaps server-side) functionality,
-then add accessible scripting to make it more efficient, friendly, and accessible.
+### Aprimoramento Progressivo
+
+Aprimoramento Progressivo, do inglês <em lang="en">Progressive enhancement</em>, é a técnica de usar scripts para melhorar a funcionalidade ou comportamento de conteúdos e funcionalidades que já é suficiente sem uso de JavasScript.
+Um exemplo poderia ser a adição do lado do cliente de [validação de formulários e mensagens de erro](http://webaim.org/techniques/formvalidation/)
+de uma forma que já tem a validação do lado do servidor.
+O formulário ainda funciona muito bem sem scripts,
+porém uso de Javascript melhora progressivamente o formulário de modo a torná-lo mais útil e acessível.
+Esta é uma excelente abordagem para desenvolver interfaces de script acessíveis -
+Primeiro comece com marcação acessível e HTML básico que funcione (ainda que com ajuda do lado do servidor),
+em seguida, adicione scripts acessível para torná-lo mais eficiente, amigável e acessível.
 
 ### `<noscript>`
 
