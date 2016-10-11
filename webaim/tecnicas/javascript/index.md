@@ -1,7 +1,7 @@
 ---
 layout: translation
 date: 2013-10-24 # Data de ultima atualização do original
-title: "Accessible Javascript" # Titulo traduzido
+title: "Accessible JavaScript" # Titulo traduzido
 description: "JavaScript allows developers to add increased interaction, information processing, and control in web-based content. However, JavaScript can also introduce accessibility issues."
 
 copyright: 'Copyright WebAIM' # Quem tem direitos de cópia
@@ -18,7 +18,7 @@ translators: [{
 reviewers: []
 discussion: https://github.com/webiwg/acessibilidade-web-pt/issues/22
 original: {
-    title: "Accessible Javascript", # Titulo original, no idioma origial
+    title: "Accessible JavaScript", # Titulo original, no idioma origial
     link: "http://webaim.org/techniques/javascript/", # Link para documento original
     dateOfTranslation: "2016-10-04" # Data em que a tradução foi finalizada
 }
@@ -100,14 +100,15 @@ h4 code {
 
 ## Problemas de Acessibilidade com JavasScript
 
-Javascript permite que os desenvolvedores disponibilizem mais interação, processamento de informações e controle num contexto web.
-Entretanto, Javascript pode introduzir alguns problemas de acessibilidade.
+JavaScript permite que os desenvolvedores disponibilizem mais interação, processamento de informações e controle num contexto web.
+Entretanto, JavaScript pode introduzir alguns problemas de acessibilidade.
 Esses problemas incluem:
 
 <!--Comentários do item: Problemas de Acessibilidade com JavasScript
 
   N.T.:  Não tenho certeza da tradução de "user agent" (@robsmayer, 2016-10-06 22:18)
   N.T.:  Deixar esse comentário como exemplo para eu me lembrar por enquanto.
+  N.T.:  "user agent" = "agente de usuário". Essa é 100% (@fititnt, 2016-10-11 03:09)
 -->
 
 -   **Navegação.** Incapacidade ou dificuldade ao navegar utilizando um teclado ou tecnologia assistiva.
@@ -115,9 +116,9 @@ Esses problemas incluem:
 -   **Controle do Usuário.** Falta controle do usuário sobre mudanças automáticas de conteúdo.
 -   **Confusão/Desorientamento.** Alterando ou desligando o uso normal do usuário ou ativando eventos que podem ser desconhecidos pelo usuário.
 
-Geralmente, uma página web contendo Javascript será totalmente acessível se o script da página funcionar independente de qual dispositivo for utilizado.
+Geralmente, uma página web contendo JavaScript será totalmente acessível se o script da página funcionar independente de qual dispositivo for utilizado.
 Ou seja, que não requere somente o uso do mouse ou somente o uso do teclado para ser utilizada e que as informações(conteúdo) for disponível para tecnologias assistivas.
-Infelizmente, não há um meio simples que possa ser aplicado para resolver todos problemas de acessibilidade associados ao Javascript.
+Infelizmente, não há um meio simples que possa ser aplicado para resolver todos problemas de acessibilidade associados ao JavaScript.
 O único modo de garantir a acessibilidade do JavaScript é análisar cada página que utiliza scripts e inventar uma solução única para cada problema encontrado.
 
 ### JavaScript que não altera a acessibilidade
@@ -135,8 +136,8 @@ O único modo de garantir a acessibilidade do JavaScript é análisar cada pági
 Usar JavaScript numa página não significa que ela não é acessível.
 Em muitos casos, JavaScript pode ser usado para aumentar a acessibilidade.
 Por meio dos <em lang="en">prompts JavaScript</em> informações adicionais, avisos ou instruções podem ser dadas ao usuário.
-Por exemplo, segundo a  <em lang="en">[Section 508 guidelines of United States law](http://webaim.org//standards/508/checklist) and the
-[Web Content Accessibility Guidelines](http://webaim.org//standards/wcag/checklist),)</em>,
+Por exemplo, segundo a <em lang="en">[Section 508 guidelines of United States law](http://webaim.org//standards/508/checklist) e a
+[Diretrizes de Acessibilidade para Conteúdo Web](http://webaim.org//standards/wcag/checklist),)</em>,
 caso seja necessário uma resposta do usuário num tempo dado, deve-se notificar o mesmo desse tempo de resposta e dar a ele tempo suficiente para que ele possa
 indicar que será necessário um período maior.
 Implementar tal função seria dificíl usando somente HTML.
@@ -144,7 +145,7 @@ Implementar tal função seria dificíl usando somente HTML.
 Às vezes, JavaScript é utilizado para criar elementos de interfaces visuais que não afetam a acessibilidade.
 Geralmente, JavaScript é usado para rolagem de imagens ou outras modificações apenas visuais,
 onde uma imagem é trocada por outra quando o mouse é movido acima dela;
-por exemplo, um <em lang="en">navigation item<\em> que muda para exibir uma sombra, brilho, sublinhado quando o cursor fica acima dele.
+por exemplo, um <em lang="en">navigation item</em> que muda para exibir uma sombra, brilho, sublinhado quando o cursor fica acima dele.
 
 Para tais usos não são necessários recursos adicionais de acessibilidade, pois tal script não introduz ferramentas ou não exibe conteúdos importantes.
 
@@ -154,9 +155,10 @@ Para tais usos não são necessários recursos adicionais de acessibilidade, poi
 
     N.T.: Acho que exite uma tradução melhor para "don't have or 'do' JavaScript".
     N.T,: Desconheço uma tradução correta de scripted interfaces (supus interfaces script) e scripted content (coloquei conteúdo script).
+    N.T.: Alterei "don't have or 'do' JavaScript" para "tem ou não tem JavaScript ativado". Não é 100% (@fititnt, 2016-10-11 03:13)
 -->
 
-É um erro comum supor que pessoas com deficiência não precisam do JavaScript ou 'utilizem'  <em lang="en">don't have or 'do' JavaScript</en> o mesmo
+É um erro comum supor que pessoas com deficiência não precisam do JavaScript ou 'utilizem' tem ou não tem JavaScript ativado o mesmo
 e portanto, é aceitável que exista interfaces script inacessíveias, contanto que sejam acessíveis com o JavaScript desativado.
 Uma pesquisa feita pela WebAIM de usuários leitores descobriu que [98.6% dos correspondentes tinham JavaScript ativado](http://webaim.org//projects/screenreadersurvey4/#javascript).
 Os números são ainda maiores para usuários que possuem um nível maior de [deficiência visual](http://webaim.org/projects/lowvisionsurvey/#javascript)
@@ -176,7 +178,7 @@ Entretanto, isso não significa que todas funcionalidades devem funcionar sem sc
 se ela não funcionar sem scripts, você deve evitar apresentar algo confuso ou falso que pareça funcionar, mas não
 funcione sem o uso de suporte para JavaScript.
 
-## <em lang="en">JavaScript Event Handlers</em>
+## Manipulador de Eventos JavaScript
 
 <!--Comentários do item: JavaScript Event Handlers
 
@@ -185,24 +187,25 @@ funcione sem o uso de suporte para JavaScript.
     N.T: Deixando claro, não é que eu não saiba as coisas, é só que eu ache que tenha algo melhor do que a minha tradução
     N.T: Há muitos termos técnicos nesse item.(@robsmayer 2016-10-09 - 23:50)
     N.T: Esqueci de colocar o horário em basicamente todas notas de tradução (@robsmayer 2016-10-09 - 23:51)
+    N.T: "JavaScript Event Handlres" = "Manipulador de Eventos JavaScript". (@fititnt, 2016-10-11 03:16)
 -->
 
 <!--Ideia Geral/Panorama Geral-->
 
 ### Visão Geral
 
-<em lang="en">Event handlers</em> acompanham código HTML existente ou conteúdo gerado dinâmicamente
+Manipuladores de evento acompanham código HTML existente ou conteúdo gerado dinâmicamente
 são ativados pelo navegador ou pelo usuário -
 por exemplo quando uma página carrega, quando um usuário clica o mouse, ou quando são 20h.
-Alguns <em lang="en">event handlers</em> dependem do uso do mouse ou do teclado.
-Estes são chamados de <em lang="en">**device dependent**event handlers</em>.
-Outros <em lang="en">event handlers are **device independent**</em> e são ativados por ambos, mouse e teclado. ou por outros meios.
+Alguns manipuladores de evento dependem do uso do mouse ou do teclado.
+Estes são chamados de manipuladores de eventos **dependentes de dispositivos**.
+Outros manipuladores de eventos são **independentes de dispositivos** e são ativados por ambos, mouse e teclado. ou por outros meios.
 
 <div class="important" markdown="1">
 <div class="title">Importante</div>
 
-Com objetivo de assegurar a acessibilidade, use tanto um <em lang="en">device independent event handler</em> (Um que funcione com o mouse e com o teclado)
-ou utilize ambos <em lang="en">mouse dependente *and* keyboard dependent event handlers</em>.
+Com objetivo de assegurar a acessibilidade, use tanto um manipulador de eventos independente de dispositivo (Um que funcione com o mouse e com o teclado)
+ou utilize ao mesmo tempo um que funcione com mouse *e* outro que funcione com teclado.
 </div>
 
 ### `onMouseOver` and `onMouseOut`
@@ -219,13 +222,13 @@ tal como um <em>tooltip</em>, um menu de navegação, etc, então esse conteúdo
 Considerações adicionais são necessárias para acessibilidade.
 
 Para usuários que não possuem deficiência visual, o conteúdo adicional pode ser fornecido diretamente de um modo acessível,
-como texto alternativo, por <em> ARIA label </em> ou descrição, ou até um meio fora da tela.
+como texto alternativo, por etiqueta ARIA ou descrição, ou até um meio fora da tela.
 Entretanto, para usuários que navegam conhecendo somente o conteúdo do teclado, deve haver algum mecanismo para que eles
 possam acessar e ver o novo conteúdo ou a nova funcionalidade reveladas.
 
 Em adicição a `onMouseOver`e `onMouseOut`, use `onFocus` e `onBlur`.
 Essas ações são ativadas quando o teclado é utilizado para navegar de ou para um elemento.
-É claro que estes só podem ser ativados por <em>keyboard-navigable elements</em> -
+É claro que estes só podem ser ativados por elementos navegáveis por teclado -
 links e controle de formulários (ou até talvez elementos com [tabindex](http://webaim.org/techniques/keyboard/tabindex)).
 Simplesmente, ativando a mudança com um link comum e usando <em> mouse and keyboard event handlers </em> garantirá a acessibilidade.
 
@@ -233,29 +236,29 @@ Ocasionalmente, scripting é usado para exibir interações complexas, como drop
 Apesar de ser possível fazer com que essas funcionalidades sejam acessíveis,
 as vezes, uma alternativa acessível pode ser mais amigável.
 Por exemplo, ao invés de forçar usuários a navegar por um longo e complexo menu de navegação,
-você pode garantir que esse sistema de menu não (NOT) é diretamente acessível pelo teclado (nem lido por um <em>screen reader</em>)
+você pode garantir que esse sistema de menu NÃO é diretamente acessível pelo teclado (nem lido por um leitor de tela)
 mas prover um link padrão de funcionalidade no nível superior de um menu. (e.g., "Produtos").
 Esse link levaria o usuário a uma página secundária que forneceria links padrões para páginas incluidas no menu complexo.
-(e.g., uma <em>Products landing page</em> que contém links para várias categorias de produtos).
-Ainda que não seja exatamente a mesma interação que <em>mouse users</em> poderiam escolher,
+(e.g., uma <em lang="en">langing page</em> de produtos que contém links para várias categorias de produtos).
+Ainda que não seja exatamente a mesma interação que usuários de mouse poderiam escolher,
 tais alternativas são em geral mais intuitivas e amigáveis para todos usuários.
 
 ### `onFocus` e `onBlur`
 
-Estes <em>event handlers</em> são tipicamente utilizados junto de elementos de formulários,
+Estes manipuladores de eventos são tipicamente utilizados junto de elementos de formulários,
 tais como caixas de text fields, radio buttons e submit buttons, mas também podem ser usados com links.<!--Aqui preferi utilizar os termos originais-->
 `onFocus` é ativado quando o cursor é colocado em cima ou dentro de um item de formulário especifico,
 ou quando o usuário aperta 'tab' para ir de um item a outro.
 `onBlur` é ativado quando o cursor sai de um elemento de formulário ou aperta 'tab' para sair dele.
 
-Ambos desses <em>event handlers are device independent</em>,
+Ambos são manipuladores de eventos independentes de dispositivo,
 ou seja, eles podem ser ativados com o mouse, o teclado, ou qualquer tecnologia assistiva.
-As ações que são provenientes da execução desses <em>event handlers</em> devem ser analisadas para determinar se elas causam algum problema de acessibilidade.
+As ações que são provenientes da execução desses manipuladores de eventos devem ser analisadas para determinar se elas causam algum problema de acessibilidade.
 Geralmente, esses eventos não causam problema algum a não ser que eles estejam modificando o comportamento padrão do navegador
 ou estão interferindo com o navegador de teclado dentro da página.
 Exemplos de tais problemas podem estar automaticamente colocando o foco em outras áreas da página com `onFocus` e `onBlur`,
 prendendo o usuário dentro do formulário, <em>dynamically revealing form controls immediately upon a user leaving (blurring) a form control, etc.
-Keyboard and screen reader testing will be necessary to ensure these interactions are built in an accessible manner.</em>
+Keyboard and leitor de tela testing will be necessary to ensure these interactions are built in an accessible manner.</em>
 
 ### `onClick` e `onDblClick`
 
@@ -424,7 +427,7 @@ Aprimoramento Progressivo, do inglês <em lang="en">Progressive enhancement</em>
 Um exemplo poderia ser a adição do lado do cliente de [validação de formulários e mensagens de erro](http://webaim.org/techniques/formvalidation/)
 de uma forma que já tem a validação do lado do servidor.
 O formulário ainda funciona muito bem sem scripts,
-porém uso de Javascript melhora progressivamente o formulário de modo a torná-lo mais útil e acessível.
+porém uso de JavaScript melhora progressivamente o formulário de modo a torná-lo mais útil e acessível.
 Esta é uma excelente abordagem para desenvolver interfaces de script acessíveis -
 Primeiro comece com marcação acessível e HTML básico que funcione (ainda que com ajuda do lado do servidor),
 em seguida, adicione scripts acessível para torná-lo mais eficiente, amigável e acessível.
@@ -440,12 +443,10 @@ conteúdo dentro do elemento `<noscript>`.
 O elemento `<noscript>` pode ser usado dentro de sua página para exibir conteúdo em navegadores que não suportam ou desativaram JavaScript.
 No entanto, se o JavaScript está habilitado o elemento `<noscript>` é ignorado.
 
-
-
-Fornecer uma alternativa acessível dentro do elemento '<noscript>' para um script inacessível não vai fazer a página acessível.
-O conteúdo de '<noscript>' apenas será apresentada se o JavaScript está desabilitado.
-A maioria dos usuários de leitor de tela ter o JavaScript habilitado e assim encontrará seu script inacessível e não o conteúdo de '<noscript>'.
-* * Em outras palavras, '<noscript>' é uma alternativa para criação de scripts, não é uma alternativa para o inaccessibility.*
+Fornecer uma alternativa acessível dentro do elemento `<noscript>` para um script inacessível não vai fazer a página acessível.
+O conteúdo de `<noscript>` apenas será apresentada se o JavaScript está desabilitado.
+A maioria dos usuários de leitor de tela ter o JavaScript habilitado e assim encontrará seu script inacessível e não o conteúdo de `<noscript>`.
+* * Em outras palavras, `<noscript>` é uma alternativa para criação de scripts, não é uma alternativa para o inaccessibility.*
 
 <div class="important" markdown="1">
 <div class="title">Importante</div>
