@@ -1,7 +1,7 @@
 ---
 layout: translation
 date: 2010-01-01 # Data de ultima atualização do original
-title: "Writing Clearly and Simply" # Titulo traduzido
+title: "É possível escrever de forma Simples e Clara" # Titulo traduzido
 description: "The task of writing clearly and simply has never been either clear or simple.
 In fact, it can be one of the most difficult of all writing tasks.
 Clear and simple writing is an art to which many aspire and few achieve."
@@ -112,8 +112,12 @@ h4 code {
 
 </style>
 
+<!--
+  N.T.: Não estou certa se "Clearly and Simply" possui um significado subjetivo além do literal 
+        (@icoffani, 2016-10-11 15:24)
+-->
 
-Is it *Possible* to Write "Clearly and Simply"?
+É *possível* escrever de forma "Simples e Clara"?
 -----------------------------------------------
 
 The task of writing clearly and simply has never been either clear or simple.
