@@ -431,32 +431,39 @@ em seguida, adicione scripts acessível para torná-lo mais eficiente, amigável
 
 ### `<noscript>`
 
-Making JavaScript natively accessible is very important.
-However, in some cases, the end user may not have JavaScript enabled or may be using technologies that do not support JavaScript.
-In such cases, you can provide non-JavaScript alternatives to user's who cannot or choose not to view JavaScript content.
+Tornar JavaScript nativamente acessível é muito importante.
+No entanto, em alguns casos, o usuário final pode não ter o JavaScript habilitado ou pode estar usando tecnologias que não suportam JavaScript.
+Em tais casos, você pode fornecer alternativas não-JavaScript para usuário que não podem ou optar por não exibir o conteúdo do JavaScript.
 
-When JavaScript is used within a Web page, the most straightforward way to provide an alternative for the JavaScript-generated content is to provide
-content within the `<noscript>` element.
-The `<noscript>` element can be used within your page to display content in browsers that do not support or have disabled JavaScript.
-However, if JavaScript IS enabled the `<noscript>` element is ignored.
+Quando o JavaScript é usado dentro de uma página Web, é a maneira mais simples para fornecer uma alternativa para o conteúdo gerado pelo JavaScript para fornecer
+conteúdo dentro do elemento `<noscript>`.
+O elemento `<noscript>` pode ser usado dentro de sua página para exibir conteúdo em navegadores que não suportam ou desativaram JavaScript.
+No entanto, se o JavaScript está habilitado o elemento `<noscript>` é ignorado.
+
+
+
+Fornecer uma alternativa acessível dentro do elemento '<noscript>' para um script inacessível não vai fazer a página acessível.
+O conteúdo de '<noscript>' apenas será apresentada se o JavaScript está desabilitado.
+A maioria dos usuários de leitor de tela ter o JavaScript habilitado e assim encontrará seu script inacessível e não o conteúdo de '<noscript>'.
+* * Em outras palavras, '<noscript>' é uma alternativa para criação de scripts, não é uma alternativa para o inaccessibility.*
 
 <div class="important" markdown="1">
 <div class="title">Importante</div>
-Providing an accessible alternative within the `<noscript>` element for an inaccessible script will not make the page accessible.
-The `<noscript>` content will only display if JavaScript is disabled.
-Most screen reader users have JavaScript enabled, and will thus encounter your inaccessible script and not the `<noscript>` content.
-**In other words, `<noscript>` is an alternative to scripting, NOT an alternative for inaccessibility.**
+Prover uma alternativa acessível ao uso do elemento `<noscript>` para um script inacessível não vai fazer a página acessível.
+O conteúdo de `<noscript>` apenas será apresentada se o JavaScript está desabilitado.
+A maioria dos usuários de leitor de tela tem o JavaScript habilitado e assim encontrará seu script inacessível e não o conteúdo de `<noscript>`.
+**Em outras palavras, uso de `<noscript>` é uma alternativa ao uso de JavaScript, NÃO uma alternativa para inacessibilidade.**
 </div>
 
-Optimally, the `<noscript>` element would contain equivalent or alternative content or functionality to the scripted content or functionality.
-You may, for example, provide a link to an accessible HTML alternative or to a page that utilizes server-side scripting instead.
-However, this is often not possible, especially for highly complex applications that cannot be duplicated without scripting.
-In these cases you may choose to simply indicate "Your browser does not support JavaScript." or similar.
-This does nothing to make the content accessible or usable,
-but at least conveys why it is not accessible or usable.
+Idealmente, o elemento de `<noscript>` conteria conteúdo equivalente ou alternativo a funcionalidade para o conteúdo criado com JavaScript ou funcionalidade.
+Você pode, por exemplo, fornecer um link para uma alternativa acessível de HTML ou uma página que utiliza em vez de script funcionalidade do lado do servidor.
+No entanto, muitas vezes não é possível, especialmente para aplicações altamente complexas que não podem ser duplicadas sem scripts.
+Nesses casos, você pode optar por simplesmente indicar "seu navegador não suporta JavaScript..." ou similar.
+Isso não faz nada para tornar o conteúdo acessível ou utilizável,
+Mas pelo menos transmite não é acessível ou utilizável.
 
-Progressive enhancement can also be used to provide JavaScript alternatives or,
-at a minimum, failure messages for when scripting is not available.
-For example, an error message or link to an alternative version may be provided in HTML at the beginning of the page,
-but if scripting is enabled, it is used to hide this message from view using CSS `display:none;`.
-Users without scripting enabled will see the message,but users with scripting will not.
+Aprimoramento progressivo também pode ser usado para fornecer alternativas JavaScript ou,
+no mínimo, mensagens de falha para quando o script não está disponível.
+Por exemplo, uma mensagem de erro ou um link para uma versão alternativa pode ser fornecido no HTML no início da página,
+Mas se o script é ativado, ele é usado para esconder esta mensagem visualmente usando CSS `display:none;`.
+Usuários sem scripts habilitado verá a mensagem, mas os usuários com o script não verão.
