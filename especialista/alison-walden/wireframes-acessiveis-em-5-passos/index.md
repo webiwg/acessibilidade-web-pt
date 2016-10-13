@@ -1,7 +1,7 @@
 ---
 layout: translation
 date: 2016-08-28 # Data de ultima atualização do original
-title: "How to make your wireframes more accessible in five easy steps" # Titulo traduzido
+title: "Wireframes mais acessíveis em 5 passos fáceis" # Titulo traduzido
 description: "Most websites in North America and Europe now need to meet accessibility requirements.
 These include requirements described by Section 508 of the American Disabilities Act (ADA)."
 
@@ -27,17 +27,23 @@ isDraft: true
 isReleaseCandidate: false
 ---
 
-Most websites in North America and Europe now need to meet accessibility requirements.
-These include requirements described by Section 508 of the American Disabilities Act (ADA).
-They also refer to the Web Content Accessibility Guidelines (WCAG 2.0).
+<!--
+    N.T.: "How to make your wireframes more accessible in five easy steps" foi
+        traduzido para "Wireframes mais acessíveis em 5 passos fáceis", pois desta forma
+        a palavra wireframes fica mais visível (@ivans-netto, 10-13-2016 15:40).
+-->
 
-Follow these five easy steps to make your wireframes more accessible:
+A maioria dos websites na América do Norte e Europa agora precisam adequar-ser aos requerimentos de acessibilidade.
+Estes incluem requerimentos descritos pela Section 508 of the <am lang="en">American Disabilities Act (ADA)</am>.
+Eles também referenciam para o <am lang="en">Web Content Accessibility Guidelines (WCAG 2.0)</am>.
 
--   One: Document the heading structure.
--   Two: Document hidden way-finding cues.
--   Three: Document focus order information and specify the visible focus state.
--   Four: Provide clear link labels.
--   Five: Design simple, usable forms.
+Siga estes 5 fáceis passos para fazer seu wireframe mais acessível:
+
+1. Documente a estrutura dos títulos;
+2. Documente hidden way-finding cues;
+3. Documente a ordem do focus e especifique o estado visível deste;
+4. Forneça links claras para os labels;
+5. Faça o design simples e de formas utilizáveis.
 
 One: Document the heading structure
 -----------------------------------
