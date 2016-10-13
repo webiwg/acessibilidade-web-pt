@@ -13,8 +13,8 @@ authors: [{
     link: "http://accessib.li/about-alison-walden/"
 }]
 translators: [{
-    name: "Nome Do Tradutor Aqui",
-    link: "http://twitter.com/webiwg"
+    name: "Ivan Sander Netto",
+    link: "https://github.com/ivans-netto"
 }]
 reviewers: []
 discussion: https://github.com/webiwg/acessibilidade-web-pt/issues/11
