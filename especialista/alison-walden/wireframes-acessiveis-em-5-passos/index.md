@@ -45,20 +45,19 @@ Siga estes 5 fáceis passos para fazer seu wireframe mais acessível:
 4. Forneça links claras para os labels;
 5. Faça o design simples e de formas utilizáveis.
 
-One: Document the heading structure
+Um: Documente a estrutura de títulos
 -----------------------------------
 
-Remember the last time you wrote an essay? You probably had a series of sections in your essay that each had a heading.
-Most likely you had a table of contents that listed all your headings.
-If someone read your table of contents, they would have had a good idea of what your essay was about.
+Lembra-se da última vez que escreveu uma redação? Você provavelmente tinha uma série de sessões na sua redação e em cada uma delas um título.
+Mais provável tinha um índice que listava estes títulos.
+Se alguém lesse seu índice, teria uma boa idéia sobre o que sua redação se trata.
 
-This is what headings are for on a website.
-They should describe the page they are on.
-Assistive devices like screen readers allow users to navigate web pages by headings.
-This is one way that a non-sighted person can "scan" a webpage, by choosing to hear all the headings on the page.
-Listening to the headings allows them to assess if the page is useful for them.
-If the headings are not developed and written in a clear and proper way,
-they will not be helpful to this audience.
+Isto é o que títulos são para os websites.
+Eles devem descrever a página que estão.
+Dispositivos de acessibilidade como leitores de tela permitem usuários navegar as webpages pelos títulos.
+Ouvir os títulos permite os usuários identificar rapidamente se a página é útil para eles.
+Se os títulos não são desenvolvidos e escritos em uma forma clara e própria para,
+eles não irão auxiliares para os usuários que fazem uso destas ferramentas de leitura.
 
 <!--
   N.T: O trexo abaixo é o HTML original. Vamos manter esse comentário até que
@@ -69,11 +68,12 @@ they will not be helpful to this audience.
   <img src="http://i0.wp.com/accessib.li/wp-content/uploads/2016/08/headings.jpg?resize=550%2C217" alt="A primary heading that asks the question, Should I be a primary heading?" class="size-full wp-image-282" sizes="(max-width: 550px) 100vw, 550px" srcset="http://i0.wp.com/accessib.li/wp-content/uploads/2016/08/headings.jpg?w=550 550w, http://i0.wp.com/accessib.li/wp-content/uploads/2016/08/headings.jpg?resize=300%2C118 300w" width="550" height="217" />
 -->
 
-![A primary heading that asks the question, Should I be a primary heading?](media/headings.jpg)
+![O título primário  A primary heading faz uma pergunta: Eu devo ser um título primário?](media/headings.jpg)
 
-The experience designer or copywriter should decide the heading structure.
-The wireframe or content matrix should include an annotation that describes the heading structure.
-A developer should not decide the heading structure by herself (in absence of documentation).
+O designer de experiência ou escritor deve decidir as estruturas de títulos.
+
+O wireframe ou matriz de conteúdo deve incluir a anotação que descreve a estrutura de títulos.
+O desenvolvedor não deve decidir a estrutura de títulos por ele mesmo (na ausência de documentação).
 
 Two: Document hidden way-finding cues
 -------------------------------------
