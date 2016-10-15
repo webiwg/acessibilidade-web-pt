@@ -15,8 +15,8 @@ authors: [{
     link: "http://webaim.org/"
 }]
 translators: [{
-    name: "Nome Da Pessa Tradutora",
-    link: "http://www.webiwg.org/colabore.html"
+    name: "João Vitor Do Erre",
+    link: "https://github.com/joaodoerre"
 }]
 reviewers: []
 discussion: https://github.com/webiwg/acessibilidade-web-pt/issues/28
