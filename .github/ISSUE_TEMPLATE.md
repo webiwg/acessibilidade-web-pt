@@ -1,8 +1,5 @@
 
-
-#-----------------------------------------------------------------------------#
 #--------- Cortar até aqui para issue referente a tradução de texto ----------#
-#-----------------------------------------------------------------------------#
 
 - **Original**: (colocar link para tradução original ao postar o tópico)
 - **Tradução**: (em breve, aqui o link para arquivo de rascunho no nosso site)
@@ -35,6 +32,4 @@ na dúvida, copie o primeiro parágrafo_
 Esta proposta de tradução segue [Processo de tradução da WebIWG](https://github.com/webiwg/webiwg-issues/blob/master/traducao.md).
 Veja também o [Guia de referência rápida para tradução](https://github.com/webiwg/webiwg-issues/blob/master/guia-de-referencia-rapida-para-tradu%C3%A7%C3%A3o.md).
 
-#-----------------------------------------------------------------------------#
 #--------- Cortar até aqui para issue referente a tradução de texto ----------#
-#-----------------------------------------------------------------------------#
