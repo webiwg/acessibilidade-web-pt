@@ -1,7 +1,7 @@
 ---
 layout: translation
 date: 2013-08-09 # Data de ultima atualização do original
-title: "Cognitive Disabilities" # Titulo traduzido
+title: "Deficiências Cognitivas" # Titulo traduzido
 description: "The concept of cognitive disabilities is extremely broad,
 and not always well-defined. In loose terms,
 a person with a cognitive disability has greater difficulty with one or more types of mental tasks than the average person.
@@ -108,11 +108,12 @@ h4 code {
 
 </style>
 
-## Introduction
 
-### Something to Think About...
+## Intodução
 
-<span style="float: right; margin: 8px 0px 1px 10px;"><img src="media/head.jpg" alt="computer generated image of a human head" width="156" height="149"></span>
+### Algo para se pensar...
+
+<span style="float: right; margin: 8px 0px 1px 10px;"><img src="media/head.jpg" alt="Imagem gerada da cabeça humana por computador" width="156" height="149"></span>
 The concept of cognitive disabilities is extremely broad, and not always well-defined.
 In loose terms,
 a person with a cognitive disability has greater difficulty with one or more types of mental tasks than the average person.
