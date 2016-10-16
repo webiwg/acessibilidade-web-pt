@@ -114,13 +114,13 @@ h4 code {
 ### Algo para se pensar...
 
 <span style="float: right; margin: 8px 0px 1px 10px;"><img src="media/head.jpg" alt="Imagem gerada da cabeça humana por computador" width="156" height="149"></span>
-The concept of cognitive disabilities is extremely broad, and not always well-defined.
-In loose terms,
-a person with a cognitive disability has greater difficulty with one or more types of mental tasks than the average person.
-There are too many types of cognitive disabilities to list here, but we will cover some of the major categories.
-Most cognitive disabilities have some sort of basis in the biology or physiology of the individual.
-The connection between a person's biology and mental processes is most obvious in the case of traumatic brain injury and genetic disorders,
-but even the more subtle cognitive disabilities often have a basis in the structure or chemistry of the brain.
+O conceito de deficiência cognitiva é extremamente amplo, e nem sempre bem definido.
+De forma simplificada,
+uma pessoa com deficiência cognitiva tem mais dificuldade em uma ou mais habilidades mentais que a maioria da população.
+Há muitos tipos de deficiências cognitivas para listar aqui, mas nós vamos cobrir a maior parte das categorias.
+A maioria das deficiências cognitivas tem algum tipo de base na biologia e fisiologia do induvíduo.
+A conecção entre a biologia da pessoa e o processo mental é mais obvia no caso de traumatismo cerebral e desordem genética,
+mas mesmo a mais suave das deficiências cerebrais é baseada na estrutura ou na química cerebral.
 
 A person with profound cognitive disabilities will need assistance with nearly every aspect of daily living.
 Someone with a minor learning disability may be able to function adequately despite the disability,
