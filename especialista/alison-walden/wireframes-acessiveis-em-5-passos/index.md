@@ -75,21 +75,21 @@ O designer de experiência ou escritor deve decidir as estruturas de títulos.
 O wireframe ou matriz de conteúdo deve incluir a anotação que descreve a estrutura de títulos.
 O desenvolvedor não deve decidir a estrutura de títulos por ele mesmo (na ausência de documentação).
 
-Two: Document hidden way-finding cues
+Dois: Document hidden way-finding cues
 -------------------------------------
 
-Screen reader users benefit from additional way-finding cues to help them navigate a webpage.
-These include:
+Usuários de leitores de telas são beneficiados pelo way-finding cue para ajudar na navegação da webpage.
+Estes incluem:
 
--   "Bypass block links": These allow screen reader users to skip over repeated blocks of content.
-    Without them, screen reader users would have to tab through repetitive blocks of content from page to page.
-    They are most often used to skip over navigation menus.
-    Other candidates for bypassing include filter menus or carousels with many panels.
--   Bypass block links can be hidden by default, but should appear on keyboard focus.
-    They should allow the user to skip past the content block to the content immediately after.
-    It's important to test these with your keyboard once they are implemented.
-    Make sure that you can tab once into the content area,
-    and tab again into the next interactive element in the content area.
+-   "Blocos de escape (Bypass)":  Estes permitem ao usuário do leitor de tela escapar dos possíveis blocos repetidos de conteúdo.
+    Sem eles, estes usuários teriam de utilizar a tecla "tab" repetitivamente nos blocos de conteúdo da página.
+    Ele são os mais utilizados para escapar da navegação do menu.
+    Outros candidatos para o bypass incluem filtros para menus, carrousels e muitos outros tipos de conteúdo.
+-   Blocos de bypass podem ser escondidos por padrão, mas devem aparecer no foco do teclado.
+    Eles devem permitir o usuário a escapar o bloco de conteúdo atual para o imediatamente próximo.
+    É importante testar estes com um teclado, uma que estão implementados.
+    Tenha certeza que você pode utilizar o tab uma vez para a area de conteúdo,
+    e também novamente para o próximo objeto interativo dentro desta mesma area, se houver.
 
 Three: Document focus order information and specify the visible focus state
 ---------------------------------------------------------------------------
