@@ -120,143 +120,178 @@ h4 code {
 É *possível* escrever de forma "Simples e Clara"?
 -----------------------------------------------
 
-The task of writing clearly and simply has never been either clear or simple.
-In fact, it can be one of the most difficult of all writing tasks.
-Clear and simple writing is an art to which many aspire and few achieve.
-Even so, the understandability of web content depends upon clear and simple writing.
-Unclear or confusing writing is an accessibility barrier to all readers,
-but can be especially difficult for people with reading disorders or cognitive disabilities.
+A tarefa de escrever de forma clara e simples nunca foi nem clara e nem simples.
+Na verdade, ela pode ser uma das tarefas mais difíceis relacionadas à escrita.
+Escrita clara e simples é uma arte à qual muitos se aspiram, porém poucos a atingem.
+Ainda assim, o entendimento do conteúdo da web depende de uma escrita clara e simples.
+A escrita, quando não é clara e é confusa, é uma barreira de acessibilidade a todos os leitores,
+mas pode ser ainda mais difícil para pessoas que tenham dislexia ou pessoas com distúrbios
+cognitivos.
 
-> "My aim is to put down on paper what I see and what I feel in the best and simplest way." <br>
+<!--
+  N.T.: As traduções das citações foram retiradas das traduções já realizadas por terceiros por
+  se tratarem de sentenças de pessoas famosas já traduzidas anteriormente.
+        (@icoffani, 2016-10-18 23:36)
+-->
+
+> "O meu objetivo é colocar no papel aquilo que vejo e aquilo que sinto da mais simples 
+e melhor maneira." <br>
 > —Ernest Hemingway
 
-> "Unless one is a genius, it is best to aim at being intelligible." <br>
+> "A menos que você seja um gênio, dedique-se a ser inteligível." <br>
 > —Anthony Hope Hawkins
 
-**Language and cultural differences matter.**
-To complicate matters, the "rules" of clear and simple writing in English may not apply at all in other languages,
-or even between cultures that speak the same language.
-Many English-speaking countries value directness and explicitness in written communication.
-Other cultures feel that this style is too blunt, and perhaps even insulting to readers.
+**Diferenças culturais e de linguagem importam.**
+Para complicar a situação, as “regras” para escrita de forma clara e simples em inglês podem não se aplicar de
+forma alguma a outras línguas, ou até mesmo entre culturas que falam a mesma língua.
+Em muitos países em que se fala o Inglês, é valorizada uma comunicação escrita que seja direta e explícita.
+Outras culturas sentem que esse estilo seja muito grosseiro, e até mesmo ofensivo aos leitores.
 
-Despite the difficulties in defining the meaning of "clear and simple" writing,
-the suggestions in this section may still benefit writers of web content.
-The suggestions serve as general guidelines for writing clear and simple English,
-primarily from an American English perspective.
-Those who write in other languages should seek resources that apply specifically to those languages.
+Apesar das dificuldades em definir o significado da escrita “clara e simples”,
+as sugestões nesta seção ainda podem beneficiar redatores de conteúdo para web.
+As sugestões servem como orientações generais para escrever em Inglês de forma clara e simples,
+primeiramente a partir de uma perspectiva do Inglês Americano.
+Aqueles que escrevem em outras línguas deverão procurar recursos que se apliquem especificamente àquelas
+línguas.
 
-**Cognitive abilities matter.**
-Not everyone reads at the same level or has the ability to understand text content,
-even when presented clearly and simply.
-Reading disorders, memory disorders, attention deficit disorders,
-and other conditions which affect the brain's cognitive processes can compromise a person's ability to benefit from text.
-The guidelines presented below will improve readability for many people, but not for all.
+**Habilidades cognitivas importam.**
+Nem todo mundo tem o mesmo nível de leitura ou tem a habilidade de entender os conteúdos dos textos,
+mesmo quando estes são apresentados de forma clara e simples.
+Dislexia, distúrbios de memória, distúrbios de déficit de atenção,
+e outras condições que afetam os processos cognitivos do cérebro podem comprometer a habilidade de uma 
+pessoa de se beneficiar com o texto.
+As orientações apresentadas abaixo vão melhorar a leitura para muitas pessoas, mas pode não ser 
+aplicável para todas.
 
-General Guidelines
+Orientações Gerais
 ------------------
 
-The guidelines presented here are not a complete list,
-nor do they apply to every situation, but they are a good starting point.
-Writers who take these guidelines seriously are more likely to write clearly and simply.
+As orientações apresentadas aqui não são uma lista completa,
+também não se aplicam a toda situação, mas são um bom ponto de partida. 
+Escritores que levam estas orientações a sério têm maior probabilidade de escrever de forma clara e simples.
 
-### 1. Organize your ideas into a logical outline—before and during the writing process
+### 1. Organize suas ideias em um esboço lógico – antes e durante o processo de escrita
 
-This may be the most important guideline of all.
-You have to think clearly about a topic in order to communicate it clearly.
-The organization process is ongoing,
-starting before any words are written and continuing throughout the entire process.
-There is nothing wrong with reorganizing a paper as you write it.
-When you think you're finished,
-take the opportunity to analyze it one more time to see if the organization still makes sense to you.
-If it does, great! If not, try again!
+Esta pode ser a orientação mais importante de todas.
+Você tem de pensar claramente sobre um tópico a fim de poder comunicá-lo claramente.
+O processo de organização é contínuo,
+começando antes de qualquer palavra ser escrita e continuando através de todo o processo.
+Não há nada de errado em reorganizar um papel conforme você o escreve.
+Quando você acredita ter terminado,
+aproveite a oportunidade de analisá-lo mais uma vez para ver se a organização faz sentido para você.
+Se ela faz, ótimo! Se não fizer, tente novamente!
 
-Here are some thoughts by accomplished writers about the need to organize ideas:
+Aqui estão algumas ideias de escritores bem-sucedidos sobre a necessidade de organizar as ideias:
 
-> "If any man wishes to write in a clear style, let him first be clear in his thoughts." <br>
+> "Se qualquer homem deseja escrever de forma clara, deixe-o antes ser claro em seus pensamentos." <br>
 > —Johann Wolfgang von Goethe
 
-> "Writing comes more easily if you have something to say." <br>
+> "Escrever é mais fácil se você tiver algo a dizer." <br>
 > —Sholem Asch
 
-### 2. Tell the readers what you're going to tell them; tell them; then tell them what you told them
+### 2. Diga aos seus leitores o que você irá dizer a eles; diga a eles; depois diga a eles o que você disse a eles
 
-The formula to follow is to begin with an introduction, or overview of the paper's ideas,
-explain the ideas in the main body of the text, then summarize or review the ideas at the end.
+A fórmula a ser seguida é começar com uma introdução ou uma visão geral das ideias do artigo, 
+explicar as ideias no corpo principal do texto e, então, resumir ou revisar as ideias no final.
 
 <div class="example" markdown="1">
-<div class="title">Example</div>
+<div class="title">Exemplo</div>
 
-In a simplified format, here is a structural analysis of ideas for a paper about baldness:
+De forma simplificada, aqui está uma análise estrutural de ideias para um artigo sobre calvície:
 
 <div style="border:gray solid 1px;padding:20px;margin:20px;" markdown="1">
-**Introduction (Tell them what you're going to tell them)**
+**Introdução (Diga aos leitores o que você irá dizer a eles)**
 
-Not everyone appreciates baldness as they should.
-There are advantages to being bald.
+Nem todo mundo aprecia a calvície da forma como deveriam.
+Há vantagens em ser calvo.
 
-**Body (Tell them)**
+**Corpo (Diga a eles)**
 
-**Main idea 1:**
-Bald people don't have to worry about the cost of haircuts.
-They can cut their own hair (what remains of it) with a razor or clippers.
+**Ideia Principal 1:**
+Pessoas calvas não têm de se preocupar com o custo de cortes de cabelo.
+Eles podem cortar seu próprio cabelo (o que tiver sobrado dele) com uma tesoura ou navalha.
 
-**Main idea 2:**
-Bald people don't have to style their hair.
-They only have to dry their head with a towel after showering,
-and are then free to move on to other more relevant activities,
-like reading the comics, practicing yoga, or climbing trees.
+<!--
+  N.T.: o verbo "style" possui diversas aplicações no português no contexto inserido, tais como: pentear,
+  fazer escova, realizar um penteado, etc. Dessa forma, foi escolhida a palavra que mais se aproxima do 
+  sentido de todos os aplicáveis ao verbo citado.
+        (@icoffani, 2016-10-18 00:03)
+-->
 
-**Main idea 3:**
-Even on windy days, bald people never get hair in their eyes or mouth,at least not their own hair,
-which makes windy days more bearable for the vast majority of people who don't particularly like the taste of hair.
+**Ideia Principal 2:**
+Pessoas calvas não precisam pentear seu cabelo.
+Eles só têm de secar a sua cabeça com uma toalha após o banho,
+e estão então livres para seguir para outras atividades mais relevantes,
+tais como ler quadrinhos, praticar ioga ou escalar árvores.
 
-**Review and Conclusion (Tell them what you told them)**
+**Ideia Principal 3:**
+Mesmo em dias de vento, as pessoas calvas nunca têm cabelos caindo em seus olhos ou em suas bocas,
+ao menos não os seus próprios,
+o que torna dias de vento mais suportáveis para a vasta maioria das pessoas que não gosta do sabor
+de cabelo.
 
-Baldness allows for some under-appreciated conveniences in life,
-in terms of haircuts, styling, and windy days. You ought to consider being bald.
+**Revisão e Conclusão (Diga a eles o que você disse a eles)**
+
+A calvície permite algumas conveniências na vida que normalmente são pouco apreciadas,
+em termos de cortes de cabelo, estilo e em dias de vento. Você deveria considerar a possibilidade
+de ser calvo.
 
 </div>
 </div>
 
-### 3. Stick to the point
+### 3. Atenha-se ao ponto
 
-The more you stray from your main point, the less likely people will be to remember it.
+Quando mais você se afasta de seu ponto principal, menor será a probabilidade de as pessoas
+lembrarem dele.
 
-### 4. Make it interesting
+### 4. Torne-o interessante
 
-Capture the attention of your readers by including relevant details that motivate them to continue reading.
+Prenda a atenção dos seus leitores através da inclusão de detalhes relevantes que os motivem a 
+continuar lendo.
 
-Here are some thoughts by famous individuals about the importance of making things interesting:
+Aqui estão algumas ideias de indivíduos famosos sobre a importância de tornar as coisas interessantes:
 
-> "If you would not be forgotten as soon as you are dead, either write things worth reading or do things worth writing." <br>
+> "Se você não quer ser esquecido quando morrer, escreva coisas que valham a pena serem lidas ou faça coisas
+que valham a pena escrever a respeito." <br>
 > —Benjamin Franklin
 
-> "Imagination is more important than knowledge."
+> "A imaginação é mais importante que o conhecimento.” "
 > —Albert Einstein
 
-> "What we want is a story that starts with an earthquake and builds to a climax." <br>
+> "O que queremos é uma história que comece com um terremoto e que chegue ao clímax pouco a pouco." <br>
 > —Samuel Goldwyn
 
-### 5. Write for your target audience
+### 5. Escreva para seu público-alvo
 
-You should write differently for a classroom of first-graders than you would for a committee of post-graduate scholars.
-In addition, you should take into account people's areas of expertise,
-even if they have the same level of education or intelligence.
-Cultural and gender differences can also play a role in defining a target audience.
-As you write, keep your audience's characteristics in mind and write accordingly.
+Você deve escrever de modo diferente para uma classe de alunos de primeira série e para um comitê de
+estudantes pós-graduados. 
+Além disso, você deve levar em conta as áreas de competência das pessoas,
+mesmo que elas tenham o mesmo nível de educação ou de inteligência.
+Diferenças culturais e de gênero também podem desempenhar um papel ao definir o público-alvo.
+À medida que você seguir em sua escrita, mantenha as características de seu público em mente
+e escreva de acordo.
 
-### 6. Assume that your readers are intelligent, but do not assume that they know the subject matter as well as you
+### 6. Assuma que seus leitores são inteligentes, mas não assuma que eles saibam sobre o tema tão bem quanto você
 
-The amount of explaining you need to do depends upon how familiar your audience is with the topic.
-Explaining concepts is not insulting; it is helpful,
-as long as the explanations show that you respect the reader.
-Some people with cognitive disabilities may need more explanation than others,
-but when you write for general audiences, assume a general level of intelligence.
+A quantidade de explicação que você necessita dar depende de quão familiar o seu público é com o
+tópico em questão. 
+Explicar conceitos não é um insulto; é benéfico,
+desde que as explicações mostrem que você respeita o leitor.
+Algumas pessoas com distúrbios cognitivos podem necessitar de mais explicação do que outras,
+mas quando você escreve para o público em geral, assuma um nível de inteligência genérico a eles.
 
-Some experts say writers should aim for "eighth grade level" writing.
-It is difficult to determine for sure what this means. Many popular magazines,
-such as Readers Digest and Ladies' Home Journal are written at about this level.
-News sources such as Newsweek are written at a slightly higher level, approximately 10th grade.
+Alguns especialistas dizem que os escritores devem almejar uma linguagem em sua escrita de “nível
+de oitava série”.
+É difícil determinar com certeza o que isso significa. Muitas revistas populares,
+tais como a “Reader’s Digest” e a “Ladies’ Home Journal” são escritas em torno desse nível. 
+Fontes de notícias, como a “Newsweek”, são escritas em um nível ligeiramente maior, aproximando-se de 
+linguagem do primeiro ano do ensino médio (décimo ano de estudo).
+
+<!--
+  N.T.: o décimo ano de estudo (10th grade) corresponde ao primeiro ano do ensino médio no Brasil.
+        (@icoffani, 2016-10-18 00:17)
+-->
+
 
 ### 7. Write cohesive paragraphs constructed around a single major idea
 
