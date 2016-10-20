@@ -543,6 +543,14 @@ utilizados.
 A professora teve de preparar um PEI para as crianças com DA e teve de cumprir com as regs. do NCDT de forma 
 a atingir os reqs. do PAA.
 
+<!--
+  N.T.: As abreviações acima foram feitas através de tradução livre, pois não consegui encontrar nenhuma delas 
+  em sites oficiais e confiáveis em português. As abreviações e acrônimos em inglês são, respectivamente: 
+  Individualized Education Plan (IEP), learning disabilities (LD), No Child Left Behind (NCLB) e Annual Yearly
+  Progress (AYP).
+        (@icoffani, 2016-10-20 15:08)
+-->
+
 <span class="inlinemediaobject"><img src="media/smiley.png" alt="Good example:" width="20" height="20" /></span>
 **Explicações dos acrônimos, com as abreviações eliminadas**
 A professora teve de preparar um Programa de Educação Individualizado (PEI) para as crianças com distúrbios no 
