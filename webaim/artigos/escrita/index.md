@@ -24,8 +24,8 @@ original: {
     link: "http://webaim.org/techniques/writing/", # Link para documento original
     dateOfTranslation: "2016-10-09" # Data em que a tradução foi finalizada
 }
-isDraft: true
-isReleaseCandidate: false
+isDraft: false
+isReleaseCandidate: true
 ---
 
 <!--
