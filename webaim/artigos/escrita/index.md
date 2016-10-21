@@ -587,133 +587,152 @@ Nossas produtos e serviços são os melhores pelo preço.
         (@icoffani, 2016-10-20 00:18)
 -->
 
-### 18. Write short sentences
+### 18. Escreva frases curtas
 
-Readers tend to lose the main point of long, run-on sentences.
-Help readers stay focused by creating shorter sentences.
+Leitores tendem a perder o ponto principal de frases longas e sem junção. 
+Ajude os leitores a manterem o foco por meio da criação de frases mais curtas.
 
-> "Good things, when short, are twice as good." <br>
+> "As coisas boas, quando curtas, são duas vezes tão boas.” " <br>
 > —Gracián
 
 <div class="example" markdown="1">
-<div class="title">Example</div>
+<div class="title">Exemplo</div>
 
 <span class="inlinemediaobject"><img src="media/frowny.png" alt="Bad example:" width="20" height="20" /></span>
-**Long, run-on sentence:**
-We all agreed that we ought to eat at the new Greek restaurant in town,
-then see a movie, and, before going home, we should stop at the grocery store to buy milk for breakfast,
-because we ran out of milk earlier in the day and cold cereal doesn't taste good without milk,
-especially not with orange juice, which gives cereal a tart,
-citrus flavor which is fine for drinking from a glass, but not so fine for eating with flakes of cereal.
+**Frase longa e sem junção:**
+Todos nós concordamos que deveríamos comer no novo restaurante grego [na] cidade,
+depois ver um filme e, antes de ir para casa, nós deveríamos parar na mercearia para comprar leite para o 
+café-da-manhã,
+pois nós ficamos sem leite mais cedo e cereal gelado não é tão gostoso sem leite,
+e fica pior ainda com suco de laranja, que dá um gosto ácido e cítrico ao cereal, 
+o sabor cítrico torna o suco bom para se beber em um copo, mas não tão bom para comer com flocos de cereal.
 
 <span class="inlinemediaobject"><img src="media/smiley.png" alt="Good example:" width="20" height="20" /></span>
-**Multiple shorter sentences:** <br>
-**Sentence 1:** We all agreed that we ought to eat at the new Greek restaurant in town, then see a movie. <br>
-**Sentence 2:** Before going home, we should stop at the grocery store to buy milk for breakfast because we ran out of milk earlier in the day. <br>
-**Sentence 3:** Cold cereal doesn't taste good without milk, especially not with orange juice. <br>
-**Sentence 4:** Orange juice gives cereal a tart, citrus flavor which is fine for drinking from a glass, but not so fine for eating with flakes of cereal.
+**Múltiplas frases curtas** <br>
+**Frase 1:** Todos nós concordamos que deveríamos comer no novo restaurante grego na cidade e depois ver um filme. <br>
+**Frase 2:** Antes de ir para casa, nós deveríamos parar na mercearia para comprar leite para o café-da-manhã, pois nós
+ficamos sem leite mais cedo. <br>
+**Frase 3:** Cereal gelado não é tão gostoso sem leite, e fica pior ainda com suco de laranja. <br>
+**Frase 4:** Suco de laranja dá um gosto ácido e cítrico ao cereal, o que torna o suco bom para se beber em um copo, mas
+não tão bom para comer com flocos de cereal.
 
 </div>
 
-### 19. Ensure that every word and paragraph is necessary
+### 19. Assegure que cada palavra e cada parágrafo são necessários
 
-> "Omit needless words. Vigorous writing is concise.
-> A sentence should contain no unnecessary words, a paragraph no unnecessary sentences,
-> for the same reason that a drawing should have no unnecessary lines and a machine no unnecessary parts."
+> "Omita palavras desnecessárias. A escrita vigorosa é concisa.
+> Uma frase não deve conter palavras desnecessárias e um parágrafo não deve conter frases desnecessárias, 
+> pela mesma razão que um desenho não deve ter linhas desnecessárias e uma máquina não deve ter peças desnecessárias."
 > —William Strunk, Jr.
 
 <div class="example" markdown="1">
-<div class="title">Example</div>
+<div class="title">Exemplo</div>
 
 <span class="inlinemediaobject"><img src="media/frowny.png" alt="Bad example:" width="20" height="20" /></span>
-**Too wordy:**
-It is my opinion that the explanation that was given by the teacher was delivered in a way that was not brief enough to be interesting,
-and was not understood by the class.
+**Muitas palavras:**
+Minha opinião é que a explicação que foi dada pelo professor foi recebida de uma forma que não foi breve o suficiente
+para ser interessante e não foi entendida pela classe.
 
 <span class="inlinemediaobject"><img src="media/smiley.png" alt="Good example:" width="20" height="20" /></span>
-**Better:**
-I think that the class misunderstood the teacher's long, uninteresting explanation. <br>
-**OR** <br>
-The class misunderstood the teacher's long, uninteresting explanation.
+**Melhor:**
+Eu acredito que a sala interpretou mal a longa e desinteressante explicação do professor. <br>
+**OU** <br>
+A classe interpretou mal a longa e desinteressante explicação do professor.
 
 </div>
 
-### 20. When you're finished, stop
+### 20. Quando você tiver terminado, pare
 
-Say only what you need to say.
+Diga apenas o que você precisa dizer.
 
-Additional Considerations for Users with Reading Disorders and Cognitive Disabilities
+Considerações Adicionais para Usuários com Dislexia e Distúrbios Cognitivos
 -------------------------------------------------------------------------------------
 
-All of the writing guidelines discussed above will improve the chances that users with reading disorders or cognitive disabilities will understand the text.
-Nevertheless, these guidelines will be insufficient for some users,
-especially for those who read poorly, or who cannot read at all.
-Text content will always pose problems for these users.
-Some of the recommendations most relevant to people with cognitive disabilities are the following:
+Todas as orientações para a escrita acima discutidas vão melhorar as chances de que usuários com dislexia ou distúrbios
+cognitivos possam entender o texto. 
+Contudo, essas orientações serão insuficientes para alguns usuários,
+especialmente para aqueles que não lêem bem, ou que, de fato, não consigam ler.
+O conteúdo do texto vai sempre se apresentar como um problema para estes usuários.
+Algumas das recomendações mais relevantes para as pessoas com distúrbios cognitivos são as seguintes:
 
-1.  **Supplement the text with illustrations.**
-    The most drastic—and perhaps the most useful—solution for these audiences is to provide illustrations as alternatives to the text,
-    or at least as enhancements of the textual content.
-    In other words, do everything possible to clarify and simplify the text,
-    then go one step further by supplementing the text with illustrations.
-2.  **Reduce text to a bare minimum.**
-    Pages with a large amount of text can intimidate users with reading difficulties.
-    For this audience, the less you say, the better.
-3.  **Be as literal as possible.**
-    Some people with cognitive disabilities have a hard time distinguishing between the literal meaning of ideas and implied meaning.
-    Sarcasm and parody can be especially confusing for some people.
+1.  **Complemente o texto com ilustrações.**
+    A solução mais drástica—e talvez a mais útil—para este público é fornecer ilustrações como alternativas ao texto, 
+    ou ao menos como reforço do conteúdo textual.
+    Em outras palavras, faça todo o posível para esclarecer e simplificar o texto,
+    então dê um passo além por meio da complementação do texto com ilustrações.
+2.  **Reduza o texto ao mínimo possível.**
+    Páginas com uma grande quantidade de texto podem intimidar os usuários com dificuldades de leitura.
+    Para este público, quanto menos você disser, melhor. 
+3.  **Seja o mais literal possível.**
+    Algumas pessoas com distúrbios cognitivos têm dificuldades em discernir o significado literal das ideias de seus 
+    significados implícitos. 
+    Sarcasmo e paródia podem ser particularmente confusos para algumas pessoas.
 
-How Can Writers Know if They Have Achieved Clarity and Simplicity?
+Como os Escritores Podem Saber Se Eles Atingiram a Clareza e a Simplicidade?
 ------------------------------------------------------------------
 
-Strictly speaking, writers cannot know for sure whether their writing is truly "clear and simple."
-No matter how well writers think they have explained a concept,
-some of the readers will almost always misunderstand.
+Falando estritamente, escritores não podem saber com certeza se sua escrita é verdadeiramente “clara e simples”.
+Não importa quão bem os escritores acreditem que eles tenham explicado um conceito,
+alguns dos leitores irão quase sempre interpretar mal.
 
-### Readability tests
+### Testes de Leitura
 
-Algorithms, such as the Gunning Fog Index, Flesch Reading Ease Index,
-and Flesch-Kincaid Index attempt to evaluate the readability or reading level of text content.
-Such algorithms appeal to some experts because they are based on clear-cut mathematical formulas.
-The tests produce measurable results.
-Unfortunately, the tests' emphasis on quantitative (numerical) accuracy can mislead writers into thinking that achieving clear and simple writing is a well-defined,
-formulaic process, when it is not.
-The algorithms themselves are somewhat questionable too,
-since they use such superficial criteria as the number of syllables,
-the number of words, the length of sentences, etc, all of which are indirect measures of readability, at best.
+Algorítmos, tais como o “Gunning Fog Index”, o “Flesch Reading Ease Index”,
+e o “Flesch-Kincaid Index” (em inglês) tentam avaliar a legibilidade ou o nível de leitura do conteúdo de um texto.
+Tais algorítmos agradam alguns especialistas porque eles são baseados em fórmulas matemáticas claras. 
+Os testes produzem resultados mensuráveis.
+Infelizmente, a ênfase dos testes na precisão quantitativa (numérica) pode induzir escritores ao erro de pensar que atingir
+uma escrita clara e simples é um processo bem definido e formulado,
+quando, na verdade, não o é.
+Os próprios algoritmos são, de certa forma, questionáveis também, 
+visto que eles utilizam alguns critérios superficiais, tais como o número de sílabas,
+o número de palavras, o tamanho das frases, etc, sendo que todos estes são, no máximo, medidas indiretas de legibilidade.
 
-Users of Microsoft Word can evaluate written content against the Flesch Reading Ease scale and the Flesch-Kincaid Grade Level scale within the word processor itself.
-Word also provides a percentage count of passive sentences (the lower the percentage the better).
+Usuários do Microsoft Word podem avaliar o conteúdo escrito em contraste com as escalas “Flesch Reading Ease” e a 
+“Flesch-Kincaid Grade Level” dentro do próprio processador de texto
+O Word também fornece uma contagem percentual de frases passivas (quanto menor a porcentagem, melhor).
 
-To activate this feature in Word,
-go to the **Tools** menu, click **Options**, then click on the **Spelling & Grammar** tab.
-Select the **Check grammar with spelling** check box and the **Show readability statistics** check box,
-and then click OK.
-To use the feature, go to **Tools &gt; Spelling & Grammar** and let Word run through the document for spelling and grammar errors.
-At the end of this process,
-a dialogue box will pop up showing the readability score.
+<!--
+  N.T.: o texto abaixo está relacionado com uma imagem escrita em inglês, então traduzi o passo-a-passo correspondente a 
+  versão do Word em Português
+        (@icoffani, 2016-10-21 00:23)
+-->
+
+Para ativar este recurso no Word,
+Para ativar este recurso no Word, vá para a aba **Ferramentas**, caso haja, ou **Arquivo**  (em alguns Words mais novos), 
+logo após clique em **Opções** e, em seguida, clique na aba **Revisão de Texto**. Marque a opção **Verificar Gramática e Ortografia**
+e a opção **Mostrar Estatísticas de Legibilidade**, em seguida clique OK. Para utilizar este recurso, deve-se clicar em um botão
+abaixo escrito **Verificar o Documento Novamente** e deixar o Word percorrer o documento todo verificando erros de ortografia 
+e de gramática. Ao final deste processo, uma caixa de diálogo irá aparecer mostrando as estatísticas de legibilidade.
 
 <img src="media/readability.jpg" alt="The MS Word dialogue box showing readability scores of a document (in this case, there are 4% passive sentences, Flesch reading ease score of 54.7, and a Flesch-Kincaid Grade Level score of 9.1" width="321" height="312" />
 
-Other sources of software-based readability evaluators include:
+Outras fontes de avaliadores de legibilidade por meio de softwares **(todas em inglês)** incluem:
 
--   [Readability Calculations](http://www.micropowerandlight.com/rd.html) by [Micro Power and Light Co](http://www.micropowerandlight.com/).
--   GrammarExpert Plus, by [Wintertree software](http://www.wintertree-software.com/)
+<!--
+  N.T.: como as fontes são referências sem correspondente no Português, elas foram mantidas mas com um sútil aviso em cima
+  que tais fontes estão em inglês.
+        (@icoffani, 2016-10-21 00:23)
+-->
 
-Also, an [online readability test](http://www.juicystudio.com/fog/) using the Fog index is available from Juicy Studios.
+-   [Readability Calculations (Cálculo de Legibilidade)](http://www.micropowerandlight.com/rd.html) by [Micro Power and Light Co](http://www.micropowerandlight.com/).
+-   GrammarExpert Plus , por [Wintertree software](http://www.wintertree-software.com/)
+
+Além disso, um [teste de legibilidade online](http://www.juicystudio.com/fog/) utilizando o Fog index está disponível
+na página do Juicy Studios.
 
 <img src="media/juicystudio.jpg" class="border" width="418" height="669" />
 
-Although readability tests are only a superficial measure of true readability,
-they can at least provide some basic feedback and give authors a general idea of how readable their documents are.
+Embora os testes de legibilidade sejam uma medida superficial da verdadeira legibilidade,
+eles podem ao menos fornecer uma resposta simples e dar aos autores uma ideia geral sobre quão legíveis estão seus documentos.
 
-Summary
+Resumo
 -------
 
-It is not easy to write clearly and simply, but it is important to try.
-Users are more likely to understand your writing if you take the time to organize your thoughts and write them in the clearest,
-simplest form possible, taking into account your audience.
-To maximize understandability for people with cognitive disabilities,
-limit the text, add appropriate illustrations,
-and avoid indirect or implied meanings (such as sarcasm or parody).
-In the end, nearly everyone benefits from clarity and simplicity.
+Não é fácil escrever de forma clara e simples, mas é importante tentar. 
+Usuários terão maior possibilidade de entender sua escrita se você reservar um tempo para organizar seus pensamentos e
+escrevê-los da forma mais clara e simples possível, levando em conta o seu público.
+Para maximizar o entendimento para pessoas com distúrbios cognitivos,
+limite o texto, adicione ilustrações apropriadas e
+evite significados indiretos ou implícitos (tais como sarcasmo ou paródia). 
+No final, praticamente todos se beneficiam da clareza e da simplicidade.
