@@ -91,32 +91,32 @@ Estes incluem:
     Tenha certeza que você pode utilizar o tab uma vez para a area de conteúdo,
     e também novamente para o próximo objeto interativo dentro desta mesma area, se houver.
 
-Three: Document focus order information and specify the visible focus state
+Três: Documentar a informação de ordem de foco e especificar o estado do foco visível
 ---------------------------------------------------------------------------
 
-### Focus order
+### Ordem de foco
 
-Focus order is an important concept for keyboard accessibility.
-It refers to the order that elements on the page receive keyboard focus.
-The usual focus order for the Western world is from top to bottom, left to right, the same way we read.
+Ordem de foco é um importante conceito para a acessibilidade no teclado.
+Isto referencia a ordem dos elementos na página que recebe o foco do teclado.
+A ordem de foco comum para Western worl é: do topo para baixo, esquerda para direita, da mesma forma que lemos.
 
-For keyboard users, a common way to access a website is to move through the content by pressing the tab key.
-The tab key moves the focus state to links or form elements.
-Screen reader users can have their device begin reading the page at any point.
+Para usuários de teclado, a forma comum de acessar um website é mover-se através do conteúdo pressionando a tecla tab.
+A tecla tab move o estado de foco para links e elementos de formulários.
+Usuários de leitores de tela podem ter seus dispositivos lendo uma página em qualquer ponto desta.
 
-Usually experiences benefit from implementing a default focus order.
-There are instances where the focus order should be changed.
-This is best determined by an experience designer.
+Normalmente experiências beneficiam-se com a implementação padrão da ordem de foco.
+Porém existem casos quais a ordem de foco deverá ser mudada.
+Isto será melhor determinado por um UX Designer ou UX Developer.
 
-The following flow illustrates a situation where the default tabbing order should be overridden:
+O seguinte fluxo ilustra uma situação onde a ação do tab padrão dele ser sobrescrita:
 
--   User clicks on a link to log in to a website, and the log in link leads to a different page.
--   By default, the first focused area on the page would probably be in the top left-most link or form field.
-    But in this instance, the user is definitely there to log in.
-    It makes sense here to put the focus state on the first field in the sign in form.
+-   O usuário clica em um link para logar em um site e tal link leva para um página diferente.
+-   Por padrão, a primeira area de foco na página seria provavelmente no topo esquerdo - link relevante ou campo do formulário.
+    Mas neste momento, o usuário está definitivamente lá para logar-se.
+    Faz sentido aqui colocar o estado de foco primeiramente no campo de cadastro do formulário.
 
-Again, this cannot be decided by a developer in absence of documentation.
-It must be annotated in the wireframe.
+De novo, isto não pode ser decidido por um desenvolvedor na ausência de documentação.
+Deve está anotado no wireframe guia.
 
 ### Visible focus state
 
