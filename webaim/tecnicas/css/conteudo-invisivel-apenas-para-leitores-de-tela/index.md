@@ -27,7 +27,7 @@ original: {
     dateOfTranslation: "2016-09-25" # Data em que a tradução foi finalizada
 }
 isDraft: false
-isReleaseCandidate: true
+isReleaseCandidate: false
 ---
 
 <!-- Geração automática de índice, inicio -->
@@ -106,8 +106,14 @@ h4 code {
 Introdução
 ------------
 
-<span style="float: right;margin: 8px 0px 1px 10px;"><img src="media/peekaboo.jpg" alt="A woman hides behind her hands." width="130" height="110" /></span>Existem
-Há casos pontuais em que o conteúdo deve ser disponibilizado para usuários de leitor de tela,
+<!--
+  N.T.: Estava "Existem Há casos pontuais em ..." e aterei para "Existem casos pontuais em ...".
+        Voltei atrás edição. (@fititnt, 2016-10-24 00:28)
+-->
+
+
+<span style="float: right;margin: 8px 0px 1px 10px;"><img src="media/peekaboo.jpg" alt="A mulher se esconde atrás das mãos" width="130" height="110" /></span>
+Existem casos pontuais em que o conteúdo deve ser disponibilizado para usuários de leitor de tela,
 mas escondido de utilizadores normovisuais. Na maioria dos casos, se o conteúdo (principalmente
 conteúdo que fornece a funcionalidade e interatividade) é importante o suficiente para
 usuários de leitor de tela, ele provavelmente deve ser disponibilizado a todos os
@@ -351,7 +357,7 @@ números de telefone.
            (fititnt, 2016-09-26 20:14)
 -->
 
-<img lang="en" src="media/phone1.jpg" alt="The words &#39;phone number&#39; are followed by 4 text input boxes, intended to be used for area code, first three digits, last four digits, and then extension" class="border" width="389" height="42" />
+<img lang="en" src="media/phone1.jpg" alt="As palavras &#39;phone number&#39; são seguidas por quatro caixas de texto de entrada, usadas para código de área, primeiros três digitos, quatro últimos dígitos, e então a extensão" class="border" width="389" height="42" />
 
 A maioria dos usuários visuais na América do Norte vão entender que o texto individual nas
 áreas de entrada correspondem as diferentes seções de números de telefone padrão.
@@ -401,4 +407,3 @@ tensão entre as exigências de acessibilidade e as demandas de design
 visual. Não é a única técnica ou método de resolver este problema, mas é
 um que os desenvolvedores web podem adicionar à sua lista de soluções possíveis quando
 surge a necessidade.
-
