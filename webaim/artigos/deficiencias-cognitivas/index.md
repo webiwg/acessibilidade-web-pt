@@ -132,39 +132,37 @@ Some content will always be too complex for certain audiences.
 This is unavoidable.
 Nevertheless, there are still some things that designers can do to increase the accessibility of web content to people with less severe cognitive disabilities.
 
-### Functional vs. Clinical Cognitive Disabilities
+### Deficiência Cognitiva Funcional VS Clínica
 
-There are at least two ways to classify cognitive disabilities:
-by functional disability or by clinical disability.
-Clinical diagnoses of cognitive disabilities include autism,
-Down Syndrome, traumatic brain injury (TBI), and even dementia.
-Less severe cognitive conditions include attention deficit disorder (ADD),
-dyslexia (difficulty reading), dyscalculia (difficulty with math),
-and learning disabilities in general.
-Clinical diagnoses may be useful from a medical perspective for treatment,
-but for the purposes of web accessibility,
-classifying cognitive disabilities by *functional* disability is more useful.
-Functional disabilities ignore the medical or behavioral causes of the disability and instead focus on the resulting abilities and challenges.
-Some of the main categories of functional cognitive disabilities include deficits or difficulties with:
+Há pelo menos duas maneiras de classificar deficiências cognitivas:
+pela deficiência funcional ou pela deficiência clínica.
+Deficiência clínica ou deficiência cognitiva incluem autismo,
+sindrome de down, traumatismo craniâno (TBI), e até mesmo demência.
+Condições de deficiência menos severas incluem defict de atenção e desorde (ADD),
+dislexia (dificuldade de leitura), discalculia ( dificuldade com matemática),
+e defict de aprendizagem em geral.
+Diagnóstico clínico pode ser útil para a perspectiva de tratamento,
+mas para fin de acessibilidade a web, classificar as deficiências cognitivas pela desabilidade *funcional* é mais útil.
+Deficiências funcional ignora causas médicas ou comportamentais da deficiência e concentra-se nas habilidades e desafios resultantes.
+Algumas das principais categorias de deficiências cognitivas funcionais incluem defict ou dificuldade com:
 
-1.  Memory
-2.  Problem-solving
-3.  Attention
-4.  Reading, linguistic, and verbal comprehension
-5.  Math comprehension
-6.  Visual comprehension
+1. Memória
+2. Resolução de problemas
+3. Atenção
+4. Leitura, linguistica, e compreensão verbal
+5. Compreensão matemática
+6. Compreensão visual
 
-The main reason why these functional disabilities are more useful when considering web accessibility is that they are more directly related to the concerns of web developers.
-Telling a developer that some people have autism is not very meaningful unless the developer knows what kinds of barriers a person with autism might face on his or her web site.
-On the other hand,
-telling a developer that some people have difficulties comprehending math provides the developer with a framework for addressing the needs of this type of audience.
+As principais razões pelas quais a tese de deficiência funcional são mais úteis quando considerada a acessibilidade a web é por que eles são mais diretamente relacionados com as preocupações de web desenvolvedores.
+Dizer a um desenvolvedor que alguém tem autismo não é muito significativo ao menos que o desenvolvedor saiba quais tipos de barreira alguem com autismo talvéz encontre no seu web site.
+Por outro lado,
+dizer a um desenvolvedor que alguem tem dificuldades de compreensão matemática fornece ao desevolvedor uma estrutura para abordar as necessidades deste tipo de público.
 
-Additionally, clinical diagnoses are not mutually exclusive in terms of what difficulties the people face.
-There is often considerable overlap of functional disabilities within clinical diagnoses.
-A person with memory deficits may also have difficulty with attention or problem-solving, for example.
-This kind of overlap fits within a medical model,
-but is not particularly helpful to web developers,
-who simply need to know what the person can or cannot do.
+Adicionalmente, diagnóstico clínico não são mutuamente excludentes em termos de que dificuldades as pessoas enfrentam.
+Há consideravelmente uma sobreposição de deficiências funcionais com diagnóstico clínico.
+Este tipo de sobreposição se encaixa com um modelo médico,
+mas não é particularmente útil para desevolvedores web,
+os quais simplesmente precisam saber o que a pessoa consegue ou não fazer.
 
 ### Memory
 
