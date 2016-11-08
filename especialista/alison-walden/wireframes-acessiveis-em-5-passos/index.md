@@ -159,7 +159,7 @@ Neste caso, indique no wireframe que o desenvolvedor deve esconder conteúdo adi
 Deste maneira, um usuário sem dificuldades visuais qual ganha informações do contexto ao redor verá "Aprende mais".
 Um usuário com dificuldades visuais irá ouvir "Aprende mais sobre nossos serviços".
 
-Five: Design simple, usable forms
+Quinto: Design simple, usable forms
 ---------------------------------
 
 ### Útil para designers
