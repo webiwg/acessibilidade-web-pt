@@ -118,19 +118,19 @@ O seguinte fluxo ilustra uma situação onde a ação do tab padrão dele ser so
 De novo, isto não pode ser decidido por um desenvolvedor na ausência de documentação.
 Deve está anotado no wireframe guia.
 
-### Visible focus state
+### Estado de foco visivel
 
-The visible focus state is the visual indicator that an element has focus.
-It is common for designers to create a hover state for mouse users.
-Usually the focus state should match the hover state.
+Um estado de focos visivel é um indicador visual que o elemento selecionado está sob foco.
+É como para designers criar um estado de hover para o mouse dos usuários.
+Geralmente o estado de foco deve combinar com o de hover.
 
-For developers to handle this state in their implementations, it must be defined in the wireframe.
-Additionally, the design of each element's focus state must be described in the style guide.
-Each browser has its own default focus state.
-Either allow this to be used, or have the designer create a new one that matches your client's branding.
+Para desenvolvedores criarem este estado nas suas implementações, este deve estar definido no wireframe.
+Adicionalmente, o design do foco de cada elemento deve ser descrito um um styleguide.
+Cada browser tem seu próprio estilo de foco.
+Ou permita o estilo do browser ser utilizado ou um designer deve criar um novo que combine com a marca do cliente.
 
-Many clients do not understand the value of the visible focus state.
-When it is described in the style guide, the client has an opportunity to see it up front and ask questions about it.
+Muitos clientes não entendem o valor de um estado de focos visivel.
+Então isto é descrito em um styleguide, onde o cliente tem o oportunidade de ver na sua frente e perguntar sobre.
 
 > What is a visible focus state?
 >
@@ -139,76 +139,78 @@ When it is described in the style guide, the client has an opportunity to see it
 > and other links change color and have an outline.
 > This is so keyboard users can see where the focus is.
 
-Four: Provide clear link labels
+Quatro: Forneça labels claros
 -------------------------------
 
-For users who navigate with a screen reader, many of them will only hear link labels.
-They will not have any context on surrounding information.
-That's why it is important to make sure the link itself (or the form field label) is meaningful.
+Usuários quais navegam com leitores de tela, muitos deles não vão apenas ouvir os labels.
+Eles não tem qualquer contexto em torno da informação.
+É importante fazer claro os labels por si próprios (ou por form field label), isto é significativo.
 
-Do this: Learn more about our services
+Fazer: Aprender mais sobre nossos serviços
 
-Don't do this: Learn more
+Não fazer isto: Aprenda mais
 
-Do this: Edit my account settings
+Fazer: Editar minha conta
 
-Don't do this: Edit
+Não fazer isto: Editar
 
-Sometimes the context is clear to a sighted user based on surrounding content.
-In this case, indicate in the wireframe that the developer should hide the additional content from sighted users.
-This way, a sighted user who can gain context from the surrounding content will see "Learn more".
-A non-sighted user will hear, "Learn more about our services".
+Algumas vezes o contexto é claro para o usuário baseado no conteúdo ao redor.
+Neste caso, indique no wireframe que o desenvolvedor deve esconder conteúdo adicional para usuários sem dificuldades visuais.
+Deste maneira, um usuário sem dificuldades visuais qual ganha informações do contexto ao redor verá "Aprende mais".
+Um usuário com dificuldades visuais irá ouvir "Aprende mais sobre nossos serviços".
 
 Five: Design simple, usable forms
 ---------------------------------
 
-### Usable form design
+### Útil para designers
 
-I often ask designers if they plan to enter their form design into the coveted Form Design Awards.
-Usually they stare back at me blankly.
-Sometimes they perk up and ask for more information about these awards.
+Eu frequentimente pergunto aos designers se eles planejam enviar seus form designs para o cobiçado From Design Awards.
+Normalmente eles me olham fixo inexpressivamente.
+Às vezes eles animamam-se e perguntam por mais informações sobre este prêmio.
 
-There are no Form Design Awards. Isn't it great?
-We can put our aesthetic goals aside and focus on making the form usable.
-Trust me: forms are meant to be filled out. They don't need to be flashy.
-It's okay if they aren't ultra clean and sleek.
+Não existe Form Desgin Awards. Não é ótimo?
+Nós podemos pôr nossas metas estéticas de lado e focar em fazer um form mais utilizável.
+Confie em mim: formuálios são para serem preenchidos.
+Trust me: forms are meant to be filled out. Eles não precisam ser chamativos.
+Está tudo bem se eles não forem ultra clean e lustroso.
 
-Here are some form design best practices that also make the form more accessible:
+Aqui estão algumas das boas práticas que também fazem seu formulário acessível.
 
--   Place the label above the form field, not beside it.
--   Put a "required field" indicator inside the field's label.
-    It's also helpful to put "(optional)" within optional field's labels.
--   Do not replace proper form fields with placeholder text.
-    Users of all ages and abilities complain about this.
-    Placeholder text disappears when a user clicks into the field and begins to type.
-    It can be hard to remember what content the field needed (e.g. Email address vs. username).
--   If fields do not have a visible label (e.g. search fields), provide the annotation for a hidden label.
-    Indicate the label text. All form fields must have labels.
+-   Colo um label acima do campo do formuário, não ao lado;
+-   Coloque um "campo requerido" indicador;
+    Também de grande ajuda colocar "opcional" nos campos opcionais
+-   Não troque campos do formulário por placeholders de textos (marcadores de texto).
+    Usuários de todas as idades e habilidades reclamam sobre isto.
+    Textos em placeholders desaparecem quando o usuário clica dentro do campo para começar a digitar.
+    Pode ser dificil de lembrar o que o conteúdo do campo pede (Ex: Email vs nome de usuário);
+-   Se os campos não tem um label visivel (ex: campos de busca),
+-   If fields do not have a visible label (e.g. search fields), providencie um label oculto.
+    Indica-se o texto do label. Todos os campos de formuário devem ter labels.
 
-![Form field labels should be placed above the field, not beside it.](media/label-top-of-field.jpg)
+![Campos de formuário devem ser colocados acima, não ao lado](media/label-top-of-field.jpg)
 
-*See this article:* *[The definitive guide to form label
-positioning](http://www.sitepoint.com/definitive-guide-form-label-positioning/)*
+*Veja este artigo:* *[O guia definitivo para o
+posicionamento de labels](http://www.sitepoint.com/definitive-guide-form-label-positioning/)*
 
-!["Do not replace labels with placeholder text.](media/no-placeholders.jpg)
+!["Não troque labels por textos de placeholders.](media/no-placeholders.jpg)
 
 *From the Nielsen Norman Group article:*
-*[Form design
-placeholders](https://www.nngroup.com/articles/form-design-placeholders/)*
+*[Design de placeholders
+de formuários](https://www.nngroup.com/articles/form-design-placeholders/)*
 
-### Accessible form error messaging
+### Mensagens de erros acessíveis
 
-Screen readers automatically read out form field labels when the field has focus.
-The form error messaging flow should work like this:
+Leitores de tela automaticamente leem campos de labels do formuários quando o campo está sob foco.
+A mensagem de erro de fluxo deve funcionar assim:
 
--   User fills out a field the wrong way.
--   User attempts to submit form.
--   The first form field that has an error message should automatically gain keyboard focus.
--   The form field error message should be programmatically appended to the field's label.
+-   Usuário preenche de uma forma errada;
+-   Usuário tenta submitar o formuário;
+-   O primeiro campo do formulário com uma mensagem de erro deve automaticamente ficar sob o foco do teclado.
+-   A mensagem de erro deve ser programada para aparecer no campo do label.
 
-In this way, the screen reader will read out the form field followed by the error message text.
-Example: "Email address. Email address is a required field."
-The user can then fix this issue, then tab through the rest of the form and hear any other error messages along the way.
+Desta maneira, um leitor de tela irá ler o formulário seguindo a mensagem de erro.
+Exemplo: "Endereço de Email. Endereço de email é um campo requerido".
+O usuário pode arrumar o erro, então dar tab para o restante do formulário e ouvir as outras mensagens de erros durante este percurso.
 
 <!--
   N.T: O trexo abaixo é o HTML original. Vamos manter esse comentário até que
@@ -218,18 +220,18 @@ The user can then fix this issue, then tab through the rest of the form and hear
   <p><a href="http://webaim.org/techniques/forms/" target="_blank">WebAIM has a great article about accessible form development<span class="icon-webfont fa-external-link" aria-hidden="true"></span><span class="screen-reader-text">Opens in a new window</span></a>    that I encourage everyone to read.</p>
 -->
 
-[WebAIM has a great article about accessible form development](http://acessibilidade.pt.webiwg.org/webaim/tecnicas/formularios/)
-that I encourage everyone to read.
+[WebAIM é um ótimo artigo sobre desenvolvimento de formulários acessiveis](http://acessibilidade.pt.webiwg.org/webaim/tecnicas/formularios/)
+que eu incientivo todos a lerem.
 
-You might be interested in these other articles related to accessible user experience:
+Você pode estar interessado neste artigos mencionados sobre experiência do usuário acessível:
 --------------------------------------------------------------------------------------
 
--   [Creating accessible experiences starts with experience
+-   [Criar experiência acessíveis começa com o experience
     design](http://accessib.li/2016/05/14/creating-accessible-experiences-starts-with-experience-design/)
--   [Why accessibility compliance should be a criteria in web design
-    awards](http://accessib.li/2016/04/22/why-accessibility-compliance-should-be-a-criteria-in-web-design-awards/)
--   [Usability should include
-    accessibility](http://accessib.li/2016/03/18/usability-should-include-accessibility/)
+-   [Por que a conformidade da acessibilidade deve ser um critério nos prêmios
+    de web design](http://accessib.li/2016/04/22/why-accessibility-compliance-should-be-a-criteria-in-web-design-awards/)
+-   [Usuablidade deve incluir
+    acessibilidade](http://accessib.li/2016/03/18/usability-should-include-accessibility/)
 
-Let me know in [the comments section](http://accessib.li/2016/08/28/how-to-make-your-wireframes-more-accessible-in-five-easy-steps/#respond)
-what accessibility features you add to your wireframes.
+Faça me saber [sessão de comentários](http://accessib.li/2016/08/28/how-to-make-your-wireframes-more-accessible-in-five-easy-steps/#respond)
+quais features de acessilibade você adiciona nos seu formulários.
