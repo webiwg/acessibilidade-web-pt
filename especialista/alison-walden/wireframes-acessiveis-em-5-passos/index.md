@@ -1,7 +1,7 @@
 ---
 layout: translation
 date: 2016-08-28 # Data de ultima atualização do original
-title: "How to make your wireframes more accessible in five easy steps" # Titulo traduzido
+title: "Wireframes mais acessíveis em 5 passos fáceis" # Titulo traduzido
 description: "Most websites in North America and Europe now need to meet accessibility requirements.
 These include requirements described by Section 508 of the American Disabilities Act (ADA)."
 
@@ -13,8 +13,8 @@ authors: [{
     link: "http://accessib.li/about-alison-walden/"
 }]
 translators: [{
-    name: "Nome Do Tradutor Aqui",
-    link: "http://twitter.com/webiwg"
+    name: "Ivan Sander Netto",
+    link: "https://github.com/ivans-netto"
 }]
 reviewers: []
 discussion: https://github.com/webiwg/acessibilidade-web-pt/issues/11
@@ -27,32 +27,37 @@ isDraft: true
 isReleaseCandidate: false
 ---
 
-Most websites in North America and Europe now need to meet accessibility requirements.
-These include requirements described by Section 508 of the American Disabilities Act (ADA).
-They also refer to the Web Content Accessibility Guidelines (WCAG 2.0).
+<!--
+    N.T.: "How to make your wireframes more accessible in five easy steps" foi
+        traduzido para "Wireframes mais acessíveis em 5 passos fáceis", pois desta forma
+        a palavra wireframes fica mais visível (@ivans-netto, 10-13-2016 15:40).
+-->
 
-Follow these five easy steps to make your wireframes more accessible:
+A maioria dos websites na América do Norte e Europa agora precisam adequar-ser aos requerimentos de acessibilidade.
+Estes incluem requerimentos descritos pela Section 508 of the <am lang="en">American Disabilities Act (ADA)</am>.
+Eles também referenciam para o <am lang="en">Web Content Accessibility Guidelines (WCAG 2.0)</am>.
 
--   One: Document the heading structure.
--   Two: Document hidden way-finding cues.
--   Three: Document focus order information and specify the visible focus state.
--   Four: Provide clear link labels.
--   Five: Design simple, usable forms.
+Siga estes 5 fáceis passos para fazer seu wireframe mais acessível:
 
-One: Document the heading structure
+1. Documente a estrutura dos títulos;
+2. Documente hidden way-finding cues;
+3. Documente a ordem do focus e especifique o estado visível deste;
+4. Forneça links claras para os labels;
+5. Faça o design simples e de formas utilizáveis.
+
+Um: Documente a estrutura de títulos
 -----------------------------------
 
-Remember the last time you wrote an essay? You probably had a series of sections in your essay that each had a heading.
-Most likely you had a table of contents that listed all your headings.
-If someone read your table of contents, they would have had a good idea of what your essay was about.
+Lembra-se da última vez que escreveu uma redação? Você provavelmente tinha uma série de sessões na sua redação e em cada uma delas um título.
+Mais provável tinha um índice que listava estes títulos.
+Se alguém lesse seu índice, teria uma boa idéia sobre o que sua redação se trata.
 
-This is what headings are for on a website.
-They should describe the page they are on.
-Assistive devices like screen readers allow users to navigate web pages by headings.
-This is one way that a non-sighted person can "scan" a webpage, by choosing to hear all the headings on the page.
-Listening to the headings allows them to assess if the page is useful for them.
-If the headings are not developed and written in a clear and proper way,
-they will not be helpful to this audience.
+Isto é o que títulos são para os websites.
+Eles devem descrever a página que estão.
+Dispositivos de acessibilidade como leitores de tela permitem usuários navegar as webpages pelos títulos.
+Ouvir os títulos permite os usuários identificar rapidamente se a página é útil para eles.
+Se os títulos não são desenvolvidos e escritos em uma forma clara e própria para,
+eles não irão auxiliares para os usuários que fazem uso destas ferramentas de leitura.
 
 <!--
   N.T: O trexo abaixo é o HTML original. Vamos manter esse comentário até que
@@ -63,68 +68,69 @@ they will not be helpful to this audience.
   <img src="http://i0.wp.com/accessib.li/wp-content/uploads/2016/08/headings.jpg?resize=550%2C217" alt="A primary heading that asks the question, Should I be a primary heading?" class="size-full wp-image-282" sizes="(max-width: 550px) 100vw, 550px" srcset="http://i0.wp.com/accessib.li/wp-content/uploads/2016/08/headings.jpg?w=550 550w, http://i0.wp.com/accessib.li/wp-content/uploads/2016/08/headings.jpg?resize=300%2C118 300w" width="550" height="217" />
 -->
 
-![A primary heading that asks the question, Should I be a primary heading?](media/headings.jpg)
+![O título primário  A primary heading faz uma pergunta: Eu devo ser um título primário?](media/headings.jpg)
 
-The experience designer or copywriter should decide the heading structure.
-The wireframe or content matrix should include an annotation that describes the heading structure.
-A developer should not decide the heading structure by herself (in absence of documentation).
+O designer de experiência ou escritor deve decidir as estruturas de títulos.
 
-Two: Document hidden way-finding cues
+O wireframe ou matriz de conteúdo deve incluir a anotação que descreve a estrutura de títulos.
+O desenvolvedor não deve decidir a estrutura de títulos por ele mesmo (na ausência de documentação).
+
+Dois: Document hidden way-finding cues
 -------------------------------------
 
-Screen reader users benefit from additional way-finding cues to help them navigate a webpage.
-These include:
+Usuários de leitores de telas são beneficiados pelo way-finding cue para ajudar na navegação da webpage.
+Estes incluem:
 
--   "Bypass block links": These allow screen reader users to skip over repeated blocks of content.
-    Without them, screen reader users would have to tab through repetitive blocks of content from page to page.
-    They are most often used to skip over navigation menus.
-    Other candidates for bypassing include filter menus or carousels with many panels.
--   Bypass block links can be hidden by default, but should appear on keyboard focus.
-    They should allow the user to skip past the content block to the content immediately after.
-    It's important to test these with your keyboard once they are implemented.
-    Make sure that you can tab once into the content area,
-    and tab again into the next interactive element in the content area.
+-   "Blocos de escape (Bypass)":  Estes permitem ao usuário do leitor de tela escapar dos possíveis blocos repetidos de conteúdo.
+    Sem eles, estes usuários teriam de utilizar a tecla "tab" repetitivamente nos blocos de conteúdo da página.
+    Ele são os mais utilizados para escapar da navegação do menu.
+    Outros candidatos para o bypass incluem filtros para menus, carrousels e muitos outros tipos de conteúdo.
+-   Blocos de bypass podem ser escondidos por padrão, mas devem aparecer no foco do teclado.
+    Eles devem permitir o usuário a escapar o bloco de conteúdo atual para o imediatamente próximo.
+    É importante testar estes com um teclado, uma que estão implementados.
+    Tenha certeza que você pode utilizar o tab uma vez para a area de conteúdo,
+    e também novamente para o próximo objeto interativo dentro desta mesma area, se houver.
 
-Three: Document focus order information and specify the visible focus state
+Três: Documentar a informação de ordem de foco e especificar o estado do foco visível
 ---------------------------------------------------------------------------
 
-### Focus order
+### Ordem de foco
 
-Focus order is an important concept for keyboard accessibility.
-It refers to the order that elements on the page receive keyboard focus.
-The usual focus order for the Western world is from top to bottom, left to right, the same way we read.
+Ordem de foco é um importante conceito para a acessibilidade no teclado.
+Isto referencia a ordem dos elementos na página que recebe o foco do teclado.
+A ordem de foco comum para Western worl é: do topo para baixo, esquerda para direita, da mesma forma que lemos.
 
-For keyboard users, a common way to access a website is to move through the content by pressing the tab key.
-The tab key moves the focus state to links or form elements.
-Screen reader users can have their device begin reading the page at any point.
+Para usuários de teclado, a forma comum de acessar um website é mover-se através do conteúdo pressionando a tecla tab.
+A tecla tab move o estado de foco para links e elementos de formulários.
+Usuários de leitores de tela podem ter seus dispositivos lendo uma página em qualquer ponto desta.
 
-Usually experiences benefit from implementing a default focus order.
-There are instances where the focus order should be changed.
-This is best determined by an experience designer.
+Normalmente experiências beneficiam-se com a implementação padrão da ordem de foco.
+Porém existem casos quais a ordem de foco deverá ser mudada.
+Isto será melhor determinado por um UX Designer ou UX Developer.
 
-The following flow illustrates a situation where the default tabbing order should be overridden:
+O seguinte fluxo ilustra uma situação onde a ação do tab padrão dele ser sobrescrita:
 
--   User clicks on a link to log in to a website, and the log in link leads to a different page.
--   By default, the first focused area on the page would probably be in the top left-most link or form field.
-    But in this instance, the user is definitely there to log in.
-    It makes sense here to put the focus state on the first field in the sign in form.
+-   O usuário clica em um link para logar em um site e tal link leva para um página diferente.
+-   Por padrão, a primeira area de foco na página seria provavelmente no topo esquerdo - link relevante ou campo do formulário.
+    Mas neste momento, o usuário está definitivamente lá para logar-se.
+    Faz sentido aqui colocar o estado de foco primeiramente no campo de cadastro do formulário.
 
-Again, this cannot be decided by a developer in absence of documentation.
-It must be annotated in the wireframe.
+De novo, isto não pode ser decidido por um desenvolvedor na ausência de documentação.
+Deve está anotado no wireframe guia.
 
-### Visible focus state
+### Estado de foco visivel
 
-The visible focus state is the visual indicator that an element has focus.
-It is common for designers to create a hover state for mouse users.
-Usually the focus state should match the hover state.
+Um estado de focos visivel é um indicador visual que o elemento selecionado está sob foco.
+É como para designers criar um estado de hover para o mouse dos usuários.
+Geralmente o estado de foco deve combinar com o de hover.
 
-For developers to handle this state in their implementations, it must be defined in the wireframe.
-Additionally, the design of each element's focus state must be described in the style guide.
-Each browser has its own default focus state.
-Either allow this to be used, or have the designer create a new one that matches your client's branding.
+Para desenvolvedores criarem este estado nas suas implementações, este deve estar definido no wireframe.
+Adicionalmente, o design do foco de cada elemento deve ser descrito um um styleguide.
+Cada browser tem seu próprio estilo de foco.
+Ou permita o estilo do browser ser utilizado ou um designer deve criar um novo que combine com a marca do cliente.
 
-Many clients do not understand the value of the visible focus state.
-When it is described in the style guide, the client has an opportunity to see it up front and ask questions about it.
+Muitos clientes não entendem o valor de um estado de focos visivel.
+Então isto é descrito em um styleguide, onde o cliente tem o oportunidade de ver na sua frente e perguntar sobre.
 
 > What is a visible focus state?
 >
@@ -133,76 +139,78 @@ When it is described in the style guide, the client has an opportunity to see it
 > and other links change color and have an outline.
 > This is so keyboard users can see where the focus is.
 
-Four: Provide clear link labels
+Quatro: Forneça labels claros
 -------------------------------
 
-For users who navigate with a screen reader, many of them will only hear link labels.
-They will not have any context on surrounding information.
-That's why it is important to make sure the link itself (or the form field label) is meaningful.
+Usuários quais navegam com leitores de tela, muitos deles não vão apenas ouvir os labels.
+Eles não tem qualquer contexto em torno da informação.
+É importante fazer claro os labels por si próprios (ou por form field label), isto é significativo.
 
-Do this: Learn more about our services
+Fazer: Aprender mais sobre nossos serviços
 
-Don't do this: Learn more
+Não fazer isto: Aprenda mais
 
-Do this: Edit my account settings
+Fazer: Editar minha conta
 
-Don't do this: Edit
+Não fazer isto: Editar
 
-Sometimes the context is clear to a sighted user based on surrounding content.
-In this case, indicate in the wireframe that the developer should hide the additional content from sighted users.
-This way, a sighted user who can gain context from the surrounding content will see "Learn more".
-A non-sighted user will hear, "Learn more about our services".
+Algumas vezes o contexto é claro para o usuário baseado no conteúdo ao redor.
+Neste caso, indique no wireframe que o desenvolvedor deve esconder conteúdo adicional para usuários sem dificuldades visuais.
+Deste maneira, um usuário sem dificuldades visuais qual ganha informações do contexto ao redor verá "Aprende mais".
+Um usuário com dificuldades visuais irá ouvir "Aprende mais sobre nossos serviços".
 
-Five: Design simple, usable forms
+Quinto: Design simple, usable forms
 ---------------------------------
 
-### Usable form design
+### Útil para designers
 
-I often ask designers if they plan to enter their form design into the coveted Form Design Awards.
-Usually they stare back at me blankly.
-Sometimes they perk up and ask for more information about these awards.
+Eu frequentimente pergunto aos designers se eles planejam enviar seus form designs para o cobiçado From Design Awards.
+Normalmente eles me olham fixo inexpressivamente.
+Às vezes eles animamam-se e perguntam por mais informações sobre este prêmio.
 
-There are no Form Design Awards. Isn't it great?
-We can put our aesthetic goals aside and focus on making the form usable.
-Trust me: forms are meant to be filled out. They don't need to be flashy.
-It's okay if they aren't ultra clean and sleek.
+Não existe Form Desgin Awards. Não é ótimo?
+Nós podemos pôr nossas metas estéticas de lado e focar em fazer um form mais utilizável.
+Confie em mim: formuálios são para serem preenchidos.
+Trust me: forms are meant to be filled out. Eles não precisam ser chamativos.
+Está tudo bem se eles não forem ultra clean e lustroso.
 
-Here are some form design best practices that also make the form more accessible:
+Aqui estão algumas das boas práticas que também fazem seu formulário acessível.
 
--   Place the label above the form field, not beside it.
--   Put a "required field" indicator inside the field's label.
-    It's also helpful to put "(optional)" within optional field's labels.
--   Do not replace proper form fields with placeholder text.
-    Users of all ages and abilities complain about this.
-    Placeholder text disappears when a user clicks into the field and begins to type.
-    It can be hard to remember what content the field needed (e.g. Email address vs. username).
--   If fields do not have a visible label (e.g. search fields), provide the annotation for a hidden label.
-    Indicate the label text. All form fields must have labels.
+-   Colo um label acima do campo do formuário, não ao lado;
+-   Coloque um "campo requerido" indicador;
+    Também de grande ajuda colocar "opcional" nos campos opcionais
+-   Não troque campos do formulário por placeholders de textos (marcadores de texto).
+    Usuários de todas as idades e habilidades reclamam sobre isto.
+    Textos em placeholders desaparecem quando o usuário clica dentro do campo para começar a digitar.
+    Pode ser dificil de lembrar o que o conteúdo do campo pede (Ex: Email vs nome de usuário);
+-   Se os campos não tem um label visivel (ex: campos de busca),
+-   If fields do not have a visible label (e.g. search fields), providencie um label oculto.
+    Indica-se o texto do label. Todos os campos de formuário devem ter labels.
 
-![Form field labels should be placed above the field, not beside it.](media/label-top-of-field.jpg)
+![Campos de formuário devem ser colocados acima, não ao lado](media/label-top-of-field.jpg)
 
-*See this article:* *[The definitive guide to form label
-positioning](http://www.sitepoint.com/definitive-guide-form-label-positioning/)*
+*Veja este artigo:* *[O guia definitivo para o
+posicionamento de labels](http://www.sitepoint.com/definitive-guide-form-label-positioning/)*
 
-!["Do not replace labels with placeholder text.](media/no-placeholders.jpg)
+!["Não troque labels por textos de placeholders.](media/no-placeholders.jpg)
 
 *From the Nielsen Norman Group article:*
-*[Form design
-placeholders](https://www.nngroup.com/articles/form-design-placeholders/)*
+*[Design de placeholders
+de formuários](https://www.nngroup.com/articles/form-design-placeholders/)*
 
-### Accessible form error messaging
+### Mensagens de erros acessíveis
 
-Screen readers automatically read out form field labels when the field has focus.
-The form error messaging flow should work like this:
+Leitores de tela automaticamente leem campos de labels do formuários quando o campo está sob foco.
+A mensagem de erro de fluxo deve funcionar assim:
 
--   User fills out a field the wrong way.
--   User attempts to submit form.
--   The first form field that has an error message should automatically gain keyboard focus.
--   The form field error message should be programmatically appended to the field's label.
+-   Usuário preenche de uma forma errada;
+-   Usuário tenta submitar o formuário;
+-   O primeiro campo do formulário com uma mensagem de erro deve automaticamente ficar sob o foco do teclado.
+-   A mensagem de erro deve ser programada para aparecer no campo do label.
 
-In this way, the screen reader will read out the form field followed by the error message text.
-Example: "Email address. Email address is a required field."
-The user can then fix this issue, then tab through the rest of the form and hear any other error messages along the way.
+Desta maneira, um leitor de tela irá ler o formulário seguindo a mensagem de erro.
+Exemplo: "Endereço de Email. Endereço de email é um campo requerido".
+O usuário pode arrumar o erro, então dar tab para o restante do formulário e ouvir as outras mensagens de erros durante este percurso.
 
 <!--
   N.T: O trexo abaixo é o HTML original. Vamos manter esse comentário até que
@@ -212,18 +220,18 @@ The user can then fix this issue, then tab through the rest of the form and hear
   <p><a href="http://webaim.org/techniques/forms/" target="_blank">WebAIM has a great article about accessible form development<span class="icon-webfont fa-external-link" aria-hidden="true"></span><span class="screen-reader-text">Opens in a new window</span></a>    that I encourage everyone to read.</p>
 -->
 
-[WebAIM has a great article about accessible form development](http://acessibilidade.pt.webiwg.org/webaim/tecnicas/formularios/)
-that I encourage everyone to read.
+[WebAIM é um ótimo artigo sobre desenvolvimento de formulários acessiveis](http://acessibilidade.pt.webiwg.org/webaim/tecnicas/formularios/)
+que eu incientivo todos a lerem.
 
-You might be interested in these other articles related to accessible user experience:
+Você pode estar interessado neste artigos mencionados sobre experiência do usuário acessível:
 --------------------------------------------------------------------------------------
 
--   [Creating accessible experiences starts with experience
+-   [Criar experiência acessíveis começa com o experience
     design](http://accessib.li/2016/05/14/creating-accessible-experiences-starts-with-experience-design/)
--   [Why accessibility compliance should be a criteria in web design
-    awards](http://accessib.li/2016/04/22/why-accessibility-compliance-should-be-a-criteria-in-web-design-awards/)
--   [Usability should include
-    accessibility](http://accessib.li/2016/03/18/usability-should-include-accessibility/)
+-   [Por que a conformidade da acessibilidade deve ser um critério nos prêmios
+    de web design](http://accessib.li/2016/04/22/why-accessibility-compliance-should-be-a-criteria-in-web-design-awards/)
+-   [Usuablidade deve incluir
+    acessibilidade](http://accessib.li/2016/03/18/usability-should-include-accessibility/)
 
-Let me know in [the comments section](http://accessib.li/2016/08/28/how-to-make-your-wireframes-more-accessible-in-five-easy-steps/#respond)
-what accessibility features you add to your wireframes.
+Faça me saber [sessão de comentários](http://accessib.li/2016/08/28/how-to-make-your-wireframes-more-accessible-in-five-easy-steps/#respond)
+quais features de acessilibade você adiciona nos seu formulários.
