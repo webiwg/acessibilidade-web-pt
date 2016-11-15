@@ -164,16 +164,16 @@ Este tipo de sobreposição se encaixa com um modelo médico,
 mas não é particularmente útil para desevolvedores web,
 os quais simplesmente precisam saber o que a pessoa consegue ou não fazer.
 
-### Memory
+### Memória
 
-Memory refers to the ability of a user to recall what they have learned over time.
-A common model for explaining memory involves the concepts of working
-(i.e., immediate) memory, short-term memory, and long-term memory.
-Some individuals with cognitive disabilities have difficulties with one, two, or all three of these memory types.
-Some users may have memory difficulties that impair their ability to remember how they got to content.
-Consider a complex form that displays multiple error messages at the top of the form when submitted.
-It may be very difficult for the user to remember multiple errors,
-or perhaps may even forget the error information before they are even able to address that error.
+Memória se refere a habilidade de se lembrar de algo uma vez aprendido.
+Um modelo comum para explicar a memória envolver os conceitos de memória trabalho 
+( i.e., imediata), memória de curto e de longo prazos.
+Alguns indivíduos com deficiências cognitivas tem dificuldades com uma, duas ou mais de três tipos de memória.
+Alguns dos usuário tem dificuldades de memória que prejudicam suas habilidades de se lembrar como eles conseguiram o conteúdo.
+Considere uma complexa forma de multiplos displays de mensagem de erro na parte superior do formulário quando enviado.
+Talvez isto seja bem difícil para o usuário de se lembrar de vários erros,
+Ou talvez mesmo esquecendo as informações de erro antes de eles estarem mesmo válidos para encaminhar este erro..
 
 ### Problem-Solving
 
