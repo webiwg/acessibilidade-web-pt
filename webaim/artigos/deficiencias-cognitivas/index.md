@@ -122,15 +122,15 @@ A maioria das deficiências cognitivas tem algum tipo de base na biologia e fisi
 A conecção entre a biologia da pessoa e o processo mental é mais obvia no caso de traumatismo cerebral e desordem genética,
 mas mesmo a mais suave das deficiências cerebrais é baseada na estrutura ou na química cerebral.
 
-A person with profound cognitive disabilities will need assistance with nearly every aspect of daily living.
-Someone with a minor learning disability may be able to function adequately despite the disability,
-perhaps even to the extent that the disability is never discovered or diagnosed.
-Admittedly, the wide variance among the mental capabilities of those with cognitive disabilities complicates matters somewhat.
-In fact, one may reasonably argue that a great deal of web content *cannot* be made accessible to individuals with profound cognitive disabilities,
-no matter how hard the developer tries.
-Some content will always be too complex for certain audiences.
-This is unavoidable.
-Nevertheless, there are still some things that designers can do to increase the accessibility of web content to people with less severe cognitive disabilities.
+Uma pessoa com deficiência cogniticas profunda irá precisar de assistência em quase todos os aspectos da vida cotidiana.
+Alguém com menor dificuldade de aprendizagem talvéz esteja apto a se adaptar adequadamente apesar da deficiência,
+talvez mesmo com a extensão da deficiência ela não seja nunca descoberta ou diagnosticada.
+Aditidamente, a grande variância entre as capacidades mentais destes que com deficiências cognitivas severas impacta de alguma maneira.
+Na realidade, talvéz um argumento racional seja o fato que o conteúdo da rede pode não ser acessível à indivíduos com profundas deficiência cognitivas,
+não importando quanto trabalho no desevolviment haja.
+Alguns conteúdos serão sempre complexos demais para certa audiência.
+Isto é inevitável.
+Mesmo assim, há ainda alguumas coisas que designers podem fazer para aumentar a acessibilidade ao conteúdo da rede para pessoas com deficiência cognitivas menos severas.
 
 ### Deficiência Cognitiva Funcional VS Clínica
 
