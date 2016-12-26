@@ -175,13 +175,13 @@ Considere uma complexa forma de multiplos displays de mensagem de erro na parte 
 Talvez isto seja bem difícil para o usuário de se lembrar de vários erros,
 Ou talvez mesmo esquecendo as informações de erro antes de eles estarem mesmo válidos para encaminhar este erro..
 
-### Problem-Solving
+### Resolução de problemas
 
-Some individuals with cognitive disabilities have a difficult time solving problems as they arise.
-In many instances,
-their resilience can be low and the resulting frustration is such that they choose to leave the site and not persist to solve the problem.
-One example of this would be the presence of a 404 error from a bad link,
-or a link that does not take them where they thought they were going.
+Alguns indivíduos com deficiências cognitivas tem dificuldades em resolver problemas à tempo assim que eles surgem. 
+Em muitas situações,
+a resiliências deles pode ser baixa e resultando em frustração no caso de eles escolherem abandonar o caso e não persistir na resolução do problema.
+Um exempo disto pode ser a presença de um erro 404 de algum link quebrado,
+ ou um link que não os leva à pagina que eles acharam que iriam.
 
 ### Attention
 
