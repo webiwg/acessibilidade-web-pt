@@ -205,35 +205,35 @@ Evitando qualquer coisa que retire a atenção da pessoa do conteúdo principal 
 Como cores, espações brancos,
 E uma simples apresentação podem ajudar o foco dos usuários no conteúdo importante e na funcionalidade.
 
-### Reading, Linguistic, and Verbal Comprehension
+### Leitura, Linguística e compreenção Verbal
 
 <span style="float: right; margin: 8px 0px 1px 10px;"><img src="media/text.jpg" alt="complex words floating through space" width="203" height="203" /></span>
-Some individuals have difficulties understanding text.
-These difficulties may be mild or severe, ranging from minor challenges to a complete inability to read any text.
-It would be unreasonable to expect web developers to accommodate the entire range of reading abilities.
-The difference between non-readers and genius readers is simply too vast.
-It *is* reasonable, however, to expect developers to
+Alguns indivíduos tem dificuldade de compreensão de textos.
+Estas dificuldade podem ser leves ou severas, variando de pequenos desafios à completa incapacidade de ler qualquer texto.
+É razoável esperar que desenvolvedores web acomodem toda a gama de variação de habilidade de leitura.
+A diferença entre não leitores e leitores gênios é simplesmente enorme. 
+É *razoável*, contudo esperar que desenvolvedores
 [write as simply and clearly as is feasible](http://webaim.org/techniques/writing/),
-taking into account the primary audience and including those who may have difficulty with some of the content.
-After all, *an estimated 15-20% of the population,
-including many of the brightest minds of recent generations such as Albert Einstein,
-Thomas Edison, and Henry Ford,
-has some sort of language or text comprehension difficulty*.
+levando em conta o público-alvo principal incluindo quem tenha dificuldade com alguns tipos de conteúdos.
+Apesar de tudo, *estima-se que 15-20% da população,
+incluindo as mentes mais brilhantes das gerações recentes como Albert Einstein,
+Thomas Edsion e Henry Ford,
+tenha algum tipo de dificuldade de compreensão de linguagem ou textual*.
 
 <div class="example" markdown="1">
 <div class="title">Example</div>
 
-Here is one example of a reading problem.
-Note that it may be one of perception or of processing.
-See if the associated accessibility fix helps you.
+Aqui está um exemplo de problema de leitura.
+ Note que isto pode ser na percepção ou no processamento.
+. Veja se acessibilidade associativa pode ajudar você.
 
-What is being said in this phrase?
+O que foi dito nesta frase?
 
 **Tob eornot obe**
 
-Now check the power and importance of embedded graphics as a way to enhance the context of the written word by looking at the [phrase with a graphic.](graphic.html)
+Agora note o poder e a importância da incorporação de gráficos no sentido de aprimorar o contexto da escritura da palavra olhando para [phrase with a graphic.](graphic.html)
 
-Another interesting simulation of a reading difficulty and our resilience in the face of reading problems can be found at
+Outra sumulação interessante de dificuldade de leitura ou da nossa resiliência frente a problemas de leitura que podem sem encontradas.
 <http://www.angmail.fsnet.co.uk/jumbltxt.htm>.
 
 </div>
