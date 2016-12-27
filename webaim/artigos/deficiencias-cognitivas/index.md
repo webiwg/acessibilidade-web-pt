@@ -183,27 +183,27 @@ a resiliências deles pode ser baixa e resultando em frustração no caso de ele
 Um exempo disto pode ser a presença de um erro 404 de algum link quebrado,
  ou um link que não os leva à pagina que eles acharam que iriam.
 
-### Attention
+### Atenção
 
 <span style="float: right; margin: 8px 0px 1px 10px;">![A distracted student](media/student.jpg)</span>
-There are many individuals that have difficulty with focusing their attention to the task at hand.
-Distractions such as scrolling text, blinking icons,
-and pop-up windows can make the web environment difficult or even impossible.
-Even for typical users, such things can be irritating.
-Good design principles would limit these instances to only that which is necessary to convey the content.
+Há muitos indivíduos que tem dificuldade em focar sua atenção na terefa em questão. 
+Distrações do tipo textos de rolagem, ícones piscando,
+ e janelas pop-up podem tornar o ambiente web difícil ou até mesmo impossível.
+ Mesmo para os usos típicos, algumas coisas podem ser irritantes.
+Bons princípios de design podem limitar suas instâncias à somento aquilo que é necessário para transmitir o conteúdo..
 
-Some people with Attention Deficit Hyperactivity Disorder (ADHD) have difficulties learning,
-but oftentimes this is due to their distractibility,
-rather than to any kind of inability to process information.
-People with ADHD can be impulsive, easily distracted, and inattentive.
-On a positive note,
-some people with attention deficits are highly creative and very productive in short bursts,
-with an abundance of energy and enthusiasm.
-On a less positive note, it can be difficult for people with ADHD to stick to a task for a long period of time.
+Algumas pessoas com Transtorno de défict de atenção com hiperatividade (TDAH) tem dificuldade de aprendizagem,
+mas algumas vezes isto é devido à sua capacidade de se distrair, 
+preferido no lugar de qualquer tipo de incapacidade de processar informação.
+Pessoas com TDAH podem ser impulsivas, facilmente distraídos e desatentas.
+Uma nota positiva,
+algumas pessoas com transtornos de atenção são altamente criatias e muito produtivas à curto prazo,
+com abundância de energia e entusiasmo.
+Uma última nota positiva, pode ser difícil para pessoas com TDAH se concentrarem em uma tarefa por um longo período de tempo.
 
-Avoiding anything that draws a person's attention away from the main content and using good design,
-such as color, white space,
-and simple presentation can help users focus on important content and functionality.
+Evitando qualquer coisa que retire a atenção da pessoa do conteúdo principal e usando bom designd,
+Como cores, espações brancos,
+E uma simples apresentação podem ajudar o foco dos usuários no conteúdo importante e na funcionalidade.
 
 ### Reading, Linguistic, and Verbal Comprehension
 
