@@ -2,9 +2,9 @@
 layout: translation
 date: 2010-01-01 # Data de ultima atualização do original
 title: "É possível escrever de forma Simples e Clara" # Titulo traduzido
-description: "The task of writing clearly and simply has never been either clear or simple.
-In fact, it can be one of the most difficult of all writing tasks.
-Clear and simple writing is an art to which many aspire and few achieve."
+description: "A tarefa de escrever de forma clara e simples nunca foi nem clara e nem simples.
+Na verdade, ela pode ser uma das tarefas mais difíceis relacionadas à escrita.
+Escrita clara e simples é uma arte à qual muitos se aspiram, porém poucos a atingem."
 
 copyright: 'Copyright WebAIM' # Quem tem direitos de cópia
 license: null # Caso seja uma licença padrão (MIT, GPL...) por aqui
