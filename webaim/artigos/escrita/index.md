@@ -17,7 +17,10 @@ translators: [{
     name: "Isadora Coffani",
     link: "https://github.com/icoffani"
 }]
-reviewers: []
+reviewers: [{
+    name: "Vilmar Neto"
+    link: "https://github.com/dkmister"
+}]
 discussion: https://github.com/webiwg/acessibilidade-web-pt/issues/29
 original: {
     title: "Writing Clearly and Simply", # Titulo original, no idioma origial
