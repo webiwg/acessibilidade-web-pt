@@ -122,7 +122,7 @@ h4 code {
 
 A tarefa de escrever de forma clara e simples nunca foi nem clara e nem simples.
 Na verdade, ela pode ser uma das tarefas mais difíceis relacionadas à escrita.
-Escrita clara e simples é uma arte à qual muitos se aspiram, porém poucos a atingem.
+Escrita clara e simples é uma arte à qual muitos se aspiram, e poucos a atingem.
 Ainda assim, o entendimento do conteúdo da web depende de uma escrita clara e simples.
 A escrita, quando não é clara e é confusa, é uma barreira de acessibilidade a todos os leitores,
 mas pode ser ainda mais difícil para pessoas que tenham dislexia ou pessoas com distúrbios
@@ -151,7 +151,7 @@ Apesar das dificuldades em definir o significado da escrita “clara e simples�
 as sugestões nesta seção ainda podem beneficiar redatores de conteúdo para web.
 As sugestões servem como orientações generais para escrever em Inglês de forma clara e simples,
 primeiramente a partir de uma perspectiva do Inglês Americano.
-Aqueles que escrevem em outras línguas deverão procurar recursos que se apliquem especificamente àquelas
+Aqueles que escrevem em outras línguas devem procurar recursos que se apliquem especificamente àquelas
 línguas.
 
 **Habilidades cognitivas importam.**
@@ -160,8 +160,7 @@ mesmo quando estes são apresentados de forma clara e simples.
 Dislexia, distúrbios de memória, distúrbios de déficit de atenção,
 e outras condições que afetam os processos cognitivos do cérebro podem comprometer a habilidade de uma 
 pessoa de se beneficiar com o texto.
-As orientações apresentadas abaixo vão melhorar a leitura para muitas pessoas, mas pode não ser 
-aplicável para todas.
+As orientações apresentadas abaixo vão melhorar a leitura para muitas pessoas, mas não para todas.
 
 Orientações Gerais
 ------------------
@@ -221,7 +220,7 @@ Eles podem cortar seu próprio cabelo (o que tiver sobrado dele) com uma tesoura
 **Ideia Principal 2:**
 Pessoas calvas não precisam pentear seu cabelo.
 Eles só têm de secar a sua cabeça com uma toalha após o banho,
-e estão então livres para seguir para outras atividades mais relevantes,
+e estão então livres para seguir com outras atividades mais relevantes,
 tais como ler quadrinhos, praticar ioga ou escalar árvores.
 
 **Ideia Principal 3:**
@@ -241,7 +240,7 @@ de ser calvo.
 
 ### 3. Atenha-se ao ponto
 
-Quando mais você se afasta de seu ponto principal, menor será a probabilidade de as pessoas
+Quando mais você se afasta de seu ponto principal, menor será a probabilidade das pessoas
 lembrarem dele.
 
 ### 4. Torne-o interessante
@@ -249,7 +248,7 @@ lembrarem dele.
 Prenda a atenção dos seus leitores através da inclusão de detalhes relevantes que os motivem a 
 continuar lendo.
 
-Aqui estão algumas ideias de indivíduos famosos sobre a importância de tornar as coisas interessantes:
+Aqui estão algumas pensamentos de indivíduos famosos sobre a importância de tornar as coisas interessantes:
 
 > "Se você não quer ser esquecido quando morrer, escreva coisas que valham a pena serem lidas ou faça coisas
 que valham a pena escrever a respeito." <br>
@@ -308,14 +307,14 @@ Conforme você prosseguir com a leitura deste parágrafo,
 note como as outras frases dele reforçam a ideia principal da primeira frase.
 
 > **Obstáculos são uma realidade constante para as equipes.**
-Eles ocorrem a partir do momento que uma equipe em potencial se junta até o final desta equipe.
+Eles ocorrem a partir do momento que uma equipe em potencial se junta até que a equipe acabe.
 Obstáculos também diferem tanto quanto as equipes, os desafios de performance, os ambientes 
 organizacionais e os contextos de negócios que os produzem.
 A equipe “Burlington Northern Intermodal”, por exemplo, encontrou pouco apoio da gestão,
 políticas contra publicidade, falta de confiança de caminhoneiros e o talento medíocre no departamento intermodal.
 Ela também confrontou mau tempo, competição intensa e uma economia empobrecida quando teve de provar sua estratégia
 com os dois novos núcleos. 
-Quaisquer desses obstáculos poderia impedir o progresso e a performance da equipe.
+Quaisquer desses obstáculos poderiam impedir o progresso e a performance da equipe.
 Nenhum deles o fez. De fato, trabalhar com os obstáculos tornou a equipe mais forte.
 
 (De “A Sabedoria das Equipes”, por Jon R. Katzenbach e Douglas K. Smith. HarperBusiness press 1994, página 149.)
@@ -341,7 +340,7 @@ mas significam pouco ou nada para pessoas que não são familiarizadas com os te
 
 <span class="inlinemediaobject"><img src="media/frowny.png" alt="Good example:" width="20" height="20" /></span>
 **Jargão de teoria social:**
-A teoria crítica procura problematizar a reificação hegemônica de constructos sociais estratificados opressivos.
+A teoria crítica procura problematizar a reificação hegemônica de construções sociais estratificadas opressivas.
 
 A frase acima descreve com precisão um aspecto do movimento social conhecido como teoria crítica,
 mas utiliza termos que são de certa forma menos comuns fora da teoria crítica,
@@ -360,7 +359,7 @@ e não em impressioná-los utilizando palavras incomuns ou chamativas.
 
 <span class="inlinemediaobject"><img src="media/frowny.png" alt="Bad example:" width="20" height="20" /></span>
 **Palavras que não são comuns (a muitas pessoas):**
-A legião populosa dos andarilhos impecuniosos congregou-se nas proximidades da basílica.
+A legião populosa de andarilhos impecuniosos congregou-se nas proximidades da basílica.
 
 <span class="inlinemediaobject"><img src="media/smiley.png" alt="Good example:" width="20" height="20" /></span>
 **Palavras mais comuns:**
@@ -380,8 +379,8 @@ A voz ativa liga o sujeito diretamente à ação.
 **Passive:**
 
 -   A refeição foi comida na festa pelos convidados.
--   Um bom momento foi tido por todos.
--   O resultado da construção de uma estrada através do terreno agrícola foi a busca no aumento de lucro por alguns donos de propriedades e a eventual perda de terras adjacentes à estrada para os projetos de construção residencial e comercial dos contratantes.
+-   Foi um bom momento para todos.
+-   O resultado da construção de uma estrada através do terreno agrícola foi aumentada pela busca no aumento de lucro por alguns donos de propriedades e a eventual perda de terras adjacentes à estrada para os projetos de construção residencial e comercial dos contratantes.
 
 <span class="inlinemediaobject"><img src="media/smiley.png" alt="Good example:" width="20" height="20" /></span>
 **Active:**
@@ -408,7 +407,7 @@ Em contrapartida, outros verbos – tais como “melhorar”, “esclarecer”, 
 
 <span class="inlinemediaobject"><img src="media/frowny.png" alt="Bad example:" width="20" height="20" /></span>
 **Verbo fraco ("ser"):**
-Um modo de melhorar sua escrita é utilizar verbos fortes.
+Um modo de melhorar sua escrita *é* utilizar verbos fortes.
 (A = B)
 (Um modo de melhorar sua escrita = utilizar verbos fortes)
 A igual relação entre as duas partes da frase implica em nenhuma ação.
@@ -466,7 +465,7 @@ perspectiva como as coisas não são, não foram, não serão ou não seriam.
 
 -   Não se suje.
 -   Não se esqueça de regar as flores.
--   Eu não lembrei onde estive na noite passada..
+-   Eu não lembrei onde estive na noite passada.
 -   Membros do coral não deveriam cantar de formas que não se misturem ao restante do coral.
 
 <span class="inlinemediaobject"><img src="media/smiley.png" alt="Good example:" width="20" height="20" /></span>
@@ -549,6 +548,8 @@ a atingir os reqs. do PAA.
   Individualized Education Plan (IEP), learning disabilities (LD), No Child Left Behind (NCLB) e Annual Yearly
   Progress (AYP).
         (@icoffani, 2016-10-20 15:08)
+  N.R.: OK!
+        (@dkmister, 2017-1-1 2:27)
 -->
 
 <span class="inlinemediaobject"><img src="media/smiley.png" alt="Good example:" width="20" height="20" /></span>
@@ -574,6 +575,7 @@ Eu queria vre o pôr-do-sol por minha conta.
 <!--
   N.T.: o autor do texto usou como exemplo de "ortografia incorreta" o hte = the, mas para nós esse artigo possui somente uma letra na frase em questão ("o/a"), por isso foi escolhida outra palavra da frase para dar o sentido correto ao exemplo acima.
         (@icoffani, 2016-10-20 00:16)
+  N.R.: Tá bom, apesar de eu achar melhor "[...]u pôr-do-sol[]"
 -->
 
 <span class="inlinemediaobject"><img src="media/frowny.png" alt="Another bad example:" width="20" height="20" /></span>
@@ -677,8 +679,8 @@ alguns dos leitores irão quase sempre interpretar mal.
 
 ### Testes de Leitura
 
-Algorítmos, tais como o “Gunning Fog Index”, o “Flesch Reading Ease Index”,
-e o “Flesch-Kincaid Index” (em inglês) tentam avaliar a legibilidade ou o nível de leitura do conteúdo de um texto.
+Algorítmos, tais como o “__Gunning Fog Index__”, o “__Flesch Reading Ease Index__”,
+e o “__Flesch-Kincaid Index__” (em inglês) tentam avaliar a legibilidade ou o nível de leitura do conteúdo de um texto.
 Tais algorítmos agradam alguns especialistas porque eles são baseados em fórmulas matemáticas claras. 
 Os testes produzem resultados mensuráveis.
 Infelizmente, a ênfase dos testes na precisão quantitativa (numérica) pode induzir escritores ao erro de pensar que atingir
@@ -688,8 +690,8 @@ Os próprios algoritmos são, de certa forma, questionáveis também,
 visto que eles utilizam alguns critérios superficiais, tais como o número de sílabas,
 o número de palavras, o tamanho das frases, etc, sendo que todos estes são, no máximo, medidas indiretas de legibilidade.
 
-Usuários do Microsoft Word podem avaliar o conteúdo escrito em contraste com as escalas “Flesch Reading Ease” e a 
-“Flesch-Kincaid Grade Level” dentro do próprio processador de texto
+Usuários do Microsoft Word podem avaliar o conteúdo escrito em contraste com as escalas “__Flesch Reading Ease__” e a 
+“__Flesch-Kincaid Grade Level__” dentro do próprio processador de texto
 O Word também fornece uma contagem percentual de frases passivas (quanto menor a porcentagem, melhor).
 
 <!--
@@ -718,8 +720,8 @@ Outras fontes de avaliadores de legibilidade por meio de softwares **(todas em i
 -   [Readability Calculations (Cálculo de Legibilidade)](http://www.micropowerandlight.com/rd.html) by [Micro Power and Light Co](http://www.micropowerandlight.com/).
 -   GrammarExpert Plus , por [Wintertree software](http://www.wintertree-software.com/)
 
-Além disso, um [teste de legibilidade online](http://www.juicystudio.com/fog/) utilizando o Fog index está disponível
-na página do Juicy Studios.
+Além disso, um [teste de legibilidade online](http://www.juicystudio.com/fog/) utilizando o __Fog index__ está disponível
+na página do __Juicy Studios__.
 
 <img src="media/juicystudio.jpg" class="border" width="418" height="669" />
 
@@ -730,7 +732,7 @@ Resumo
 -------
 
 Não é fácil escrever de forma clara e simples, mas é importante tentar. 
-Usuários terão maior possibilidade de entender sua escrita se você reservar um tempo para organizar seus pensamentos e
+Usuários terão mais facilidade de entender sua escrita se você reservar um tempo para organizar seus pensamentos e
 escrevê-los da forma mais clara e simples possível, levando em conta o seu público.
 Para maximizar o entendimento para pessoas com distúrbios cognitivos,
 limite o texto, adicione ilustrações apropriadas e
