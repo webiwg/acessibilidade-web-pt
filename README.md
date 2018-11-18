@@ -11,7 +11,7 @@ sirva de base para inspirar projetos, que hoje, em Agosto de 2016, seriam
 inimagináveis pela comunidade de desenvolvedores que fala português.
 
 O projeto é coordenado por [Vilmar Neto](https://github.com/Dkmister).
-O site publicado está em [http://acessibilidade.pt.webiwg.org/](http://acessibilidade.pt.webiwg.org/)
+O site publicado está em [https://webiwg.github.io/acessibilidade-web-pt](https://webiwg.github.io/acessibilidade-web-pt)
 e seu código fonte em [https://github.com/webiwg/acessibilidade-web-pt](https://github.com/webiwg/acessibilidade-web-pt).
 
 ## Sobre o conteúdo desde repositório

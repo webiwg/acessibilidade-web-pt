@@ -18,8 +18,8 @@ title: Textos sobre acessibilidade na Web em português
 lang: pt
 description: >
   Aqui você encontra textos traduzidos sobre acessibilidade na web no idioma português. Seu foco é permitir que colaboradores indiquem textos pertinentes sobre o tema e, depois de discussão, seja traduzido por outros colaboradores.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://acessibilidade.pt.webiwg.org" # url completa para o site. NÃO termine com barra
+baseurl: "/acessibilidade-web-pt" # the subpath of your site, e.g. /blog
+url: "https://webiwg.github.io" # url completa para o site. NÃO termine com barra
 twitter_username: WebIWG
 github_username:  WebIWG
 github_repository: webiwg/acessibilidade-web-pt
