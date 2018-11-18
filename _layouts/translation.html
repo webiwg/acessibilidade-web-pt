@@ -25,7 +25,7 @@ layout: default
         {% if page.original %}
         <dt>Original</dt>
         <dd>
-          <a href="{{ page.original.link }}">{{ page.original.title }}</a> obtida em {% include date-portugues.html date=page.original.dateOfTranslation %}
+          <a href="{{ page.original.link }}">{{ page.original.title }} ↗</a> obtida em {% include date-portugues.html date=page.original.dateOfTranslation %}
         <dd>
         {% endif %}
         <dt>Data de atualização do original</dt>
@@ -40,7 +40,7 @@ layout: default
                 organizações (fititnt, 2016-09-08 00:58)
           -->
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span itemprop="name"><a rel="author" href="{{ author.link }}">{{ author.name }}</a></span>
+            <span itemprop="name"><a rel="author" href="{{ author.link }}">{{ author.name }} ↗</a></span>
           </span>
         </dd>
         {% endfor %}
@@ -55,7 +55,7 @@ layout: default
         {% for sponsor in page.sponsors %}
         <dd>
           <span itemprop="sponsor" itemscope itemtype="http://schema.org/Organization">
-            <span itemprop="name"><a href="{{ sponsor.link }}">{{ sponsor.name }}</a></span>
+            <span itemprop="name"><a href="{{ sponsor.link }}">{{ sponsor.name }} ↗</a></span>
           </span>
         </dd>
         {% endfor %}
@@ -65,7 +65,7 @@ layout: default
         {% for translator in page.translators %}
         <dd>
           <span itemprop="translator" itemscope itemtype="http://schema.org/Person">
-            <span itemprop="name"><a href="{{ translator.link }}">{{ translator.name }}</a></span>
+            <span itemprop="name"><a href="{{ translator.link }}">{{ translator.name }} ↗</a></span>
           </span>
         </dd>
         {% endfor %}
@@ -75,7 +75,7 @@ layout: default
         {% for reviewer in page.reviewers %}
         <dd>
           <span itemprop="translator" itemscope itemtype="http://schema.org/Person">
-            <span itemprop="name"><a href="{{ reviewer.link }}">{{ reviewer.name }}</a></span>
+            <span itemprop="name"><a href="{{ reviewer.link }}">{{ reviewer.name }} ↗</a></span>
           </span>
         </dd>
         {% endfor %}
@@ -101,7 +101,7 @@ layout: default
       Tradução em processo de revisão final. Sugestões de melhorias no português
       ou mesmo discussões sobre problemas técnicos são bem vindas.
       {% if page.discussion %}
-      Veja a <a href="{{ page.discussion }}">discussão desta tradução no Github</a>.
+      Veja a <a href="{{ page.discussion }}">discussão desta tradução no Github ↗</a>.
       {% endif %}
     </div>
     {% endif %}
