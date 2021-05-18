@@ -1,7 +1,7 @@
 ---
 layout: translation
 date: 2013-08-09 # Data de ultima atualização do original
-title: "Cognitive Disabilities" # Titulo traduzido
+title: "Deficiências Cognitivas" # Titulo traduzido
 description: "The concept of cognitive disabilities is extremely broad,
 and not always well-defined. In loose terms,
 a person with a cognitive disability has greater difficulty with one or more types of mental tasks than the average person.
@@ -15,8 +15,8 @@ authors: [{
     link: "http://webaim.org/"
 }]
 translators: [{
-    name: "Nome Da Pessa Tradutora",
-    link: "http://www.webiwg.org/colabore.html"
+    name: "João Vitor Do Erre",
+    link: "https://github.com/joaodoerre"
 }]
 reviewers: []
 discussion: https://github.com/webiwg/acessibilidade-web-pt/issues/28
@@ -108,133 +108,132 @@ h4 code {
 
 </style>
 
-## Introduction
 
-### Something to Think About...
+## Intodução
 
-<span style="float: right; margin: 8px 0px 1px 10px;"><img src="media/head.jpg" alt="computer generated image of a human head" width="156" height="149"></span>
-The concept of cognitive disabilities is extremely broad, and not always well-defined.
-In loose terms,
-a person with a cognitive disability has greater difficulty with one or more types of mental tasks than the average person.
-There are too many types of cognitive disabilities to list here, but we will cover some of the major categories.
-Most cognitive disabilities have some sort of basis in the biology or physiology of the individual.
-The connection between a person's biology and mental processes is most obvious in the case of traumatic brain injury and genetic disorders,
-but even the more subtle cognitive disabilities often have a basis in the structure or chemistry of the brain.
+### Algo para se pensar...
 
-A person with profound cognitive disabilities will need assistance with nearly every aspect of daily living.
-Someone with a minor learning disability may be able to function adequately despite the disability,
-perhaps even to the extent that the disability is never discovered or diagnosed.
-Admittedly, the wide variance among the mental capabilities of those with cognitive disabilities complicates matters somewhat.
-In fact, one may reasonably argue that a great deal of web content *cannot* be made accessible to individuals with profound cognitive disabilities,
-no matter how hard the developer tries.
-Some content will always be too complex for certain audiences.
-This is unavoidable.
-Nevertheless, there are still some things that designers can do to increase the accessibility of web content to people with less severe cognitive disabilities.
+<span style="float: right; margin: 8px 0px 1px 10px;"><img src="media/head.jpg" alt="Imagem gerada da cabeça humana por computador" width="156" height="149"></span>
+O conceito de deficiência cognitiva é extremamente amplo, e nem sempre bem definido.
+De forma simplificada,
+uma pessoa com deficiência cognitiva tem mais dificuldade em uma ou mais habilidades mentais que a maioria da população.
+Há muitos tipos de deficiências cognitivas para listar aqui, mas nós vamos cobrir a maior parte das categorias.
+A maioria das deficiências cognitivas tem algum tipo de base na biologia e fisiologia do induvíduo.
+A conecção entre a biologia da pessoa e o processo mental é mais obvia no caso de traumatismo cerebral e desordem genética,
+mas mesmo a mais suave das deficiências cerebrais é baseada na estrutura ou na química cerebral.
 
-### Functional vs. Clinical Cognitive Disabilities
+Uma pessoa com deficiência cogniticas profunda irá precisar de assistência em quase todos os aspectos da vida cotidiana.
+Alguém com menor dificuldade de aprendizagem talvéz esteja apto a se adaptar adequadamente apesar da deficiência,
+talvez mesmo com a extensão da deficiência ela não seja nunca descoberta ou diagnosticada.
+Aditidamente, a grande variância entre as capacidades mentais destes que com deficiências cognitivas severas impacta de alguma maneira.
+Na realidade, talvéz um argumento racional seja o fato que o conteúdo da rede pode não ser acessível à indivíduos com profundas deficiência cognitivas,
+não importando quanto trabalho no desevolviment haja.
+Alguns conteúdos serão sempre complexos demais para certa audiência.
+Isto é inevitável.
+Mesmo assim, há ainda alguumas coisas que designers podem fazer para aumentar a acessibilidade ao conteúdo da rede para pessoas com deficiência cognitivas menos severas.
 
-There are at least two ways to classify cognitive disabilities:
-by functional disability or by clinical disability.
-Clinical diagnoses of cognitive disabilities include autism,
-Down Syndrome, traumatic brain injury (TBI), and even dementia.
-Less severe cognitive conditions include attention deficit disorder (ADD),
-dyslexia (difficulty reading), dyscalculia (difficulty with math),
-and learning disabilities in general.
-Clinical diagnoses may be useful from a medical perspective for treatment,
-but for the purposes of web accessibility,
-classifying cognitive disabilities by *functional* disability is more useful.
-Functional disabilities ignore the medical or behavioral causes of the disability and instead focus on the resulting abilities and challenges.
-Some of the main categories of functional cognitive disabilities include deficits or difficulties with:
+### Deficiência Cognitiva Funcional VS Clínica
 
-1.  Memory
-2.  Problem-solving
-3.  Attention
-4.  Reading, linguistic, and verbal comprehension
-5.  Math comprehension
-6.  Visual comprehension
+Há pelo menos duas maneiras de classificar deficiências cognitivas:
+pela deficiência funcional ou pela deficiência clínica.
+Deficiência clínica ou deficiência cognitiva incluem autismo,
+sindrome de down, traumatismo craniâno (TBI), e até mesmo demência.
+Condições de deficiência menos severas incluem defict de atenção e desorde (ADD),
+dislexia (dificuldade de leitura), discalculia ( dificuldade com matemática),
+e defict de aprendizagem em geral.
+Diagnóstico clínico pode ser útil para a perspectiva de tratamento,
+mas para fin de acessibilidade a web, classificar as deficiências cognitivas pela desabilidade *funcional* é mais útil.
+Deficiências funcional ignora causas médicas ou comportamentais da deficiência e concentra-se nas habilidades e desafios resultantes.
+Algumas das principais categorias de deficiências cognitivas funcionais incluem defict ou dificuldade com:
 
-The main reason why these functional disabilities are more useful when considering web accessibility is that they are more directly related to the concerns of web developers.
-Telling a developer that some people have autism is not very meaningful unless the developer knows what kinds of barriers a person with autism might face on his or her web site.
-On the other hand,
-telling a developer that some people have difficulties comprehending math provides the developer with a framework for addressing the needs of this type of audience.
+1. Memória
+2. Resolução de problemas
+3. Atenção
+4. Leitura, linguistica, e compreensão verbal
+5. Compreensão matemática
+6. Compreensão visual
 
-Additionally, clinical diagnoses are not mutually exclusive in terms of what difficulties the people face.
-There is often considerable overlap of functional disabilities within clinical diagnoses.
-A person with memory deficits may also have difficulty with attention or problem-solving, for example.
-This kind of overlap fits within a medical model,
-but is not particularly helpful to web developers,
-who simply need to know what the person can or cannot do.
+As principais razões pelas quais a tese de deficiência funcional são mais úteis quando considerada a acessibilidade a web é por que eles são mais diretamente relacionados com as preocupações de web desenvolvedores.
+Dizer a um desenvolvedor que alguém tem autismo não é muito significativo ao menos que o desenvolvedor saiba quais tipos de barreira alguem com autismo talvéz encontre no seu web site.
+Por outro lado,
+dizer a um desenvolvedor que alguem tem dificuldades de compreensão matemática fornece ao desevolvedor uma estrutura para abordar as necessidades deste tipo de público.
 
-### Memory
+Adicionalmente, diagnóstico clínico não são mutuamente excludentes em termos de que dificuldades as pessoas enfrentam.
+Há consideravelmente uma sobreposição de deficiências funcionais com diagnóstico clínico.
+Este tipo de sobreposição se encaixa com um modelo médico,
+mas não é particularmente útil para desevolvedores web,
+os quais simplesmente precisam saber o que a pessoa consegue ou não fazer.
 
-Memory refers to the ability of a user to recall what they have learned over time.
-A common model for explaining memory involves the concepts of working
-(i.e., immediate) memory, short-term memory, and long-term memory.
-Some individuals with cognitive disabilities have difficulties with one, two, or all three of these memory types.
-Some users may have memory difficulties that impair their ability to remember how they got to content.
-Consider a complex form that displays multiple error messages at the top of the form when submitted.
-It may be very difficult for the user to remember multiple errors,
-or perhaps may even forget the error information before they are even able to address that error.
+### Memória
 
-### Problem-Solving
+Memória se refere a habilidade de se lembrar de algo uma vez aprendido.
+Um modelo comum para explicar a memória envolver os conceitos de memória trabalho 
+( i.e., imediata), memória de curto e de longo prazos.
+Alguns indivíduos com deficiências cognitivas tem dificuldades com uma, duas ou mais de três tipos de memória.
+Alguns dos usuário tem dificuldades de memória que prejudicam suas habilidades de se lembrar como eles conseguiram o conteúdo.
+Considere uma complexa forma de multiplos displays de mensagem de erro na parte superior do formulário quando enviado.
+Talvez isto seja bem difícil para o usuário de se lembrar de vários erros,
+Ou talvez mesmo esquecendo as informações de erro antes de eles estarem mesmo válidos para encaminhar este erro..
 
-Some individuals with cognitive disabilities have a difficult time solving problems as they arise.
-In many instances,
-their resilience can be low and the resulting frustration is such that they choose to leave the site and not persist to solve the problem.
-One example of this would be the presence of a 404 error from a bad link,
-or a link that does not take them where they thought they were going.
+### Resolução de problemas
 
-### Attention
+Alguns indivíduos com deficiências cognitivas tem dificuldades em resolver problemas à tempo assim que eles surgem. 
+Em muitas situações,
+a resiliências deles pode ser baixa e resultando em frustração no caso de eles escolherem abandonar o caso e não persistir na resolução do problema.
+Um exempo disto pode ser a presença de um erro 404 de algum link quebrado,
+ ou um link que não os leva à pagina que eles acharam que iriam.
+
+### Atenção
 
 <span style="float: right; margin: 8px 0px 1px 10px;">![A distracted student](media/student.jpg)</span>
-There are many individuals that have difficulty with focusing their attention to the task at hand.
-Distractions such as scrolling text, blinking icons,
-and pop-up windows can make the web environment difficult or even impossible.
-Even for typical users, such things can be irritating.
-Good design principles would limit these instances to only that which is necessary to convey the content.
+Há muitos indivíduos que tem dificuldade em focar sua atenção na terefa em questão. 
+Distrações do tipo textos de rolagem, ícones piscando,
+ e janelas pop-up podem tornar o ambiente web difícil ou até mesmo impossível.
+ Mesmo para os usos típicos, algumas coisas podem ser irritantes.
+Bons princípios de design podem limitar suas instâncias à somento aquilo que é necessário para transmitir o conteúdo..
 
-Some people with Attention Deficit Hyperactivity Disorder (ADHD) have difficulties learning,
-but oftentimes this is due to their distractibility,
-rather than to any kind of inability to process information.
-People with ADHD can be impulsive, easily distracted, and inattentive.
-On a positive note,
-some people with attention deficits are highly creative and very productive in short bursts,
-with an abundance of energy and enthusiasm.
-On a less positive note, it can be difficult for people with ADHD to stick to a task for a long period of time.
+Algumas pessoas com Transtorno de défict de atenção com hiperatividade (TDAH) tem dificuldade de aprendizagem,
+mas algumas vezes isto é devido à sua capacidade de se distrair, 
+preferido no lugar de qualquer tipo de incapacidade de processar informação.
+Pessoas com TDAH podem ser impulsivas, facilmente distraídos e desatentas.
+Uma nota positiva,
+algumas pessoas com transtornos de atenção são altamente criatias e muito produtivas à curto prazo,
+com abundância de energia e entusiasmo.
+Uma última nota positiva, pode ser difícil para pessoas com TDAH se concentrarem em uma tarefa por um longo período de tempo.
 
-Avoiding anything that draws a person's attention away from the main content and using good design,
-such as color, white space,
-and simple presentation can help users focus on important content and functionality.
+Evitando qualquer coisa que retire a atenção da pessoa do conteúdo principal e usando bom designd,
+Como cores, espações brancos,
+E uma simples apresentação podem ajudar o foco dos usuários no conteúdo importante e na funcionalidade.
 
-### Reading, Linguistic, and Verbal Comprehension
+### Leitura, Linguística e compreenção Verbal
 
 <span style="float: right; margin: 8px 0px 1px 10px;"><img src="media/text.jpg" alt="complex words floating through space" width="203" height="203" /></span>
-Some individuals have difficulties understanding text.
-These difficulties may be mild or severe, ranging from minor challenges to a complete inability to read any text.
-It would be unreasonable to expect web developers to accommodate the entire range of reading abilities.
-The difference between non-readers and genius readers is simply too vast.
-It *is* reasonable, however, to expect developers to
+Alguns indivíduos tem dificuldade de compreensão de textos.
+Estas dificuldade podem ser leves ou severas, variando de pequenos desafios à completa incapacidade de ler qualquer texto.
+É razoável esperar que desenvolvedores web acomodem toda a gama de variação de habilidade de leitura.
+A diferença entre não leitores e leitores gênios é simplesmente enorme. 
+É *razoável*, contudo esperar que desenvolvedores
 [write as simply and clearly as is feasible](http://webaim.org/techniques/writing/),
-taking into account the primary audience and including those who may have difficulty with some of the content.
-After all, *an estimated 15-20% of the population,
-including many of the brightest minds of recent generations such as Albert Einstein,
-Thomas Edison, and Henry Ford,
-has some sort of language or text comprehension difficulty*.
+levando em conta o público-alvo principal incluindo quem tenha dificuldade com alguns tipos de conteúdos.
+Apesar de tudo, *estima-se que 15-20% da população,
+incluindo as mentes mais brilhantes das gerações recentes como Albert Einstein,
+Thomas Edsion e Henry Ford,
+tenha algum tipo de dificuldade de compreensão de linguagem ou textual*.
 
 <div class="example" markdown="1">
 <div class="title">Example</div>
 
-Here is one example of a reading problem.
-Note that it may be one of perception or of processing.
-See if the associated accessibility fix helps you.
+Aqui está um exemplo de problema de leitura.
+ Note que isto pode ser na percepção ou no processamento.
+. Veja se acessibilidade associativa pode ajudar você.
 
-What is being said in this phrase?
+O que foi dito nesta frase?
 
 **Tob eornot obe**
 
-Now check the power and importance of embedded graphics as a way to enhance the context of the written word by looking at the [phrase with a graphic.](graphic.html)
+Agora note o poder e a importância da incorporação de gráficos no sentido de aprimorar o contexto da escritura da palavra olhando para [phrase with a graphic.](graphic.html)
 
-Another interesting simulation of a reading difficulty and our resilience in the face of reading problems can be found at
+Outra sumulação interessante de dificuldade de leitura ou da nossa resiliência frente a problemas de leitura que podem sem encontradas.
 <http://www.angmail.fsnet.co.uk/jumbltxt.htm>.
 
 </div>
