@@ -15,7 +15,10 @@ translators: [{
     name: "Roberta Schmitz Mayer",
     link: "http://webiwg.org"
 }]
-reviewers: []
+reviewers: [{
+    name: "Jean Carlo Suissa",
+    link: "http://twitter.com/suissa"
+}]
 discussion: https://github.com/webiwg/acessibilidade-web-pt/issues/22
 original: {
     title: "Accessible JavaScript", # Titulo original, no idioma origial
