@@ -11,7 +11,7 @@ authors: [{
     link: "https://github.com/kara-louise"
 }]
 translators: [{
-    name: "Vilmar Neto",
+    name: "Vil Aprato",
     link: "http://www.webiwg.org"
 }]
 reviewers: [{
